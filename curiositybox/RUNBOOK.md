@@ -1,12 +1,13 @@
 # CuriosityBox Shorts — run instructions
 
 CuriosityBox is a **separate channel** from CareerWithCode. Everything for it lives in
-`curiositybox/` and it posts **only** to the CuriosityBox Metricool brand. Never touch the
+`curiositybox/` and it posts **only** through Zapier to the CuriosityBox YouTube channel and
+Facebook page. Never touch the
 CareerWithCode files (`make_short.py`, `tracker.json`, `shorts/`, `specs/` at the repo root)
 and never post CuriosityBox content to the Career With Code brand (blogId `7393281`).
 
 Each scheduled run makes ONE Hinglish Short of **20–30 seconds** for ONE slot and posts it
-publicly to **YouTube (Short)** and **Facebook (Reel)** through Metricool.
+publicly to **YouTube (Short)** and **Facebook** through Zapier.
 
 | Slot (IST) | `SLOT`   | Category chip   | Content | Tone |
 |-----------|----------|-----------------|---------|------|
@@ -67,29 +68,36 @@ publicly to **YouTube (Short)** and **Facebook (Reel)** through Metricool.
 5. **Upload:** `curiositybox/publish.sh curiositybox/shorts/<name>.mp4` → commits the video and
    prints its public URL.
 
-6. **Find the brand.** Call Metricool `getBrandSettings` and pick the brand whose `label`
-   contains "curiosity" (case-insensitive). Use its `id` as `blogId`.
-   - If there is **no such brand**, or it has no YouTube/Facebook connected: do NOT post
-     anywhere. Set the log `status` to `"rendered, not posted: CuriosityBox brand not connected in Metricool"`
-     and continue at step 8.
-   - Only post to the networks that brand has connected (`youtubeData`, `facebookData`).
+6. **Post through Zapier** (NOT Metricool; Metricool is only for CareerWithCode).
+   Load the Zapier tools with ToolSearch (`select:mcp__Zapier__inspect_zapier_actions,mcp__Zapier__execute_zapier_write_action,mcp__Zapier__execute_zapier_read_action`).
+   Fixed, verified targets — use exactly these, never any other channel or page:
+   - YouTube channel **CuriosityBox | Hindi Facts & Stories**, id `UCtJ6818H8WuXS071samDcPA`
+     (Zapier connection `02f81f1b-fb53-829a-8a1a-2ec5c7132037`, the default)
+   - Facebook page **CuriosityBox Hindi Facts & Stories**, page id `1380858578445805`
+     (Zapier connection `02674053-085b-8da8-bb95-8d1f812207a6`, the default)
 
-7. **Post** with Metricool `createScheduledPost`:
-   - `blogId`: the CuriosityBox brand id from step 6
-   - `date`: today at the slot time exactly (e.g. `17:00:00+05:30`). Runs start ~15 min early.
-     If the slot time has already passed, use now + 3 minutes.
-   - `info`:
-     - `providers`: `[{"network":"youtube"},{"network":"facebook"}]`
-     - `media`: `[<video URL>]`
-     - `publicationDate`: `{"dateTime": "<same time, no offset>", "timezone": "Asia/Calcutta"}`
-     - `text`: 1–2 line Hinglish caption + 5–8 hashtags (#shorts #hindifacts #curiositybox + topic tags)
-     - `autoPublish`: true, `draft`: false
-     - `youtubeData`: `{"title": "<= 90 chars, Hinglish, ends with #shorts", "type": "short",
-        "privacy": "public", "madeForKids": false, "category": "EDUCATION",
-        "tags": [...], "isAiGeneratedContent": false}`
-     - `facebookData`: `{"type": "REEL"}`
-   - If Metricool rejects the post, fix the reported field and retry once. If it still fails,
-     do not retry further; record the error.
+   Runs start ~20 min early. Wait (sleep) until the slot time before posting, because Zapier
+   publishes immediately. If the slot time has already passed, post right away.
+
+   a. **YouTube:** `execute_zapier_write_action` with `selected_api: "YouTubeV4CLIAPI"`,
+      `action: "upload_video"`, `tool_name: "youtube_upload_video"`, params:
+      `title` (<= 90 chars, Hinglish, ends with #shorts), `description` (caption + hashtags),
+      `video` (the public URL from step 5), `privacy_status: "public"`, `made_for_kids: "false"`,
+      `category_id: "27"` (Education), `tags` (list), `default_language: "hi"`,
+      `default_audio_language: "hi"`, `notify_subscribers: "true"`.
+      Check the result's `channelId` is `UCtJ6818H8WuXS071samDcPA`; record the video `id`.
+   b. **Facebook:** `execute_zapier_write_action` with `selected_api: "FacebookV2CLIAPI"`,
+      `action: "page_video"`, `tool_name: "facebook_pages_create_page_video"`, params:
+      `page: "1380858578445805"`, `source` (same video URL), `title`, `description` (caption +
+      hashtags, use #reels instead of #shorts). Record the returned `id`.
+   - If an action fails, fix the reported field and retry once. If it still fails, record the
+     error. If Zapier reports the monthly task limit is reached, do not retry; record
+     "not posted: Zapier task limit reached".
+   - Never post the same video twice: if step a succeeded and b fails, retry only b.
+
+7. **Caption rules:** 1–2 line Hinglish caption ending with a question, then 5–8 hashtags
+   (#shorts #hindifacts #curiositybox + topic tags). `paisa` captions end with
+   "Ye financial advice nahi hai." before the hashtags.
 
 8. **Update the tracker** (`curiositybox/tracker.json`): append the topic to `tracker[SLOT].posted`
    and append to `log`: `{"date", "slot", "title", "tone", "hook_format", "video", "status"}`.
