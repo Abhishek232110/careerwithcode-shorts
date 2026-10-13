@@ -1,0 +1,22 @@
+{
+  "hook": "Every developer runs this loop",
+  "language": "Python",
+  "before": [
+    "if talent:",
+    "    success()  # myth"
+  ],
+  "before_title": "what people think",
+  "code": [
+    "day = 1",
+    "while not job_ready:",
+    "    learn(); build(); fail()",
+    "    day += 1",
+    "    job_ready = day > 180",
+    "print(\"Hired on day\", day)"
+  ],
+  "code_title": "what actually works",
+  "output": "Hired on day 181",
+  "takeaway": "Consistency beats talent. Your day 1 is today.",
+  "cta": "Follow and start your loop today",
+  "duration": 25
+}

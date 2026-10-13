@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render a 15-second 1080x1920 coding explainer Short from a JSON spec.
+"""Render a 20-30 second 1080x1920 coding explainer Short from a JSON spec.
 
 Usage: python3 make_short.py spec.json out.mp4
 
@@ -16,7 +16,7 @@ spec = {
 import json, subprocess, sys, math, wave, struct
 from PIL import Image, ImageDraw, ImageFont
 
-W, H, FPS, DUR = 1080, 1920, 30, 15
+W, H, FPS, DUR = 1080, 1920, 30, 25   # DUR is set per video from spec["duration"] (20-30 s)
 BG = (248, 250, 252); PANEL = (255, 255, 255); BORDER = (214, 220, 228)
 FG = (31, 35, 40); MUTED = (101, 109, 118)
 ACCENT = (9, 105, 218); GREEN = (26, 127, 55); YELLOW = (191, 87, 0)
@@ -98,6 +98,7 @@ def panel(d, box, title):
 
 
 def frame(spec, t):
+    p = t; t = t * 15.0 / DUR   # animation timeline is designed for 15 s, stretched to DUR
     img = Image.new("RGB", (W, H), BG); d = ImageDraw.Draw(img)
     # subtle grid background
     for gx in range(0, W, 90): d.line((gx, 0, gx, H), fill=GRID)
@@ -129,6 +130,14 @@ def frame(spec, t):
     longest = max(spec["code"] + (spec.get("before") or []), key=len)
     size = 50
     while size > 26 and d.textlength(longest, font=F(MONO, size)) > W - 220: size -= 2
+    # shrink further until the whole layout fits above the CTA button
+    nb, nc = len(spec.get("before") or []), len(spec["code"])
+    def total(sz):
+        l = int(sz * 1.55)
+        h = top + (125 + l * nb + 40 if nb else 0) + 125 + l * nc + 40
+        h += 190 if spec.get("output") else 0
+        return h + 20 + 2 * 84
+    while size > 26 and total(size) > H - 260: size -= 2
     mono = F(MONO, size); lh = int(size * 1.55)
     global EXT
     EXT = {"python": ".py", "go": ".go", "javascript": ".js", "java": ".java", "sql": ".sql",
@@ -186,7 +195,7 @@ def frame(spec, t):
         d.text(((W - d.textlength(cta, font=cf)) / 2, y0 + 44), cta, font=cf, fill=(255, 255, 255))
 
     # progress bar
-    d.rectangle((0, H - 18, int(W * t / DUR), H), fill=ACCENT)
+    d.rectangle((0, H - 18, int(W * p / DUR), H), fill=ACCENT)
     return img
 
 
@@ -209,7 +218,9 @@ def music(path):
 
 
 def main(spec_path, out):
+    global DUR
     spec = json.load(open(spec_path))
+    DUR = int(max(20, min(30, spec.get("duration", 25))))
     music(out + ".wav")
     p = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24",
                           "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-", "-i", out + ".wav",
@@ -219,6 +230,7 @@ def main(spec_path, out):
     for i in range(FPS * DUR):
         p.stdin.write(frame(spec, i / FPS).tobytes())
     p.stdin.close(); p.wait()
+    import os; os.remove(out + ".wav")
 
 
 if __name__ == "__main__":

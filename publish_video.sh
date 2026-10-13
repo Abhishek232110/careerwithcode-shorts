@@ -1,33 +1,19 @@
 #!/usr/bin/env bash
-# Upload a rendered Short to the `media` branch and print its public URL.
-# The media branch is rebuilt each time and keeps only the last 3 days of
-# videos, so the repo never grows large (videos are already on YouTube/IG/FB).
+# Commit a rendered Short to the repo (main branch, shorts/ folder) and print
+# its public URL. Every video is kept permanently in the repo.
 # Usage: ./publish_video.sh shorts/2026-10-13_0800_go-p01.mp4
 set -euo pipefail
-VIDEO="$(realpath "$1")"; NAME="$(basename "$VIDEO")"
-REPO="$(git -C "$(dirname "$0")" rev-parse --show-toplevel)"
-REMOTE="$(git -C "$REPO" remote get-url origin)"
-OWNER_REPO="$(echo "$REMOTE" | sed -E 's#.*github.com[/:]##; s#\.git$##')"
-CUTOFF="$(date -u -d '3 days ago' +%Y-%m-%d)"
-
-W="$(mktemp -d)"; cd "$W"
-git init -q; git remote add origin "$REMOTE"
-if git fetch -q --depth 1 origin media 2>/dev/null; then
-  git checkout -q FETCH_HEAD -- . 2>/dev/null || true
-fi
-git checkout -q --orphan media
-mkdir -p v
-for f in v/*.mp4; do
-  [ -e "$f" ] || continue
-  d="$(basename "$f" | cut -c1-10)"
-  [[ "$d" < "$CUTOFF" ]] && rm -f "$f"
-done
-cp "$VIDEO" "v/$NAME"
-git add -A
-git -c user.name="CareerWithCode Bot" -c user.email="bot@careerwithcode.local" commit -q -m "media: $NAME"
-git push -q -f origin media
-URL="https://raw.githubusercontent.com/${OWNER_REPO}/media/v/${NAME}"
-# wait until the file is publicly downloadable
+cd "$(git -C "$(dirname "$0")" rev-parse --show-toplevel)"
+FILE="$1"; NAME="$(basename "$FILE")"
+mkdir -p shorts
+[ "$FILE" = "shorts/$NAME" ] || cp "$FILE" "shorts/$NAME"
+OWNER_REPO="$(git remote get-url origin | sed -E 's#.*github.com[/:]##; s#\.git$##')"
+git add "shorts/$NAME"
+git -c user.name="CareerWithCode Bot" -c user.email="bot@careerwithcode.local" \
+    commit -q -m "video: $NAME" -- "shorts/$NAME"
+git pull -q --rebase origin main
+git push -q origin main
+URL="https://raw.githubusercontent.com/${OWNER_REPO}/main/shorts/${NAME}"
 for i in $(seq 1 20); do
   code="$(curl -s -o /dev/null -w '%{http_code}' -L "$URL" || true)"
   [ "$code" = "200" ] && break

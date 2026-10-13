@@ -1,6 +1,6 @@
 # CareerWithCode Shorts — run instructions
 
-Each scheduled run makes ONE 15-second Short for ONE slot and posts it publicly to
+Each scheduled run makes ONE Short of **20–30 seconds** for ONE slot and posts it publicly to
 YouTube (Short), Instagram (Reel) and Facebook (Reel) through Metricool.
 
 | Slot (IST) | `SLOT` value   | Content |
@@ -34,6 +34,7 @@ YouTube (Short), Instagram (Reel) and Facebook (Reel) through Metricool.
      "output": "i = 3",                               // optional, short
      "takeaway": "One line, ≤ 12 words.",
      "cta": "Follow for Part 8 tomorrow",              // series: "Follow for Part N+1 tomorrow"
+     "duration": 25,                                  // REQUIRED: 20-30 seconds, more text = longer
      "before_title": "...", "code_title": "..."       // optional panel titles
    }
    ```
@@ -44,11 +45,12 @@ YouTube (Short), Instagram (Reel) and Facebook (Reel) through Metricool.
    - Educational slot: a gotcha, trick, or "X explained" with a tiny code example.
 
 4. **Render:** `python3 make_short.py specs/<name>.json shorts/<name>.mp4`
-   Check it is 15 s and 1080x1920 (`ffprobe`). Extract one frame at 14 s and look at it
+   Check it is 20–30 s and 1080x1920 (`ffprobe`). Extract one frame 1 s before the end and look at it
    with Read: text must not overlap or run off the screen. If it does, shorten the
    text and re-render.
 
-5. **Upload:** `./publish_video.sh shorts/<name>.mp4` → prints the public video URL.
+5. **Upload:** `./publish_video.sh shorts/<name>.mp4` → commits the video to `shorts/`
+   on main (every video is kept in the repo permanently) and prints its public URL.
 
 6. **Post** with Metricool `createScheduledPost`:
    - `blogId`: `7393281`
@@ -74,6 +76,5 @@ YouTube (Short), Instagram (Reel) and Facebook (Reel) through Metricool.
    Keep `log` to the latest 100 entries.
    Then: `git add specs tracker.json curriculum.json && git commit -m "<date> <slot>: <topic>"`,
    `git pull --rebase origin main`, `git push origin main`.
-   Do NOT commit the `shorts/` folder (videos live on the `media` branch only).
 
 8. **Finish** with a one-line summary: slot, title, and whether the post succeeded.
