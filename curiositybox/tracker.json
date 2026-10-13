@@ -15,7 +15,9 @@
     ]
   },
   "kahani": {
-    "posted": []
+    "posted": [
+      "Konark Sun Temple: patthar ka rath"
+    ]
   },
   "log": [
     {
@@ -45,6 +47,16 @@
       "mood": "epic",
       "video": "2026-10-13_1720_whatif-earth-ghoomna-band.mp4",
       "status": "published via Zapier: yt B3MgSz1n8Z0, fb 1136867818762348"
+    },
+    {
+      "date": "2026-10-13 20:00",
+      "slot": "kahani",
+      "title": "Konark: Patthar Ka Rath Jo Samay Batata Hai? #shorts",
+      "tone": "storyteller, suspense",
+      "hook_format": "story-open",
+      "mood": "mysterious",
+      "video": "2026-10-13_2000_kahani-konark-surya-rath.mp4",
+      "status": "published via Zapier: yt Ix9tnhxOh5g, fb 3193686584161547"
     }
   ]
 }
