@@ -13,3 +13,10 @@ YouTube, Instagram and Facebook via Metricool.
 
 To change the series order, edit `curriculum.json`. To jump a series to a
 different part, change `next_part` in `tracker.json`.
+
+## CuriosityBox (separate channel)
+
+`curiositybox/` holds the automation for the separate Hindi channel CuriosityBox: 4 Shorts a
+day (08:00, 14:00, 17:00, 20:00 IST) on YouTube and Facebook. It has its own renderer,
+specs, videos, tracker and runbook (`curiositybox/RUNBOOK.md`) and never touches the
+CareerWithCode files above.
