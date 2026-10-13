@@ -17,7 +17,9 @@
     ]
   },
   "learn": {
-    "posted": []
+    "posted": [
+      "How to escape tutorial hell"
+    ]
   },
   "log": [
     {
@@ -46,6 +48,15 @@
       "hook_format": "myth-vs-fact",
       "video": "2026-10-13_1400_educational-python-mutable-default-args.mp4",
       "status": "scheduled: metricool 394701744 (yt, ig, fb) for 14:00 IST"
+    },
+    {
+      "date": "2026-10-13 17:00",
+      "slot": "learn",
+      "title": "How I escaped tutorial hell (the 1:3 rule) #shorts",
+      "tone": "motivating mentor",
+      "hook_format": "mini-story",
+      "video": "2026-10-13_1700_learn-escape-tutorial-hell.mp4",
+      "status": "scheduled: metricool 394840864 (yt, ig, fb) for 17:00 IST"
     }
   ],
   "inspiring": {
