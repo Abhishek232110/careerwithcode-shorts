@@ -1,0 +1,37 @@
+{
+  "label": "Go tip",
+  "title": ["Build a ", "Web API", " in Go"],
+  "subtitle": "No framework needed!",
+  "sections": [
+    {"heading": "Start a server",
+     "code": [
+       "func hello(w http.ResponseWriter,",
+       "           r *http.Request) {",
+       "  fmt.Fprintln(w, \"Hello, Go!\")",
+       "}",
+       "http.HandleFunc(\"/\", hello)",
+       "http.ListenAndServe(\":8080\", nil)"
+     ]},
+    {"heading": "Send JSON",
+     "code": [
+       "type User struct {",
+       "  ID   int    `json:\"id\"`",
+       "  Name string `json:\"name\"`",
+       "}",
+       "u := User{1, \"Gopher\"}",
+       "json.NewEncoder(w).Encode(u)",
+       "// {\"id\":1,\"name\":\"Gopher\"}"
+     ]},
+    {"heading": "Routes + params", "tag": "Go 1.22+",
+     "code": [
+       "http.HandleFunc(",
+       "  \"GET /users/{id}\", getUser)",
+       "",
+       "// inside getUser:",
+       "id := r.PathValue(\"id\")"
+     ]}
+  ],
+  "takeaway": "The standard library is all you need!",
+  "cta": "Follow CareerWithCode",
+  "duration": 28
+}
