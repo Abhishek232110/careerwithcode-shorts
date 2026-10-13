@@ -15,7 +15,8 @@
   "educational": {
     "posted": [
       "JavaScript == vs ===",
-      "Python mutable default arguments"
+      "Python mutable default arguments",
+      "Build a Web API in Go (net/http, JSON, 1.22 routes)"
     ]
   },
   "learn": {
@@ -68,6 +69,16 @@
       "hook_format": "quiz",
       "video": "2026-10-13_2000_python-p01-print-and-fstrings.mp4",
       "status": "scheduled: metricool 394998906 (yt, ig, fb) for 20:00 IST"
+    },
+    {
+      "date": "2026-10-13 21:05",
+      "slot": "educational",
+      "title": "Build a Web API in Go (no framework!) #shorts",
+      "tone": "practical quick win",
+      "hook_format": "bold-claim",
+      "style": "handwritten",
+      "video": "2026-10-13_2110_educational-go-web-api.mp4",
+      "status": "scheduled: metricool 395069359 (yt, ig, fb) for 21:05 IST"
     }
   ],
   "inspiring": {
