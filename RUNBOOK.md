@@ -11,6 +11,27 @@ YouTube (Short), Instagram (Reel) and Facebook (Reel) through Metricool.
 | 20:00     | `python`       | Python series, next part from `curriculum.json` |
 | 23:00     | `educational`  | Helpful coding tip / concept, new topic |
 
+## Tone — every Short must feel different
+
+Each slot has its own voice. Hook, takeaway, CTA and caption must all match it.
+
+| Slot  | Tone | Feel |
+|-------|------|------|
+| 08:00 Go series | **Friendly teacher** | Clear, encouraging, "let's learn this together". CTA teases the next part. |
+| 14:00 educational | **Myth-buster / surprising** | "You've been doing this wrong", "Most devs don't know this". |
+| 17:00 learn | **Motivating mentor** | Inspiring, growth-focused, speaks to beginners chasing a dev career. |
+| 20:00 Python series | **Playful & relatable** | Light humour, relatable dev moments, still teaches the topic properly. |
+| 23:00 educational | **Calm night recap** | Short and chill: "one thing to know before you sleep". |
+
+**Rotate the hook format** so the same slot never uses the same format twice in a row
+(check that slot's last entry in `tracker.log`, field `hook_format`):
+`question` ("Do you know why…?"), `bold-claim`, `common-mistake`, `quiz`
+("What does this print?" — show the answer in `output`), `myth-vs-fact`, `comparison`
+(X vs Y), `mini-story` ("I spent 2 hours on this bug…"), `challenge` ("Try this today").
+
+Also vary the CTA and caption wording (never copy the previous post's text), and end the
+caption with an engaging question or "comment X" prompt to grow reach.
+
 ## Steps
 
 1. **Get the repo.** `git clone https://github.com/Abhishek232110/careerwithcode-shorts`
@@ -72,7 +93,7 @@ YouTube (Short), Instagram (Reel) and Facebook (Reel) through Metricool.
 7. **Update the tracker** (`tracker.json`):
    - series slots: `next_part += 1`, append `"Part N: <topic>"` to `posted`
    - other slots: append the topic to `posted`
-   - append to `log`: `{"date", "slot", "title", "video": "<file name>", "status"}`
+   - append to `log`: `{"date", "slot", "title", "tone", "hook_format", "video": "<file name>", "status"}`
    Keep `log` to the latest 100 entries.
    Then: `git add specs tracker.json curriculum.json && git commit -m "<date> <slot>: <topic>"`,
    `git pull --rebase origin main`, `git push origin main`.

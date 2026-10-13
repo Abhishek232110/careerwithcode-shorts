@@ -24,14 +24,18 @@
       "slot": "educational",
       "title": "== vs === in JavaScript (in 15 seconds) #shorts",
       "video": "2026-10-13_0936_educational-js-double-vs-triple-equals.mp4",
-      "status": "published: yt Juuq_QX4Ufw, ig, fb"
+      "status": "published: yt Juuq_QX4Ufw, ig, fb",
+      "tone": "myth-buster",
+      "hook_format": "comparison"
     },
     {
       "date": "2026-10-13 09:57",
       "slot": "inspiring",
       "title": "Every developer runs this loop 💻 #shorts #coding",
       "video": "2026-10-13_0950_inspiring-the-developer-loop.mp4",
-      "status": "published: yt LM3RZOemqOg, ig, fb"
+      "status": "published: yt LM3RZOemqOg, ig, fb",
+      "tone": "motivating mentor",
+      "hook_format": "myth-vs-fact"
     }
   ],
   "inspiring": {
