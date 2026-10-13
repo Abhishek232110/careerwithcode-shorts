@@ -1,9 +1,21 @@
 {
   "_note": "CuriosityBox only. Updated automatically after every run.",
-  "ai": {"posted": []},
-  "whatif": {"posted": ["Agar Chand Gayab Ho Jaye Toh?"]},
-  "paisa": {"posted": []},
-  "kahani": {"posted": []},
+  "ai": {
+    "posted": []
+  },
+  "whatif": {
+    "posted": [
+      "Agar Chand Gayab Ho Jaye Toh?"
+    ]
+  },
+  "paisa": {
+    "posted": [
+      "Emergency fund kyun zaroori hai"
+    ]
+  },
+  "kahani": {
+    "posted": []
+  },
   "log": [
     {
       "date": "2026-10-13 15:10",
@@ -13,6 +25,15 @@
       "hook_format": "question",
       "video": "2026-10-13_1700_whatif-chand-gayab.mp4",
       "status": "test render, not posted (CuriosityBox brand not in Metricool yet)"
+    },
+    {
+      "date": "2026-10-13 11:15",
+      "slot": "paisa",
+      "title": "Emergency Fund Ki 3 Zaroori Baatein #shorts",
+      "tone": "friendly bade bhai",
+      "hook_format": "number-list",
+      "video": "2026-10-13_1700_paisa-emergency-fund.mp4",
+      "status": "rendered, not posted: CuriosityBox brand not connected in Metricool"
     }
   ]
 }

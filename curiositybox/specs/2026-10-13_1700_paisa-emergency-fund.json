@@ -1,0 +1,12 @@
+{
+  "category": "paisa",
+  "hook": "3 Baatein Emergency Fund Ki",
+  "points": [
+    {"title": "Kitna rakhna hai?", "text": "Aam rule: 3 se 6 mahine ke zaroori kharche alag rakho."},
+    {"title": "Kahan rakhna hai?", "text": "Aisi jagah jahan se turant nikal sako, risky jagah bilkul nahi."},
+    {"title": "Sirf emergency ke liye", "text": "Job loss ya hospital ke liye. Sale ya trip ke liye nahi!"}
+  ],
+  "takeaway": "Emergency fund aapka financial seatbelt hai.",
+  "cta": "Follow karo, paisa smart banao",
+  "duration": 25
+}
