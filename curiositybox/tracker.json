@@ -5,7 +5,8 @@
   },
   "whatif": {
     "posted": [
-      "Agar Chand Gayab Ho Jaye Toh?"
+      "Agar Chand Gayab Ho Jaye Toh?",
+      "Agar Earth ghoomna band kar de toh?"
     ]
   },
   "paisa": {
@@ -34,6 +35,16 @@
       "hook_format": "number-list",
       "video": "2026-10-13_1700_paisa-emergency-fund.mp4",
       "status": "published via Zapier: yt G87wOvCOLS0, fb 3753850671439474"
+    },
+    {
+      "date": "2026-10-13 17:14",
+      "slot": "whatif",
+      "title": "Agar Earth Ghoomna Band Kar De Toh? #shorts",
+      "tone": "wonder",
+      "hook_format": "question",
+      "mood": "epic",
+      "video": "2026-10-13_1720_whatif-earth-ghoomna-band.mp4",
+      "status": "published via Zapier: yt B3MgSz1n8Z0, fb 1136867818762348"
     }
   ]
 }
