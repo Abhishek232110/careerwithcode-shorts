@@ -29,6 +29,11 @@ Each slot has its own voice. Hook, takeaway, CTA and caption must all match it.
 ("What does this print?" — show the answer in `output`), `myth-vs-fact`, `comparison`
 (X vs Y), `mini-story` ("I spent 2 hours on this bug…"), `challenge` ("Try this today").
 
+**Style:** all on-screen text (hook, labels, takeaway, button) uses the handwritten
+Kalam font from `fonts/` automatically; code stays monospace. Write every hook, takeaway
+and caption the way a real person talks: casual, warm, first person ("I", "you"),
+short sentences, no robotic or corporate phrasing.
+
 Also vary the CTA and caption wording (never copy the previous post's text), and end the
 caption with an engaging question or "comment X" prompt to grow reach.
 

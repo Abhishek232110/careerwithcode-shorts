@@ -25,8 +25,11 @@ GRID = (236, 240, 245); BADGE = (221, 235, 255); OUTBG = (230, 246, 234)
 LANG_COLORS = {"python": (55, 118, 171), "go": (0, 150, 190), "javascript": (200, 160, 0),
                "java": (176, 114, 25), "sql": (100, 90, 200), "c++": (0, 89, 156)}
 
-SANS_B = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
-SANS = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
+import os
+_HERE = os.path.dirname(os.path.abspath(__file__))
+# Handwritten look for all human text (titles, takeaway, labels, buttons); code stays monospace.
+SANS_B = os.path.join(_HERE, "fonts", "Kalam-Bold.ttf")
+SANS = os.path.join(_HERE, "fonts", "Kalam-Regular.ttf")
 MONO = "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf"
 MONO_B = "/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf"
 F = lambda p, s: ImageFont.truetype(p, s)
@@ -94,7 +97,7 @@ def panel(d, box, title):
     d.rounded_rectangle(box, 28, fill=PANEL, outline=BORDER, width=3)
     for k, col in enumerate((RED, YELLOW, GREEN)):
         d.ellipse((x0 + 34 + k * 40, y0 + 30, x0 + 58 + k * 40, y0 + 54), fill=col)
-    d.text((x0 + 170, y0 + 26), title, font=F(MONO, 30), fill=MUTED)
+    d.text((x0 + 170, y0 + 18), title, font=F(SANS, 42), fill=MUTED)
 
 
 def frame(spec, t):
@@ -105,19 +108,20 @@ def frame(spec, t):
     for gy in range(0, H, 90): d.line((0, gy, W, gy), fill=GRID)
 
     # brand badge
-    d.rounded_rectangle((60, 90, 520, 160), 35, fill=BADGE)
-    d.text((90, 103), "</> CareerWithCode", font=F(SANS_B, 36), fill=ACCENT)
+    bf = F(SANS_B, 44); bw = d.textlength("</> CareerWithCode", font=bf)
+    d.rounded_rectangle((60, 88, 120 + bw, 162), 37, fill=BADGE)
+    d.text((90, 96), "</> CareerWithCode", font=bf, fill=ACCENT)
     lang = spec.get("language", "")
     if lang:
-        lw = d.textlength(lang, font=F(SANS_B, 32))
+        lw = d.textlength(lang, font=F(SANS_B, 40))
         d.rounded_rectangle((W - 100 - lw, 95, W - 60, 155), 30, fill=LANG_COLORS.get(lang.lower(), GREEN))
-        d.text((W - 80 - lw, 106), lang, font=F(SANS_B, 32), fill=(255, 255, 255))
+        d.text((W - 80 - lw, 98), lang, font=F(SANS_B, 40), fill=(255, 255, 255))
     label = spec.get("series_label", "")   # e.g. "Go Series · Part 4"
     if label:
-        d.text((70, 185), label, font=F(SANS_B, 38), fill=MUTED)
+        d.text((70, 178), label, font=F(SANS_B, 44), fill=MUTED)
 
     # hook title (always visible at top, pops in)
-    hf = F(SANS_B, 80)
+    hf = F(SANS_B, 90)
     hl = wrap(spec["hook"], hf, W - 140, d)
     a = ease(t / 0.6)
     y = 270 - int((1 - a) * 60)
@@ -125,6 +129,11 @@ def frame(spec, t):
         col = tuple(int(BG[k] + (FG[k] - BG[k]) * a) for k in range(3))
         d.text((70, y + i * 96), line, font=hf, fill=col)
     top = 270 + len(hl) * 96 + 60
+    if a > 0.3:
+        uy = 270 + len(hl) * 96 + 12
+        uw = min(W - 140, d.textlength(hl[-1], font=hf)) * min(1, (t - 0.2) / 0.6)
+        pts = [(70 + x, uy + 6 * math.sin(x / 38.0)) for x in range(0, int(uw), 6)]
+        if len(pts) > 1: d.line(pts, fill=YELLOW, width=7, joint="curve")
 
     # auto-fit code font so the longest line fits the panel
     longest = max(spec["code"] + (spec.get("before") or []), key=len)
@@ -172,16 +181,16 @@ def frame(spec, t):
     if out and t > 8.5:
         a = ease((t - 8.5) / 0.5)
         d.rounded_rectangle((60, cy, W - 60, cy + 150), 24, fill=OUTBG, outline=GREEN, width=3)
-        d.text((100, cy + 22), "Output", font=F(SANS_B, 32), fill=GREEN)
+        d.text((100, cy + 14), "Output", font=F(SANS_B, 38), fill=GREEN)
         d.text((100, cy + 66), out, font=F(MONO_B, 50), fill=FG)
         cy += 190
 
     # takeaway (10s+)
     if t > 10:
         a = ease((t - 10) / 0.6)
-        tf = F(SANS_B, 66)
+        tf = F(SANS_B, 76)
         tl = wrap(spec["takeaway"], tf, W - 160, d)
-        if len(tl) > 2: tf = F(SANS_B, 54); tl = wrap(spec["takeaway"], tf, W - 160, d)
+        if len(tl) > 2: tf = F(SANS_B, 62); tl = wrap(spec["takeaway"], tf, W - 160, d)
         for i, line in enumerate(tl):
             col = tuple(int(BG[k] + (YELLOW[k] - BG[k]) * a) for k in range(3))
             d.text((80, cy + 20 + i * 84 + int((1 - a) * 30)), line, font=tf, fill=col)
@@ -191,8 +200,8 @@ def frame(spec, t):
         a = ease((t - 13) / 0.5)
         y0 = H - 230 + int((1 - a) * 80)
         d.rounded_rectangle((60, y0, W - 60, y0 + 140), 70, fill=ACCENT)
-        cf = F(SANS_B, 44); cta = spec.get("cta", "Follow for a coding tip every day")
-        d.text(((W - d.textlength(cta, font=cf)) / 2, y0 + 44), cta, font=cf, fill=(255, 255, 255))
+        cf = F(SANS_B, 54); cta = spec.get("cta", "Follow for a coding tip every day")
+        d.text(((W - d.textlength(cta, font=cf)) / 2, y0 + 34), cta, font=cf, fill=(255, 255, 255))
 
     # progress bar
     d.rectangle((0, H - 18, int(W * p / DUR), H), fill=ACCENT)
