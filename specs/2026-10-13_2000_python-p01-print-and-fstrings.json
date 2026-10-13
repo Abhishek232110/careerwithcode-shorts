@@ -1,0 +1,21 @@
+{
+  "series_label": "Python Series · Part 1",
+  "hook": "Quiz: what does this print?",
+  "language": "Python",
+  "before_title": "the painful way",
+  "before": [
+    "msg = \"Got \" + str(bugs)",
+    "print(msg + \" bugs\")  # ugh"
+  ],
+  "code_title": "the f-string way",
+  "code": [
+    "name = \"Abhi\"",
+    "bugs = 3",
+    "print(f\"{name} fixed {bugs} bugs\")",
+    "print(f\"Now: {bugs * 2}\")"
+  ],
+  "output": "Abhi fixed 3 bugs | Now: 6",
+  "takeaway": "Add an f, toss variables in { }. Done.",
+  "cta": "Follow for Part 2 tomorrow",
+  "duration": 26
+}

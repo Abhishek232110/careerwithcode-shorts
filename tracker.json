@@ -6,8 +6,10 @@
       "posted": []
     },
     "python": {
-      "next_part": 1,
-      "posted": []
+      "next_part": 2,
+      "posted": [
+        "Part 1: print and f-strings"
+      ]
     }
   },
   "educational": {
@@ -57,6 +59,15 @@
       "hook_format": "mini-story",
       "video": "2026-10-13_1700_learn-escape-tutorial-hell.mp4",
       "status": "scheduled: metricool 394840864 (yt, ig, fb) for 17:00 IST"
+    },
+    {
+      "date": "2026-10-13 20:00",
+      "slot": "python",
+      "title": "Can you guess what this Python f-string prints? 🐍 Part 1 #shorts",
+      "tone": "playful & relatable",
+      "hook_format": "quiz",
+      "video": "2026-10-13_2000_python-p01-print-and-fstrings.mp4",
+      "status": "scheduled: metricool 394998906 (yt, ig, fb) for 20:00 IST"
     }
   ],
   "inspiring": {
