@@ -1,0 +1,16 @@
+{
+  "hook": "== vs === in JavaScript",
+  "language": "JavaScript",
+  "before": [
+    "0 == \"0\"     // true"
+  ],
+  "before_title": "loose equality  converts types",
+  "code": [
+    "0 === \"0\"    // false",
+    "0 === 0      // true"
+  ],
+  "code_title": "strict equality  no conversion",
+  "output": "Use === by default",
+  "takeaway": "=== checks value AND type. No surprises.",
+  "cta": "Follow for a coding tip every day"
+}

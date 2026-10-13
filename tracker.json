@@ -1,10 +1,30 @@
 {
   "_note": "Updated automatically after every post. Edit next_part to jump a series forward/back.",
   "series": {
-    "go": { "next_part": 1, "posted": [] },
-    "python": { "next_part": 1, "posted": [] }
+    "go": {
+      "next_part": 1,
+      "posted": []
+    },
+    "python": {
+      "next_part": 1,
+      "posted": []
+    }
   },
-  "educational": { "posted": [] },
-  "learn": { "posted": [] },
-  "log": []
+  "educational": {
+    "posted": [
+      "JavaScript == vs ==="
+    ]
+  },
+  "learn": {
+    "posted": []
+  },
+  "log": [
+    {
+      "date": "2026-10-13 09:42",
+      "slot": "educational",
+      "title": "== vs === in JavaScript (in 15 seconds) #shorts",
+      "video": "2026-10-13_0936_educational-js-double-vs-triple-equals.mp4",
+      "status": "scheduled (metricool 394580228)"
+    }
+  ]
 }
