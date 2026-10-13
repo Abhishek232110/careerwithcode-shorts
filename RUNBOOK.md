@@ -6,10 +6,10 @@ YouTube (Short), Instagram (Reel) and Facebook (Reel) through Metricool.
 | Slot (IST) | `SLOT` value   | Content |
 |-----------|----------------|---------|
 | 08:00     | `go`           | Go series, next part from `curriculum.json` |
+| 11:00     | `educational`  | Helpful coding tip / concept, new topic |
 | 14:00     | `educational`  | Helpful coding tip / concept, new topic |
 | 17:00     | `learn`        | How to learn programming (roadmaps, study tips) |
 | 20:00     | `python`       | Python series, next part from `curriculum.json` |
-| 23:00     | `educational`  | Helpful coding tip / concept, new topic |
 
 ## Tone — every Short must feel different
 
@@ -18,10 +18,10 @@ Each slot has its own voice. Hook, takeaway, CTA and caption must all match it.
 | Slot  | Tone | Feel |
 |-------|------|------|
 | 08:00 Go series | **Friendly teacher** | Clear, encouraging, "let's learn this together". CTA teases the next part. |
+| 11:00 educational | **Practical quick win** | Energetic and useful: "Save this", a trick you can use today. |
 | 14:00 educational | **Myth-buster / surprising** | "You've been doing this wrong", "Most devs don't know this". |
 | 17:00 learn | **Motivating mentor** | Inspiring, growth-focused, speaks to beginners chasing a dev career. |
 | 20:00 Python series | **Playful & relatable** | Light humour, relatable dev moments, still teaches the topic properly. |
-| 23:00 educational | **Calm night recap** | Short and chill: "one thing to know before you sleep". |
 
 **Rotate the hook format** so the same slot never uses the same format twice in a row
 (check that slot's last entry in `tracker.log`, field `hook_format`):
@@ -75,7 +75,8 @@ caption with an engaging question or "comment X" prompt to grow reach.
 
 6. **Post** with Metricool `createScheduledPost`:
    - `blogId`: `7393281`
-   - `date`: now + 3 minutes, ISO 8601 with `+05:30`
+   - `date`: today at the slot time exactly (e.g. 08:00:00+05:30). Runs start ~15 min early
+     so the post lands on time. If the slot time has already passed, use now + 3 minutes.
    - `info`:
      - `providers`: `[{"network":"youtube"},{"network":"instagram"},{"network":"facebook"}]`
      - `media`: `[<video URL>]`
