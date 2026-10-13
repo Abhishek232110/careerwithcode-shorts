@@ -12,7 +12,8 @@
   },
   "educational": {
     "posted": [
-      "JavaScript == vs ==="
+      "JavaScript == vs ===",
+      "Python mutable default arguments"
     ]
   },
   "learn": {
@@ -36,6 +37,15 @@
       "status": "published: yt LM3RZOemqOg, ig, fb",
       "tone": "motivating mentor",
       "hook_format": "myth-vs-fact"
+    },
+    {
+      "date": "2026-10-13 14:00",
+      "slot": "educational",
+      "title": "This Python default argument myth trips up everyone #shorts",
+      "tone": "myth-buster",
+      "hook_format": "myth-vs-fact",
+      "video": "2026-10-13_1400_educational-python-mutable-default-args.mp4",
+      "status": "scheduled: metricool 394701744 (yt, ig, fb) for 14:00 IST"
     }
   ],
   "inspiring": {

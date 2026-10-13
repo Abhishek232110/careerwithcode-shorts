@@ -1,0 +1,21 @@
+{
+  "hook": "Myth: default args reset every call",
+  "language": "Python",
+  "before_title": "what you expect",
+  "before": [
+    "add(1)  # [1]",
+    "add(2)  # [2] ...right?"
+  ],
+  "code_title": "what really happens",
+  "code": [
+    "def add(item, box=[]):",
+    "    box.append(item)",
+    "    return box",
+    "print(add(1))",
+    "print(add(2))"
+  ],
+  "output": "[1]  then  [1, 2]",
+  "takeaway": "Use box=None, then make a fresh list inside.",
+  "cta": "Follow, I bust one dev myth daily",
+  "duration": 26
+}
