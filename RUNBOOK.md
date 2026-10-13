@@ -1,0 +1,79 @@
+# CareerWithCode Shorts — run instructions
+
+Each scheduled run makes ONE 15-second Short for ONE slot and posts it publicly to
+YouTube (Short), Instagram (Reel) and Facebook (Reel) through Metricool.
+
+| Slot (IST) | `SLOT` value   | Content |
+|-----------|----------------|---------|
+| 08:00     | `go`           | Go series, next part from `curriculum.json` |
+| 14:00     | `educational`  | Helpful coding tip / concept, new topic |
+| 17:00     | `learn`        | How to learn programming (roadmaps, study tips) |
+| 20:00     | `python`       | Python series, next part from `curriculum.json` |
+| 23:00     | `educational`  | Helpful coding tip / concept, new topic |
+
+## Steps
+
+1. **Get the repo.** `git clone https://github.com/Abhishek232110/careerwithcode-shorts`
+   (if the session has no access, attach it first with the add_repo tool, push access).
+   Work inside the clone.
+
+2. **Pick the topic.** Read `tracker.json` and `curriculum.json`.
+   - `go` / `python`: topic = `curriculum[SLOT][next_part - 1]`. If the list has run out,
+     write the next sensible topic for that series yourself and append it to the list.
+   - `educational` / `learn`: choose a topic NOT already in `tracker[SLOT].posted`
+     (use the `*_ideas` lists for inspiration; vary languages and formats; never repeat).
+
+3. **Write the spec** to `specs/<YYYY-MM-DD>_<HHMM>_<slot>-<slug>.json` (IST date/time):
+   ```json
+   {
+     "series_label": "Go Series · Part 7",          // series slots only; omit otherwise
+     "hook": "Go has no while loop. Here's why",       // ≤ 8 words, curiosity-driven
+     "language": "Go",                                // badge: Python, Go, JavaScript, SQL, Git, Roadmap…
+     "before": ["..."],                               // optional "old/wrong way", ≤ 4 lines
+     "code": ["..."],                                 // main code, ≤ 6 lines, ≤ 34 chars per line
+     "output": "i = 3",                               // optional, short
+     "takeaway": "One line, ≤ 12 words.",
+     "cta": "Follow for Part 8 tomorrow",              // series: "Follow for Part N+1 tomorrow"
+     "before_title": "...", "code_title": "..."       // optional panel titles
+   }
+   ```
+   - The code MUST be correct. For Python, run it with `python3` and copy the real output.
+   - `learn` slot: put a short roadmap/steps in `code` (e.g. `"Week 1: syntax + loops"`),
+     set `language` to `"Roadmap"` and `code_title` to something like `"30-day plan"`;
+     leave out `before`/`output` if they don't fit.
+   - Educational slot: a gotcha, trick, or "X explained" with a tiny code example.
+
+4. **Render:** `python3 make_short.py specs/<name>.json shorts/<name>.mp4`
+   Check it is 15 s and 1080x1920 (`ffprobe`). Extract one frame at 14 s and look at it
+   with Read: text must not overlap or run off the screen. If it does, shorten the
+   text and re-render.
+
+5. **Upload:** `./publish_video.sh shorts/<name>.mp4` → prints the public video URL.
+
+6. **Post** with Metricool `createScheduledPost`:
+   - `blogId`: `7393281`
+   - `date`: now + 3 minutes, ISO 8601 with `+05:30`
+   - `info`:
+     - `providers`: `[{"network":"youtube"},{"network":"instagram"},{"network":"facebook"}]`
+     - `media`: `[<video URL>]`
+     - `publicationDate`: `{"dateTime": "<same time, no offset>", "timezone": "Asia/Calcutta"}`
+     - `text`: 1–2 line caption + 5–8 hashtags (#shorts #coding #programming #<language> …)
+     - `autoPublish`: true, `draft`: false
+     - `youtubeData`: `{"title": "<≤ 90 chars, ends with #shorts>", "type": "short",
+        "privacy": "public", "madeForKids": false, "category": "EDUCATION",
+        "tags": [...], "isAiGeneratedContent": false}`
+     - `instagramData`: `{"type": "REEL", "showReelOnFeed": true}`
+     - `facebookData`: `{"type": "REEL"}`
+   - If Metricool rejects the post, fix the reported field and retry once. If it still
+     fails, do not retry further; report the error.
+
+7. **Update the tracker** (`tracker.json`):
+   - series slots: `next_part += 1`, append `"Part N: <topic>"` to `posted`
+   - other slots: append the topic to `posted`
+   - append to `log`: `{"date", "slot", "title", "video": "<file name>", "status"}`
+   Keep `log` to the latest 100 entries.
+   Then: `git add specs tracker.json curriculum.json && git commit -m "<date> <slot>: <topic>"`,
+   `git pull --rebase origin main`, `git push origin main`.
+   Do NOT commit the `shorts/` folder (videos live on the `media` branch only).
+
+8. **Finish** with a one-line summary: slot, title, and whether the post succeeded.

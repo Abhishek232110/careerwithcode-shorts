@@ -1,0 +1,10 @@
+{
+  "_note": "Updated automatically after every post. Edit next_part to jump a series forward/back.",
+  "series": {
+    "go": { "next_part": 1, "posted": [] },
+    "python": { "next_part": 1, "posted": [] }
+  },
+  "educational": { "posted": [] },
+  "learn": { "posted": [] },
+  "log": []
+}
