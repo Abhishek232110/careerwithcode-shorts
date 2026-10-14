@@ -8,9 +8,10 @@
       ]
     },
     "python": {
-      "next_part": 2,
+      "next_part": 3,
       "posted": [
-        "Part 1: print and f-strings"
+        "Part 1: print and f-strings",
+        "Part 2: Variables and dynamic typing"
       ]
     }
   },
@@ -123,6 +124,16 @@
       "style": "handwritten",
       "video": "2026-10-14_1700_learn-how-much-to-study-per-day.mp4",
       "status": "scheduled: metricool 395784313 (yt, ig, fb) for 17:00 IST"
+    },
+    {
+      "date": "2026-10-14 20:00",
+      "slot": "python",
+      "title": "My variable changed type and Python didn't care 🐍 Part 2 #shorts",
+      "tone": "playful & relatable",
+      "hook_format": "mini-story",
+      "style": "handwritten",
+      "video": "2026-10-14_2000_python-p02-variables-dynamic-typing.mp4",
+      "status": "scheduled: metricool 395935591 (yt, ig, fb) for 20:00 IST"
     }
   ],
   "inspiring": {

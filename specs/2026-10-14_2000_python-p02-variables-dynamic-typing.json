@@ -1,0 +1,23 @@
+{
+  "series_label": "Python Series · Part 2",
+  "hook": "My variable changed type. Python didn't care",
+  "language": "Python",
+  "before_title": "Java me, years ago",
+  "before": [
+    "int x = 42;",
+    "x = \"forty-two\";  // error!"
+  ],
+  "code_title": "Python just shrugs",
+  "code": [
+    "x = 42",
+    "print(type(x).__name__)",
+    "x = \"forty-two\"",
+    "print(type(x).__name__)",
+    "x = [4, 2]",
+    "print(type(x).__name__)"
+  ],
+  "output": "int | str | list",
+  "takeaway": "Names are just labels. The value carries the type.",
+  "cta": "Follow for Part 3 tomorrow",
+  "duration": 26
+}
