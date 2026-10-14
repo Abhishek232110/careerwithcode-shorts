@@ -20,7 +20,8 @@
   },
   "kahani": {
     "posted": [
-      "Konark Sun Temple: patthar ka rath"
+      "Konark Sun Temple: patthar ka rath",
+      "Bermuda Triangle: myth vs fact"
     ]
   },
   "log": [
@@ -89,6 +90,16 @@
       "hook_format": "question",
       "video": "2026-10-14_1700_paisa-50-30-20-rule.mp4",
       "status": "published via Zapier: yt xLRbdbO8090, fb 1142226201574208"
+    },
+    {
+      "date": "2026-10-14 20:00",
+      "slot": "kahani",
+      "title": "Bermuda Triangle: Shaitani Ya Sirf Afwaah? Sach Jaano #shorts",
+      "tone": "storyteller, suspense",
+      "hook_format": "myth-vs-fact",
+      "mood": "mysterious",
+      "video": "2026-10-14_2000_kahani-bermuda-triangle-sach.mp4",
+      "status": "published via Zapier: yt shR8va_faMo, fb 1621352909727062"
     }
   ]
 }
