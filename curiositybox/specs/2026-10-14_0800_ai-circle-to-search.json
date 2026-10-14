@@ -1,0 +1,15 @@
+{
+  "category": "ai",
+  "hook": "Phone Ka Chhupa AI Button",
+  "highlight": "AI",
+  "teaser": "No. 3 gaana pakad leta hai",
+  "points": [
+    {"title": "Circle to Search", "text": "Home button ya neeche wali line ko long-press karo. Screen par AI search khul jayega."},
+    {"title": "Gol ghero, jawab pao", "text": "Kisi bhi photo, text ya video par gola banao aur turant search karo."},
+    {"title": "Gaana pehchano", "text": "Music icon dabao, aas-paas baj raha gaana pehchan lega."}
+  ],
+  "takeaway": "App badalne ki zarurat nahi, ek long-press kaafi hai.",
+  "cta": "Save karo, kal kaam aayega",
+  "mood": "upbeat",
+  "duration": 25
+}

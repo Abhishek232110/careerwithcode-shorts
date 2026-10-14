@@ -1,7 +1,9 @@
 {
   "_note": "CuriosityBox only. Updated automatically after every run.",
   "ai": {
-    "posted": []
+    "posted": [
+      "Circle to Search: phone ka chhupa AI button"
+    ]
   },
   "whatif": {
     "posted": [
@@ -57,6 +59,15 @@
       "mood": "mysterious",
       "video": "2026-10-13_2000_kahani-konark-surya-rath.mp4",
       "status": "published via Zapier: yt Ix9tnhxOh5g, fb 3193686584161547"
+    },
+    {
+      "date": "2026-10-14",
+      "slot": "ai",
+      "title": "Phone Ka Chhupa AI Button: Circle to Search ke 3 kamaal",
+      "tone": "practical quick win",
+      "hook_format": "number-list",
+      "video": "curiositybox/shorts/2026-10-14_0800_ai-circle-to-search.mp4",
+      "status": "posted: YouTube 3jpI-hSYu9k, Facebook 963641236816460"
     }
   ]
 }
