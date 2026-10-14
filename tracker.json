@@ -2,8 +2,10 @@
   "_note": "Updated automatically after every post. Edit next_part to jump a series forward/back.",
   "series": {
     "go": {
-      "next_part": 1,
-      "posted": []
+      "next_part": 2,
+      "posted": [
+        "Part 1: Hello World and package main"
+      ]
     },
     "python": {
       "next_part": 2,
@@ -79,6 +81,15 @@
       "style": "handwritten",
       "video": "2026-10-13_2110_educational-go-web-api.mp4",
       "status": "scheduled: metricool 395069359 (yt, ig, fb) for 21:05 IST"
+    },
+    {
+      "date": "2026-10-14 08:00",
+      "slot": "go",
+      "title": "Your first Go program won't run? Here's why | Go Part 1 #shorts",
+      "tone": "friendly teacher",
+      "hook_format": "common-mistake",
+      "video": "2026-10-14_0800_go-p01-hello-world-package-main.mp4",
+      "status": "scheduled: metricool 395489840 (yt, ig, fb) for 08:00 IST"
     }
   ],
   "inspiring": {

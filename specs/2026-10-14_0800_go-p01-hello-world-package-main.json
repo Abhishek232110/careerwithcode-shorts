@@ -1,0 +1,22 @@
+{
+  "series_label": "Go Series · Part 1",
+  "hook": "Your first Go program won't run? Here's why",
+  "language": "Go",
+  "before_title": "the common mistake",
+  "before": [
+    "package hello",
+    "// go run: not a main package"
+  ],
+  "code_title": "the fix",
+  "code": [
+    "package main",
+    "import \"fmt\"",
+    "func main() {",
+    "    fmt.Println(\"Hello, Go!\")",
+    "}"
+  ],
+  "output": "Hello, Go!",
+  "takeaway": "package main + func main() = your program's front door.",
+  "cta": "Follow for Part 2 tomorrow",
+  "duration": 26
+}
