@@ -19,7 +19,8 @@
       "JavaScript == vs ===",
       "Python mutable default arguments",
       "Build a Web API in Go (net/http, JSON, 1.22 routes)",
-      "Git: undo last commit with reset --soft"
+      "Git: undo last commit with reset --soft",
+      "JavaScript sort() sorts numbers as strings"
     ]
   },
   "learn": {
@@ -101,6 +102,16 @@
       "style": "handwritten",
       "video": "2026-10-14_1100_educational-git-undo-last-commit.mp4",
       "status": "scheduled: metricool 395556694 (yt, ig, fb) for 11:00 IST"
+    },
+    {
+      "date": "2026-10-14 14:00",
+      "slot": "educational",
+      "title": "JavaScript sort() is lying to you (most devs miss this) #shorts",
+      "tone": "myth-buster",
+      "hook_format": "quiz",
+      "style": "handwritten",
+      "video": "2026-10-14_1400_educational-js-sort-numbers.mp4",
+      "status": "scheduled: metricool 395650640 (yt, ig, fb) for 14:00 IST"
     }
   ],
   "inspiring": {

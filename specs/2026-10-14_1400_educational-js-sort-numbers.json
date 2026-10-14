@@ -1,0 +1,19 @@
+{
+  "hook": "What does this sort() print?",
+  "language": "JavaScript",
+  "before_title": "you'd expect 1, 5, 10, 100",
+  "before": [
+    "[10, 1, 5, 100].sort()",
+    "// [1, 10, 100, 5]  ...wait what?"
+  ],
+  "code_title": "the real fix",
+  "code": [
+    "const nums = [10, 1, 5, 100];",
+    "nums.sort((a, b) => a - b);",
+    "console.log(nums);"
+  ],
+  "output": "[ 1, 5, 10, 100 ]",
+  "takeaway": "sort() compares strings by default. Pass a compare fn!",
+  "cta": "Follow for more JS myths busted",
+  "duration": 26
+}
