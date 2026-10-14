@@ -1,0 +1,15 @@
+{
+  "hook": "1 hour a day beats 8 on Sunday",
+  "language": "Roadmap",
+  "code_title": "my daily 60-minute plan",
+  "code": [
+    "10 min: review your last code",
+    "30 min: build one small thing",
+    "15 min: fix it, read the docs",
+    "5 min: write what you learned",
+    "Repeat daily. Skip zero days."
+  ],
+  "takeaway": "Small daily wins stack up faster than weekend marathons.",
+  "cta": "Follow and show up tomorrow too",
+  "duration": 26
+}

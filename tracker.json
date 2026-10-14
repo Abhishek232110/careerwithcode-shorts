@@ -25,7 +25,8 @@
   },
   "learn": {
     "posted": [
-      "How to escape tutorial hell"
+      "How to escape tutorial hell",
+      "How much to study per day"
     ]
   },
   "log": [
@@ -112,6 +113,16 @@
       "style": "handwritten",
       "video": "2026-10-14_1400_educational-js-sort-numbers.mp4",
       "status": "scheduled: metricool 395650640 (yt, ig, fb) for 14:00 IST"
+    },
+    {
+      "date": "2026-10-14 17:00",
+      "slot": "learn",
+      "title": "1 hour a day beats 8 on Sunday (my coding study plan) #shorts",
+      "tone": "motivating mentor",
+      "hook_format": "bold-claim",
+      "style": "handwritten",
+      "video": "2026-10-14_1700_learn-how-much-to-study-per-day.mp4",
+      "status": "scheduled: metricool 395784313 (yt, ig, fb) for 17:00 IST"
     }
   ],
   "inspiring": {
