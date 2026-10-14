@@ -18,7 +18,8 @@
     "posted": [
       "JavaScript == vs ===",
       "Python mutable default arguments",
-      "Build a Web API in Go (net/http, JSON, 1.22 routes)"
+      "Build a Web API in Go (net/http, JSON, 1.22 routes)",
+      "Git: undo last commit with reset --soft"
     ]
   },
   "learn": {
@@ -90,6 +91,16 @@
       "hook_format": "common-mistake",
       "video": "2026-10-14_0800_go-p01-hello-world-package-main.mp4",
       "status": "scheduled: metricool 395489840 (yt, ig, fb) for 08:00 IST"
+    },
+    {
+      "date": "2026-10-14 11:00",
+      "slot": "educational",
+      "title": "Committed too early? Undo it in 1 line (Git) #shorts",
+      "tone": "practical quick win",
+      "hook_format": "question",
+      "style": "handwritten",
+      "video": "2026-10-14_1100_educational-git-undo-last-commit.mp4",
+      "status": "scheduled: metricool 395556694 (yt, ig, fb) for 11:00 IST"
     }
   ],
   "inspiring": {

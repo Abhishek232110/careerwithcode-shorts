@@ -1,0 +1,19 @@
+{
+  "hook": "Committed too early? Undo it in 1 line",
+  "language": "Git",
+  "before_title": "the panic move",
+  "before": [
+    "git reset --hard HEAD~1",
+    "# commit gone... and your work too"
+  ],
+  "code_title": "the safe undo",
+  "code": [
+    "git reset --soft HEAD~1",
+    "# commit undone",
+    "# changes still staged",
+    "git commit -m \"better message\""
+  ],
+  "takeaway": "--soft undoes the commit but keeps every change.",
+  "cta": "Save this for your next oops",
+  "duration": 25
+}
