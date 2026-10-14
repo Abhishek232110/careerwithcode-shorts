@@ -1,0 +1,15 @@
+{
+  "category": "paisa",
+  "hook": "Salary Aate Hi Khatam Ho Jaati Hai?",
+  "highlight": "Khatam",
+  "teaser": "Last wala 20% game changer hai",
+  "points": [
+    {"title": "50% - Zaroorat", "text": "Rent, khana, bills, EMI. Jo kharche har mahine karne hi padte hain."},
+    {"title": "30% - Shauk", "text": "Ghoomna, shopping, bahar khana. Enjoy karo, par is limit ke andar."},
+    {"title": "20% - Bachat", "text": "Salary aate hi pehle ye side mein rakho. Emergency fund aur future goals ke liye."}
+  ],
+  "takeaway": "Pehle bachat, phir kharcha. Yahi 50-30-20 rule hai.",
+  "cta": "Follow karo, paisa smart banao",
+  "mood": "motivational",
+  "duration": 25
+}

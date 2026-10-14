@@ -14,7 +14,8 @@
   },
   "paisa": {
     "posted": [
-      "Emergency fund kyun zaroori hai"
+      "Emergency fund kyun zaroori hai",
+      "50-30-20 rule: salary kaise baantein"
     ]
   },
   "kahani": {
@@ -79,6 +80,15 @@
       "mood": "epic",
       "video": "2026-10-14_1400_whatif-suraj-gayab.mp4",
       "status": "published via Zapier: yt zqwsusrzrlA, fb 1851464786212448"
+    },
+    {
+      "date": "2026-10-14 17:00",
+      "slot": "paisa",
+      "title": "Salary Aate Hi Khatam? 50-30-20 Rule Samjho #shorts",
+      "tone": "friendly bade bhai",
+      "hook_format": "question",
+      "video": "2026-10-14_1700_paisa-50-30-20-rule.mp4",
+      "status": "published via Zapier: yt xLRbdbO8090, fb 1142226201574208"
     }
   ]
 }
