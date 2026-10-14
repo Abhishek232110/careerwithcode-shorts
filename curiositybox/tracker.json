@@ -8,7 +8,8 @@
   "whatif": {
     "posted": [
       "Agar Chand Gayab Ho Jaye Toh?",
-      "Agar Earth ghoomna band kar de toh?"
+      "Agar Earth ghoomna band kar de toh?",
+      "Agar Suraj gayab ho jaye toh?"
     ]
   },
   "paisa": {
@@ -68,6 +69,16 @@
       "hook_format": "number-list",
       "video": "curiositybox/shorts/2026-10-14_0800_ai-circle-to-search.mp4",
       "status": "posted: YouTube 3jpI-hSYu9k, Facebook 963641236816460"
+    },
+    {
+      "date": "2026-10-14 14:00",
+      "slot": "whatif",
+      "title": "Agar Suraj Gayab Ho Jaye Toh? 8 Minute Tak Pata Nahi Chalega! #shorts",
+      "tone": "wonder",
+      "hook_format": "shocking-fact",
+      "mood": "epic",
+      "video": "2026-10-14_1400_whatif-suraj-gayab.mp4",
+      "status": "published via Zapier: yt zqwsusrzrlA, fb 1851464786212448"
     }
   ]
 }
