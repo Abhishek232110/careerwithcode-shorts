@@ -1,0 +1,20 @@
+{
+  "hook": "Try this today: ditch range(len())",
+  "language": "Python",
+  "before_title": "what I used to write",
+  "before": [
+    "for i in range(len(langs)):",
+    "    print(i + 1, langs[i])"
+  ],
+  "code_title": "the clean way",
+  "code": [
+    "langs = [\"Go\", \"Python\", \"JS\"]",
+    "for i, lang in enumerate(",
+    "        langs, start=1):",
+    "    print(f\"{i}. {lang}\")"
+  ],
+  "output": "1. Go  2. Python  3. JS",
+  "takeaway": "enumerate gives you the index and the item. No math.",
+  "cta": "Save this and use it in your next loop",
+  "duration": 26
+}

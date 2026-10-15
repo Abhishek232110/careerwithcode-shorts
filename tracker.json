@@ -21,7 +21,8 @@
       "Python mutable default arguments",
       "Build a Web API in Go (net/http, JSON, 1.22 routes)",
       "Git: undo last commit with reset --soft",
-      "JavaScript sort() sorts numbers as strings"
+      "JavaScript sort() sorts numbers as strings",
+      "Python enumerate() instead of range(len()) loops"
     ]
   },
   "learn": {
@@ -134,6 +135,16 @@
       "style": "handwritten",
       "video": "2026-10-14_2000_python-p02-variables-dynamic-typing.mp4",
       "status": "scheduled: metricool 395935591 (yt, ig, fb) for 20:00 IST"
+    },
+    {
+      "date": "2026-10-15 10:00",
+      "slot": "educational",
+      "title": "Stop using range(len()) in Python - try this today #shorts",
+      "tone": "practical quick win",
+      "hook_format": "challenge",
+      "style": "handwritten",
+      "video": "2026-10-15_1000_educational-python-enumerate.mp4",
+      "status": "scheduled: metricool 396487282 (yt, ig, fb) for 10:00 IST"
     }
   ],
   "inspiring": {
