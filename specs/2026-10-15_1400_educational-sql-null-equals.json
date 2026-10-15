@@ -1,0 +1,19 @@
+{
+  "hook": "Myth: = NULL finds empty rows",
+  "language": "SQL",
+  "before_title": "myth: this works (0 rows!)",
+  "before": [
+    "SELECT name FROM users",
+    "WHERE email = NULL;",
+    "-- 0 rows. Every time."
+  ],
+  "code_title": "fact: use IS NULL",
+  "code": [
+    "SELECT name FROM users",
+    "WHERE email IS NULL;"
+  ],
+  "output": "Asha, Meera",
+  "takeaway": "NULL = NULL isn't true, it's unknown. Use IS NULL.",
+  "cta": "Comment NULL if this ever got you",
+  "duration": 26
+}

@@ -22,7 +22,8 @@
       "Build a Web API in Go (net/http, JSON, 1.22 routes)",
       "Git: undo last commit with reset --soft",
       "JavaScript sort() sorts numbers as strings",
-      "Python enumerate() instead of range(len()) loops"
+      "Python enumerate() instead of range(len()) loops",
+      "SQL: = NULL never matches, use IS NULL"
     ]
   },
   "learn": {
@@ -145,6 +146,16 @@
       "style": "handwritten",
       "video": "2026-10-15_1000_educational-python-enumerate.mp4",
       "status": "scheduled: metricool 396487282 (yt, ig, fb) for 10:00 IST"
+    },
+    {
+      "date": "2026-10-15 14:00",
+      "slot": "educational",
+      "title": "Why = NULL returns 0 rows in SQL (myth busted) #shorts",
+      "tone": "myth-buster",
+      "hook_format": "myth-vs-fact",
+      "style": "handwritten",
+      "video": "2026-10-15_1400_educational-sql-null-equals.mp4",
+      "status": "scheduled: metricool 396605325 (yt, ig, fb) for 14:00 IST"
     }
   ],
   "inspiring": {
