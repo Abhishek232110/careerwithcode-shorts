@@ -1,0 +1,15 @@
+{
+  "category": "paisa",
+  "hook": "Byaaj Pe Bhi Byaaj Milta Hai!",
+  "highlight": "Byaaj",
+  "teaser": "Last wala rule yaad rakhna",
+  "points": [
+    {"title": "Simple vs Compound", "text": "Simple mein sirf asli paise pe byaaj. Compound mein byaaj pe bhi byaaj."},
+    {"title": "Rs 1 Lakh Ka Example", "text": "10% saalana, 10 saal: simple se Rs 2 lakh, compound se lagbhag Rs 2.59 lakh."},
+    {"title": "Rule of 72", "text": "72 ko rate se divide karo. 10% pe paisa lagbhag 7 saal mein double."}
+  ],
+  "takeaway": "Jaldi shuru karo, time hi asli jaadu hai.",
+  "cta": "Follow karo, roz paisa gyaan",
+  "mood": "motivational",
+  "duration": 26
+}

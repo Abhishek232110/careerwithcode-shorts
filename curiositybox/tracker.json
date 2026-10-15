@@ -16,7 +16,8 @@
   "paisa": {
     "posted": [
       "Emergency fund kyun zaroori hai",
-      "50-30-20 rule: salary kaise baantein"
+      "50-30-20 rule: salary kaise baantein",
+      "Compound interest ka jaadu (Rule of 72)"
     ]
   },
   "kahani": {
@@ -111,6 +112,15 @@
       "mood": "epic",
       "video": "2026-10-15_1400_whatif-neend-band.mp4",
       "status": "published via Zapier: yt ozK5yjSI0Q0, fb 2188394492556604"
+    },
+    {
+      "date": "2026-10-15 17:00",
+      "slot": "paisa",
+      "title": "Byaaj Pe Bhi Byaaj? Compound Interest Ka Jaadu #shorts",
+      "tone": "friendly bade bhai",
+      "hook_format": "shocking-fact",
+      "video": "2026-10-15_1700_paisa-compound-interest.mp4",
+      "status": "published via Zapier: yt EHqI8ll9K0M, fb 1675354127641407"
     }
   ]
 }
