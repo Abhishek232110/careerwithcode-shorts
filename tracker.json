@@ -29,7 +29,8 @@
   "learn": {
     "posted": [
       "How to escape tutorial hell",
-      "How much to study per day"
+      "How much to study per day",
+      "How to use AI to learn coding the right way"
     ]
   },
   "log": [
@@ -156,6 +157,16 @@
       "style": "handwritten",
       "video": "2026-10-15_1400_educational-sql-null-equals.mp4",
       "status": "scheduled: metricool 396605325 (yt, ig, fb) for 14:00 IST"
+    },
+    {
+      "date": "2026-10-15 17:00",
+      "slot": "learn",
+      "title": "Stop letting AI code for you (how I use AI to learn) #shorts",
+      "tone": "motivating mentor",
+      "hook_format": "common-mistake",
+      "style": "handwritten",
+      "video": "2026-10-15_1700_learn-use-ai-to-learn-coding.mp4",
+      "status": "scheduled: metricool 396732755 (yt, ig, fb) for 17:00 IST"
     }
   ],
   "inspiring": {
