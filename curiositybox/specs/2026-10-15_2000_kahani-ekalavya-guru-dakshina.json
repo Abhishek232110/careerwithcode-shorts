@@ -1,0 +1,28 @@
+{
+  "category": "kahani",
+  "hook": "Ek Shishya Jisne Guru Ko Angootha De Diya",
+  "highlight": "Angootha",
+  "teaser": "Aakhri hissa dil chhoo lega",
+  "points": [
+    {
+      "title": "Guru ne mana kiya",
+      "text": "Mahabharat ke anusaar, Drona ne Ekalavya ko shishya nahi banaya."
+    },
+    {
+      "title": "Mitti ki murti",
+      "text": "Usne Drona ki mitti ki murti banakar roz abhyaas kiya."
+    },
+    {
+      "title": "Kutte ka munh band",
+      "text": "Bhaunkte kutte ke munh mein saat teer, bina chot pahunchaye."
+    },
+    {
+      "title": "Guru dakshina",
+      "text": "Drona ne daayan angootha maanga. Ekalavya ne turant de diya."
+    }
+  ],
+  "takeaway": "Lagan aur samarpan ki misaal, jo aaj bhi yaad ki jaati hai.",
+  "cta": "Follow karo, har raat ek kahani",
+  "mood": "inspiring",
+  "duration": 28
+}

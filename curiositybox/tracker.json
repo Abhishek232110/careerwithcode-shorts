@@ -23,7 +23,8 @@
   "kahani": {
     "posted": [
       "Konark Sun Temple: patthar ka rath",
-      "Bermuda Triangle: myth vs fact"
+      "Bermuda Triangle: myth vs fact",
+      "Ekalavya ki guru dakshina (Mahabharat)"
     ]
   },
   "log": [
@@ -121,6 +122,16 @@
       "hook_format": "shocking-fact",
       "video": "2026-10-15_1700_paisa-compound-interest.mp4",
       "status": "published via Zapier: yt EHqI8ll9K0M, fb 1675354127641407"
+    },
+    {
+      "date": "2026-10-15 20:00",
+      "slot": "kahani",
+      "title": "Ekalavya: Shishya Jisne Guru Ko Angootha De Diya #shorts",
+      "tone": "storyteller, suspense",
+      "hook_format": "story-open",
+      "mood": "inspiring",
+      "video": "2026-10-15_2000_kahani-ekalavya-guru-dakshina.mp4",
+      "status": "published via Zapier: yt 5ShEVeDmCqg, fb 1125686486660009"
     }
   ]
 }
