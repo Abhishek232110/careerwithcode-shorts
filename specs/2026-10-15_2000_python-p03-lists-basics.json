@@ -1,0 +1,23 @@
+{
+  "series_label": "Python Series · Part 3",
+  "hook": "This one line deleted my whole list",
+  "language": "Python",
+  "before_title": "me at 2am: why is it None?!",
+  "before": [
+    "nums = [1, 2, 3]",
+    "nums = nums.append(4)",
+    "print(nums)  # None"
+  ],
+  "code_title": "append changes it in place",
+  "code": [
+    "nums = [1, 2, 3]",
+    "nums.append(4)",
+    "print(nums)",
+    "print(nums[0], nums[-1])",
+    "print(len(nums))"
+  ],
+  "output": "[1, 2, 3, 4] | 1 4 | 4",
+  "takeaway": "append() edits the list and returns None. Don't reassign it!",
+  "cta": "Follow for Part 4 tomorrow",
+  "duration": 27
+}

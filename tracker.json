@@ -8,10 +8,11 @@
       ]
     },
     "python": {
-      "next_part": 3,
+      "next_part": 4,
       "posted": [
         "Part 1: print and f-strings",
-        "Part 2: Variables and dynamic typing"
+        "Part 2: Variables and dynamic typing",
+        "Part 3: Lists basics"
       ]
     }
   },
@@ -167,6 +168,16 @@
       "style": "handwritten",
       "video": "2026-10-15_1700_learn-use-ai-to-learn-coding.mp4",
       "status": "scheduled: metricool 396732755 (yt, ig, fb) for 17:00 IST"
+    },
+    {
+      "date": "2026-10-15 20:00",
+      "slot": "python",
+      "title": "This one line turned my Python list into None 😭 Part 3 #shorts",
+      "tone": "playful & relatable",
+      "hook_format": "common-mistake",
+      "style": "handwritten",
+      "video": "2026-10-15_2000_python-p03-lists-basics.mp4",
+      "status": "scheduled: metricool 396883772 (yt, ig, fb) for 20:00 IST"
     }
   ],
   "inspiring": {
