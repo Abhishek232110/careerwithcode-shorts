@@ -2,9 +2,10 @@
   "_note": "Updated automatically after every post. Edit next_part to jump a series forward/back.",
   "series": {
     "go": {
-      "next_part": 2,
+      "next_part": 3,
       "posted": [
-        "Part 1: Hello World and package main"
+        "Part 1: Hello World and package main",
+        "Part 2: Variables: var vs :="
       ]
     },
     "python": {
@@ -178,6 +179,16 @@
       "style": "handwritten",
       "video": "2026-10-15_2000_python-p03-lists-basics.mp4",
       "status": "scheduled: metricool 396883772 (yt, ig, fb) for 20:00 IST"
+    },
+    {
+      "date": "2026-10-16 06:00",
+      "slot": "go",
+      "title": "Quick Go quiz: var vs := (what does it print?) | Go Part 2 #shorts",
+      "tone": "friendly teacher",
+      "hook_format": "quiz",
+      "style": "handwritten",
+      "video": "2026-10-16_0600_go-p02-var-vs-short-declare.mp4",
+      "status": "scheduled: metricool 397313485 (yt, ig, fb) for 06:00 IST"
     }
   ],
   "inspiring": {

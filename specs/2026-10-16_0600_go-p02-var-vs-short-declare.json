@@ -1,0 +1,22 @@
+{
+  "series_label": "Go Series · Part 2",
+  "hook": "Quick quiz: what does this print?",
+  "language": "Go",
+  "before_title": "the long way: var",
+  "before": [
+    "var name string = \"Ana\"",
+    "var level = 1  // type inferred",
+    "var count int  // zero value: 0"
+  ],
+  "code_title": "the short way: :=",
+  "code": [
+    "age := 25",
+    "var count int",
+    "age, city := 26, \"Pune\"",
+    "fmt.Println(age, count, city)"
+  ],
+  "output": "26 0 Pune",
+  "takeaway": ":= declares and guesses the type. Inside functions only!",
+  "cta": "Follow for Part 3: constants tomorrow",
+  "duration": 26
+}
