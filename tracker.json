@@ -2,10 +2,11 @@
   "_note": "Updated automatically after every post. Edit next_part to jump a series forward/back.",
   "series": {
     "go": {
-      "next_part": 3,
+      "next_part": 4,
       "posted": [
         "Part 1: Hello World and package main",
-        "Part 2: Variables: var vs :="
+        "Part 2: Variables: var vs :=",
+        "Part 3: Constants and iota"
       ]
     },
     "python": {
@@ -189,6 +190,16 @@
       "style": "handwritten",
       "video": "2026-10-16_0600_go-p02-var-vs-short-declare.mp4",
       "status": "scheduled: metricool 397313485 (yt, ig, fb) for 06:00 IST"
+    },
+    {
+      "date": "2026-10-16 10:00",
+      "slot": "go",
+      "title": "Did you know Go can count for you? iota | Go Part 3 #shorts",
+      "tone": "friendly teacher",
+      "hook_format": "question",
+      "style": "handwritten",
+      "video": "2026-10-16_1000_go-p03-constants-iota.mp4",
+      "status": "scheduled: metricool 397403289 (yt, ig, fb) for 10:00 IST"
     }
   ],
   "inspiring": {
