@@ -26,7 +26,8 @@
       "Git: undo last commit with reset --soft",
       "JavaScript sort() sorts numbers as strings",
       "Python enumerate() instead of range(len()) loops",
-      "SQL: = NULL never matches, use IS NULL"
+      "SQL: = NULL never matches, use IS NULL",
+      "Python: 0.1 + 0.2 != 0.3 (floating point)"
     ]
   },
   "learn": {
@@ -200,6 +201,16 @@
       "style": "handwritten",
       "video": "2026-10-16_1000_go-p03-constants-iota.mp4",
       "status": "scheduled: metricool 397403289 (yt, ig, fb) for 10:00 IST"
+    },
+    {
+      "date": "2026-10-16 16:00",
+      "slot": "educational",
+      "title": "Why is 0.1 + 0.2 not 0.3 in Python? (myth busted) #shorts",
+      "tone": "myth-buster",
+      "hook_format": "question",
+      "style": "handwritten",
+      "video": "2026-10-16_1600_educational-python-float-0-1-plus-0-2.mp4",
+      "status": "scheduled: metricool 397609965 (yt, ig, fb) for 16:00 IST"
     }
   ],
   "inspiring": {
