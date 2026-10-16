@@ -26,7 +26,8 @@
     "posted": [
       "Konark Sun Temple: patthar ka rath",
       "Bermuda Triangle: myth vs fact",
-      "Ekalavya ki guru dakshina (Mahabharat)"
+      "Ekalavya ki guru dakshina (Mahabharat)",
+      "Iceland mein machhar: pehli baar 2025 mein mile"
     ]
   },
   "log": [
@@ -162,6 +163,16 @@
       "mood": "upbeat",
       "video": "2026-10-16_1000_ai-photo-background-cutout.mp4",
       "status": "published via Zapier: yt wAEl7C4lxIY, fb 1040067632420500"
+    },
+    {
+      "date": "2026-10-16 16:00",
+      "slot": "kahani",
+      "title": "Iceland Mein Machhar Kyun Nahi The? Ab Kahani Badal Gayi #shorts",
+      "tone": "storyteller, suspense",
+      "hook_format": "question",
+      "mood": "mysterious",
+      "video": "2026-10-16_1600_kahani-iceland-machhar.mp4",
+      "status": "published via Zapier: yt xMMilQ_nYqI, fb 1622841276178724"
     }
   ]
 }
