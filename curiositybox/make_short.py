@@ -14,7 +14,7 @@ spec = {
   "takeaway": "<= 12 words, the punchline",
   "cta": "Follow karo, roz ek naya sawaal",
   "mood": "epic",                           # motivational | inspiring | epic | mysterious | upbeat
-  "duration": 25                            # 20-30 s, more text = longer
+  "duration": 25                            # 10-30 s, more text = longer
 }
 All text is Hinglish in Latin script (Poppins font). No emoji in the spec: the font can't draw them.
 Background music is generated here from scratch for the chosen mood (original, copyright-free).
@@ -355,7 +355,7 @@ def music(path, mood):
 def main(spec_path, out):
     global DUR
     spec = json.load(open(spec_path))
-    DUR = int(max(20, min(30, spec.get("duration", 25))))
+    DUR = int(max(10, min(30, spec.get("duration", 25))))
     r = Renderer(spec)
     music(out + ".wav", spec.get("mood", "inspiring"))
     p = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24",
