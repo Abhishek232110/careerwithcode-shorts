@@ -1,0 +1,15 @@
+{
+  "category": "ai",
+  "hook": "Ye Prompt Try Karo, Fark Dekho",
+  "highlight": "Fark",
+  "teaser": "Last wala game changer hai",
+  "points": [
+    {"title": "Role do", "text": "Likho: Tum ek expert teacher ho. AI usi andaaz mein jawab dega."},
+    {"title": "Context batao", "text": "Kis liye chahiye, kiske liye hai, kitna aata hai, sab batao."},
+    {"title": "Format maango", "text": "Bolo: 5 points mein, table mein, ya 100 words mein. Jawab saaf milega."}
+  ],
+  "takeaway": "Achha sawaal poocho, achha jawab pao.",
+  "cta": "Abhi try karo, comment mein batao",
+  "mood": "upbeat",
+  "duration": 25
+}

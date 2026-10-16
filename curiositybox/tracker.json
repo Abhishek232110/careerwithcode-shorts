@@ -2,7 +2,8 @@
   "_note": "CuriosityBox only. Updated automatically after every run.",
   "ai": {
     "posted": [
-      "Circle to Search: phone ka chhupa AI button"
+      "Circle to Search: phone ka chhupa AI button",
+      "Better AI answers: role, context, format prompt tips"
     ]
   },
   "whatif": {
@@ -141,6 +142,15 @@
       "hook_format": "song",
       "video": "curiositybox/shorts/2026-10-16_special-sabzi-gang-song.mp4",
       "status": "posted: YouTube hdMvjHOSq80, Facebook 930357206598941"
+    },
+    {
+      "date": "2026-10-16",
+      "slot": "ai",
+      "title": "Ye Prompt Try Karo, AI Ka Jawab Badal Jayega",
+      "tone": "practical quick win",
+      "hook_format": "challenge",
+      "video": "curiositybox/shorts/2026-10-16_0600_ai-better-prompt-tips.mp4",
+      "status": "posted: YouTube myR0aydSj6M, Facebook 1118488103966539"
     }
   ]
 }
