@@ -229,7 +229,7 @@ def music(path):
 def main(spec_path, out):
     global DUR
     spec = json.load(open(spec_path))
-    DUR = int(max(20, min(30, spec.get("duration", 25))))
+    DUR = int(max(10, min(30, spec.get("duration", 25))))
     music(out + ".wav")
     p = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24",
                           "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-", "-i", out + ".wav",

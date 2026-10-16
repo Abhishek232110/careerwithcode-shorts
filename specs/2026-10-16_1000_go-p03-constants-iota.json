@@ -1,0 +1,18 @@
+{
+  "series_label": "Go Series · Part 3",
+  "hook": "Did you know Go can count for you?",
+  "language": "Go",
+  "code_title": "constants.go  meet iota",
+  "code": [
+    "const (",
+    "    Low = iota",
+    "    Mid",
+    "    High",
+    ")",
+    "fmt.Println(Low, Mid, High)"
+  ],
+  "output": "0 1 2",
+  "takeaway": "iota starts at 0 and adds 1 each line.",
+  "cta": "Follow for Part 4 tomorrow",
+  "duration": 15
+}
