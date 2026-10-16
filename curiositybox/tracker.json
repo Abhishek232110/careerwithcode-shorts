@@ -3,7 +3,8 @@
   "ai": {
     "posted": [
       "Circle to Search: phone ka chhupa AI button",
-      "Better AI answers: role, context, format prompt tips"
+      "Better AI answers: role, context, format prompt tips",
+      "Photo background cutout: long-press subject (iPhone Photos / Samsung Gallery)"
     ]
   },
   "whatif": {
@@ -151,6 +152,16 @@
       "hook_format": "challenge",
       "video": "curiositybox/shorts/2026-10-16_0600_ai-better-prompt-tips.mp4",
       "status": "posted: YouTube myR0aydSj6M, Facebook 1118488103966539"
+    },
+    {
+      "date": "2026-10-16 10:00",
+      "slot": "ai",
+      "title": "Background Hatane Ke Liye App Chahiye? Bas Ek Touch! #shorts",
+      "tone": "practical quick win",
+      "hook_format": "question",
+      "mood": "upbeat",
+      "video": "2026-10-16_1000_ai-photo-background-cutout.mp4",
+      "status": "published via Zapier: yt wAEl7C4lxIY, fb 1040067632420500"
     }
   ]
 }
