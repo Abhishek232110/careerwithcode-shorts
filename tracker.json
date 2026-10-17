@@ -28,7 +28,8 @@
       "JavaScript sort() sorts numbers as strings",
       "Python enumerate() instead of range(len()) loops",
       "SQL: = NULL never matches, use IS NULL",
-      "Python: 0.1 + 0.2 != 0.3 (floating point)"
+      "Python: 0.1 + 0.2 != 0.3 (floating point)",
+      "JavaScript: NaN === NaN is false, use Number.isNaN()"
     ]
   },
   "learn": {
@@ -222,6 +223,16 @@
       "style": "handwritten",
       "video": "2026-10-17_1000_go-p04-basic-types.mp4",
       "status": "scheduled: metricool 398298764 (yt, ig, fb) for 10:00 IST"
+    },
+    {
+      "date": "2026-10-17 16:00",
+      "slot": "educational",
+      "title": "Myth: NaN equals NaN in JavaScript? Not even close #shorts",
+      "tone": "myth-buster",
+      "hook_format": "myth-vs-fact",
+      "style": "handwritten",
+      "video": "2026-10-17_1600_educational-js-nan-not-equal-nan.mp4",
+      "status": "scheduled: metricool 398423804 (yt, ig, fb) for 16:00 IST"
     }
   ],
   "inspiring": {

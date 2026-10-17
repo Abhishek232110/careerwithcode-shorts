@@ -1,0 +1,13 @@
+{
+  "hook": "Myth: NaN always equals NaN",
+  "language": "JavaScript",
+  "code_title": "try it in your console",
+  "code": [
+    "console.log(NaN === NaN)",
+    "console.log(Number.isNaN(NaN))"
+  ],
+  "output": "false  true",
+  "takeaway": "NaN never equals itself. Check it with Number.isNaN().",
+  "cta": "Comment NaN if this got you",
+  "duration": 13
+}
