@@ -4,7 +4,8 @@
     "posted": [
       "Circle to Search: phone ka chhupa AI button",
       "Better AI answers: role, context, format prompt tips",
-      "Photo background cutout: long-press subject (iPhone Photos / Samsung Gallery)"
+      "Photo background cutout: long-press subject (iPhone Photos / Samsung Gallery)",
+      "Google Lens: photo ka text copy karna"
     ]
   },
   "whatif": {
@@ -173,6 +174,16 @@
       "mood": "mysterious",
       "video": "2026-10-16_1600_kahani-iceland-machhar.mp4",
       "status": "published via Zapier: yt xMMilQ_nYqI, fb 1622841276178724"
+    },
+    {
+      "date": "2026-10-17 10:00",
+      "slot": "ai",
+      "title": "Photo Ka Text Bhi Copy Hota Hai! Google Lens Trick #shorts",
+      "tone": "practical quick win",
+      "hook_format": "shocking-fact",
+      "mood": "upbeat",
+      "video": "curiositybox/shorts/2026-10-17_1000_ai-google-lens-copy-text.mp4",
+      "status": "posted via Zapier: YouTube yLbbmYT-tZY, Facebook 1831806864635822"
     }
   ]
 }
