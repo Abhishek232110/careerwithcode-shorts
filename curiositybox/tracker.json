@@ -28,7 +28,8 @@
       "Konark Sun Temple: patthar ka rath",
       "Bermuda Triangle: myth vs fact",
       "Ekalavya ki guru dakshina (Mahabharat)",
-      "Iceland mein machhar: pehli baar 2025 mein mile"
+      "Iceland mein machhar: pehli baar 2025 mein mile",
+      "Delhi Iron Pillar: 1600 saal se zang nahi (phosphorus)"
     ]
   },
   "log": [
@@ -184,6 +185,16 @@
       "mood": "upbeat",
       "video": "curiositybox/shorts/2026-10-17_1000_ai-google-lens-copy-text.mp4",
       "status": "posted via Zapier: YouTube yLbbmYT-tZY, Facebook 1831806864635822"
+    },
+    {
+      "date": "2026-10-17 16:00",
+      "slot": "kahani",
+      "title": "Delhi Ka Iron Pillar: 1600 Saal Se Zang Kyun Nahi? #shorts",
+      "tone": "storyteller, suspense",
+      "hook_format": "shocking-fact",
+      "mood": "mysterious",
+      "video": "2026-10-17_1600_kahani-delhi-iron-pillar.mp4",
+      "status": "published via Zapier: yt yRe3VoIrSEA, fb 1479268380712700"
     }
   ]
 }
