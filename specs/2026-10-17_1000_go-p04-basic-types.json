@@ -1,0 +1,17 @@
+{
+  "series_label": "Go Series · Part 4",
+  "hook": "You never typed float64. Go did!",
+  "language": "Go",
+  "code_title": "types.go  4 basic types",
+  "code": [
+    "n := 42      // int",
+    "f := 3.14    // float64",
+    "s := \"Go\"    // string",
+    "ok := true   // bool",
+    "fmt.Printf(\"%T\", f)"
+  ],
+  "output": "float64",
+  "takeaway": "Go looks at your value and picks the type.",
+  "cta": "Follow for Part 5 tomorrow",
+  "duration": 14
+}

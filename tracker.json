@@ -2,11 +2,12 @@
   "_note": "Updated automatically after every post. Edit next_part to jump a series forward/back.",
   "series": {
     "go": {
-      "next_part": 4,
+      "next_part": 5,
       "posted": [
         "Part 1: Hello World and package main",
         "Part 2: Variables: var vs :=",
-        "Part 3: Constants and iota"
+        "Part 3: Constants and iota",
+        "Part 4: Basic types: int, float64, string, bool"
       ]
     },
     "python": {
@@ -211,6 +212,16 @@
       "style": "handwritten",
       "video": "2026-10-16_1600_educational-python-float-0-1-plus-0-2.mp4",
       "status": "scheduled: metricool 397609965 (yt, ig, fb) for 16:00 IST"
+    },
+    {
+      "date": "2026-10-17 10:00",
+      "slot": "go",
+      "title": "You never typed float64. Go did! | Go Part 4 #shorts",
+      "tone": "friendly teacher",
+      "hook_format": "bold-claim",
+      "style": "handwritten",
+      "video": "2026-10-17_1000_go-p04-basic-types.mp4",
+      "status": "scheduled: metricool 398298764 (yt, ig, fb) for 10:00 IST"
     }
   ],
   "inspiring": {
