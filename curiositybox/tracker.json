@@ -30,7 +30,8 @@
       "Bermuda Triangle: myth vs fact",
       "Ekalavya ki guru dakshina (Mahabharat)",
       "Iceland mein machhar: pehli baar 2025 mein mile",
-      "Delhi Iron Pillar: 1600 saal se zang nahi (phosphorus)"
+      "Delhi Iron Pillar: 1600 saal se zang nahi (phosphorus)",
+      "Voynich Manuscript: 600 saal se undeciphered"
     ]
   },
   "log": [
@@ -206,6 +207,16 @@
       "mood": "upbeat",
       "video": "curiositybox/shorts/2026-10-18_1000_ai-chatgpt-temporary-chat.mp4",
       "status": "posted via Zapier: YouTube du5oryWJeck, Facebook 999898382705292"
+    },
+    {
+      "date": "2026-10-18 16:00",
+      "slot": "kahani",
+      "title": "Ek Kitaab Jo 600 Saal Se Koi Padh Nahi Paya? #shorts",
+      "tone": "storyteller, suspense",
+      "hook_format": "question",
+      "mood": "mysterious",
+      "video": "2026-10-18_1600_kahani-voynich-manuscript.mp4",
+      "status": "published via Zapier: yt lr2F5TRp6lw, fb 1672100504473115"
     }
   ]
 }
