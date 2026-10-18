@@ -1,0 +1,13 @@
+{
+  "hook": "Why is typeof null \"object\"?",
+  "language": "JavaScript",
+  "code_title": "try it in your console",
+  "code": [
+    "console.log(typeof null)",
+    "console.log(null === null)"
+  ],
+  "output": "object  true",
+  "takeaway": "It's a 1995 bug nobody can fix. Check null with === null.",
+  "cta": "Comment 1995 if you knew",
+  "duration": 13
+}
