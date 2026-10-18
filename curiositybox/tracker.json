@@ -5,7 +5,8 @@
       "Circle to Search: phone ka chhupa AI button",
       "Better AI answers: role, context, format prompt tips",
       "Photo background cutout: long-press subject (iPhone Photos / Samsung Gallery)",
-      "Google Lens: photo ka text copy karna"
+      "Google Lens: photo ka text copy karna",
+      "ChatGPT Temporary Chat: history/training/memory off"
     ]
   },
   "whatif": {
@@ -195,6 +196,16 @@
       "mood": "mysterious",
       "video": "2026-10-17_1600_kahani-delhi-iron-pillar.mp4",
       "status": "published via Zapier: yt yRe3VoIrSEA, fb 1479268380712700"
+    },
+    {
+      "date": "2026-10-18 10:00",
+      "slot": "ai",
+      "title": "ChatGPT Sab Yaad Rakhta Hai? Ye Button Dabao #shorts",
+      "tone": "practical quick win",
+      "hook_format": "myth-vs-fact",
+      "mood": "upbeat",
+      "video": "curiositybox/shorts/2026-10-18_1000_ai-chatgpt-temporary-chat.mp4",
+      "status": "posted via Zapier: YouTube du5oryWJeck, Facebook 999898382705292"
     }
   ]
 }
