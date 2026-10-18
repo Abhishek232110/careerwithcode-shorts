@@ -2,12 +2,13 @@
   "_note": "Updated automatically after every post. Edit next_part to jump a series forward/back.",
   "series": {
     "go": {
-      "next_part": 5,
+      "next_part": 6,
       "posted": [
         "Part 1: Hello World and package main",
         "Part 2: Variables: var vs :=",
         "Part 3: Constants and iota",
-        "Part 4: Basic types: int, float64, string, bool"
+        "Part 4: Basic types: int, float64, string, bool",
+        "Part 5: Zero values"
       ]
     },
     "python": {
@@ -233,6 +234,16 @@
       "style": "handwritten",
       "video": "2026-10-17_1600_educational-js-nan-not-equal-nan.mp4",
       "status": "scheduled: metricool 398423804 (yt, ig, fb) for 16:00 IST"
+    },
+    {
+      "date": "2026-10-18 10:00",
+      "slot": "go",
+      "title": "What's inside a Go variable you never set? | Go Part 5 #shorts",
+      "tone": "friendly teacher",
+      "hook_format": "question",
+      "style": "handwritten",
+      "video": "2026-10-18_1000_go-p05-zero-values.mp4",
+      "status": "scheduled: metricool 398913005 (yt, ig, fb) for 10:00 IST"
     }
   ],
   "inspiring": {

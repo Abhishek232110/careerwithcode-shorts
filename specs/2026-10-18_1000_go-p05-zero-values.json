@@ -1,0 +1,16 @@
+{
+  "series_label": "Go Series · Part 5",
+  "hook": "What's inside a Go variable you never set?",
+  "language": "Go",
+  "code_title": "zero.go  no value given",
+  "code": [
+    "var n int",
+    "var s string",
+    "var ok bool",
+    "fmt.Printf(\"%v %q %v\", n, s, ok)"
+  ],
+  "output": "0 \"\" false",
+  "takeaway": "No garbage in Go. Every type starts at zero.",
+  "cta": "Follow for Part 6 tomorrow",
+  "duration": 13
+}
