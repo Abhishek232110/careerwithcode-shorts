@@ -32,7 +32,8 @@
       "SQL: = NULL never matches, use IS NULL",
       "Python: 0.1 + 0.2 != 0.3 (floating point)",
       "JavaScript: NaN === NaN is false, use Number.isNaN()",
-      "JavaScript: typeof null is \"object\" (1995 bug)"
+      "JavaScript: typeof null is \"object\" (1995 bug)",
+      "Python: round(2.5) == 2 (banker's rounding)"
     ]
   },
   "learn": {
@@ -266,6 +267,16 @@
       "style": "handwritten",
       "video": "2026-10-19_1000_go-p06-type-conversion.mp4",
       "status": "scheduled: metricool 399616352 (yt, ig, fb) for 10:00 IST"
+    },
+    {
+      "date": "2026-10-19 16:00",
+      "slot": "educational",
+      "title": "Myth: round(2.5) is 3 in Python? Nope, it's 2 #shorts",
+      "tone": "myth-buster",
+      "hook_format": "myth-vs-fact",
+      "style": "handwritten",
+      "video": "2026-10-19_1600_educational-python-round-bankers.mp4",
+      "status": "queued: github action (yt, ig, fb) for 16:00 IST"
     }
   ],
   "inspiring": {

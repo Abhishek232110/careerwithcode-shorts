@@ -1,0 +1,14 @@
+{
+  "hook": "Myth: round(2.5) gives 3 in Python",
+  "language": "Python",
+  "code_title": "try it yourself",
+  "code": [
+    "print(round(2.5))",
+    "print(round(3.5))",
+    "print(round(0.5))"
+  ],
+  "output": "2  4  0",
+  "takeaway": "Python rounds .5 to the nearest even number. Surprise!",
+  "cta": "Comment EVEN if this got you",
+  "duration": 14
+}
