@@ -32,7 +32,8 @@
       "Ekalavya ki guru dakshina (Mahabharat)",
       "Iceland mein machhar: pehli baar 2025 mein mile",
       "Delhi Iron Pillar: 1600 saal se zang nahi (phosphorus)",
-      "Voynich Manuscript: 600 saal se undeciphered"
+      "Voynich Manuscript: 600 saal se undeciphered",
+      "Ram Setu 5 din mein bana (Valmiki Ramayan)"
     ]
   },
   "log": [
@@ -228,6 +229,16 @@
       "mood": "upbeat",
       "video": "curiositybox/shorts/2026-10-19_1000_ai-voice-clone-code-word.mp4",
       "status": "posted via Zapier: YouTube ObWr1L7OF9E, Facebook 3517247421787537"
+    },
+    {
+      "date": "2026-10-19 16:00",
+      "slot": "kahani",
+      "title": "Sirf 5 Din Mein Samudra Par Pul? Ram Setu Ki Kahani #shorts",
+      "tone": "storyteller, suspense",
+      "hook_format": "shocking-fact",
+      "mood": "inspiring",
+      "video": "2026-10-19_1600_kahani-ram-setu-5-din.mp4",
+      "status": "queued"
     }
   ]
 }
