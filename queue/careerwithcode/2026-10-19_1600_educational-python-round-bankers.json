@@ -1,0 +1,28 @@
+{
+  "channel": "careerwithcode",
+  "video": "shorts/2026-10-19_1600_educational-python-round-bankers.mp4",
+  "publish_at": "2026-10-19T16:00:00+05:30",
+  "platforms": [
+    "youtube",
+    "instagram",
+    "facebook"
+  ],
+  "caption": "I was sure round(2.5) gave 3. Python said 2. It rounds .5 to the nearest even number (banker's rounding).\n\nDid this one get you? Comment EVEN 👇\n\n#reels #coding #programming #python #pythontips #learnpython #developer",
+  "youtube": {
+    "title": "Myth: round(2.5) is 3 in Python? Nope, it's 2 #shorts",
+    "description": "I was sure round(2.5) gave 3. Python said 2. It rounds .5 to the nearest even number (banker's rounding).\n\nDid this one get you? Comment EVEN 👇\n\n#shorts #coding #programming #python #pythontips #learnpython #developer",
+    "tags": [
+      "python",
+      "round",
+      "bankers rounding",
+      "python tips",
+      "coding",
+      "programming",
+      "python myths"
+    ],
+    "category_id": "27",
+    "default_language": "en",
+    "privacy": "public"
+  },
+  "status": "pending"
+}
