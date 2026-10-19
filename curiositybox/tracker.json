@@ -6,7 +6,8 @@
       "Better AI answers: role, context, format prompt tips",
       "Photo background cutout: long-press subject (iPhone Photos / Samsung Gallery)",
       "Google Lens: photo ka text copy karna",
-      "ChatGPT Temporary Chat: history/training/memory off"
+      "ChatGPT Temporary Chat: history/training/memory off",
+      "AI voice cloning scam: family secret code word"
     ]
   },
   "whatif": {
@@ -217,6 +218,16 @@
       "mood": "mysterious",
       "video": "2026-10-18_1600_kahani-voynich-manuscript.mp4",
       "status": "published via Zapier: yt lr2F5TRp6lw, fb 1672100504473115"
+    },
+    {
+      "date": "2026-10-19 10:00",
+      "slot": "ai",
+      "title": "Phone Pe Papa Ki Awaaz Asli Hai? AI Scam Se Bacho #shorts",
+      "tone": "practical quick win",
+      "hook_format": "question",
+      "mood": "upbeat",
+      "video": "curiositybox/shorts/2026-10-19_1000_ai-voice-clone-code-word.mp4",
+      "status": "posted via Zapier: YouTube ObWr1L7OF9E, Facebook 3517247421787537"
     }
   ]
 }
