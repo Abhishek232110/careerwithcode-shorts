@@ -24,7 +24,7 @@
     "default_language": "en",
     "privacy": "public"
   },
-  "status": "pending",
+  "status": "skipped",
   "results": {
     "youtube": {
       "status": "skipped",
