@@ -1,0 +1,17 @@
+{
+  "series_label": "Go Series · Part 6",
+  "hook": "Go refuses to multiply 7 by 2.5!",
+  "language": "Go",
+  "code_title": "convert.go  you convert, not Go",
+  "code": [
+    "n := 7",
+    "price := 2.5",
+    "// n * price  -> compile error",
+    "total := float64(n) * price",
+    "fmt.Println(total)"
+  ],
+  "output": "17.5",
+  "takeaway": "No silent mixing. Wrap it: float64(n).",
+  "cta": "Follow for Part 7 tomorrow",
+  "duration": 13
+}

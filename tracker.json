@@ -2,13 +2,14 @@
   "_note": "Updated automatically after every post. Edit next_part to jump a series forward/back.",
   "series": {
     "go": {
-      "next_part": 6,
+      "next_part": 7,
       "posted": [
         "Part 1: Hello World and package main",
         "Part 2: Variables: var vs :=",
         "Part 3: Constants and iota",
         "Part 4: Basic types: int, float64, string, bool",
-        "Part 5: Zero values"
+        "Part 5: Zero values",
+        "Part 6: Type conversion"
       ]
     },
     "python": {
@@ -255,6 +256,16 @@
       "style": "handwritten",
       "video": "2026-10-18_1600_educational-js-typeof-null-object.mp4",
       "status": "scheduled: metricool 399038191 (yt, ig, fb) for 16:00 IST"
+    },
+    {
+      "date": "2026-10-19 10:00",
+      "slot": "go",
+      "title": "Go refuses to multiply 7 by 2.5?! | Go Part 6 #shorts",
+      "tone": "friendly teacher",
+      "hook_format": "bold-claim",
+      "style": "handwritten",
+      "video": "2026-10-19_1000_go-p06-type-conversion.mp4",
+      "status": "scheduled: metricool 399616352 (yt, ig, fb) for 10:00 IST"
     }
   ],
   "inspiring": {
