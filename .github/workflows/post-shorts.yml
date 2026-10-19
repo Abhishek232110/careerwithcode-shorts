@@ -1,0 +1,65 @@
+name: Post Shorts
+
+# Posts queued Shorts directly to YouTube / Facebook / Instagram with their official APIs.
+# Runs when a scheduled Claude run pushes a job file to queue/, every 30 min as a backup,
+# or by hand from the Actions tab.
+on:
+  push:
+    branches: [main]
+    paths: ["queue/careerwithcode/**", "queue/curiositybox/**"]
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+    inputs:
+      check_only:
+        description: "Only check which secrets are set (posts nothing)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: post-shorts
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install requests
+
+      - name: Post due Shorts
+        env:
+          PERSIST_GIT: "1"
+          # CareerWithCode
+          CWC_YT_CLIENT_ID: ${{ secrets.CWC_YT_CLIENT_ID }}
+          CWC_YT_CLIENT_SECRET: ${{ secrets.CWC_YT_CLIENT_SECRET }}
+          CWC_YT_REFRESH_TOKEN: ${{ secrets.CWC_YT_REFRESH_TOKEN }}
+          CWC_FB_PAGE_ID: ${{ secrets.CWC_FB_PAGE_ID }}
+          CWC_FB_PAGE_TOKEN: ${{ secrets.CWC_FB_PAGE_TOKEN }}
+          CWC_IG_USER_ID: ${{ secrets.CWC_IG_USER_ID }}
+          # CuriosityBox
+          CB_YT_CLIENT_ID: ${{ secrets.CB_YT_CLIENT_ID }}
+          CB_YT_CLIENT_SECRET: ${{ secrets.CB_YT_CLIENT_SECRET }}
+          CB_YT_REFRESH_TOKEN: ${{ secrets.CB_YT_REFRESH_TOKEN }}
+          CB_FB_PAGE_ID: ${{ secrets.CB_FB_PAGE_ID }}
+          CB_FB_PAGE_TOKEN: ${{ secrets.CB_FB_PAGE_TOKEN }}
+          CB_IG_USER_ID: ${{ secrets.CB_IG_USER_ID }}
+        run: |
+          git config user.name "Shorts Poster"
+          git config user.email "poster@careerwithcode.local"
+          if [ "${{ inputs.check_only }}" = "true" ]; then
+            python3 poster/post.py --check
+          else
+            python3 poster/post.py
+          fi

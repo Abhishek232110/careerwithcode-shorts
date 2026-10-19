@@ -1,0 +1,18 @@
+{
+  "_note": "Public, non-secret settings per channel. Secrets (tokens) live in GitHub repo secrets, see poster/SETUP.md.",
+  "careerwithcode": {
+    "secret_prefix": "CWC",
+    "youtube_channel_id": "UCZ6m5Lh_vmFjOLL_RAHNTxw",
+    "default_platforms": ["youtube", "instagram", "facebook"],
+    "youtube_category_id": "27",
+    "default_language": "en"
+  },
+  "curiositybox": {
+    "secret_prefix": "CB",
+    "youtube_channel_id": "UCtJ6818H8WuXS071samDcPA",
+    "facebook_page_id": "1380858578445805",
+    "default_platforms": ["youtube", "facebook"],
+    "youtube_category_id": "27",
+    "default_language": "hi"
+  }
+}
