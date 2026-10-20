@@ -1,0 +1,29 @@
+{
+  "channel": "careerwithcode",
+  "video": "shorts/2026-10-20_1000_go-p07-if-short-statement.mp4",
+  "publish_at": "2026-10-20T10:00:00+05:30",
+  "platforms": [
+    "youtube",
+    "instagram",
+    "facebook"
+  ],
+  "caption": "Go lets you declare a variable right inside the if, and it vanishes after. I love how tidy this keeps my code. Would you use this? Comment YES or NO 👇\n\n#reels #golang #go #coding #programming #learntocode #developer",
+  "youtube": {
+    "title": "Did you know Go's if can declare variables? | Go Part 7 #shorts",
+    "description": "Go lets you declare a variable right inside the if, and it vanishes after. I love how tidy this keeps my code. Would you use this? Comment YES or NO 👇\n\n#shorts #golang #go #coding #programming #learntocode #developer",
+    "tags": [
+      "golang",
+      "go",
+      "go tutorial",
+      "if statement",
+      "learn go",
+      "coding",
+      "programming",
+      "shorts"
+    ],
+    "category_id": "27",
+    "default_language": "en",
+    "privacy": "public"
+  },
+  "status": "pending"
+}
