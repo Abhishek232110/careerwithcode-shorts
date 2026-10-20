@@ -1,0 +1,28 @@
+{
+  "channel": "careerwithcode",
+  "video": "shorts/2026-10-20_1600_educational-js-parseint-tiny-number.mp4",
+  "publish_at": "2026-10-20T16:00:00+05:30",
+  "platforms": [
+    "youtube",
+    "instagram",
+    "facebook"
+  ],
+  "caption": "I thought parseInt just chops off decimals. Nope, it turns your number into the string \"5e-7\" first, then reads the 5. Would this have caught you?\n\n#reels #coding #programming #javascript #webdev #jstips #codinglife",
+  "youtube": {
+    "title": "Why does parseInt(0.0000005) give 5 in JavaScript? #shorts",
+    "description": "I thought parseInt just chops off decimals. Nope, it turns your number into the string \"5e-7\" first, then reads the 5. Would this have caught you?\n\n#shorts #coding #programming #javascript #webdev #jstips #codinglife",
+    "tags": [
+      "javascript",
+      "parseInt",
+      "js gotchas",
+      "coding",
+      "programming",
+      "webdev",
+      "shorts"
+    ],
+    "category_id": "27",
+    "default_language": "en",
+    "privacy": "public"
+  },
+  "status": "pending"
+}
