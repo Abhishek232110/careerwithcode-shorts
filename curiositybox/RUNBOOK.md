@@ -1,13 +1,13 @@
 # CuriosityBox Shorts — run instructions
 
 CuriosityBox is a **separate channel** from CareerWithCode. Everything for it lives in
-`curiositybox/` and it posts **only** through Zapier to the CuriosityBox YouTube channel and
-Facebook page. Never touch the
+`curiositybox/` and it posts **only** to the CuriosityBox YouTube channel and Facebook page (directly via the
+repo's GitHub Action; Zapier only as a temporary fallback, see step 6). Never touch the
 CareerWithCode files (`make_short.py`, `tracker.json`, `shorts/`, `specs/` at the repo root)
 and never post CuriosityBox content to the Career With Code brand (blogId `7393281`).
 
 Each scheduled run makes ONE Hinglish Short of **10–15 seconds** for ONE slot and posts it
-publicly to **YouTube (Short)** and **Facebook** through Zapier.
+publicly to **YouTube (Short)** and **Facebook** (step 6).
 
 | Slot (IST) | `SLOT`   | Category chip   | Content | Tone |
 |-----------|----------|-----------------|---------|------|
@@ -84,7 +84,23 @@ publicly to **YouTube (Short)** and **Facebook** through Zapier.
 5. **Upload:** `curiositybox/publish.sh curiositybox/shorts/<name>.mp4` → commits the video and
    prints its public URL.
 
-6. **Post through Zapier** (NOT Metricool; Metricool is only for CareerWithCode).
+6. **Post.** First run `python3 poster/route.py curiositybox`. It prints which platforms post
+   **directly** (the repo's "Post Shorts" GitHub Action, official APIs) and which still need the
+   temporary **Zapier fallback** because their token hasn't been added yet. Each platform goes
+   through exactly ONE path, never both. Once every platform is direct, Zapier is not used at all.
+
+   **Direct platforms** (if the `direct` list is not empty):
+   ```bash
+   python3 poster/queue_post.py --channel curiositybox --platforms <direct, comma-separated> \
+     --video curiositybox/shorts/<name>.mp4 --time "<YYYY-MM-DD> <HH:MM>" \
+     --title "<≤ 90 chars, Hinglish, ends with #shorts>" --caption "<caption + hashtags>" \
+     --fb-caption "<same caption, #reels instead of #shorts>" --tags "<comma,separated,tags>"
+   ```
+   `--time` is the slot time in IST (if passed, it posts in 3 minutes). Never use
+   `--channel careerwithcode` here. Results land in `queue/done/curiositybox/<name>.json`.
+
+   **Fallback platforms only** — post through Zapier, doing step a only if youtube is in the
+   fallback list and step b only if facebook is:
    Load the Zapier tools with ToolSearch (`select:mcp__Zapier__inspect_zapier_actions,mcp__Zapier__execute_zapier_write_action,mcp__Zapier__execute_zapier_read_action`).
    Fixed, verified targets — use exactly these, never any other channel or page:
    - YouTube channel **CuriosityBox | Hindi Facts & Stories**, id `UCtJ6818H8WuXS071samDcPA`
@@ -121,4 +137,4 @@ publicly to **YouTube (Short)** and **Facebook** through Zapier.
    `git add curiositybox && git commit -m "curiositybox <date> <slot>: <topic>"`,
    `git pull --rebase origin main`, `git push origin main`.
 
-9. **Finish** with a one-line summary: slot, title, and whether the post succeeded.
+9. **Finish** with a one-line summary: slot, title, and and how each platform was posted (direct / Zapier fallback).

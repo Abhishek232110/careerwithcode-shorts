@@ -9,6 +9,12 @@ Posting now works like this:
    and **Meta Graph API** (Facebook Reels + Instagram Reels).
 3. Results (video ids, links or errors) are written to `queue/done/<channel>/<name>.json`.
 
+**Until a platform's token is added, the scheduled runs post that platform through the old
+Metricool (CareerWithCode) / Zapier (CuriosityBox) route.** The Action records which platforms
+are ready in `poster/status.json` (within 30 min of adding a secret, or right away if you run the
+workflow by hand), and from then on that platform posts directly and the fallback is never used
+for it again. Once everything shows `true`, you can disconnect Zapier and Metricool.
+
 The tokens live only in **GitHub repo secrets**. You do the one-time setup below; nothing else
 is needed after that. Any platform whose secrets are missing is simply skipped, so you can set up
 YouTube first and Facebook/Instagram later.
@@ -56,6 +62,16 @@ Each channel gets its own Google Cloud project, so each gets its own daily uploa
    private and you can make them public by hand in YouTube Studio; the job result shows
    `"privacy": "private"` with a warning.
 
+**No-terminal alternative for steps 5–6** (everything in the browser):
+- In step 5 choose type **Web application** instead, and under *Authorized redirect URIs* add
+  `https://developers.google.com/oauthplayground`.
+- Open <https://developers.google.com/oauthplayground>, click the ⚙️ gear (top right) → tick
+  **Use your own OAuth credentials** → paste the Client ID and Client secret.
+- In the left box type `https://www.googleapis.com/auth/youtube.upload` and
+  `https://www.googleapis.com/auth/youtube.readonly` (space between them) →
+  **Authorize APIs** → sign in and pick the right channel → **Exchange authorization code for
+  tokens**. Copy the **Refresh token**.
+
 Quota: each project gets 10,000 units/day and one upload costs about 1,600, so about 6 uploads
 per channel per day.
 
@@ -81,6 +97,12 @@ Requirements: you are an admin of each Facebook Page, and the CareerWithCode Ins
    ```
    It lists each Page with its **page id**, **page token** (doesn't expire) and linked
    **Instagram id**.
+   **No-terminal alternative:** paste the Explorer token into the Access Token Debugger
+   (<https://developers.facebook.com/tools/debug/accesstoken>) → **Extend Access Token** → copy
+   the long-lived token. Back in the Graph API Explorer, paste it as the access token and run
+   `me/accounts?fields=id,name,access_token,instagram_business_account` — each Page's
+   `access_token` there is its page token (doesn't expire), `id` is the page id, and
+   `instagram_business_account.id` is the Instagram id.
 5. Add GitHub secrets:
 
    | Channel        | Secrets |

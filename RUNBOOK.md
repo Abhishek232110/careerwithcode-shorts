@@ -1,7 +1,8 @@
 # CareerWithCode Shorts — run instructions
 
-Each scheduled run makes ONE Short of **20–30 seconds** for ONE slot and queues it to be posted publicly
-to YouTube (Short), Instagram (Reel) and Facebook (Reel) by the repo's GitHub Action.
+Each scheduled run makes ONE Short of **20–30 seconds** for ONE slot and posts it publicly to YouTube (Short),
+Instagram (Reel) and Facebook (Reel): directly via the repo's GitHub Action for every platform
+whose token is set up, Metricool only as a temporary fallback for the rest (step 6).
 
 | Slot (IST) | `SLOT` value   | Content |
 |-----------|----------------|---------|
@@ -78,20 +79,38 @@ caption with an engaging question or "comment X" prompt to grow reach.
 5. **Upload:** `./publish_video.sh shorts/<name>.mp4` → commits the video to `shorts/`
    on main (every video is kept in the repo permanently) and prints its public URL.
 
-6. **Queue the post** (no Metricool/Zapier: the repo's own "Post Shorts" GitHub Action posts
-   straight to YouTube, Instagram and Facebook with their official APIs at the slot time):
-   ```bash
-   python3 poster/queue_post.py --channel careerwithcode \
-     --video shorts/<name>.mp4 --time "<YYYY-MM-DD> <HH:MM>" \
-     --title "<≤ 90 chars, ends with #shorts>" \
-     --caption "<1–2 line caption>\n\n<5–8 hashtags: #shorts #coding #programming #<language> …>" \
-     --fb-caption "<same caption, #reels instead of #shorts>" \
-     --tags "<comma,separated,tags>"
-   ```
-   - `--time` is the slot time in IST. If it has already passed, the script posts in 3 minutes.
-   - The script commits `queue/careerwithcode/<name>.json` and pushes. Do not post any other way,
-     and never queue the same video twice (the script refuses).
-   - Results appear later in `queue/done/careerwithcode/<name>.json` (written by the Action).
+6. **Post.** First run `python3 poster/route.py careerwithcode`. It prints which platforms
+   post **directly** (the repo's "Post Shorts" GitHub Action, official APIs) and which still
+   need the temporary **fallback** (Metricool) because their token hasn't been added yet.
+   Each platform goes through exactly ONE of the two paths, never both.
+
+   a. **Direct platforms** (if the `direct` list is not empty):
+      ```bash
+      python3 poster/queue_post.py --channel careerwithcode --platforms <direct, comma-separated> \
+        --video shorts/<name>.mp4 --time "<YYYY-MM-DD> <HH:MM>" \
+        --title "<≤ 90 chars, ends with #shorts>" \
+        --caption "<1–2 line caption>\n\n<5–8 hashtags: #shorts #coding #programming #<language> …>" \
+        --fb-caption "<same caption, #reels instead of #shorts>" \
+        --tags "<comma,separated,tags>"
+      ```
+      `--time` is the slot time in IST (if passed, it posts in 3 minutes). Never queue the
+      same video twice. Results land in `queue/done/careerwithcode/<name>.json`.
+
+   b. **Fallback platforms** (only if the `fallback` list is not empty): Metricool
+      `createScheduledPost` with ONLY those platforms in `providers`:
+      - `blogId`: `7393281`
+      - `date`: today at the slot time (e.g. 10:00:00+05:30); if it has passed, now + 3 minutes.
+      - `info`: `providers` (fallback platforms only, e.g. `[{"network":"instagram"}]`),
+        `media`: `[<video URL from step 5>]`,
+        `publicationDate`: `{"dateTime": "<same time, no offset>", "timezone": "Asia/Calcutta"}`,
+        `text`: caption + hashtags, `autoPublish`: true, `draft`: false,
+        `youtubeData`: `{"title": "<title>", "type": "short", "privacy": "public",
+        "madeForKids": false, "category": "EDUCATION", "tags": [...], "isAiGeneratedContent": false}`
+        (only if youtube is in fallback), `instagramData`: `{"type": "REEL", "showReelOnFeed": true}`,
+        `facebookData`: `{"type": "REEL"}`.
+      - If Metricool rejects it, fix the field and retry once; if it still fails, report the error.
+
+   Record in the tracker status which path each platform used.
 
 7. **Update the tracker** (`tracker.json`):
    - series slots: `next_part += 1`, append `"Part N: <topic>"` to `posted`
@@ -101,4 +120,4 @@ caption with an engaging question or "comment X" prompt to grow reach.
    Then: `git add specs tracker.json curriculum.json && git commit -m "<date> <slot>: <topic>"`,
    `git pull --rebase origin main`, `git push origin main`.
 
-8. **Finish** with a one-line summary: slot, title, and that it was queued for HH:MM IST.
+8. **Finish** with a one-line summary: slot, title, and how each platform was posted (direct / fallback).

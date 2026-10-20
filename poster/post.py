@@ -324,6 +324,47 @@ def process(path, args):
     finish(path, job, channel)
 
 
+NEED = {"youtube": ["YT_CLIENT_ID", "YT_CLIENT_SECRET", "YT_REFRESH_TOKEN"],
+        "facebook": ["FB_PAGE_TOKEN"],
+        "instagram": ["IG_USER_ID", "FB_PAGE_TOKEN"]}
+
+
+def readiness():
+    """{channel: {platform: True/False}} based on which secrets are present."""
+    out = {}
+    for name, cfg in CHANNELS.items():
+        if name.startswith("_"):
+            continue
+        p = cfg["secret_prefix"]
+        out[name] = {}
+        for plat in cfg["default_platforms"]:
+            need = list(NEED[plat])
+            if plat == "facebook" and not cfg.get("facebook_page_id"):
+                need.append("FB_PAGE_ID")
+            out[name][plat] = all(os.environ.get(f"{p}_{s}") for s in need)
+    return out
+
+
+def write_status():
+    """Write poster/status.json so scheduled runs know which platforms post directly."""
+    path = os.path.join(ROOT, "poster", "status.json")
+    data = {"_note": "Written by the Post Shorts GitHub Action. true = posts directly via "
+                     "official API; false = token not added yet (runs use the fallback).",
+            "ready": readiness()}
+    old = None
+    if os.path.exists(path):
+        try:
+            old = json.load(open(path)).get("ready")
+        except Exception:
+            pass
+    if old == data["ready"]:
+        return
+    data["updated"] = now().astimezone(IST).isoformat(timespec="seconds")
+    save(path, data)
+    git_persist(["poster/status.json"], "poster: update platform readiness")
+    log(f"status.json updated: {data['ready']}")
+
+
 def check():
     ok = True
     for name, cfg in CHANNELS.items():
@@ -353,6 +394,8 @@ def main():
     if args.check:
         check()
         return
+    if not args.dry_run:
+        write_status()
     jobs = [p for p in glob.glob(os.path.join(QUEUE, "*", "*.json"))
             if not p.startswith(DONE + os.sep)]
     jobs.sort(key=lambda p: json.load(open(p)).get("publish_at", ""))
