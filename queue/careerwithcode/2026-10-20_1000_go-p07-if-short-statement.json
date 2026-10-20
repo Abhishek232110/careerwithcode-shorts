@@ -30,6 +30,10 @@
     "youtube": {
       "status": "skipped",
       "error": "secret CWC_YT_CLIENT_ID is not set"
+    },
+    "instagram": {
+      "status": "skipped",
+      "error": "secret CWC_IG_USER_ID is not set"
     }
   }
 }
