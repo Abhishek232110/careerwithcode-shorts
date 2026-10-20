@@ -34,7 +34,8 @@
       "Iceland mein machhar: pehli baar 2025 mein mile",
       "Delhi Iron Pillar: 1600 saal se zang nahi (phosphorus)",
       "Voynich Manuscript: 600 saal se undeciphered",
-      "Ram Setu 5 din mein bana (Valmiki Ramayan)"
+      "Ram Setu 5 din mein bana (Valmiki Ramayan)",
+      "Great Emu War 1932: army vs emus (Australia)"
     ]
   },
   "log": [
@@ -249,6 +250,16 @@
       "hook_format": "shocking-fact",
       "mood": "upbeat",
       "video": "curiositybox/shorts/2026-10-20_1000_ai-google-translate-live.mp4",
+      "status": "queued"
+    },
+    {
+      "date": "2026-10-20 16:00",
+      "slot": "kahani",
+      "title": "Saal 1932: Jab Army Emus Se Jung Haar Gayi! #shorts",
+      "tone": "storyteller, suspense",
+      "hook_format": "story-open",
+      "mood": "epic",
+      "video": "2026-10-20_1600_kahani-emu-war-1932.mp4",
       "status": "queued"
     }
   ]
