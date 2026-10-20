@@ -23,5 +23,11 @@
     "default_language": "hi",
     "privacy": "public"
   },
-  "status": "pending"
+  "status": "pending",
+  "results": {
+    "youtube": {
+      "status": "skipped",
+      "error": "secret CB_YT_CLIENT_ID is not set"
+    }
+  }
 }
