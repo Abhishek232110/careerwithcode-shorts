@@ -28,6 +28,10 @@
     "youtube": {
       "status": "skipped",
       "error": "secret CB_YT_CLIENT_ID is not set"
+    },
+    "facebook": {
+      "status": "skipped",
+      "error": "secret CB_FB_PAGE_TOKEN is not set"
     }
   }
 }
