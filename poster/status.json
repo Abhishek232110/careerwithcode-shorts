@@ -1,0 +1,15 @@
+{
+  "_note": "Written by the Post Shorts GitHub Action. true = posts directly via official API; false = token not added yet (runs use the fallback).",
+  "ready": {
+    "careerwithcode": {
+      "youtube": false,
+      "instagram": false,
+      "facebook": false
+    },
+    "curiositybox": {
+      "youtube": false,
+      "facebook": false
+    }
+  },
+  "updated": "2026-10-21T01:20:50+05:30"
+}
