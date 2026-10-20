@@ -34,7 +34,8 @@
       "Python: 0.1 + 0.2 != 0.3 (floating point)",
       "JavaScript: NaN === NaN is false, use Number.isNaN()",
       "JavaScript: typeof null is \"object\" (1995 bug)",
-      "Python: round(2.5) == 2 (banker's rounding)"
+      "Python: round(2.5) == 2 (banker's rounding)",
+      "JavaScript: parseInt(0.0000005) returns 5 (5e-7)"
     ]
   },
   "learn": {
@@ -288,6 +289,16 @@
       "style": "handwritten",
       "video": "2026-10-20_1000_go-p07-if-short-statement.mp4",
       "status": "queued: github action (yt, ig, fb) for 10:00 IST"
+    },
+    {
+      "date": "2026-10-20 16:00",
+      "slot": "educational",
+      "title": "Why does parseInt(0.0000005) give 5 in JavaScript? #shorts",
+      "tone": "myth-buster",
+      "hook_format": "question",
+      "style": "handwritten",
+      "video": "2026-10-20_1600_educational-js-parseint-tiny-number.mp4",
+      "status": "queued: github action (yt, ig, fb) for 16:00 IST"
     }
   ],
   "inspiring": {
