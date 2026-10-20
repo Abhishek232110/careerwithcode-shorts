@@ -34,6 +34,10 @@
     "instagram": {
       "status": "skipped",
       "error": "secret CWC_IG_USER_ID is not set"
+    },
+    "facebook": {
+      "status": "skipped",
+      "error": "secret CWC_FB_PAGE_ID is not set"
     }
   }
 }
