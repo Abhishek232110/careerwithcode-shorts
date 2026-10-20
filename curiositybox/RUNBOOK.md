@@ -77,7 +77,7 @@ publicly to **YouTube (Short)** and **Facebook** through Zapier.
    ```
 
 4. **Render:** `python3 curiositybox/make_short.py curiositybox/specs/<name>.json curiositybox/shorts/<name>.mp4`
-   Check it is 20–30 s and 1080x1920 (`ffprobe`). Extract frames at ~8 s and 1 s before the end
+   Check it is 10–15 s and 1080x1920 (`ffprobe`). Extract frames at ~8 s and 1 s before the end
    and look at them with Read: no text overlapping or running off screen. If it does, shorten
    the text and re-render.
 
