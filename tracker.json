@@ -2,14 +2,15 @@
   "_note": "Updated automatically after every post. Edit next_part to jump a series forward/back.",
   "series": {
     "go": {
-      "next_part": 7,
+      "next_part": 8,
       "posted": [
         "Part 1: Hello World and package main",
         "Part 2: Variables: var vs :=",
         "Part 3: Constants and iota",
         "Part 4: Basic types: int, float64, string, bool",
         "Part 5: Zero values",
-        "Part 6: Type conversion"
+        "Part 6: Type conversion",
+        "Part 7: If with a short statement"
       ]
     },
     "python": {
@@ -277,6 +278,16 @@
       "style": "handwritten",
       "video": "2026-10-19_1600_educational-python-round-bankers.mp4",
       "status": "queued: github action (yt, ig, fb) for 16:00 IST"
+    },
+    {
+      "date": "2026-10-20 10:00",
+      "slot": "go",
+      "title": "Did you know Go's if can declare variables? | Go Part 7 #shorts",
+      "tone": "friendly teacher",
+      "hook_format": "question",
+      "style": "handwritten",
+      "video": "2026-10-20_1000_go-p07-if-short-statement.mp4",
+      "status": "queued: github action (yt, ig, fb) for 10:00 IST"
     }
   ],
   "inspiring": {

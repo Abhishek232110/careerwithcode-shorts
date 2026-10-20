@@ -1,0 +1,16 @@
+{
+  "series_label": "Go Series · Part 7",
+  "hook": "Did you know Go's if can declare variables?",
+  "language": "Go",
+  "code_title": "if.go  declare, then check",
+  "code": [
+    "if n := len(\"gopher\"); n > 5 {",
+    "    fmt.Println(\"long:\", n)",
+    "}",
+    "// n is gone out here"
+  ],
+  "output": "long: 6",
+  "takeaway": "n lives only inside the if. Tidy!",
+  "cta": "Follow for Part 8 tomorrow",
+  "duration": 13
+}
