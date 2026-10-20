@@ -7,7 +7,8 @@
       "Photo background cutout: long-press subject (iPhone Photos / Samsung Gallery)",
       "Google Lens: photo ka text copy karna",
       "ChatGPT Temporary Chat: history/training/memory off",
-      "AI voice cloning scam: family secret code word"
+      "AI voice cloning scam: family secret code word",
+      "Google Translate Live translate: live baat 70+ bhashaon mein"
     ]
   },
   "whatif": {
@@ -238,6 +239,16 @@
       "hook_format": "shocking-fact",
       "mood": "inspiring",
       "video": "2026-10-19_1600_kahani-ram-setu-5-din.mp4",
+      "status": "queued"
+    },
+    {
+      "date": "2026-10-20 10:00",
+      "slot": "ai",
+      "title": "Videshi Se Hindi Mein Baat? Google Translate Ka Live Button #shorts",
+      "tone": "practical quick win",
+      "hook_format": "shocking-fact",
+      "mood": "upbeat",
+      "video": "curiositybox/shorts/2026-10-20_1000_ai-google-translate-live.mp4",
       "status": "queued"
     }
   ]
