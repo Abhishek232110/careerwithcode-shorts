@@ -8,7 +8,8 @@
       "Google Lens: photo ka text copy karna",
       "ChatGPT Temporary Chat: history/training/memory off",
       "AI voice cloning scam: family secret code word",
-      "Google Translate Live translate: live baat 70+ bhashaon mein"
+      "Google Translate Live translate: live baat 70+ bhashaon mein",
+      "Google Hum to Search: gungunao aur gaana dhundo"
     ]
   },
   "whatif": {
@@ -261,6 +262,16 @@
       "mood": "epic",
       "video": "2026-10-20_1600_kahani-emu-war-1932.mp4",
       "status": "published via Zapier: yt wP2GGJ8qJMk, fb 1915933943148858"
+    },
+    {
+      "date": "2026-10-21 10:00",
+      "slot": "ai",
+      "title": "Gaane Ka Naam Bhool Gaye? Bas Gungunao, Google Dhundh Lega #shorts",
+      "tone": "practical quick win",
+      "hook_format": "question",
+      "mood": "upbeat",
+      "video": "curiositybox/shorts/2026-10-21_1000_ai-google-hum-to-search.mp4",
+      "status": "posted via Zapier: YouTube UGSZb0bv070, Facebook 1042772188788886"
     }
   ]
 }
