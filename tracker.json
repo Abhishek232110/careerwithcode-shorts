@@ -2,7 +2,7 @@
   "_note": "Updated automatically after every post. Edit next_part to jump a series forward/back.",
   "series": {
     "go": {
-      "next_part": 8,
+      "next_part": 9,
       "posted": [
         "Part 1: Hello World and package main",
         "Part 2: Variables: var vs :=",
@@ -10,7 +10,8 @@
         "Part 4: Basic types: int, float64, string, bool",
         "Part 5: Zero values",
         "Part 6: Type conversion",
-        "Part 7: If with a short statement"
+        "Part 7: If with a short statement",
+        "Part 8: for: the only loop in Go"
       ]
     },
     "python": {
@@ -299,6 +300,16 @@
       "style": "handwritten",
       "video": "2026-10-20_1600_educational-js-parseint-tiny-number.mp4",
       "status": "queued: github action (yt, ig, fb) for 16:00 IST"
+    },
+    {
+      "date": "2026-10-21 10:00",
+      "slot": "go",
+      "title": "Go has NO while loop?! | Go Part 8 #shorts",
+      "tone": "friendly teacher",
+      "hook_format": "bold-claim",
+      "style": "handwritten",
+      "video": "2026-10-21_1000_go-p08-for-only-loop.mp4",
+      "status": "scheduled: metricool 401763858 (fallback: yt, ig, fb; direct: none) for 10:00 IST"
     }
   ],
   "inspiring": {

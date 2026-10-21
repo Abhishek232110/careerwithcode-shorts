@@ -1,0 +1,17 @@
+{
+  "series_label": "Go Series · Part 8",
+  "hook": "Go has no while loop. None!",
+  "language": "Go",
+  "code_title": "for.go  your new while",
+  "code": [
+    "i := 1",
+    "for i <= 3 {",
+    "    fmt.Print(i, \" \")",
+    "    i++",
+    "}"
+  ],
+  "output": "1 2 3",
+  "takeaway": "for with just a condition IS your while.",
+  "cta": "Follow for Part 9 tomorrow",
+  "duration": 13
+}
