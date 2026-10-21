@@ -18,7 +18,8 @@
       "Agar Earth ghoomna band kar de toh?",
       "Agar Suraj gayab ho jaye toh?",
       "Agar insaan kabhi na soye toh?",
-      "Agar sab log ek saath kood padein toh?"
+      "Agar sab log ek saath kood padein toh?",
+      "Agar Chand aadhi doori pe aa jaye toh?"
     ]
   },
   "paisa": {
@@ -294,6 +295,16 @@
       "mood": "epic",
       "video": "curiositybox/shorts/2026-10-21_1400_whatif-sab-ek-saath-koodein.mp4",
       "status": "posted via Zapier: YouTube KmPJxgmfw8M, Facebook 2198503937413737"
+    },
+    {
+      "date": "2026-10-21 18:30",
+      "slot": "whatif",
+      "title": "Agar Chand Aadhi Doori Pe Aa Jaye Toh? Tides 8 Guna! #shorts",
+      "tone": "wonder, dramatic curiosity",
+      "hook_format": "shocking-fact",
+      "mood": "epic",
+      "video": "curiositybox/shorts/2026-10-21_1830_whatif-chand-aadhi-doori.mp4",
+      "status": "posted via Zapier: YouTube WSKxTIQoEq4; Facebook not posted (blocked by permission check)"
     }
   ]
 }
