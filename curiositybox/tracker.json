@@ -17,7 +17,8 @@
       "Agar Chand Gayab Ho Jaye Toh?",
       "Agar Earth ghoomna band kar de toh?",
       "Agar Suraj gayab ho jaye toh?",
-      "Agar insaan kabhi na soye toh?"
+      "Agar insaan kabhi na soye toh?",
+      "Agar sab log ek saath kood padein toh?"
     ]
   },
   "paisa": {
@@ -283,6 +284,16 @@
       "mood": "mysterious",
       "video": "2026-10-21_1600_kahani-kailasa-ellora.mp4",
       "status": "published via Zapier: yt AeT5FWX_3h4, fb 2610052852774378"
+    },
+    {
+      "date": "2026-10-21 14:00",
+      "slot": "whatif",
+      "title": "Sab Ek Saath Koodein Toh Earth Hilegi? Myth vs Fact #shorts",
+      "tone": "wonder, dramatic curiosity",
+      "hook_format": "myth-vs-fact",
+      "mood": "epic",
+      "video": "curiositybox/shorts/2026-10-21_1400_whatif-sab-ek-saath-koodein.mp4",
+      "status": "posted via Zapier: YouTube KmPJxgmfw8M, Facebook 2198503937413737"
     }
   ]
 }
