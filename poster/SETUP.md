@@ -24,6 +24,8 @@ Actions → New repository secret**.
 
 ---
 
+> No terminal? Follow `poster/SETUP-BROWSER.md` instead; it does the same setup entirely in a browser.
+
 ## Part A — YouTube (do this once per channel)
 
 Do it **signed in with the Gmail that owns the channel**:
