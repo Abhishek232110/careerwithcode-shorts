@@ -1,0 +1,14 @@
+{
+  "hook": "Myth: [[0]*3]*3 makes a 3x3 grid?",
+  "language": "Python",
+  "code_title": "change ONE cell...",
+  "code": [
+    "grid = [[0]*3]*3",
+    "grid[0][0] = 1",
+    "print(grid[1], grid[2])"
+  ],
+  "output": "[1, 0, 0] [1, 0, 0]",
+  "takeaway": "Same list, 3 times! Use [[0]*3 for _ in range(3)]",
+  "cta": "Comment GRID if this got you",
+  "duration": 13
+}

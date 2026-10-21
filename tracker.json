@@ -36,7 +36,8 @@
       "JavaScript: NaN === NaN is false, use Number.isNaN()",
       "JavaScript: typeof null is \"object\" (1995 bug)",
       "Python: round(2.5) == 2 (banker's rounding)",
-      "JavaScript: parseInt(0.0000005) returns 5 (5e-7)"
+      "JavaScript: parseInt(0.0000005) returns 5 (5e-7)",
+      "Python: [[0]*3]*3 shares one inner list"
     ]
   },
   "learn": {
@@ -310,6 +311,16 @@
       "style": "handwritten",
       "video": "2026-10-21_1000_go-p08-for-only-loop.mp4",
       "status": "scheduled: metricool 401763858 (fallback: yt, ig, fb; direct: none) for 10:00 IST"
+    },
+    {
+      "date": "2026-10-21 16:00",
+      "slot": "educational",
+      "title": "Myth: [[0]*3]*3 makes a 3x3 grid in Python? Nope #shorts",
+      "tone": "myth-buster",
+      "hook_format": "myth-vs-fact",
+      "style": "handwritten",
+      "video": "2026-10-21_1600_educational-python-list-multiply-shared.mp4",
+      "status": "scheduled: metricool 401975944 (fallback: yt, ig, fb; direct: none) for 16:00 IST"
     }
   ],
   "inspiring": {
