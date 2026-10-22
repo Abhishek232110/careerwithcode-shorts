@@ -1,0 +1,12 @@
+{
+  "hook": "Why does map(parseInt) give NaN?",
+  "language": "JavaScript",
+  "code_title": "looks harmless, right?",
+  "code": [
+    "['1','7','11'].map(parseInt)"
+  ],
+  "output": "[1, NaN, 3]",
+  "takeaway": "map passes the index as radix! Use .map(Number)",
+  "cta": "Comment NAN if this got you",
+  "duration": 13
+}

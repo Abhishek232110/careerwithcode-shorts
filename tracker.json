@@ -38,7 +38,8 @@
       "JavaScript: typeof null is \"object\" (1995 bug)",
       "Python: round(2.5) == 2 (banker's rounding)",
       "JavaScript: parseInt(0.0000005) returns 5 (5e-7)",
-      "Python: [[0]*3]*3 shares one inner list"
+      "Python: [[0]*3]*3 shares one inner list",
+      "JavaScript: ['1','7','11'].map(parseInt) gives [1, NaN, 3] (index as radix)"
     ]
   },
   "learn": {
@@ -331,6 +332,16 @@
       "hook_format": "question",
       "style": "handwritten",
       "video": "2026-10-22_1000_go-p09-range-loops.mp4",
+      "status": "not posted: not connected in Zapier (YouTube connection reaches CuriosityBox UCtJ6818H8WuXS071samDcPA, not UCZ6m5Lh_vmFjOLL_RAHNTxw; Facebook connection lists only page 1380858578445805, not 926523670552408); instagram skipped (not in Zapier)"
+    },
+    {
+      "date": "2026-10-22 16:00",
+      "slot": "educational",
+      "title": "Why does map(parseInt) give NaN in JavaScript? #shorts",
+      "tone": "myth-buster",
+      "hook_format": "question",
+      "style": "handwritten",
+      "video": "2026-10-22_1600_educational-js-map-parseint-nan.mp4",
       "status": "not posted: not connected in Zapier (YouTube connection reaches CuriosityBox UCtJ6818H8WuXS071samDcPA, not UCZ6m5Lh_vmFjOLL_RAHNTxw; Facebook connection lists only page 1380858578445805, not 926523670552408); instagram skipped (not in Zapier)"
     }
   ],
