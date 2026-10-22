@@ -40,7 +40,8 @@
       "Voynich Manuscript: 600 saal se undeciphered",
       "Ram Setu 5 din mein bana (Valmiki Ramayan)",
       "Great Emu War 1932: army vs emus (Australia)",
-      "Kailasa Mandir Ellora: ek chattan, upar se neeche"
+      "Kailasa Mandir Ellora: ek chattan, upar se neeche",
+      "1752: Britain ke calendar se 11 din gayab (Julian to Gregorian)"
     ]
   },
   "log": [
@@ -316,6 +317,16 @@
       "mood": "upbeat",
       "video": "curiositybox/shorts/2026-10-22_1000_ai-google-photos-magic-eraser.mp4",
       "status": "posted via Zapier: YouTube X4971JyexHw, Facebook 1988435815166341"
+    },
+    {
+      "date": "2026-10-22 16:00",
+      "slot": "kahani",
+      "title": "Britain Ke Calendar Se 11 Din Gayab! Saal 1752 #shorts",
+      "tone": "storyteller, suspense",
+      "hook_format": "shocking-fact",
+      "mood": "mysterious",
+      "video": "2026-10-22_1600_kahani-1752-gayab-11-din.mp4",
+      "status": "published via Zapier: yt 2BmwRUZcZnE, fb 2647896775682598"
     }
   ]
 }
