@@ -2,7 +2,7 @@
   "_note": "Updated automatically after every post. Edit next_part to jump a series forward/back.",
   "series": {
     "go": {
-      "next_part": 9,
+      "next_part": 10,
       "posted": [
         "Part 1: Hello World and package main",
         "Part 2: Variables: var vs :=",
@@ -11,7 +11,8 @@
         "Part 5: Zero values",
         "Part 6: Type conversion",
         "Part 7: If with a short statement",
-        "Part 8: for: the only loop in Go"
+        "Part 8: for: the only loop in Go",
+        "Part 9: Range loops"
       ]
     },
     "python": {
@@ -321,6 +322,16 @@
       "style": "handwritten",
       "video": "2026-10-21_1600_educational-python-list-multiply-shared.mp4",
       "status": "scheduled: metricool 401975944 (fallback: yt, ig, fb; direct: none) for 16:00 IST"
+    },
+    {
+      "date": "2026-10-22 10:00",
+      "slot": "go",
+      "title": "Still counting with i++ in Go? | Go Part 9 #shorts",
+      "tone": "friendly teacher",
+      "hook_format": "question",
+      "style": "handwritten",
+      "video": "2026-10-22_1000_go-p09-range-loops.mp4",
+      "status": "not posted: not connected in Zapier (YouTube connection reaches CuriosityBox UCtJ6818H8WuXS071samDcPA, not UCZ6m5Lh_vmFjOLL_RAHNTxw; Facebook connection lists only page 1380858578445805, not 926523670552408); instagram skipped (not in Zapier)"
     }
   ],
   "inspiring": {

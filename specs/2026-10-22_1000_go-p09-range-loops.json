@@ -1,0 +1,16 @@
+{
+  "series_label": "Go Series · Part 9",
+  "hook": "Still counting with i++ in Go?",
+  "language": "Go",
+  "code_title": "range.go",
+  "code": [
+    "xs := []string{\"Go\", \"Py\", \"JS\"}",
+    "for i, x := range xs {",
+    "    fmt.Println(i, x)",
+    "}"
+  ],
+  "output": "0 Go | 1 Py | 2 JS",
+  "takeaway": "range hands you the index AND the value.",
+  "cta": "Follow for Part 10 tomorrow",
+  "duration": 14
+}
