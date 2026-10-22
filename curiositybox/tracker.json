@@ -9,7 +9,8 @@
       "ChatGPT Temporary Chat: history/training/memory off",
       "AI voice cloning scam: family secret code word",
       "Google Translate Live translate: live baat 70+ bhashaon mein",
-      "Google Hum to Search: gungunao aur gaana dhundo"
+      "Google Hum to Search: gungunao aur gaana dhundo",
+      "Google Photos Magic Eraser: photo se unwanted log/cheez hatao (free)"
     ]
   },
   "whatif": {
@@ -305,6 +306,16 @@
       "mood": "epic",
       "video": "curiositybox/shorts/2026-10-21_1830_whatif-chand-aadhi-doori.mp4",
       "status": "posted via Zapier: YouTube WSKxTIQoEq4; Facebook 1095757123039431 (posted by the thread session)"
+    },
+    {
+      "date": "2026-10-22 10:00",
+      "slot": "ai",
+      "title": "Photo Se Anjaan Log Gayab! Google Photos Magic Eraser Trick #shorts",
+      "tone": "practical quick win",
+      "hook_format": "shocking-fact",
+      "mood": "upbeat",
+      "video": "curiositybox/shorts/2026-10-22_1000_ai-google-photos-magic-eraser.mp4",
+      "status": "posted via Zapier: YouTube X4971JyexHw, Facebook 1988435815166341"
     }
   ]
 }
