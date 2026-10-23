@@ -1,0 +1,14 @@
+{
+  "hook": "Myth: COUNT(email) counts every row?",
+  "language": "SQL",
+  "code_title": "3 users, one email is NULL",
+  "code": [
+    "SELECT COUNT(*),",
+    "       COUNT(email)",
+    "FROM users;"
+  ],
+  "output": "3 | 2",
+  "takeaway": "COUNT(col) skips NULLs. Want rows? Use COUNT(*)",
+  "cta": "Comment NULL if this fooled you",
+  "duration": 13
+}
