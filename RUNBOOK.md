@@ -1,8 +1,8 @@
 # CareerWithCode Shorts — run instructions
 
 Each scheduled run makes ONE Short of **20–30 seconds** for ONE slot and posts it publicly to YouTube (Short),
-Instagram (Reel) and Facebook (Reel): directly via the repo's GitHub Action for every platform
-whose token is set up, Metricool only as a temporary fallback for the rest (step 6).
+Facebook (Reel) through **Zapier only** (step 6). Metricool is no longer used. Instagram is
+skipped because Zapier can't post to it.
 
 | Slot (IST) | `SLOT` value   | Content |
 |-----------|----------------|---------|
@@ -79,38 +79,38 @@ caption with an engaging question or "comment X" prompt to grow reach.
 5. **Upload:** `./publish_video.sh shorts/<name>.mp4` → commits the video to `shorts/`
    on main (every video is kept in the repo permanently) and prints its public URL.
 
-6. **Post.** First run `python3 poster/route.py careerwithcode`. It prints which platforms
-   post **directly** (the repo's "Post Shorts" GitHub Action, official APIs) and which still
-   need the temporary **fallback** (Metricool) because their token hasn't been added yet.
-   Each platform goes through exactly ONE of the two paths, never both.
+6. **Post through Zapier only.** Never use Metricool, `poster/route.py` or `poster/queue_post.py`.
+   Load the Zapier tools with ToolSearch (`select:mcp__Zapier__list_zapier_connections,mcp__Zapier__inspect_zapier_actions,mcp__Zapier__execute_zapier_write_action,mcp__Zapier__execute_zapier_read_action`).
+   Targets — use exactly these, never any other channel or page:
+   - YouTube channel **CareerWithCode**, id `UCZ6m5Lh_vmFjOLL_RAHNTxw`
+   - Facebook page **CareerWithCode**, page id `926523670552408`
+   Never post to the CuriosityBox channel `UCtJ6818H8WuXS071samDcPA` or page `1380858578445805`.
 
-   a. **Direct platforms** (if the `direct` list is not empty):
-      ```bash
-      python3 poster/queue_post.py --channel careerwithcode --platforms <direct, comma-separated> \
-        --video shorts/<name>.mp4 --time "<YYYY-MM-DD> <HH:MM>" \
-        --title "<≤ 90 chars, ends with #shorts>" \
-        --caption "<1–2 line caption>\n\n<5–8 hashtags: #shorts #coding #programming #<language> …>" \
-        --fb-caption "<same caption, #reels instead of #shorts>" \
-        --tags "<comma,separated,tags>"
-      ```
-      `--time` is the slot time in IST (if passed, it posts in 3 minutes). Never queue the
-      same video twice. Results land in `queue/done/careerwithcode/<name>.json`.
+   **Check the connections first.** List the `YouTubeV4CLIAPI` connections and, for each, read
+   the channel it reaches (YouTube `channels?mine=true`); use only the connection whose channel id
+   is `UCZ6m5Lh_vmFjOLL_RAHNTxw`, passing its `connection_id`. For Facebook, check that page
+   `926523670552408` is in the `page` dropdown of `facebook_pages_create_page_video`. If a
+   CareerWithCode account isn't connected, don't post to it: keep the video and record
+   "not posted: not connected in Zapier" for that platform.
 
-   b. **Fallback platforms** (only if the `fallback` list is not empty): Metricool
-      `createScheduledPost` with ONLY those platforms in `providers`:
-      - `blogId`: `7393281`
-      - `date`: today at the slot time (e.g. 10:00:00+05:30); if it has passed, now + 3 minutes.
-      - `info`: `providers` (fallback platforms only, e.g. `[{"network":"instagram"}]`),
-        `media`: `[<video URL from step 5>]`,
-        `publicationDate`: `{"dateTime": "<same time, no offset>", "timezone": "Asia/Calcutta"}`,
-        `text`: caption + hashtags, `autoPublish`: true, `draft`: false,
-        `youtubeData`: `{"title": "<title>", "type": "short", "privacy": "public",
-        "madeForKids": false, "category": "EDUCATION", "tags": [...], "isAiGeneratedContent": false}`
-        (only if youtube is in fallback), `instagramData`: `{"type": "REEL", "showReelOnFeed": true}`,
-        `facebookData`: `{"type": "REEL"}`.
-      - If Metricool rejects it, fix the field and retry once; if it still fails, report the error.
+   Runs start ~15 min early. Wait (sleep) until the slot time before posting, because Zapier
+   publishes immediately. If the slot time has already passed, post right away.
 
-   Record in the tracker status which path each platform used.
+   a. **YouTube:** `execute_zapier_write_action` with `selected_api: "YouTubeV4CLIAPI"`,
+      `action: "upload_video"`, `tool_name: "youtube_upload_video"`, the CareerWithCode
+      `connection_id`, params: `title` (<= 90 chars, ends with #shorts), `description`
+      (caption + 5–8 hashtags: #shorts #coding #programming #<language> …), `video` (the public URL
+      from step 5), `privacy_status: "public"`, `made_for_kids: "false"`, `category_id: "27"`
+      (Education), `tags` (list), `notify_subscribers: "true"`.
+      Check the result's `channelId` is `UCZ6m5Lh_vmFjOLL_RAHNTxw`; record the video `id`.
+   b. **Facebook:** `execute_zapier_write_action` with `selected_api: "FacebookV2CLIAPI"`,
+      `action: "page_video"`, `tool_name: "facebook_pages_create_page_video"`, params:
+      `page: "926523670552408"`, `source` (same video URL), `title`, `description` (same caption,
+      #reels instead of #shorts). Record the returned `id`.
+   - If an action fails, fix the reported field and retry once. If it still fails, record the
+     error. If Zapier reports the monthly task limit is reached, do not retry; record
+     "not posted: Zapier task limit reached".
+   - Never post the same video twice: if step a succeeded and b fails, retry only b.
 
 7. **Update the tracker** (`tracker.json`):
    - series slots: `next_part += 1`, append `"Part N: <topic>"` to `posted`
@@ -120,4 +120,4 @@ caption with an engaging question or "comment X" prompt to grow reach.
    Then: `git add specs tracker.json curriculum.json && git commit -m "<date> <slot>: <topic>"`,
    `git pull --rebase origin main`, `git push origin main`.
 
-8. **Finish** with a one-line summary: slot, title, and how each platform was posted (direct / fallback).
+8. **Finish** with a one-line summary: slot, title, YouTube video id and Facebook post id (or why a platform wasn't posted).
