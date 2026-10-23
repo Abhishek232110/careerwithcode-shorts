@@ -42,7 +42,8 @@
       "Ram Setu 5 din mein bana (Valmiki Ramayan)",
       "Great Emu War 1932: army vs emus (Australia)",
       "Kailasa Mandir Ellora: ek chattan, upar se neeche",
-      "1752: Britain ke calendar se 11 din gayab (Julian to Gregorian)"
+      "1752: Britain ke calendar se 11 din gayab (Julian to Gregorian)",
+      "Anglo-Zanzibar War 1896: sabse chhoti jung (38-45 min)"
     ]
   },
   "log": [
@@ -347,6 +348,16 @@
       "mood": "upbeat",
       "video": "curiositybox/shorts/2026-10-23_1000_ai-gemini-live-camera.mp4",
       "status": "posted via Zapier: YouTube KUz2l04-zB4, Facebook 1103992829100344"
+    },
+    {
+      "date": "2026-10-23 20:00",
+      "slot": "kahani",
+      "title": "Duniya Ki Sabse Chhoti Jung Kitni Lambi? 1896 Zanzibar #shorts",
+      "tone": "storyteller, suspense",
+      "hook_format": "question",
+      "mood": "epic",
+      "video": "2026-10-23_2000_kahani-sabse-chhoti-jung.mp4",
+      "status": "published via Zapier: yt 2SqZ7ra8Tv4, fb 4540537709522735"
     }
   ]
 }
