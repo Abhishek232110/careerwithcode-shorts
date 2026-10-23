@@ -1,6 +1,6 @@
 # CareerWithCode Shorts — run instructions
 
-Each scheduled run makes ONE Short of **20–30 seconds** for ONE slot and posts it publicly to YouTube (Short),
+Each scheduled run makes ONE Short of **20–30 seconds** for ONE slot and posts it publicly to YouTube (Short) and
 Facebook (Reel) through **Zapier only** (step 6). Metricool is no longer used. Instagram is
 skipped because Zapier can't post to it.
 
