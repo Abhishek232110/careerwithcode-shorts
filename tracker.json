@@ -2,7 +2,7 @@
   "_note": "Updated automatically after every post. Edit next_part to jump a series forward/back.",
   "series": {
     "go": {
-      "next_part": 10,
+      "next_part": 11,
       "posted": [
         "Part 1: Hello World and package main",
         "Part 2: Variables: var vs :=",
@@ -12,7 +12,8 @@
         "Part 6: Type conversion",
         "Part 7: If with a short statement",
         "Part 8: for: the only loop in Go",
-        "Part 9: Range loops"
+        "Part 9: Range loops",
+        "Part 10: Switch without break"
       ]
     },
     "python": {
@@ -342,6 +343,16 @@
       "hook_format": "question",
       "style": "handwritten",
       "video": "2026-10-22_1600_educational-js-map-parseint-nan.mp4",
+      "status": "not posted: not connected in Zapier (YouTube connection reaches CuriosityBox UCtJ6818H8WuXS071samDcPA, not UCZ6m5Lh_vmFjOLL_RAHNTxw; Facebook connection lists only page 1380858578445805, not 926523670552408); instagram skipped (not in Zapier)"
+    },
+    {
+      "date": "2026-10-23 10:00",
+      "slot": "go",
+      "title": "Go's switch never needs break! | Go Part 10 #shorts",
+      "tone": "friendly teacher",
+      "hook_format": "bold-claim",
+      "style": "handwritten",
+      "video": "2026-10-23_1000_go-p10-switch-no-break.mp4",
       "status": "not posted: not connected in Zapier (YouTube connection reaches CuriosityBox UCtJ6818H8WuXS071samDcPA, not UCZ6m5Lh_vmFjOLL_RAHNTxw; Facebook connection lists only page 1380858578445805, not 926523670552408); instagram skipped (not in Zapier)"
     }
   ],

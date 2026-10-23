@@ -1,0 +1,18 @@
+{
+  "series_label": "Go Series · Part 10",
+  "hook": "Go's switch never needs break!",
+  "language": "Go",
+  "code_title": "switch.go",
+  "code": [
+    "switch day := \"Sun\"; day {",
+    "case \"Sat\", \"Sun\":",
+    "    fmt.Println(\"Weekend!\")",
+    "default:",
+    "    fmt.Println(\"Workday\")",
+    "}"
+  ],
+  "output": "Weekend!",
+  "takeaway": "Each case stops on its own. No break, no bugs.",
+  "cta": "See you in Part 11 tomorrow!",
+  "duration": 14
+}
