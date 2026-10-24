@@ -44,7 +44,8 @@
       "Great Emu War 1932: army vs emus (Australia)",
       "Kailasa Mandir Ellora: ek chattan, upar se neeche",
       "1752: Britain ke calendar se 11 din gayab (Julian to Gregorian)",
-      "Anglo-Zanzibar War 1896: sabse chhoti jung (38-45 min)"
+      "Anglo-Zanzibar War 1896: sabse chhoti jung (38-45 min)",
+      "Japan islands recount 2023: 6852 se 14125"
     ]
   },
   "log": [
@@ -369,6 +370,16 @@
       "mood": "upbeat",
       "video": "curiositybox/shorts/2026-10-24_1000_ai-10-saal-bacche-prompt.mp4",
       "status": "posted via Zapier: YouTube PR9RxGSRjwE, Facebook 1650814006678136"
+    },
+    {
+      "date": "2026-10-24 20:00",
+      "slot": "kahani",
+      "title": "Japan Mein Kitne Islands? 6852 Nahi, 14125! #shorts",
+      "tone": "storyteller, suspense",
+      "hook_format": "myth-vs-fact",
+      "mood": "mysterious",
+      "video": "2026-10-24_2000_kahani-japan-14125-islands.mp4",
+      "status": "published via Zapier: yt XpqshbXrCRY, fb 863310296838160"
     }
   ]
 }
