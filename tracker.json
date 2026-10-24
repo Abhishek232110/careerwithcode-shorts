@@ -42,7 +42,8 @@
       "JavaScript: parseInt(0.0000005) returns 5 (5e-7)",
       "Python: [[0]*3]*3 shares one inner list",
       "JavaScript: ['1','7','11'].map(parseInt) gives [1, NaN, 3] (index as radix)",
-      "SQL: COUNT(col) skips NULLs, use COUNT(*) for rows"
+      "SQL: COUNT(col) skips NULLs, use COUNT(*) for rows",
+      "Python: bool(\"False\") is True (non-empty strings are truthy)"
     ]
   },
   "learn": {
@@ -374,6 +375,15 @@
       "hook_format": "question",
       "style": "handwritten",
       "video": "2026-10-24_1000_go-p11-multiple-returns.mp4",
+      "status": "not posted: not connected in Zapier (YouTube connection reaches CuriosityBox UCtJ6818H8WuXS071samDcPA, not UCZ6m5Lh_vmFjOLL_RAHNTxw; Facebook connection lists only page 1380858578445805, not 926523670552408); instagram skipped (not in Zapier)"
+    },
+    {
+      "date": "2026-10-24 20:00",
+      "slot": "educational",
+      "title": "Why is bool(\"False\") True in Python? #shorts",
+      "tone": "myth-buster / surprising",
+      "hook_format": "question",
+      "video": "2026-10-24_2000_educational-python-bool-false-string.mp4",
       "status": "not posted: not connected in Zapier (YouTube connection reaches CuriosityBox UCtJ6818H8WuXS071samDcPA, not UCZ6m5Lh_vmFjOLL_RAHNTxw; Facebook connection lists only page 1380858578445805, not 926523670552408); instagram skipped (not in Zapier)"
     }
   ],

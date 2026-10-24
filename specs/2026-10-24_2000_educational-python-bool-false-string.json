@@ -1,0 +1,13 @@
+{
+  "hook": "Why is bool(\"False\") True in Python?",
+  "language": "Python",
+  "code_title": "Looks false... isn't",
+  "code": [
+    "print(bool(\"False\"))",
+    "print(bool(\"\"))"
+  ],
+  "output": "True, False",
+  "takeaway": "Any non-empty string is True. Even \"False\"",
+  "cta": "Comment TRUE if this got you",
+  "duration": 13
+}
