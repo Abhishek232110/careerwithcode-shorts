@@ -46,7 +46,8 @@
       "Kailasa Mandir Ellora: ek chattan, upar se neeche",
       "1752: Britain ke calendar se 11 din gayab (Julian to Gregorian)",
       "Anglo-Zanzibar War 1896: sabse chhoti jung (38-45 min)",
-      "Japan islands recount 2023: 6852 se 14125"
+      "Japan islands recount 2023: 6852 se 14125",
+      "Bhishma 58 raatein teeron ki shaiyya par (Mahabharat)"
     ]
   },
   "log": [
@@ -391,6 +392,16 @@
       "mood": "upbeat",
       "video": "curiositybox/shorts/2026-10-25_1000_ai-myth-ai-hamesha-sahi.mp4",
       "status": "posted via Zapier: YouTube T7dG8-VWIvE, Facebook 4582809658670565"
+    },
+    {
+      "date": "2026-10-25 20:00",
+      "slot": "kahani",
+      "title": "Teeron Ki Shaiyya Par 58 Raatein? Bhishma Ki Kahani #shorts",
+      "tone": "storyteller, suspense",
+      "hook_format": "question",
+      "mood": "mysterious",
+      "video": "2026-10-25_2000_kahani-bhishma-58-raatein.mp4",
+      "status": "published via Zapier: yt UzqDJEui2UQ, fb 1482691427035985"
     }
   ]
 }
