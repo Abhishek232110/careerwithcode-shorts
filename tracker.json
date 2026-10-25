@@ -44,7 +44,8 @@
       "Python: [[0]*3]*3 shares one inner list",
       "JavaScript: ['1','7','11'].map(parseInt) gives [1, NaN, 3] (index as radix)",
       "SQL: COUNT(col) skips NULLs, use COUNT(*) for rows",
-      "Python: bool(\"False\") is True (non-empty strings are truthy)"
+      "Python: bool(\"False\") is True (non-empty strings are truthy)",
+      "Python: -7 // 2 is -4 (floor division rounds toward -infinity)"
     ]
   },
   "learn": {
@@ -395,6 +396,15 @@
       "hook_format": "bold-claim",
       "style": "handwritten",
       "video": "2026-10-25_1000_go-p12-named-returns.mp4",
+      "status": "not posted: not connected in Zapier (YouTube connection reaches CuriosityBox UCtJ6818H8WuXS071samDcPA, not UCZ6m5Lh_vmFjOLL_RAHNTxw; Facebook connection lists only page 1380858578445805, not 926523670552408); instagram skipped (not in Zapier)"
+    },
+    {
+      "date": "2026-10-25 20:00",
+      "slot": "educational",
+      "title": "Myth: -7 // 2 is -3 in Python? Nope #shorts",
+      "tone": "myth-buster / surprising",
+      "hook_format": "myth-vs-fact",
+      "video": "2026-10-25_2000_educational-python-floor-division-negative.mp4",
       "status": "not posted: not connected in Zapier (YouTube connection reaches CuriosityBox UCtJ6818H8WuXS071samDcPA, not UCZ6m5Lh_vmFjOLL_RAHNTxw; Facebook connection lists only page 1380858578445805, not 926523670552408); instagram skipped (not in Zapier)"
     }
   ],

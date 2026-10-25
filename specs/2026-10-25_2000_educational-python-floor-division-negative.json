@@ -1,0 +1,13 @@
+{
+  "hook": "Myth: -7 // 2 is -3 in Python?",
+  "language": "Python",
+  "code_title": "Floor, not chop",
+  "code": [
+    "print(-7 // 2)",
+    "print(int(-7 / 2))"
+  ],
+  "output": "-4, -3",
+  "takeaway": "// rounds down to minus infinity. Not toward 0!",
+  "cta": "Comment -4 if this got you",
+  "duration": 13
+}
