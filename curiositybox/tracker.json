@@ -12,7 +12,8 @@
       "Google Hum to Search: gungunao aur gaana dhundo",
       "Google Photos Magic Eraser: photo se unwanted log/cheez hatao (free)",
       "Gemini Live camera: camera on karke Hindi mein sawaal (free on Android)",
-      "Prompt trick: \"10 saal ke bacche ki tarah samjhao\" (ChatGPT/Gemini)"
+      "Prompt trick: \"10 saal ke bacche ki tarah samjhao\" (ChatGPT/Gemini)",
+      "Myth: AI hamesha sahi hota hai (ChatGPT/Gemini galti kar sakte hain, verify karo)"
     ]
   },
   "whatif": {
@@ -380,6 +381,16 @@
       "mood": "mysterious",
       "video": "2026-10-24_2000_kahani-japan-14125-islands.mp4",
       "status": "published via Zapier: yt XpqshbXrCRY, fb 863310296838160"
+    },
+    {
+      "date": "2026-10-25 10:00",
+      "slot": "ai",
+      "title": "AI Hamesha Sahi Bolta Hai? Ye Myth Hai! #shorts",
+      "tone": "practical quick win",
+      "hook_format": "myth-vs-fact",
+      "mood": "upbeat",
+      "video": "curiositybox/shorts/2026-10-25_1000_ai-myth-ai-hamesha-sahi.mp4",
+      "status": "posted via Zapier: YouTube T7dG8-VWIvE, Facebook 4582809658670565"
     }
   ]
 }
