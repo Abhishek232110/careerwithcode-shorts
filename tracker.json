@@ -2,7 +2,7 @@
   "_note": "Updated automatically after every post. Edit next_part to jump a series forward/back.",
   "series": {
     "go": {
-      "next_part": 12,
+      "next_part": 13,
       "posted": [
         "Part 1: Hello World and package main",
         "Part 2: Variables: var vs :=",
@@ -14,7 +14,8 @@
         "Part 8: for: the only loop in Go",
         "Part 9: Range loops",
         "Part 10: Switch without break",
-        "Part 11: Functions with multiple return values"
+        "Part 11: Functions with multiple return values",
+        "Part 12: Named return values"
       ]
     },
     "python": {
@@ -384,6 +385,16 @@
       "tone": "myth-buster / surprising",
       "hook_format": "question",
       "video": "2026-10-24_2000_educational-python-bool-false-string.mp4",
+      "status": "not posted: not connected in Zapier (YouTube connection reaches CuriosityBox UCtJ6818H8WuXS071samDcPA, not UCZ6m5Lh_vmFjOLL_RAHNTxw; Facebook connection lists only page 1380858578445805, not 926523670552408); instagram skipped (not in Zapier)"
+    },
+    {
+      "date": "2026-10-25 10:00",
+      "slot": "go",
+      "title": "This Go return has no values. It works! | Go Part 12 #shorts",
+      "tone": "friendly teacher",
+      "hook_format": "bold-claim",
+      "style": "handwritten",
+      "video": "2026-10-25_1000_go-p12-named-returns.mp4",
       "status": "not posted: not connected in Zapier (YouTube connection reaches CuriosityBox UCtJ6818H8WuXS071samDcPA, not UCZ6m5Lh_vmFjOLL_RAHNTxw; Facebook connection lists only page 1380858578445805, not 926523670552408); instagram skipped (not in Zapier)"
     }
   ],
