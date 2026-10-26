@@ -46,7 +46,8 @@
       "JavaScript: ['1','7','11'].map(parseInt) gives [1, NaN, 3] (index as radix)",
       "SQL: COUNT(col) skips NULLs, use COUNT(*) for rows",
       "Python: bool(\"False\") is True (non-empty strings are truthy)",
-      "Python: -7 // 2 is -4 (floor division rounds toward -infinity)"
+      "Python: -7 // 2 is -4 (floor division rounds toward -infinity)",
+      "JavaScript: Math.min() > Math.max() is true (empty max is -Infinity)"
     ]
   },
   "learn": {
@@ -416,6 +417,15 @@
       "hook_format": "question",
       "style": "handwritten",
       "video": "2026-10-26_1000_go-p13-variadic-functions.mp4",
+      "status": "not posted: not connected in Zapier (YouTube connection reaches CuriosityBox UCtJ6818H8WuXS071samDcPA, not UCZ6m5Lh_vmFjOLL_RAHNTxw; Facebook connection lists only page 1380858578445805, not 926523670552408); instagram skipped (not in Zapier)"
+    },
+    {
+      "date": "2026-10-26 20:00",
+      "slot": "educational",
+      "title": "Why is Math.min() bigger than Math.max() in JS? #shorts",
+      "tone": "myth-buster / surprising",
+      "hook_format": "question",
+      "video": "2026-10-26_2000_educational-js-math-max-empty.mp4",
       "status": "not posted: not connected in Zapier (YouTube connection reaches CuriosityBox UCtJ6818H8WuXS071samDcPA, not UCZ6m5Lh_vmFjOLL_RAHNTxw; Facebook connection lists only page 1380858578445805, not 926523670552408); instagram skipped (not in Zapier)"
     }
   ],

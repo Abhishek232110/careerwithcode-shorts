@@ -1,0 +1,14 @@
+{
+  "hook": "Why is Math.min() bigger than Math.max()?",
+  "language": "JavaScript",
+  "code_title": "No args? Wild.",
+  "code": [
+    "Math.max()  // -Infinity",
+    "Math.min()  // Infinity",
+    "Math.min() > Math.max()"
+  ],
+  "output": "true",
+  "takeaway": "Empty max starts at -Infinity, so any number beats it.",
+  "cta": "Comment 'wild' if you didn't know",
+  "duration": 13
+}
