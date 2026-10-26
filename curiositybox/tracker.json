@@ -48,7 +48,8 @@
       "1752: Britain ke calendar se 11 din gayab (Julian to Gregorian)",
       "Anglo-Zanzibar War 1896: sabse chhoti jung (38-45 min)",
       "Japan islands recount 2023: 6852 se 14125",
-      "Bhishma 58 raatein teeron ki shaiyya par (Mahabharat)"
+      "Bhishma 58 raatein teeron ki shaiyya par (Mahabharat)",
+      "Strasbourg Dancing Plague 1518: officials ne musicians bulaye"
     ]
   },
   "log": [
@@ -413,6 +414,16 @@
       "mood": "upbeat",
       "video": "curiositybox/shorts/2026-10-26_1000_ai-gemini-youtube-summary.mp4",
       "status": "posted via Zapier: YouTube -5hS_KmnmIY (09:57 IST, ~3 min early), Facebook 1168264505643184"
+    },
+    {
+      "date": "2026-10-26 20:00",
+      "slot": "kahani",
+      "title": "Saal 1518: Log Naachte Hi Rahe! Dancing Plague #shorts",
+      "tone": "storyteller, suspense",
+      "hook_format": "story-open",
+      "mood": "mysterious",
+      "video": "2026-10-26_2000_kahani-1518-dancing-plague.mp4",
+      "status": "published via Zapier: yt XdN1UoX9Hug, fb 1109324028507577"
     }
   ]
 }
