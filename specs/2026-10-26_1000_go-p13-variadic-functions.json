@@ -1,0 +1,20 @@
+{
+  "series_label": "Go Series · Part 13",
+  "hook": "Can one Go function take ANY number of args?",
+  "language": "Go",
+  "code_title": "sum.go",
+  "code": [
+    "func sum(nums ...int) int {",
+    "    total := 0",
+    "    for _, n := range nums {",
+    "        total += n",
+    "    }",
+    "    return total",
+    "}",
+    "fmt.Println(sum(1, 2, 3))"
+  ],
+  "output": "6",
+  "takeaway": "Put ... before the type, and you get a slice.",
+  "cta": "Part 14 tomorrow: defer!",
+  "duration": 14
+}

@@ -2,7 +2,7 @@
   "_note": "Updated automatically after every post. Edit next_part to jump a series forward/back.",
   "series": {
     "go": {
-      "next_part": 13,
+      "next_part": 14,
       "posted": [
         "Part 1: Hello World and package main",
         "Part 2: Variables: var vs :=",
@@ -15,7 +15,8 @@
         "Part 9: Range loops",
         "Part 10: Switch without break",
         "Part 11: Functions with multiple return values",
-        "Part 12: Named return values"
+        "Part 12: Named return values",
+        "Part 13: Variadic functions"
       ]
     },
     "python": {
@@ -405,6 +406,16 @@
       "tone": "myth-buster / surprising",
       "hook_format": "myth-vs-fact",
       "video": "2026-10-25_2000_educational-python-floor-division-negative.mp4",
+      "status": "not posted: not connected in Zapier (YouTube connection reaches CuriosityBox UCtJ6818H8WuXS071samDcPA, not UCZ6m5Lh_vmFjOLL_RAHNTxw; Facebook connection lists only page 1380858578445805, not 926523670552408); instagram skipped (not in Zapier)"
+    },
+    {
+      "date": "2026-10-26 10:00",
+      "slot": "go",
+      "title": "Can one Go function take ANY number of args? | Go Part 13 #shorts",
+      "tone": "friendly teacher",
+      "hook_format": "question",
+      "style": "handwritten",
+      "video": "2026-10-26_1000_go-p13-variadic-functions.mp4",
       "status": "not posted: not connected in Zapier (YouTube connection reaches CuriosityBox UCtJ6818H8WuXS071samDcPA, not UCZ6m5Lh_vmFjOLL_RAHNTxw; Facebook connection lists only page 1380858578445805, not 926523670552408); instagram skipped (not in Zapier)"
     }
   ],
