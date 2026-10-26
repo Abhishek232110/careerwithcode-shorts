@@ -13,7 +13,8 @@
       "Google Photos Magic Eraser: photo se unwanted log/cheez hatao (free)",
       "Gemini Live camera: camera on karke Hindi mein sawaal (free on Android)",
       "Prompt trick: \"10 saal ke bacche ki tarah samjhao\" (ChatGPT/Gemini)",
-      "Myth: AI hamesha sahi hota hai (ChatGPT/Gemini galti kar sakte hain, verify karo)"
+      "Myth: AI hamesha sahi hota hai (ChatGPT/Gemini galti kar sakte hain, verify karo)",
+      "Gemini se YouTube video ka summary (link paste karo, Hindi summary maango)"
     ]
   },
   "whatif": {
@@ -402,6 +403,16 @@
       "mood": "mysterious",
       "video": "2026-10-25_2000_kahani-bhishma-58-raatein.mp4",
       "status": "published via Zapier: yt UzqDJEui2UQ, fb 1482691427035985"
+    },
+    {
+      "date": "2026-10-26 10:00",
+      "slot": "ai",
+      "title": "Lambi Video, Sirf 1 Minute Mein? Gemini Summary Trick #shorts",
+      "tone": "practical quick win",
+      "hook_format": "question",
+      "mood": "upbeat",
+      "video": "curiositybox/shorts/2026-10-26_1000_ai-gemini-youtube-summary.mp4",
+      "status": "posted via Zapier: YouTube -5hS_KmnmIY (09:57 IST, ~3 min early), Facebook 1168264505643184"
     }
   ]
 }
