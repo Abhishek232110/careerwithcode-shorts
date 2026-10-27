@@ -88,10 +88,12 @@ publicly to **YouTube (Short)** and **Facebook** (step 6).
    `poster/route.py` or `poster/queue_post.py`.
    Load the Zapier tools with ToolSearch (`select:mcp__Zapier__inspect_zapier_actions,mcp__Zapier__execute_zapier_write_action,mcp__Zapier__execute_zapier_read_action`).
    Fixed, verified targets — use exactly these, never any other channel or page:
-   - YouTube channel **CuriosityBox | Hindi Facts & Stories**, id `UCtJ6818H8WuXS071samDcPA`
-     (Zapier connection `02f81f1b-fb53-829a-8a1a-2ec5c7132037`, the default)
+   - YouTube channel **CuriosityBox | Hindi Facts & Stories**, id `UCtJ6818H8WuXS071samDcPA`.
+     The Zapier YouTube default connection is **CareerWithCode**, so never upload without an explicit
+     `connection_id`: check each YouTube connection with `channels?part=snippet&mine=true` and use only
+     the one that returns `UCtJ6818H8WuXS071samDcPA`. If none does, skip YouTube and record why.
    - Facebook page **CuriosityBox Hindi Facts & Stories**, page id `1380858578445805`
-     (Zapier connection `02674053-085b-8da8-bb95-8d1f812207a6`, the default)
+     (Zapier connection `0255d81b-a11a-8f8c-9c7a-002223e547ee`)
 
    Runs start ~20 min early. Wait (sleep) until the slot time before posting, because Zapier
    publishes immediately. If the slot time has already passed, post right away.

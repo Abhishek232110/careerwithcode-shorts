@@ -86,9 +86,10 @@ caption with an engaging question or "comment X" prompt to grow reach.
    - Facebook page **CareerWithCode**, page id `926523670552408`
    Never post to the CuriosityBox channel `UCtJ6818H8WuXS071samDcPA` or page `1380858578445805`.
 
-   **Check the connections first.** List the `YouTubeV4CLIAPI` connections and, for each, read
-   the channel it reaches (YouTube `channels?mine=true`); use only the connection whose channel id
-   is `UCZ6m5Lh_vmFjOLL_RAHNTxw`, passing its `connection_id`. For Facebook, check that page
+   **Check the connections first.** YouTube connection `0262b3cb-1516-8a90-ab80-2759bc7523b1` is
+   CareerWithCode; confirm with `channels?part=snippet&mine=true` that it returns
+   `UCZ6m5Lh_vmFjOLL_RAHNTxw` and pass it as `connection_id`. Facebook uses connection
+   `0255d81b-a11a-8f8c-9c7a-002223e547ee`. YouTube rejects descriptions containing `<` or `>`. For Facebook, check that page
    `926523670552408` is in the `page` dropdown of `facebook_pages_create_page_video`. If a
    CareerWithCode account isn't connected, don't post to it: keep the video and record
    "not posted: not connected in Zapier" for that platform.
