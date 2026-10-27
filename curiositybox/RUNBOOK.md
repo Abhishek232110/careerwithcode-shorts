@@ -97,7 +97,7 @@ Music `mood`: `epic` (history, big science), `mysterious` (mysteries, dark histo
    Fixed, verified targets — use exactly these, never any other channel or page:
    - YouTube channel **CuriosityBox | Hindi Facts & Stories**, id `UCtJ6818H8WuXS071samDcPA`.
      The Zapier YouTube default connection is **CareerWithCode**, so never upload without an explicit
-     `connection_id`: check each YouTube connection with `channels?part=snippet&mine=true` and use only
+     `connection_id`: check each YouTube connection with youtube_make_api_get_request (`url: https://www.googleapis.com/youtube/v3/channels`, `querystring: {"part": "snippet", "mine": "true"}`, `method: GET`, `fail_on_errors: false`; a query string inside the url is dropped and gives a 400) and use only
      the one that returns `UCtJ6818H8WuXS071samDcPA`. If none does, skip YouTube and record why.
    - Facebook page **CuriosityBox Hindi Facts & Stories**, page id `1380858578445805`
      (Zapier connection `0255d81b-a11a-8f8c-9c7a-002223e547ee`)

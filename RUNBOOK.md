@@ -87,7 +87,7 @@ caption with an engaging question or "comment X" prompt to grow reach.
    Never post to the CuriosityBox channel `UCtJ6818H8WuXS071samDcPA` or page `1380858578445805`.
 
    **Check the connections first.** YouTube connection `0262b3cb-1516-8a90-ab80-2759bc7523b1` is
-   CareerWithCode; confirm with `channels?part=snippet&mine=true` that it returns
+   CareerWithCode; confirm with youtube_make_api_get_request (`url: https://www.googleapis.com/youtube/v3/channels`, `querystring: {"part": "snippet", "mine": "true"}`, `fail_on_errors: false`) that it returns
    `UCZ6m5Lh_vmFjOLL_RAHNTxw` and pass it as `connection_id`. Facebook uses connection
    `0255d81b-a11a-8f8c-9c7a-002223e547ee`. YouTube rejects descriptions containing `<` or `>`. For Facebook, check that page
    `926523670552408` is in the `page` dropdown of `facebook_pages_create_page_video`. If a
