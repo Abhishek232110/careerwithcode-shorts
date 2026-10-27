@@ -1,0 +1,16 @@
+{
+  "series_label": "Go Series · Part 14",
+  "hook": "Which line prints first?",
+  "language": "Go",
+  "code_title": "defer.go",
+  "code": [
+    "func main() {",
+    "    defer fmt.Println(\"bye!\")",
+    "    fmt.Println(\"hi\")",
+    "}"
+  ],
+  "output": "hi → bye!",
+  "takeaway": "defer waits until the function ends. Then it runs.",
+  "cta": "Part 15 tomorrow: arrays vs slices!",
+  "duration": 13
+}
