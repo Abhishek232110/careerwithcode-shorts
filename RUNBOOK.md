@@ -1,6 +1,6 @@
 # CareerWithCode Shorts — run instructions
 
-Each scheduled run makes ONE Short of **20–30 seconds** for ONE slot and posts it publicly to YouTube (Short) and
+Each scheduled run makes ONE poster-style Short of **10–15 seconds** for ONE slot and posts it publicly to YouTube (Short) and
 Facebook (Reel) through **Zapier only** (step 6). Metricool is no longer used. Instagram is
 skipped because Zapier can't post to it.
 
@@ -50,31 +50,37 @@ caption with an engaging question or "comment X" prompt to grow reach.
    - `educational` / `learn`: choose a topic NOT already in `tracker[SLOT].posted`
      (use the `*_ideas` lists for inspiration; vary languages and formats; never repeat).
 
-3. **Write the spec** to `specs/<YYYY-MM-DD>_<HHMM>_<slot>-<slug>.json` (IST date/time):
+3. **Write the spec** (poster design, from Oct 27 2026) to `specs/<YYYY-MM-DD>_<HHMM>_<slot>-<slug>.json` (IST).
+   Abhishek wants every CareerWithCode Short in his cartoon poster design: a big Hindi + English
+   headline (white/yellow, lines can sit on a yellow or red box), a checklist / steps / mistakes
+   panel, a cartoon boy in a "Career With Code" hoodie, a yellow sticky note, an optional red banner
+   and the CareerWithCode footer. All of that is drawn by `make_cwc_poster.py`:
    ```json
    {
-     "series_label": "Go Series · Part 7",          // series slots only; omit otherwise
-     "hook": "Go has no while loop. Here's why",       // ≤ 8 words, curiosity-driven
-     "language": "Go",                                // badge: Python, Go, JavaScript, SQL, Git, Roadmap…
-     "before": ["..."],                               // optional "old/wrong way", ≤ 4 lines
-     "code": ["..."],                                 // main code, ≤ 6 lines, ≤ 34 chars per line
-     "output": "i = 3",                               // optional, short
-     "takeaway": "One line, ≤ 12 words.",
-     "cta": "Follow for Part 8 tomorrow",              // series: "Follow for Part N+1 tomorrow"
-     "duration": 25,                                  // REQUIRED: 20-30 seconds, more text = longer
-     "before_title": "...", "code_title": "..."       // optional panel titles
+     "title": [{"text": "Go defer", "color": "white", "box": "yellow"},   // 2-4 lines, <= 16 chars
+               {"text": "पहले क्या", "color": "white"},                     // color: white | yellow
+               {"text": "Print होगा?", "color": "white", "box": "red"}],    // box: yellow | red (optional)
+     "list": {"type": "steps",                       // check (benefits) | cross (mistakes/myths) | steps (order, roadmap)
+              "items": ["defer बाद में चलता है", "LIFO order में", "return से ठीक पहले"]},  // 3-5, <= 22 chars
+     "note": "Part 15\nकल!",                         // yellow sticky note, 1-2 short lines (\n)
+     "banner": "Output: 3 2 1",                     // optional red line: the answer / punchline
+     "face": "thinking",                            // happy | thinking | worried
+     "palette": "blue",                             // blue | orange | purple
+     "duration": 12                                 // 10-15
    }
    ```
-   - The code MUST be correct. For Python, run it with `python3` and copy the real output.
-   - `learn` slot: put a short roadmap/steps in `code` (e.g. `"Week 1: syntax + loops"`),
-     set `language` to `"Roadmap"` and `code_title` to something like `"30-day plan"`;
-     leave out `before`/`output` if they don't fit.
-   - Educational slot: a gotcha, trick, or "X explained" with a tiny code example.
+   - Mix Hindi (Devanagari) and English like the sample: keywords and tech names in English
+     ("Python", "AI Agent", "High Salary"), the rest in simple Hindi. No emoji.
+   - The panel carries the actual teaching: the steps, the facts, the mistakes, or short code
+     like `x := 5`. The banner gives the answer or punchline. Everything must be correct; for
+     code, run it and use the real output.
+   - A number in the title must match the number of items ("3 गलतियाँ" with 3 items).
+   - Series slots: put "Go Part N" in the title or note, and tease Part N+1 in the note.
 
-4. **Render:** `python3 make_short.py specs/<name>.json shorts/<name>.mp4`
-   Check it is 20–30 s and 1080x1920 (`ffprobe`). Extract one frame 1 s before the end and look at it
-   with Read: text must not overlap or run off the screen. If it does, shorten the
-   text and re-render.
+4. **Render:** `python3 make_cwc_poster.py specs/<name>.json shorts/<name>.mp4`
+   Check it is 10–15 s and 1080x1920 (`ffprobe`). First preview a still with
+   `python3 make_cwc_poster.py specs/<name>.json /tmp/still.png --still` and look at it with Read:
+   no empty boxes instead of letters, nothing cut off or overlapping. Shorten text and re-render if needed.
 
 5. **Upload:** `./publish_video.sh shorts/<name>.mp4` → commits the video to `shorts/`
    on main (every video is kept in the repo permanently) and prints its public URL.
