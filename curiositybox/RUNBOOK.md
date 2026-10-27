@@ -37,7 +37,7 @@ Music `mood`: `epic` (history, big science), `mysterious` (mysteries, dark histo
 
 ## Language and style
 
-- On-screen text in **Hindi (Devanagari)**, short and simple: headline <= 6 words total,
+- On-screen text in **Hindi (Devanagari) only**: the poster font has no English letters, so write English words in Devanagari (चैटजीपीटी, एआई); digits and ! ? , are fine. Keep it short and simple: headline <= 6 words total,
   banner <= 7 words, line <= 9 words, CTA <= 4 words. No emoji in the spec.
 - Caption in Hindi/Hinglish, ending with a question; emoji are fine there.
 - Rotate the hook format so a slot never repeats its previous one (check that slot's last
