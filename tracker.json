@@ -48,7 +48,8 @@
       "SQL: COUNT(col) skips NULLs, use COUNT(*) for rows",
       "Python: bool(\"False\") is True (non-empty strings are truthy)",
       "Python: -7 // 2 is -4 (floor division rounds toward -infinity)",
-      "JavaScript: Math.min() > Math.max() is true (empty max is -Infinity)"
+      "JavaScript: Math.min() > Math.max() is true (empty max is -Infinity)",
+      "JavaScript: \"5\" + 2 is \"52\" (+ concatenates strings, - and * convert)"
     ]
   },
   "learn": {
@@ -438,6 +439,16 @@
       "style": "handwritten",
       "video": "2026-10-27_1000_go-p14-defer.mp4",
       "status": "posted: YouTube d__XKQa8zLQ (UCZ6m5Lh_vmFjOLL_RAHNTxw), Facebook 1953301259387770 (page 926523670552408); instagram skipped"
+    },
+    {
+      "date": "2026-10-27 20:00",
+      "slot": "educational",
+      "title": "Myth: \"5\" + 2 = 7 in JavaScript? Nope! #shorts",
+      "tone": "myth-buster / surprising",
+      "hook_format": "myth-vs-fact",
+      "style": "cwc-poster",
+      "video": "2026-10-27_2000_educational-js-plus-string-concat.mp4",
+      "status": "Facebook 2660902848069718 (page 926523670552408); YouTube not posted: Zapier upload_video 'throttled without retry' twice (channel UCZ6m5Lh_vmFjOLL_RAHNTxw verified); instagram skipped"
     }
   ],
   "inspiring": {

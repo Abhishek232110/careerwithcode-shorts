@@ -1,0 +1,12 @@
+{
+  "title": [{"text": "Myth: JS में", "color": "white"},
+            {"text": "\"5\" + 2 = 7?", "color": "black", "box": "yellow"},
+            {"text": "बिल्कुल नहीं!", "color": "white", "box": "red"}],
+  "list": {"type": "check",
+           "items": ["\"5\" + 2 = \"52\"", "\"5\" - 2 = 3", "\"5\" * 2 = 10", "+ string जोड़ता है"]},
+  "note": "Number(x)\nपहले लगाओ!",
+  "banner": "Output: \"52\" (string)",
+  "face": "worried",
+  "palette": "orange",
+  "duration": 12
+}
