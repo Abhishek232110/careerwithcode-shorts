@@ -14,7 +14,8 @@
       "Gemini Live camera: camera on karke Hindi mein sawaal (free on Android)",
       "Prompt trick: \"10 saal ke bacche ki tarah samjhao\" (ChatGPT/Gemini)",
       "Myth: AI hamesha sahi hota hai (ChatGPT/Gemini galti kar sakte hain, verify karo)",
-      "Gemini se YouTube video ka summary (link paste karo, Hindi summary maango)"
+      "Gemini se YouTube video ka summary (link paste karo, Hindi summary maango)",
+      "ChatGPT mein GPT ka full form: Generative Pre-trained Transformer"
     ]
   },
   "whatif": {
@@ -434,6 +435,16 @@
       "hook_format": "shocking-fact",
       "video": "curiositybox/shorts/2026-10-27_0945_kahani-kailasa-temple.mp4",
       "status": "posted manually (first poster design): YouTube wfZ1uZUomLk, Facebook 1599289984735344"
+    },
+    {
+      "date": "2026-10-27 10:00",
+      "slot": "ai",
+      "title": "ChatGPT Mein GPT Ka Matlab Kya Hai? 99% Log Nahi Jaante #shorts",
+      "tone": "practical quick win",
+      "hook_format": "number",
+      "mood": "upbeat",
+      "video": "curiositybox/shorts/2026-10-27_1000_ai-chatgpt-gpt-full-form.mp4",
+      "status": "posted via Zapier: YouTube hba2NY44wCY, Facebook 1470414878279969"
     }
   ]
 }
