@@ -51,7 +51,8 @@
       "Japan islands recount 2023: 6852 se 14125",
       "Bhishma 58 raatein teeron ki shaiyya par (Mahabharat)",
       "Strasbourg Dancing Plague 1518: officials ne musicians bulaye",
-      "Ellora Kailasa temple carved from one rock"
+      "Ellora Kailasa temple carved from one rock",
+      "Nalanda Mahavihara: 700+ saal chala, Xuanzang ne padhai ki"
     ]
   },
   "log": [
@@ -445,6 +446,16 @@
       "mood": "upbeat",
       "video": "curiositybox/shorts/2026-10-27_1000_ai-chatgpt-gpt-full-form.mp4",
       "status": "posted via Zapier: YouTube hba2NY44wCY, Facebook 1470414878279969"
+    },
+    {
+      "date": "2026-10-27 20:00",
+      "slot": "kahani",
+      "title": "700 Saal Tak Chala Ye Vishwavidyalaya! Nalanda Ki Kahani #shorts",
+      "tone": "storyteller, suspense",
+      "hook_format": "number",
+      "mood": "epic",
+      "video": "2026-10-27_2000_kahani-nalanda-700-saal.mp4",
+      "status": "Facebook 973337109161067 via Zapier; YouTube NOT posted: Zapier upload_video throttled twice ('This action has been throttled without retry')"
     }
   ]
 }
