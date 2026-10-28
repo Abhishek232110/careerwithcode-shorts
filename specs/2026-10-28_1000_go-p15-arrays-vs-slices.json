@@ -1,0 +1,12 @@
+{
+  "title": [{"text": "Go Part 15", "color": "white", "box": "yellow"},
+            {"text": "Array या Slice?", "color": "white"},
+            {"text": "फर्क क्या है?", "color": "yellow", "box": "red"}],
+  "list": {"type": "steps",
+           "items": ["a := [3]int{1,2,3}", "s := []int{1,2,3}", "s = append(s, 4)", "Array size fixed है"]},
+  "note": "Part 16:\nappend कल!",
+  "banner": "len(a)=3, len(s)=4",
+  "face": "thinking",
+  "palette": "orange",
+  "duration": 13
+}

@@ -2,7 +2,7 @@
   "_note": "Updated automatically after every post. Edit next_part to jump a series forward/back.",
   "series": {
     "go": {
-      "next_part": 15,
+      "next_part": 16,
       "posted": [
         "Part 1: Hello World and package main",
         "Part 2: Variables: var vs :=",
@@ -17,7 +17,8 @@
         "Part 11: Functions with multiple return values",
         "Part 12: Named return values",
         "Part 13: Variadic functions",
-        "Part 14: Defer"
+        "Part 14: Defer",
+        "Part 15: Arrays vs slices"
       ]
     },
     "python": {
@@ -449,6 +450,16 @@
       "style": "cwc-poster",
       "video": "2026-10-27_2000_educational-js-plus-string-concat.mp4",
       "status": "Facebook 2660902848069718 (page 926523670552408); YouTube not posted: Zapier upload_video 'throttled without retry' twice (channel UCZ6m5Lh_vmFjOLL_RAHNTxw verified); instagram skipped"
+    },
+    {
+      "date": "2026-10-28 10:00",
+      "slot": "go",
+      "title": "Array या Slice? Go में फर्क क्या है? | Go Part 15 #shorts",
+      "tone": "friendly teacher",
+      "hook_format": "question",
+      "style": "cwc-poster",
+      "video": "2026-10-28_1000_go-p15-arrays-vs-slices.mp4",
+      "status": "posted: YouTube buVyCFB0uB8 (UCZ6m5Lh_vmFjOLL_RAHNTxw), Facebook 1138577469108232 (page 926523670552408); instagram skipped"
     }
   ],
   "inspiring": {
