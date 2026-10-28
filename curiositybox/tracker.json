@@ -15,7 +15,8 @@
       "Prompt trick: \"10 saal ke bacche ki tarah samjhao\" (ChatGPT/Gemini)",
       "Myth: AI hamesha sahi hota hai (ChatGPT/Gemini galti kar sakte hain, verify karo)",
       "Gemini se YouTube video ka summary (link paste karo, Hindi summary maango)",
-      "ChatGPT mein GPT ka full form: Generative Pre-trained Transformer"
+      "ChatGPT mein GPT ka full form: Generative Pre-trained Transformer",
+      "reCAPTCHA 'I'm not a robot' checkbox: click se pehle mouse movement dekhta hai"
     ]
   },
   "whatif": {
@@ -456,6 +457,15 @@
       "mood": "epic",
       "video": "2026-10-27_2000_kahani-nalanda-700-saal.mp4",
       "status": "Facebook 973337109161067 via Zapier; YouTube NOT posted: Zapier upload_video throttled twice ('This action has been throttled without retry')"
+    },
+    {
+      "date": "2026-10-28 10:00",
+      "slot": "ai",
+      "title": "I'm Not a Robot Box Ka Asli Sach! Click Se Pehle Hi Pehchaan #shorts",
+      "tone": "practical quick win / surprising tech fact",
+      "hook_format": "shocking-fact",
+      "video": "curiositybox/shorts/2026-10-28_1000_ai-recaptcha-mouse-movement.mp4",
+      "status": "posted: YouTube G12i7bhxm7w, Facebook 1794034775261893"
     }
   ]
 }
