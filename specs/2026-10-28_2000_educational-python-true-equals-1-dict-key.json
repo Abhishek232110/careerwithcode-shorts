@@ -1,0 +1,12 @@
+{
+  "title": [{"text": "Python में", "color": "white"},
+            {"text": "1 और True", "color": "black", "box": "yellow"},
+            {"text": "एक ही key?", "color": "white", "box": "red"}],
+  "list": {"type": "steps",
+           "items": ["True == 1  # True", "hash(True) == hash(1)", "d = {1:'a', True:'b'}", "print(d)  # {1: 'b'}"]},
+  "note": "bool असल में\nint है!",
+  "banner": "Output: {1: 'b'}",
+  "face": "thinking",
+  "palette": "purple",
+  "duration": 12
+}

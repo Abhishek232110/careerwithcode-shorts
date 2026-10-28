@@ -50,7 +50,8 @@
       "Python: bool(\"False\") is True (non-empty strings are truthy)",
       "Python: -7 // 2 is -4 (floor division rounds toward -infinity)",
       "JavaScript: Math.min() > Math.max() is true (empty max is -Infinity)",
-      "JavaScript: \"5\" + 2 is \"52\" (+ concatenates strings, - and * convert)"
+      "JavaScript: \"5\" + 2 is \"52\" (+ concatenates strings, - and * convert)",
+      "Python: 1 and True are the same dict key (bool is an int)"
     ]
   },
   "learn": {
@@ -460,6 +461,16 @@
       "style": "cwc-poster",
       "video": "2026-10-28_1000_go-p15-arrays-vs-slices.mp4",
       "status": "posted: YouTube buVyCFB0uB8 (UCZ6m5Lh_vmFjOLL_RAHNTxw), Facebook 1138577469108232 (page 926523670552408); instagram skipped"
+    },
+    {
+      "date": "2026-10-28 20:00",
+      "slot": "educational",
+      "title": "Why are 1 and True the same dict key in Python? #shorts",
+      "tone": "myth-buster / surprising",
+      "hook_format": "question",
+      "style": "cwc-poster",
+      "video": "2026-10-28_2000_educational-python-true-equals-1-dict-key.mp4",
+      "status": "posted: YouTube gZ7T1xg7d8I (UCZ6m5Lh_vmFjOLL_RAHNTxw), Facebook 1792809698637213 (page 926523670552408); instagram skipped"
     }
   ],
   "inspiring": {
