@@ -1,0 +1,12 @@
+{
+  "title": [{"text": "Java Myth:", "color": "black", "box": "yellow"},
+            {"text": "128 == 128", "color": "white"},
+            {"text": "हमेशा true?", "color": "white", "box": "red"}],
+  "list": {"type": "steps",
+           "items": ["Integer a=127, b=127;", "a == b  // true", "Integer c=128, d=128;", "c == d  // false", "c.equals(d) // true"]},
+  "note": "-128 से 127\ncache होते हैं",
+  "banner": "Integer के लिए .equals()",
+  "face": "worried",
+  "palette": "orange",
+  "duration": 12
+}

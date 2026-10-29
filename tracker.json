@@ -52,7 +52,8 @@
       "Python: -7 // 2 is -4 (floor division rounds toward -infinity)",
       "JavaScript: Math.min() > Math.max() is true (empty max is -Infinity)",
       "JavaScript: \"5\" + 2 is \"52\" (+ concatenates strings, - and * convert)",
-      "Python: 1 and True are the same dict key (bool is an int)"
+      "Python: 1 and True are the same dict key (bool is an int)",
+      "Java: Integer 128 == 128 is false (Integer cache -128..127), use .equals()"
     ]
   },
   "learn": {
@@ -482,6 +483,16 @@
       "style": "cwc-poster",
       "video": "2026-10-29_1000_go-p16-append-capacity.mp4",
       "status": "posted: YouTube EzH-J1psVmU (UCZ6m5Lh_vmFjOLL_RAHNTxw), Facebook 1851857645879518 (page 926523670552408); instagram skipped"
+    },
+    {
+      "date": "2026-10-29 20:00",
+      "slot": "educational",
+      "title": "Myth: 128 == 128 is always true in Java? Nope! #shorts",
+      "tone": "myth-buster / surprising",
+      "hook_format": "myth-vs-fact",
+      "style": "cwc-poster",
+      "video": "2026-10-29_2000_educational-java-integer-cache-128.mp4",
+      "status": "posted: YouTube TA0AiuSyZ4A (UCZ6m5Lh_vmFjOLL_RAHNTxw), Facebook 2952433901757991 (page 926523670552408); instagram skipped"
     }
   ],
   "inspiring": {
