@@ -16,7 +16,8 @@
       "Myth: AI hamesha sahi hota hai (ChatGPT/Gemini galti kar sakte hain, verify karo)",
       "Gemini se YouTube video ka summary (link paste karo, Hindi summary maango)",
       "ChatGPT mein GPT ka full form: Generative Pre-trained Transformer",
-      "reCAPTCHA 'I'm not a robot' checkbox: click se pehle mouse movement dekhta hai"
+      "reCAPTCHA 'I'm not a robot' checkbox: click se pehle mouse movement dekhta hai",
+      "Incognito mode myth: websites, office network aur ISP phir bhi dekh sakte hain"
     ]
   },
   "whatif": {
@@ -477,6 +478,16 @@
       "mood": "mysterious",
       "video": "2026-10-28_2000_kahani-roopkund-kankal-jheel.mp4",
       "status": "published via Zapier: yt BQQJX8y1FwI, fb 2625159091292025"
+    },
+    {
+      "date": "2026-10-29 10:00",
+      "slot": "ai",
+      "title": "Incognito Mode Mein Aap Chhupe Nahi! Asli Sach #shorts",
+      "tone": "practical quick win / surprising tech fact",
+      "hook_format": "myth-vs-fact",
+      "mood": "upbeat",
+      "video": "curiositybox/shorts/2026-10-29_1000_ai-incognito-mode-sach.mp4",
+      "status": "posted via Zapier: YouTube 8M_boiMkkJE, Facebook 1479049987429171"
     }
   ]
 }
