@@ -55,7 +55,8 @@
       "Strasbourg Dancing Plague 1518: officials ne musicians bulaye",
       "Ellora Kailasa temple carved from one rock",
       "Nalanda Mahavihara: 700+ saal chala, Xuanzang ne padhai ki",
-      "Roopkund: kankal jheel, DNA se 1000 saal ka antar"
+      "Roopkund: kankal jheel, DNA se 1000 saal ka antar",
+      "Mary Celeste 1872: khali jahaz, 10 log gayab"
     ]
   },
   "log": [
@@ -488,6 +489,16 @@
       "mood": "upbeat",
       "video": "curiositybox/shorts/2026-10-29_1000_ai-incognito-mode-sach.mp4",
       "status": "posted via Zapier: YouTube 8M_boiMkkJE, Facebook 1479049987429171"
+    },
+    {
+      "date": "2026-10-29 20:00",
+      "slot": "kahani",
+      "title": "Samudra Mein Mila Khali Jahaz! Mary Celeste Ka Rahasya #shorts",
+      "tone": "storyteller, suspense",
+      "hook_format": "question",
+      "mood": "mysterious",
+      "video": "curiositybox/shorts/2026-10-29_2000_kahani-mary-celeste-khali-jahaz.mp4",
+      "status": "posted via Zapier: YouTube 5sKK7MYWK_0 (20:00 IST), Facebook 1111688838268912"
     }
   ]
 }
