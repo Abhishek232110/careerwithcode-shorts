@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-"""Render a 10-15 second 1080x1920 CareerWithCode Short in the cartoon "poster" style.
+"""Render a 31-60 second 1080x1920 CareerWithCode Short in the cartoon "poster" style.
 
 Look (Abhishek's design sheet, Oct 27 2026): dark coding-room background, a big Hindi + English
 headline in white / yellow with heavy black outline (lines can sit on a yellow or red brush box),
 a checklist / steps / mistakes panel on the left, a cartoon boy in a "Career With Code" hoodie on
 the right, a yellow sticky note, an optional red banner and a "CareerWithCode" footer with a
-YouTube play icon. Elements pop in during the first ~2 s, then the boy breathes and the note bobs.
+YouTube play icon. The headline and boy pop in first, then the panel rows appear one by one across the video, then
+the banner (the answer) near the end; the boy breathes and the note bobs throughout.
 
 Usage: python3 make_cwc_poster.py spec.json out.mp4      (render the video)
        python3 make_cwc_poster.py spec.json out.png --still   (preview one frame at 4 s)
@@ -22,7 +23,7 @@ spec = {
   "banner": "क्या यह आपकी Job भी ले सकता है?",     # optional red banner under the panel
   "face": "happy",                              # happy | thinking | worried (boy's pose)
   "palette": "blue",                            # blue | orange | purple
-  "duration": 12                                # 10-15
+  "duration": 35                                # 31-60 (Abhishek: every Short over 30 s)
 }
 Text font is Kalam Bold (fonts/), which has both Devanagari and Latin letters. No emoji.
 """
@@ -130,7 +131,8 @@ def title_line(ln, size, rng):
     return sh.rotate(rng.uniform(-3, 3), resample=Image.BICUBIC, expand=True)
 
 
-def list_panel(spec_list):
+def list_panel(spec_list, shown=None):
+    """The panel with only the first `shown` rows filled in (all rows when None)."""
     kind = spec_list.get("type", "check"); items = spec_list["items"][:5]
     f = F(46)
     rows = []
@@ -143,7 +145,7 @@ def list_panel(spec_list):
     im = Image.new("RGBA", (w + 30, h + 30), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
     d.rounded_rectangle([15, 21, w + 15, h + 21], 26, fill=(0, 0, 0, 120))
     d.rounded_rectangle([15, 15, w + 15, h + 15], 26, fill=(14, 22, 40, 230), outline=(90, 130, 200, 160), width=3)
-    for i, (it, fo) in enumerate(rows):
+    for i, (it, fo) in enumerate(rows[:shown]):
         cy = 15 + 20 + rh * i + rh // 2; x = 45
         if kind == "cross":
             d.line([(x, cy - 22), (x + 44, cy + 22)], fill=RED + (255,), width=12)
@@ -289,6 +291,11 @@ class Poster:
         size = {1: 170, 2: 140, 3: 122}.get(n, 104)
         self.title = [title_line(ln, size, rng) for ln in spec["title"]]
         self.panel = list_panel(spec["list"]) if spec.get("list") else None
+        # rows are revealed one by one across the video so a 30+ s Short keeps giving something new
+        self.stages = [list_panel(spec["list"], k) for k in range(len(spec["list"]["items"][:5]) + 1)] if self.panel else []
+        n = max(1, len(self.stages) - 1)
+        self.row_t = [2.0 + i * (dur * 0.72 - 2.0) / n for i in range(n)]
+        self.banner_t = (self.row_t[-1] + 3.0) if self.panel else 1.2
         self.note = sticky_note(spec["note"], rng) if spec.get("note") else None
         self.banner = banner_layer(spec["banner"], rng) if spec.get("banner") else None
         self.boy = boy(spec.get("face", "happy"))
@@ -313,10 +320,12 @@ class Poster:
         base = 0.1 + 0.2 * len(self.title)
         if self.panel:
             kk = ease((t - base - 0.2) / 0.4)
-            paste_scaled(img, self.panel, 40 + self.panel.width / 2 - (1 - kk) * 700, self.panel_y, 1.0)
+            shown = sum(1 for rt in self.row_t if t >= rt)
+            pop = 1 + 0.03 * max(0.0, 1 - (t - self.row_t[shown - 1]) / 0.3) if shown else 1
+            paste_scaled(img, self.stages[shown], 40 + self.panel.width / 2 - (1 - kk) * 700, self.panel_y, pop)
         if self.banner:
-            kk = ease((t - base - 0.6) / 0.35)
-            paste_scaled(img, self.banner, W / 2, 1700, 1.0, kk)
+            kk = back((t - self.banner_t) / 0.4)
+            paste_scaled(img, self.banner, W / 2, 1700, kk)
         if self.note:
             kk = back((t - base - 0.9) / 0.4)
             bob = 1 + (0.04 * abs(math.sin(t * 2.4)) if t > base + 1.5 else 0)
@@ -330,7 +339,7 @@ class Poster:
 
 def main(spec_path, out):
     spec = json.load(open(spec_path))
-    dur = int(max(10, min(15, spec.get("duration", 12))))
+    dur = int(max(31, min(60, spec.get("duration", 35))))
     make_short.DUR = dur
     r = Poster(spec, dur)
     make_short.music(out + ".wav")
@@ -347,6 +356,6 @@ def main(spec_path, out):
 
 if __name__ == "__main__":
     if len(sys.argv) == 4 and sys.argv[3] == "--still":
-        Poster(json.load(open(sys.argv[1])), 12).frame(4.0).save(sys.argv[2])
+        Poster(json.load(open(sys.argv[1])), 35).frame(34.0).save(sys.argv[2])
     else:
         main(sys.argv[1], sys.argv[2])

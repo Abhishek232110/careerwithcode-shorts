@@ -1,6 +1,6 @@
 # CareerWithCode Shorts — run instructions
 
-Each scheduled run makes ONE poster-style Short of **10–15 seconds** for ONE slot and posts it publicly to YouTube (Short) and
+Each scheduled run makes ONE poster-style Short of **more than 30 seconds (31–60 s, aim for ~35 s; Abhishek, Oct 29)** for ONE slot and posts it publicly to YouTube (Short) and
 Facebook (Reel) through **Zapier only** (step 6). Metricool is no longer used. Instagram is
 skipped because Zapier can't post to it.
 
@@ -66,7 +66,7 @@ caption with an engaging question or "comment X" prompt to grow reach.
      "banner": "Output: 3 2 1",                     // optional red line: the answer / punchline
      "face": "thinking",                            // happy | thinking | worried
      "palette": "blue",                             // blue | orange | purple
-     "duration": 12                                 // 10-15
+     "duration": 35                                 // 31-60, never 30 or less
    }
    ```
    - Mix Hindi (Devanagari) and English like the sample: keywords and tech names in English
@@ -75,10 +75,12 @@ caption with an engaging question or "comment X" prompt to grow reach.
      like `x := 5`. The banner gives the answer or punchline. Everything must be correct; for
      code, run it and use the real output.
    - A number in the title must match the number of items ("3 गलतियाँ" with 3 items).
+   - Videos are over 30 s: the rows appear one by one (about every 5-6 s) and the banner comes
+     last, so use 4-5 items and keep the answer for the banner.
    - Series slots: put "Go Part N" in the title or note, and tease Part N+1 in the note.
 
 4. **Render:** `python3 make_cwc_poster.py specs/<name>.json shorts/<name>.mp4`
-   Check it is 10–15 s and 1080x1920 (`ffprobe`). First preview a still with
+   Check it is MORE than 30 s (31–60) and 1080x1920 (`ffprobe`). First preview a still with
    `python3 make_cwc_poster.py specs/<name>.json /tmp/still.png --still` and look at it with Read:
    no empty boxes instead of letters, nothing cut off or overlapping. Shorten text and re-render if needed.
 

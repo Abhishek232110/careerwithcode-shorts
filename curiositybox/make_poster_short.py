@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render a 10-15 second 1080x1920 CuriosityBox Short in the cinematic "poster" style.
+"""Render a 31-60 second 1080x1920 CuriosityBox Short in the cinematic "poster" style.
 
 Look: dark cinematic background, red brush category tag (top left), big Hindi headline in
 white and yellow with a heavy black outline, a red banner subline, a small white line and a
@@ -15,14 +15,15 @@ spec = {
     {"text": "द्वारका नगरी", "color": "yellow"}
   ],
   "banner": "सच या सिर्फ कहानी?",               # red banner line, <= 28 characters
-  "line": "वैज्ञानिकों ने जो खोजा उसने सबको हैरान कर दिया!",   # optional small white line
+  "facts": ["...", "...", "..."],             # 3-5 white lines shown one by one (<= 9 words each);
+                                              # or a single "line" for one fixed line
   "cta": "जानिए पूरी कहानी",                    # yellow pill text; an arrow is added
   "image": "curiositybox/images/<name>.png",  # optional background picture (AI generated);
                                               # without it a procedural scene is drawn
   "scene": "temple",                          # temple | ocean | space | cave | forest | city
   "palette": "gold",                          # gold | blue | red | green | purple
   "mood": "mysterious",                       # music: motivational | inspiring | epic | mysterious | upbeat
-  "duration": 12                              # 10-15
+  "duration": 35                              # 31-60 (Abhishek: every Short over 30 s)
 }
 All on-screen text is Hindi in Devanagari (Noto Sans Devanagari). No emoji.
 """
@@ -249,7 +250,11 @@ class Poster:
             big = ln.get("big", ln.get("color") == "yellow")
             self.lines.append(text_layer(ln["text"], int(size * (1.12 if big else 0.9)), col))
         self.banner = banner_layer(spec["banner"], rng) if spec.get("banner") else None
-        self.line = text_layer(spec["line"], 50, WHITE, stroke=5, max_w=W - 160) if spec.get("line") else None
+        # "facts": 3-5 short lines shown one after another in the white-line slot, so a 30+ s
+        # Short keeps revealing something new; a single "line" still works
+        facts = spec.get("facts") or ([spec["line"]] if spec.get("line") else [])
+        self.facts = [text_layer(f, 50, WHITE, stroke=5, max_w=W - 160) for f in facts]
+        self.line = max(self.facts, key=lambda im: im.height) if self.facts else None
         self.cta = cta_layer(spec["cta"]) if spec.get("cta") else None
         self.embers = [(rng.uniform(0, W), rng.uniform(0, H), rng.uniform(2, 6), rng.uniform(20, 70),
                         rng.uniform(0, 6.28)) for _ in range(70)]
@@ -285,9 +290,13 @@ class Poster:
         if self.banner:
             k = ease((t - base) / 0.35)
             paste_scaled(img, self.banner, W / 2 - (1 - k) * 600, self.banner_y, 1.0, k)
-        if self.line:
-            paste_scaled(img, self.line, W / 2, self.line_y + (1 - ease((t - base - 0.4) / 0.4)) * 40, 1.0,
-                         ease((t - base - 0.4) / 0.4))
+        if self.facts:
+            start = base + 0.4; slot = max(3.0, (self.dur - start - 0.5) / len(self.facts))
+            i = min(len(self.facts) - 1, int(max(0.0, t - start) // slot))
+            lt = t - start - i * slot
+            k = ease(lt / 0.4) if i == 0 or lt < slot else 1.0
+            out = 1.0 if i == len(self.facts) - 1 else 1 - ease((lt - slot + 0.4) / 0.4)
+            paste_scaled(img, self.facts[i], W / 2, self.line_y + (1 - k) * 40, 1.0, min(k, out))
         if self.cta:
             k = back((t - base - 0.8) / 0.4)
             bob = 1 + (0.05 * abs(math.sin(t * 2.6)) if t > base + 1.4 else 0)
@@ -297,7 +306,7 @@ class Poster:
 
 def main(spec_path, out):
     spec = json.load(open(spec_path))
-    dur = int(max(10, min(15, spec.get("duration", 12))))
+    dur = int(max(31, min(60, spec.get("duration", 35))))
     make_short.DUR = dur
     r = Poster(spec, dur)
     make_short.music(out + ".wav", spec.get("mood", "mysterious"))
@@ -315,6 +324,6 @@ def main(spec_path, out):
 if __name__ == "__main__":
     if len(sys.argv) == 4 and sys.argv[3] == "--still":  # preview one frame at 4 s
         spec = json.load(open(sys.argv[1]))
-        Poster(spec, 12).frame(4.0).save(sys.argv[2])
+        Poster(spec, 35).frame(4.0).save(sys.argv[2])
     else:
         main(sys.argv[1], sys.argv[2])

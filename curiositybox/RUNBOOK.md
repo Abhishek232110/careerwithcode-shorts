@@ -6,7 +6,7 @@ CuriosityBox is a **separate channel** from CareerWithCode. Everything for it li
 CareerWithCode files (`make_short.py`, `tracker.json`, `shorts/`, `specs/` at the repo root)
 and never post CuriosityBox content to any CareerWithCode account.
 
-Each scheduled run makes ONE Hindi poster-style Short of **10–15 seconds** for ONE slot and posts it
+Each scheduled run makes ONE Hindi poster-style Short of **more than 30 seconds (31–60 s, aim for ~35 s; Abhishek, Oct 29)** for ONE slot and posts it
 publicly to **YouTube (Short)** and **Facebook** (step 6).
 
 | Slot (IST) | `SLOT`   | Category chip   | Content | Tone |
@@ -19,13 +19,13 @@ publicly to **YouTube (Short)** and **Facebook** (step 6).
 ## Look and music (poster design, from Oct 27 2026)
 
 Abhishek asked for every CuriosityBox Short to look like his design sheet: a cinematic Hindi
-poster. Render with **`make_poster_short.py`** (not `make_short.py`). Each video is a 10–15 s
+poster. Render with **`make_poster_short.py`** (not `make_short.py`). Each video is a 31–60 s (over 30 s, Abhishek Oct 29)
 animated poster:
 
 - red brush **category tag** top-left (इतिहास, रहस्य, रोचक तथ्य, विज्ञान, AI & टेक, क्या होगा अगर?)
 - big **Devanagari headline** with a black outline, 2–3 lines, white with the key word in yellow
 - red brush **banner** with the hook's second half
-- one small white **line** that gives the answer or the most surprising detail
+- a white **fact line** that changes every few seconds: 3–5 `facts` shown one by one (the video is over 30 s, so it needs this to keep giving something new)
 - yellow **CTA pill** with an arrow
 - dark cinematic background (`scene` + `palette`), slow zoom, embers, original music by `mood`.
 
@@ -73,17 +73,17 @@ Music `mood`: `epic` (history, big science), `mysterious` (mysteries, dark histo
      "headline": [{"text": "भारत का वो", "color": "white"},
                   {"text": "मंदिर", "color": "yellow"}],      // 2-3 lines, one yellow key word line
      "banner": "जिसे पहाड़ काटकर बनाया गया!",                 // red banner
-     "line": "एलोरा का कैलाश मंदिर, एक ही चट्टान से",           // the answer / key detail
+     "facts": ["एलोरा का कैलाश मंदिर", "एक ही चट्टान से तराशा गया", "8वीं सदी, राष्ट्रकूट राजा कृष्ण प्रथम", "ऊपर से नीचे की ओर काटा गया"],  // 3-5 lines shown one by one, <= 9 words each
      "cta": "फॉलो करें, रोज़ नया रहस्य",                        // yellow pill, vary it
      "scene": "temple",       // temple | ocean | space | cave | forest | city
      "palette": "gold",       // gold | blue | red | green | purple
      "mood": "epic",
-     "duration": 12           // 10-15
+     "duration": 35           // 31-60, never 30 or less
    }
    ```
 
 4. **Render:** `python3 curiositybox/make_poster_short.py curiositybox/specs/<name>.json curiositybox/shorts/<name>.mp4`
-   Check it is 10–15 s and 1080x1920 (`ffprobe`). Preview a still with
+   Check it is MORE than 30 s (31–60) and 1080x1920 (`ffprobe`). Preview a still with
    `python3 curiositybox/make_poster_short.py <spec> /tmp/still.png --still` and look at it with
    Read: Hindi must render correctly (no boxes), nothing cut off or overlapping. If it is, shorten
    the text and re-render.
