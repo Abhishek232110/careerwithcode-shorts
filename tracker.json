@@ -2,7 +2,7 @@
   "_note": "Updated automatically after every post. Edit next_part to jump a series forward/back.",
   "series": {
     "go": {
-      "next_part": 16,
+      "next_part": 17,
       "posted": [
         "Part 1: Hello World and package main",
         "Part 2: Variables: var vs :=",
@@ -18,7 +18,8 @@
         "Part 12: Named return values",
         "Part 13: Variadic functions",
         "Part 14: Defer",
-        "Part 15: Arrays vs slices"
+        "Part 15: Arrays vs slices",
+        "Part 16: append and slice capacity"
       ]
     },
     "python": {
@@ -471,6 +472,16 @@
       "style": "cwc-poster",
       "video": "2026-10-28_2000_educational-python-true-equals-1-dict-key.mp4",
       "status": "posted: YouTube gZ7T1xg7d8I (UCZ6m5Lh_vmFjOLL_RAHNTxw), Facebook 1792809698637213 (page 926523670552408); instagram skipped"
+    },
+    {
+      "date": "2026-10-29 10:00",
+      "slot": "go",
+      "title": "append के बाद cap कितना होगा? Go Part 16 #shorts",
+      "tone": "friendly teacher",
+      "hook_format": "quiz",
+      "style": "cwc-poster",
+      "video": "2026-10-29_1000_go-p16-append-capacity.mp4",
+      "status": "posted: YouTube EzH-J1psVmU (UCZ6m5Lh_vmFjOLL_RAHNTxw), Facebook 1851857645879518 (page 926523670552408); instagram skipped"
     }
   ],
   "inspiring": {
