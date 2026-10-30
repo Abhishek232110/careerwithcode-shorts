@@ -57,7 +57,8 @@
       "Ellora Kailasa temple carved from one rock",
       "Nalanda Mahavihara: 700+ saal chala, Xuanzang ne padhai ki",
       "Roopkund: kankal jheel, DNA se 1000 saal ka antar",
-      "Mary Celeste 1872: khali jahaz, 10 log gayab"
+      "Mary Celeste 1872: khali jahaz, 10 log gayab",
+      "Sher Shah Suri: 5 saal ka raaj, rupiya sikka, GT Road"
     ]
   },
   "log": [
@@ -510,6 +511,16 @@
       "mood": "upbeat",
       "video": "curiositybox/shorts/2026-10-30_1000_ai-remote-camera-infrared.mp4",
       "status": "posted via Zapier: YouTube Njf4OU4rUwc (10:00 IST), Facebook 1079179511826380"
+    },
+    {
+      "date": "2026-10-30 20:00",
+      "slot": "kahani",
+      "title": "Sirf 5 Saal Ka Raja Aur Uska Rupaya! Sher Shah Suri Ki Kahani #shorts",
+      "tone": "storyteller, suspense",
+      "hook_format": "number",
+      "mood": "epic",
+      "video": "curiositybox/shorts/2026-10-30_2000_kahani-shershah-rupiya.mp4",
+      "status": "posted via Zapier: YouTube EQuL2QF8XRA (20:05 IST), Facebook photo 122108239851515109 (post 1380858578445805_122108239887515109)"
     }
   ]
 }
