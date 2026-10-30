@@ -1,6 +1,6 @@
 # CareerWithCode Shorts — run instructions
 
-Each scheduled run makes ONE poster-style Short of **more than 30 seconds (31–60 s, aim for ~35 s; Abhishek, Oct 29)** for ONE slot and posts it publicly to YouTube (Short) and
+Each scheduled run makes ONE Short of **more than 30 seconds (31–60 s; Abhishek, Oct 29)**, built from **4-6 poster images with a Hindi voiceover explaining the topic (Abhishek, Oct 30)**, for ONE slot and posts it publicly to YouTube (Short) and
 Facebook (image post of the poster, never a reel) through **Zapier only** (step 6). Metricool is no longer used. Instagram is
 skipped because Zapier can't post to it.
 
@@ -50,39 +50,50 @@ caption with an engaging question or "comment X" prompt to grow reach.
    - `educational` / `learn`: choose a topic NOT already in `tracker[SLOT].posted`
      (use the `*_ideas` lists for inspiration; vary languages and formats; never repeat).
 
-3. **Write the spec** (poster design, from Oct 27 2026) to `specs/<YYYY-MM-DD>_<HHMM>_<slot>-<slug>.json` (IST).
-   Abhishek wants every CareerWithCode Short in his cartoon poster design: a big Hindi + English
-   headline (white/yellow, lines can sit on a yellow or red box), a checklist / steps / mistakes
-   panel, a cartoon boy in a "Career With Code" hoodie, a yellow sticky note, an optional red banner
-   and the CareerWithCode footer. All of that is drawn by `make_cwc_poster.py`:
+3. **Write the spec** (multi-image voiceover Short, from Oct 30 2026) to `specs/<YYYY-MM-DD>_<HHMM>_<slot>-<slug>.json` (IST).
+   Abhishek: "generate multiple images and make 30 sec shorts using those images and use voice to
+   explain this". The Short is 4-6 scenes. Each scene is one image in his cartoon poster design
+   (big Hindi + English headline on yellow/red boxes, a check / cross / steps panel, the cartoon boy
+   in the "Career With Code" hoodie, optional sticky note and red banner, CareerWithCode footer),
+   and a Hindi voice line (`say`) explains it while it is on screen. `make_cwc_story.py` draws the
+   scenes, speaks the lines (offline Kokoro voice) and joins everything:
    ```json
    {
-     "title": [{"text": "Go defer", "color": "white", "box": "yellow"},   // 2-4 lines, <= 16 chars
-               {"text": "पहले क्या", "color": "white"},                     // color: white | yellow
-               {"text": "Print होगा?", "color": "white", "box": "red"}],    // box: yellow | red (optional)
-     "list": {"type": "steps",                       // check (benefits) | cross (mistakes/myths) | steps (order, roadmap)
-              "items": ["defer बाद में चलता है", "LIFO order में", "return से ठीक पहले"]},  // 3-5, <= 22 chars
-     "note": "Part 15\nकल!",                         // yellow sticky note, 1-2 short lines (\n)
-     "banner": "Output: 3 2 1",                     // optional red line: the answer / punchline
-     "face": "thinking",                            // happy | thinking | worried
-     "palette": "blue",                             // blue | orange | purple
-     "duration": 35                                 // 31-60, never 30 or less
+     "voice": "hm_omega", "speed": 1.12,
+     "still_scene": 4,                     // the scene used as the Facebook image (pick the most useful one)
+     "scenes": [
+       {"title": [{"text": "Python Myth:", "color": "black", "box": "yellow"},   // 1-3 lines, <= 16 chars
+                  {"text": "0.1 + 0.2", "color": "white"},
+                  {"text": "= 0.3 ?", "color": "white", "box": "red"}],
+        "note": "सोचो और\nबताओ!", "face": "thinking", "palette": "blue",
+        "say": "क्या आप जानते हो? Python में zero point one plus zero point two, zero point three नहीं होता!"},
+       {"title": [...], "list": {"type": "steps", "items": ["print(0.1 + 0.2)", "0.30000000000000004"]},
+        "face": "worried", "palette": "orange",
+        "say": "Print करो तो आता है zero point three, फिर बहुत zeros के बाद चार।"},
+       ...
+     ]
    }
    ```
-   - Mix Hindi (Devanagari) and English like the sample: keywords and tech names in English
-     ("Python", "AI Agent", "High Salary"), the rest in simple Hindi. No emoji.
-   - The panel carries the actual teaching: the steps, the facts, the mistakes, or short code
-     like `x := 5`. The banner gives the answer or punchline. Everything must be correct; for
-     code, run it and use the real output.
-   - A number in the title must match the number of items ("3 गलतियाँ" with 3 items).
-   - Videos are over 30 s: the rows appear one by one (about every 5-6 s) and the banner comes
-     last, so use 4-5 items and keep the answer for the banner.
-   - Series slots: put "Go Part N" in the title or note, and tease Part N+1 in the note.
+   Full example: `specs/sample_story_float.json`. Scene keys are the same as the old poster spec
+   (`title`, `list` {type: check|cross|steps, items 2-5}, `note`, `banner`, `face`, `palette`), plus `say`.
+   - Story shape: scene 1 = hook question; middle scenes = explanation / code / output / why;
+     last scene = the answer or fix, plus "CareerWithCode follow करो" (series: tease the next part).
+   - `say`: simple spoken Hindi in Devanagari, 1-2 short sentences, about 6-9 s each. Tech words
+     stay in English letters (Python, slice, append). Write symbols and code as they are spoken
+     ("zero point one", "math dot isclose", "double equals"), never raw code in `say`.
+   - The images carry the real content (code, output, steps); the voice explains them. Everything
+     must be correct; for code, run it and use the real output.
+   - Vary `palette` and `face` between scenes. Mix Hindi and English on the images; no emoji.
+   - Series slots: put "Go Part N" in scene 1's title or note.
 
-4. **Render:** `python3 make_cwc_poster.py specs/<name>.json shorts/<name>.mp4`
-   Check it is MORE than 30 s (31–60) and 1080x1920 (`ffprobe`). First preview a still with
-   `python3 make_cwc_poster.py specs/<name>.json /tmp/still.png --still` and look at it with Read:
-   no empty boxes instead of letters, nothing cut off or overlapping. Shorten text and re-render if needed.
+4. **Render:** first `python3 -m pip install -q kokoro-onnx soundfile` (the voice model, ~120 MB,
+   downloads itself from GitHub on first use), then
+   `python3 make_cwc_story.py specs/<name>.json shorts/<name>.mp4`
+   It prints the length; it must be MORE than 30 s and at most 60 s. If it says the voiceover is too
+   long, shorten the `say` lines. Then check the images on a contact sheet:
+   `ffmpeg -y -i shorts/<name>.mp4 -vf "fps=1/4,scale=270:-1,tile=6x2" /tmp/sheet.png` and Read it:
+   no empty boxes instead of letters, nothing cut off or overlapping. Fix the spec and re-render if needed.
+   (`make_cwc_poster.py` alone, the old single-poster video, is no longer used.)
 
 5. **Upload:** `./publish_video.sh shorts/<name>.mp4` → commits the video to `shorts/`
    on main (every video is kept in the repo permanently) and prints its public URL.
@@ -113,7 +124,7 @@ caption with an engaging question or "comment X" prompt to grow reach.
       (Education), `tags` (list), `notify_subscribers: "true"`.
       Check the result's `channelId` is `UCZ6m5Lh_vmFjOLL_RAHNTxw`; record the video `id`.
    b. **Facebook: IMAGE POST ONLY, never a video or reel** (Abhishek, 30 Oct 2026).
-      Make the poster image: `python3 make_cwc_poster.py specs/<name>.json shorts/<name>.jpg --still` (one 1080x1920 JPEG of the poster), look at it with Read,
+      Make the image: `python3 make_cwc_story.py specs/<name>.json shorts/<name>.jpg --still` (the `still_scene` poster as one 1080x1920 JPEG), look at it with Read,
       then publish it: `./publish_video.sh shorts/<name>.jpg` (prints its public URL).
       Post it with `execute_zapier_write_action`, `selected_api: "FacebookV2CLIAPI"`,
       `action: "page_photo"`, `tool_name: "facebook_pages_create_page_photo"`, connection_id

@@ -1,0 +1,132 @@
+{
+ "voice": "hm_omega",
+ "speed": 1.12,
+ "scenes": [
+  {
+   "title": [
+    {
+     "text": "Python Myth:",
+     "color": "black",
+     "box": "yellow"
+    },
+    {
+     "text": "0.1 + 0.2",
+     "color": "white"
+    },
+    {
+     "text": "= 0.3 ?",
+     "color": "white",
+     "box": "red"
+    }
+   ],
+   "note": "सोचो और\nबताओ!",
+   "face": "thinking",
+   "palette": "blue",
+   "say": "क्या आप जानते हो? Python में zero point one plus zero point two, zero point three नहीं होता!"
+  },
+  {
+   "title": [
+    {
+     "text": "Python चलाओ",
+     "color": "white"
+    },
+    {
+     "text": "और देखो",
+     "color": "yellow"
+    }
+   ],
+   "list": {
+    "type": "steps",
+    "items": [
+     "print(0.1 + 0.2)",
+     "0.30000000000000004",
+     "0.1+0.2 == 0.3",
+     "False"
+    ]
+   },
+   "face": "worried",
+   "palette": "orange",
+   "say": "Print करो तो आता है zero point three, फिर बहुत zeros के बाद चार। और compare करो तो False।"
+  },
+  {
+   "title": [
+    {
+     "text": "ऐसा क्यों?",
+     "color": "black",
+     "box": "yellow"
+    },
+    {
+     "text": "Binary की",
+     "color": "white"
+    },
+    {
+     "text": "मजबूरी",
+     "color": "white",
+     "box": "red"
+    }
+   ],
+   "list": {
+    "type": "check",
+    "items": [
+     "Computer = Binary",
+     "0.1 binary में अधूरा",
+     "थोड़ा round होता है"
+    ]
+   },
+   "face": "thinking",
+   "palette": "purple",
+   "say": "वजह है binary. Zero point one binary में पूरा लिखा ही नहीं जा सकता, इसलिए थोड़ा round हो जाता है।"
+  },
+  {
+   "title": [
+    {
+     "text": "ये गलती",
+     "color": "white"
+    },
+    {
+     "text": "मत करना!",
+     "color": "white",
+     "box": "red"
+    }
+   ],
+   "list": {
+    "type": "cross",
+    "items": [
+     "a + b == 0.3",
+     "पैसों में float",
+     "if price == 9.99"
+    ]
+   },
+   "face": "worried",
+   "palette": "orange",
+   "say": "इसलिए float को double equals से compare मत करो, और पैसों का हिसाब float में मत रखो।"
+  },
+  {
+   "title": [
+    {
+     "text": "सही तरीका",
+     "color": "black",
+     "box": "yellow"
+    },
+    {
+     "text": "ये है!",
+     "color": "white"
+    }
+   ],
+   "list": {
+    "type": "check",
+    "items": [
+     "math.isclose(a, b)",
+     "round(a + b, 2)",
+     "Decimal('0.1')"
+    ]
+   },
+   "banner": "Float को == से मत मिलाओ",
+   "note": "Follow करो\nCareerWithCode",
+   "face": "happy",
+   "palette": "blue",
+   "say": "सही तरीका है math dot isclose, या पैसों के लिए Decimal. ऐसी tricks के लिए CareerWithCode follow करो!"
+  }
+ ],
+ "still_scene": 4
+}
