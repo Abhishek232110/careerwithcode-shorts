@@ -17,7 +17,8 @@
       "Gemini se YouTube video ka summary (link paste karo, Hindi summary maango)",
       "ChatGPT mein GPT ka full form: Generative Pre-trained Transformer",
       "reCAPTCHA 'I'm not a robot' checkbox: click se pehle mouse movement dekhta hai",
-      "Incognito mode myth: websites, office network aur ISP phir bhi dekh sakte hain"
+      "Incognito mode myth: websites, office network aur ISP phir bhi dekh sakte hain",
+      "Phone camera se TV remote ki infrared roshni dekhna (remote check trick)"
     ]
   },
   "whatif": {
@@ -499,6 +500,16 @@
       "mood": "mysterious",
       "video": "curiositybox/shorts/2026-10-29_2000_kahani-mary-celeste-khali-jahaz.mp4",
       "status": "posted via Zapier: YouTube 5sKK7MYWK_0 (20:00 IST), Facebook 1111688838268912"
+    },
+    {
+      "date": "2026-10-30 10:00",
+      "slot": "ai",
+      "title": "Phone Camera Se Dekho Remote Ki Chhupi Roshni! Abhi Try Karo #shorts",
+      "tone": "practical quick win / surprising tech fact",
+      "hook_format": "challenge",
+      "mood": "upbeat",
+      "video": "curiositybox/shorts/2026-10-30_1000_ai-remote-camera-infrared.mp4",
+      "status": "posted via Zapier: YouTube Njf4OU4rUwc (10:00 IST), Facebook 1079179511826380"
     }
   ]
 }
