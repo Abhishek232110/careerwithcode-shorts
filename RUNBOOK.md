@@ -1,7 +1,7 @@
 # CareerWithCode Shorts — run instructions
 
 Each scheduled run makes ONE poster-style Short of **more than 30 seconds (31–60 s, aim for ~35 s; Abhishek, Oct 29)** for ONE slot and posts it publicly to YouTube (Short) and
-Facebook (Reel) through **Zapier only** (step 6). Metricool is no longer used. Instagram is
+Facebook (image post of the poster, never a reel) through **Zapier only** (step 6). Metricool is no longer used. Instagram is
 skipped because Zapier can't post to it.
 
 | Slot (IST) | `SLOT` value   | Content |
@@ -112,14 +112,18 @@ caption with an engaging question or "comment X" prompt to grow reach.
       from step 5), `privacy_status: "public"`, `made_for_kids: "false"`, `category_id: "27"`
       (Education), `tags` (list), `notify_subscribers: "true"`.
       Check the result's `channelId` is `UCZ6m5Lh_vmFjOLL_RAHNTxw`; record the video `id`.
-   b. **Facebook:** `execute_zapier_write_action` with `selected_api: "FacebookV2CLIAPI"`,
-      `action: "page_video"`, `tool_name: "facebook_pages_create_page_video"`, params:
-      `page: "926523670552408"`, `source` (same video URL), `title`, `description` (same caption,
-      #reels instead of #shorts). Record the returned `id`.
+   b. **Facebook: IMAGE POST ONLY, never a video or reel** (Abhishek, 30 Oct 2026).
+      Make the poster image: `python3 make_cwc_poster.py specs/<name>.json shorts/<name>.jpg --still` (one 1080x1920 JPEG of the poster), look at it with Read,
+      then publish it: `./publish_video.sh shorts/<name>.jpg` (prints its public URL).
+      Post it with `execute_zapier_write_action`, `selected_api: "FacebookV2CLIAPI"`,
+      `action: "page_photo"`, `tool_name: "facebook_pages_create_page_photo"`, connection_id
+      `0255d81b-a11a-8f8c-9c7a-002223e547ee`, params: `page: "926523670552408"`, `source` (the image URL),
+      `message` (the caption + hashtags, no #shorts/#reels). Record the returned `id`.
+      Never call `facebook_pages_create_page_video`.
    - If an action fails, fix the reported field and retry once. If it still fails, record the
      error. If Zapier reports the monthly task limit is reached, do not retry; record
      "not posted: Zapier task limit reached".
-   - Never post the same video twice: if step a succeeded and b fails, retry only b.
+   - Never post twice: if step a succeeded and b fails, retry only b.
 
 7. **Update the tracker** (`tracker.json`):
    - series slots: `next_part += 1`, append `"Part N: <topic>"` to `posted`

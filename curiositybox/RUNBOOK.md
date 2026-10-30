@@ -7,7 +7,7 @@ CareerWithCode files (`make_short.py`, `tracker.json`, `shorts/`, `specs/` at th
 and never post CuriosityBox content to any CareerWithCode account.
 
 Each scheduled run makes ONE Hindi poster-style Short of **more than 30 seconds (31–60 s, aim for ~35 s; Abhishek, Oct 29)** for ONE slot and posts it
-publicly to **YouTube (Short)** and **Facebook** (step 6).
+publicly to **YouTube (Short)** and **Facebook as an image post, never a reel** (step 6).
 
 | Slot (IST) | `SLOT`   | Category chip   | Content | Tone |
 |-----------|----------|-----------------|---------|------|
@@ -112,14 +112,18 @@ Music `mood`: `epic` (history, big science), `mysterious` (mysteries, dark histo
       `category_id: "27"` (Education), `tags` (list), `default_language: "hi"`,
       `default_audio_language: "hi"`, `notify_subscribers: "true"`.
       Check the result's `channelId` is `UCtJ6818H8WuXS071samDcPA`; record the video `id`.
-   b. **Facebook:** `execute_zapier_write_action` with `selected_api: "FacebookV2CLIAPI"`,
-      `action: "page_video"`, `tool_name: "facebook_pages_create_page_video"`, params:
-      `page: "1380858578445805"`, `source` (same video URL), `title`, `description` (caption +
-      hashtags, use #reels instead of #shorts). Record the returned `id`.
+   b. **Facebook: IMAGE POST ONLY, never a video or reel** (Abhishek, 30 Oct 2026).
+      Make the poster image: `python3 curiositybox/make_poster_short.py curiositybox/specs/<name>.json curiositybox/shorts/<name>.jpg --still` (one 1080x1920 JPEG of the poster), look at it with Read,
+      then publish it: `curiositybox/publish.sh curiositybox/shorts/<name>.jpg` (prints its public URL).
+      Post it with `execute_zapier_write_action`, `selected_api: "FacebookV2CLIAPI"`,
+      `action: "page_photo"`, `tool_name: "facebook_pages_create_page_photo"`, connection_id
+      `0255d81b-a11a-8f8c-9c7a-002223e547ee`, params: `page: "1380858578445805"`, `source` (the image URL),
+      `message` (the caption + hashtags, no #shorts/#reels). Record the returned `id`.
+      Never call `facebook_pages_create_page_video`.
    - If an action fails, fix the reported field and retry once. If it still fails, record the
      error. If Zapier reports the monthly task limit is reached, do not retry; record
      "not posted: Zapier task limit reached".
-   - Never post the same video twice: if step a succeeded and b fails, retry only b.
+   - Never post twice: if step a succeeded and b fails, retry only b.
 
 7. **Caption rules:** 2–3 line Hindi or Hinglish caption that tells the fuller story and ends with a question, then 5–8 hashtags
    (#shorts #hindifacts #curiositybox + topic tags). `paisa` captions end with
