@@ -1,514 +1,525 @@
 {
-  "_note": "Updated automatically after every post. Edit next_part to jump a series forward/back.",
-  "series": {
-    "go": {
-      "next_part": 18,
-      "posted": [
-        "Part 1: Hello World and package main",
-        "Part 2: Variables: var vs :=",
-        "Part 3: Constants and iota",
-        "Part 4: Basic types: int, float64, string, bool",
-        "Part 5: Zero values",
-        "Part 6: Type conversion",
-        "Part 7: If with a short statement",
-        "Part 8: for: the only loop in Go",
-        "Part 9: Range loops",
-        "Part 10: Switch without break",
-        "Part 11: Functions with multiple return values",
-        "Part 12: Named return values",
-        "Part 13: Variadic functions",
-        "Part 14: Defer",
-        "Part 15: Arrays vs slices",
-        "Part 16: append and slice capacity",
-        "Part 17: Slicing a slice"
-      ]
-    },
-    "python": {
-      "next_part": 4,
-      "posted": [
-        "Part 1: print and f-strings",
-        "Part 2: Variables and dynamic typing",
-        "Part 3: Lists basics"
-      ]
-    }
+ "_note": "Updated automatically after every post. Edit next_part to jump a series forward/back.",
+ "series": {
+  "go": {
+   "next_part": 18,
+   "posted": [
+    "Part 1: Hello World and package main",
+    "Part 2: Variables: var vs :=",
+    "Part 3: Constants and iota",
+    "Part 4: Basic types: int, float64, string, bool",
+    "Part 5: Zero values",
+    "Part 6: Type conversion",
+    "Part 7: If with a short statement",
+    "Part 8: for: the only loop in Go",
+    "Part 9: Range loops",
+    "Part 10: Switch without break",
+    "Part 11: Functions with multiple return values",
+    "Part 12: Named return values",
+    "Part 13: Variadic functions",
+    "Part 14: Defer",
+    "Part 15: Arrays vs slices",
+    "Part 16: append and slice capacity",
+    "Part 17: Slicing a slice"
+   ]
   },
-  "educational": {
-    "posted": [
-      "JavaScript == vs ===",
-      "Python mutable default arguments",
-      "Build a Web API in Go (net/http, JSON, 1.22 routes)",
-      "Git: undo last commit with reset --soft",
-      "JavaScript sort() sorts numbers as strings",
-      "Python enumerate() instead of range(len()) loops",
-      "SQL: = NULL never matches, use IS NULL",
-      "Python: 0.1 + 0.2 != 0.3 (floating point)",
-      "JavaScript: NaN === NaN is false, use Number.isNaN()",
-      "JavaScript: typeof null is \"object\" (1995 bug)",
-      "Python: round(2.5) == 2 (banker's rounding)",
-      "JavaScript: parseInt(0.0000005) returns 5 (5e-7)",
-      "Python: [[0]*3]*3 shares one inner list",
-      "JavaScript: ['1','7','11'].map(parseInt) gives [1, NaN, 3] (index as radix)",
-      "SQL: COUNT(col) skips NULLs, use COUNT(*) for rows",
-      "Python: bool(\"False\") is True (non-empty strings are truthy)",
-      "Python: -7 // 2 is -4 (floor division rounds toward -infinity)",
-      "JavaScript: Math.min() > Math.max() is true (empty max is -Infinity)",
-      "JavaScript: \"5\" + 2 is \"52\" (+ concatenates strings, - and * convert)",
-      "Python: 1 and True are the same dict key (bool is an int)",
-      "Java: Integer 128 == 128 is false (Integer cache -128..127), use .equals()"
-    ]
-  },
-  "learn": {
-    "posted": [
-      "How to escape tutorial hell",
-      "How much to study per day",
-      "How to use AI to learn coding the right way"
-    ]
-  },
-  "log": [
-    {
-      "date": "2026-10-13 09:42",
-      "slot": "educational",
-      "title": "== vs === in JavaScript (in 15 seconds) #shorts",
-      "video": "2026-10-13_0936_educational-js-double-vs-triple-equals.mp4",
-      "status": "published: yt Juuq_QX4Ufw, ig, fb",
-      "tone": "myth-buster",
-      "hook_format": "comparison"
-    },
-    {
-      "date": "2026-10-13 09:57",
-      "slot": "inspiring",
-      "title": "Every developer runs this loop 💻 #shorts #coding",
-      "video": "2026-10-13_0950_inspiring-the-developer-loop.mp4",
-      "status": "published: yt LM3RZOemqOg, ig, fb",
-      "tone": "motivating mentor",
-      "hook_format": "myth-vs-fact"
-    },
-    {
-      "date": "2026-10-13 14:00",
-      "slot": "educational",
-      "title": "This Python default argument myth trips up everyone #shorts",
-      "tone": "myth-buster",
-      "hook_format": "myth-vs-fact",
-      "video": "2026-10-13_1400_educational-python-mutable-default-args.mp4",
-      "status": "scheduled: metricool 394701744 (yt, ig, fb) for 14:00 IST"
-    },
-    {
-      "date": "2026-10-13 17:00",
-      "slot": "learn",
-      "title": "How I escaped tutorial hell (the 1:3 rule) #shorts",
-      "tone": "motivating mentor",
-      "hook_format": "mini-story",
-      "video": "2026-10-13_1700_learn-escape-tutorial-hell.mp4",
-      "status": "scheduled: metricool 394840864 (yt, ig, fb) for 17:00 IST"
-    },
-    {
-      "date": "2026-10-13 20:00",
-      "slot": "python",
-      "title": "Can you guess what this Python f-string prints? 🐍 Part 1 #shorts",
-      "tone": "playful & relatable",
-      "hook_format": "quiz",
-      "video": "2026-10-13_2000_python-p01-print-and-fstrings.mp4",
-      "status": "scheduled: metricool 394998906 (yt, ig, fb) for 20:00 IST"
-    },
-    {
-      "date": "2026-10-13 21:05",
-      "slot": "educational",
-      "title": "Build a Web API in Go (no framework!) #shorts",
-      "tone": "practical quick win",
-      "hook_format": "bold-claim",
-      "style": "handwritten",
-      "video": "2026-10-13_2110_educational-go-web-api.mp4",
-      "status": "scheduled: metricool 395069359 (yt, ig, fb) for 21:05 IST"
-    },
-    {
-      "date": "2026-10-14 08:00",
-      "slot": "go",
-      "title": "Your first Go program won't run? Here's why | Go Part 1 #shorts",
-      "tone": "friendly teacher",
-      "hook_format": "common-mistake",
-      "video": "2026-10-14_0800_go-p01-hello-world-package-main.mp4",
-      "status": "scheduled: metricool 395489840 (yt, ig, fb) for 08:00 IST"
-    },
-    {
-      "date": "2026-10-14 11:00",
-      "slot": "educational",
-      "title": "Committed too early? Undo it in 1 line (Git) #shorts",
-      "tone": "practical quick win",
-      "hook_format": "question",
-      "style": "handwritten",
-      "video": "2026-10-14_1100_educational-git-undo-last-commit.mp4",
-      "status": "scheduled: metricool 395556694 (yt, ig, fb) for 11:00 IST"
-    },
-    {
-      "date": "2026-10-14 14:00",
-      "slot": "educational",
-      "title": "JavaScript sort() is lying to you (most devs miss this) #shorts",
-      "tone": "myth-buster",
-      "hook_format": "quiz",
-      "style": "handwritten",
-      "video": "2026-10-14_1400_educational-js-sort-numbers.mp4",
-      "status": "scheduled: metricool 395650640 (yt, ig, fb) for 14:00 IST"
-    },
-    {
-      "date": "2026-10-14 17:00",
-      "slot": "learn",
-      "title": "1 hour a day beats 8 on Sunday (my coding study plan) #shorts",
-      "tone": "motivating mentor",
-      "hook_format": "bold-claim",
-      "style": "handwritten",
-      "video": "2026-10-14_1700_learn-how-much-to-study-per-day.mp4",
-      "status": "scheduled: metricool 395784313 (yt, ig, fb) for 17:00 IST"
-    },
-    {
-      "date": "2026-10-14 20:00",
-      "slot": "python",
-      "title": "My variable changed type and Python didn't care 🐍 Part 2 #shorts",
-      "tone": "playful & relatable",
-      "hook_format": "mini-story",
-      "style": "handwritten",
-      "video": "2026-10-14_2000_python-p02-variables-dynamic-typing.mp4",
-      "status": "scheduled: metricool 395935591 (yt, ig, fb) for 20:00 IST"
-    },
-    {
-      "date": "2026-10-15 10:00",
-      "slot": "educational",
-      "title": "Stop using range(len()) in Python - try this today #shorts",
-      "tone": "practical quick win",
-      "hook_format": "challenge",
-      "style": "handwritten",
-      "video": "2026-10-15_1000_educational-python-enumerate.mp4",
-      "status": "scheduled: metricool 396487282 (yt, ig, fb) for 10:00 IST"
-    },
-    {
-      "date": "2026-10-15 14:00",
-      "slot": "educational",
-      "title": "Why = NULL returns 0 rows in SQL (myth busted) #shorts",
-      "tone": "myth-buster",
-      "hook_format": "myth-vs-fact",
-      "style": "handwritten",
-      "video": "2026-10-15_1400_educational-sql-null-equals.mp4",
-      "status": "scheduled: metricool 396605325 (yt, ig, fb) for 14:00 IST"
-    },
-    {
-      "date": "2026-10-15 17:00",
-      "slot": "learn",
-      "title": "Stop letting AI code for you (how I use AI to learn) #shorts",
-      "tone": "motivating mentor",
-      "hook_format": "common-mistake",
-      "style": "handwritten",
-      "video": "2026-10-15_1700_learn-use-ai-to-learn-coding.mp4",
-      "status": "scheduled: metricool 396732755 (yt, ig, fb) for 17:00 IST"
-    },
-    {
-      "date": "2026-10-15 20:00",
-      "slot": "python",
-      "title": "This one line turned my Python list into None 😭 Part 3 #shorts",
-      "tone": "playful & relatable",
-      "hook_format": "common-mistake",
-      "style": "handwritten",
-      "video": "2026-10-15_2000_python-p03-lists-basics.mp4",
-      "status": "scheduled: metricool 396883772 (yt, ig, fb) for 20:00 IST"
-    },
-    {
-      "date": "2026-10-16 06:00",
-      "slot": "go",
-      "title": "Quick Go quiz: var vs := (what does it print?) | Go Part 2 #shorts",
-      "tone": "friendly teacher",
-      "hook_format": "quiz",
-      "style": "handwritten",
-      "video": "2026-10-16_0600_go-p02-var-vs-short-declare.mp4",
-      "status": "scheduled: metricool 397313485 (yt, ig, fb) for 06:00 IST"
-    },
-    {
-      "date": "2026-10-16 10:00",
-      "slot": "go",
-      "title": "Did you know Go can count for you? iota | Go Part 3 #shorts",
-      "tone": "friendly teacher",
-      "hook_format": "question",
-      "style": "handwritten",
-      "video": "2026-10-16_1000_go-p03-constants-iota.mp4",
-      "status": "scheduled: metricool 397403289 (yt, ig, fb) for 10:00 IST"
-    },
-    {
-      "date": "2026-10-16 16:00",
-      "slot": "educational",
-      "title": "Why is 0.1 + 0.2 not 0.3 in Python? (myth busted) #shorts",
-      "tone": "myth-buster",
-      "hook_format": "question",
-      "style": "handwritten",
-      "video": "2026-10-16_1600_educational-python-float-0-1-plus-0-2.mp4",
-      "status": "scheduled: metricool 397609965 (yt, ig, fb) for 16:00 IST"
-    },
-    {
-      "date": "2026-10-17 10:00",
-      "slot": "go",
-      "title": "You never typed float64. Go did! | Go Part 4 #shorts",
-      "tone": "friendly teacher",
-      "hook_format": "bold-claim",
-      "style": "handwritten",
-      "video": "2026-10-17_1000_go-p04-basic-types.mp4",
-      "status": "scheduled: metricool 398298764 (yt, ig, fb) for 10:00 IST"
-    },
-    {
-      "date": "2026-10-17 16:00",
-      "slot": "educational",
-      "title": "Myth: NaN equals NaN in JavaScript? Not even close #shorts",
-      "tone": "myth-buster",
-      "hook_format": "myth-vs-fact",
-      "style": "handwritten",
-      "video": "2026-10-17_1600_educational-js-nan-not-equal-nan.mp4",
-      "status": "scheduled: metricool 398423804 (yt, ig, fb) for 16:00 IST"
-    },
-    {
-      "date": "2026-10-18 10:00",
-      "slot": "go",
-      "title": "What's inside a Go variable you never set? | Go Part 5 #shorts",
-      "tone": "friendly teacher",
-      "hook_format": "question",
-      "style": "handwritten",
-      "video": "2026-10-18_1000_go-p05-zero-values.mp4",
-      "status": "scheduled: metricool 398913005 (yt, ig, fb) for 10:00 IST"
-    },
-    {
-      "date": "2026-10-18 16:00",
-      "slot": "educational",
-      "title": "Why is typeof null \"object\" in JavaScript? #shorts",
-      "tone": "myth-buster",
-      "hook_format": "question",
-      "style": "handwritten",
-      "video": "2026-10-18_1600_educational-js-typeof-null-object.mp4",
-      "status": "scheduled: metricool 399038191 (yt, ig, fb) for 16:00 IST"
-    },
-    {
-      "date": "2026-10-19 10:00",
-      "slot": "go",
-      "title": "Go refuses to multiply 7 by 2.5?! | Go Part 6 #shorts",
-      "tone": "friendly teacher",
-      "hook_format": "bold-claim",
-      "style": "handwritten",
-      "video": "2026-10-19_1000_go-p06-type-conversion.mp4",
-      "status": "scheduled: metricool 399616352 (yt, ig, fb) for 10:00 IST"
-    },
-    {
-      "date": "2026-10-19 16:00",
-      "slot": "educational",
-      "title": "Myth: round(2.5) is 3 in Python? Nope, it's 2 #shorts",
-      "tone": "myth-buster",
-      "hook_format": "myth-vs-fact",
-      "style": "handwritten",
-      "video": "2026-10-19_1600_educational-python-round-bankers.mp4",
-      "status": "queued: github action (yt, ig, fb) for 16:00 IST"
-    },
-    {
-      "date": "2026-10-20 10:00",
-      "slot": "go",
-      "title": "Did you know Go's if can declare variables? | Go Part 7 #shorts",
-      "tone": "friendly teacher",
-      "hook_format": "question",
-      "style": "handwritten",
-      "video": "2026-10-20_1000_go-p07-if-short-statement.mp4",
-      "status": "queued: github action (yt, ig, fb) for 10:00 IST"
-    },
-    {
-      "date": "2026-10-20 16:00",
-      "slot": "educational",
-      "title": "Why does parseInt(0.0000005) give 5 in JavaScript? #shorts",
-      "tone": "myth-buster",
-      "hook_format": "question",
-      "style": "handwritten",
-      "video": "2026-10-20_1600_educational-js-parseint-tiny-number.mp4",
-      "status": "queued: github action (yt, ig, fb) for 16:00 IST"
-    },
-    {
-      "date": "2026-10-21 10:00",
-      "slot": "go",
-      "title": "Go has NO while loop?! | Go Part 8 #shorts",
-      "tone": "friendly teacher",
-      "hook_format": "bold-claim",
-      "style": "handwritten",
-      "video": "2026-10-21_1000_go-p08-for-only-loop.mp4",
-      "status": "scheduled: metricool 401763858 (fallback: yt, ig, fb; direct: none) for 10:00 IST"
-    },
-    {
-      "date": "2026-10-21 16:00",
-      "slot": "educational",
-      "title": "Myth: [[0]*3]*3 makes a 3x3 grid in Python? Nope #shorts",
-      "tone": "myth-buster",
-      "hook_format": "myth-vs-fact",
-      "style": "handwritten",
-      "video": "2026-10-21_1600_educational-python-list-multiply-shared.mp4",
-      "status": "scheduled: metricool 401975944 (fallback: yt, ig, fb; direct: none) for 16:00 IST"
-    },
-    {
-      "date": "2026-10-22 10:00",
-      "slot": "go",
-      "title": "Still counting with i++ in Go? | Go Part 9 #shorts",
-      "tone": "friendly teacher",
-      "hook_format": "question",
-      "style": "handwritten",
-      "video": "2026-10-22_1000_go-p09-range-loops.mp4",
-      "status": "not posted: not connected in Zapier (YouTube connection reaches CuriosityBox UCtJ6818H8WuXS071samDcPA, not UCZ6m5Lh_vmFjOLL_RAHNTxw; Facebook connection lists only page 1380858578445805, not 926523670552408); instagram skipped (not in Zapier)"
-    },
-    {
-      "date": "2026-10-22 16:00",
-      "slot": "educational",
-      "title": "Why does map(parseInt) give NaN in JavaScript? #shorts",
-      "tone": "myth-buster",
-      "hook_format": "question",
-      "style": "handwritten",
-      "video": "2026-10-22_1600_educational-js-map-parseint-nan.mp4",
-      "status": "not posted: not connected in Zapier (YouTube connection reaches CuriosityBox UCtJ6818H8WuXS071samDcPA, not UCZ6m5Lh_vmFjOLL_RAHNTxw; Facebook connection lists only page 1380858578445805, not 926523670552408); instagram skipped (not in Zapier)"
-    },
-    {
-      "date": "2026-10-23 10:00",
-      "slot": "go",
-      "title": "Go's switch never needs break! | Go Part 10 #shorts",
-      "tone": "friendly teacher",
-      "hook_format": "bold-claim",
-      "style": "handwritten",
-      "video": "2026-10-23_1000_go-p10-switch-no-break.mp4",
-      "status": "not posted: not connected in Zapier (YouTube connection reaches CuriosityBox UCtJ6818H8WuXS071samDcPA, not UCZ6m5Lh_vmFjOLL_RAHNTxw; Facebook connection lists only page 1380858578445805, not 926523670552408); instagram skipped (not in Zapier)"
-    },
-    {
-      "date": "2026-10-23 20:00",
-      "slot": "educational",
-      "title": "Myth: COUNT(email) counts every row in SQL? Nope #shorts",
-      "tone": "myth-buster / surprising",
-      "hook_format": "myth-vs-fact",
-      "video": "2026-10-23_2000_educational-sql-count-skips-null.mp4",
-      "status": "not posted: not connected in Zapier (YouTube connection reaches CuriosityBox UCtJ6818H8WuXS071samDcPA, not UCZ6m5Lh_vmFjOLL_RAHNTxw; Facebook connection lists only page 1380858578445805, not 926523670552408); instagram skipped (not in Zapier)"
-    },
-    {
-      "date": "2026-10-24 10:00",
-      "slot": "go",
-      "title": "Can a Go function return two values? | Go Part 11 #shorts",
-      "tone": "friendly teacher",
-      "hook_format": "question",
-      "style": "handwritten",
-      "video": "2026-10-24_1000_go-p11-multiple-returns.mp4",
-      "status": "not posted: not connected in Zapier (YouTube connection reaches CuriosityBox UCtJ6818H8WuXS071samDcPA, not UCZ6m5Lh_vmFjOLL_RAHNTxw; Facebook connection lists only page 1380858578445805, not 926523670552408); instagram skipped (not in Zapier)"
-    },
-    {
-      "date": "2026-10-24 20:00",
-      "slot": "educational",
-      "title": "Why is bool(\"False\") True in Python? #shorts",
-      "tone": "myth-buster / surprising",
-      "hook_format": "question",
-      "video": "2026-10-24_2000_educational-python-bool-false-string.mp4",
-      "status": "not posted: not connected in Zapier (YouTube connection reaches CuriosityBox UCtJ6818H8WuXS071samDcPA, not UCZ6m5Lh_vmFjOLL_RAHNTxw; Facebook connection lists only page 1380858578445805, not 926523670552408); instagram skipped (not in Zapier)"
-    },
-    {
-      "date": "2026-10-25 10:00",
-      "slot": "go",
-      "title": "This Go return has no values. It works! | Go Part 12 #shorts",
-      "tone": "friendly teacher",
-      "hook_format": "bold-claim",
-      "style": "handwritten",
-      "video": "2026-10-25_1000_go-p12-named-returns.mp4",
-      "status": "not posted: not connected in Zapier (YouTube connection reaches CuriosityBox UCtJ6818H8WuXS071samDcPA, not UCZ6m5Lh_vmFjOLL_RAHNTxw; Facebook connection lists only page 1380858578445805, not 926523670552408); instagram skipped (not in Zapier)"
-    },
-    {
-      "date": "2026-10-25 20:00",
-      "slot": "educational",
-      "title": "Myth: -7 // 2 is -3 in Python? Nope #shorts",
-      "tone": "myth-buster / surprising",
-      "hook_format": "myth-vs-fact",
-      "video": "2026-10-25_2000_educational-python-floor-division-negative.mp4",
-      "status": "not posted: not connected in Zapier (YouTube connection reaches CuriosityBox UCtJ6818H8WuXS071samDcPA, not UCZ6m5Lh_vmFjOLL_RAHNTxw; Facebook connection lists only page 1380858578445805, not 926523670552408); instagram skipped (not in Zapier)"
-    },
-    {
-      "date": "2026-10-26 10:00",
-      "slot": "go",
-      "title": "Can one Go function take ANY number of args? | Go Part 13 #shorts",
-      "tone": "friendly teacher",
-      "hook_format": "question",
-      "style": "handwritten",
-      "video": "2026-10-26_1000_go-p13-variadic-functions.mp4",
-      "status": "not posted: not connected in Zapier (YouTube connection reaches CuriosityBox UCtJ6818H8WuXS071samDcPA, not UCZ6m5Lh_vmFjOLL_RAHNTxw; Facebook connection lists only page 1380858578445805, not 926523670552408); instagram skipped (not in Zapier)"
-    },
-    {
-      "date": "2026-10-26 20:00",
-      "slot": "educational",
-      "title": "Why is Math.min() bigger than Math.max() in JS? #shorts",
-      "tone": "myth-buster / surprising",
-      "hook_format": "question",
-      "video": "2026-10-26_2000_educational-js-math-max-empty.mp4",
-      "status": "posted 2026-10-27 via Zapier: YouTube cJd-56BQl1w, Facebook 2374972649917597; instagram skipped"
-    },
-    {
-      "date": "2026-10-27 10:00",
-      "slot": "go",
-      "title": "Which line prints first? Go defer | Go Part 14 #shorts",
-      "tone": "friendly teacher",
-      "hook_format": "quiz",
-      "style": "handwritten",
-      "video": "2026-10-27_1000_go-p14-defer.mp4",
-      "status": "posted: YouTube d__XKQa8zLQ (UCZ6m5Lh_vmFjOLL_RAHNTxw), Facebook 1953301259387770 (page 926523670552408); instagram skipped"
-    },
-    {
-      "date": "2026-10-27 20:00",
-      "slot": "educational",
-      "title": "Myth: \"5\" + 2 = 7 in JavaScript? Nope! #shorts",
-      "tone": "myth-buster / surprising",
-      "hook_format": "myth-vs-fact",
-      "style": "cwc-poster",
-      "video": "2026-10-27_2000_educational-js-plus-string-concat.mp4",
-      "status": "Facebook 2660902848069718 (page 926523670552408); YouTube not posted: Zapier upload_video 'throttled without retry' twice (channel UCZ6m5Lh_vmFjOLL_RAHNTxw verified); instagram skipped"
-    },
-    {
-      "date": "2026-10-28 10:00",
-      "slot": "go",
-      "title": "Array या Slice? Go में फर्क क्या है? | Go Part 15 #shorts",
-      "tone": "friendly teacher",
-      "hook_format": "question",
-      "style": "cwc-poster",
-      "video": "2026-10-28_1000_go-p15-arrays-vs-slices.mp4",
-      "status": "posted: YouTube buVyCFB0uB8 (UCZ6m5Lh_vmFjOLL_RAHNTxw), Facebook 1138577469108232 (page 926523670552408); instagram skipped"
-    },
-    {
-      "date": "2026-10-28 20:00",
-      "slot": "educational",
-      "title": "Why are 1 and True the same dict key in Python? #shorts",
-      "tone": "myth-buster / surprising",
-      "hook_format": "question",
-      "style": "cwc-poster",
-      "video": "2026-10-28_2000_educational-python-true-equals-1-dict-key.mp4",
-      "status": "posted: YouTube gZ7T1xg7d8I (UCZ6m5Lh_vmFjOLL_RAHNTxw), Facebook 1792809698637213 (page 926523670552408); instagram skipped"
-    },
-    {
-      "date": "2026-10-29 10:00",
-      "slot": "go",
-      "title": "append के बाद cap कितना होगा? Go Part 16 #shorts",
-      "tone": "friendly teacher",
-      "hook_format": "quiz",
-      "style": "cwc-poster",
-      "video": "2026-10-29_1000_go-p16-append-capacity.mp4",
-      "status": "posted: YouTube EzH-J1psVmU (UCZ6m5Lh_vmFjOLL_RAHNTxw), Facebook 1851857645879518 (page 926523670552408); instagram skipped"
-    },
-    {
-      "date": "2026-10-29 20:00",
-      "slot": "educational",
-      "title": "Myth: 128 == 128 is always true in Java? Nope! #shorts",
-      "tone": "myth-buster / surprising",
-      "hook_format": "myth-vs-fact",
-      "style": "cwc-poster",
-      "video": "2026-10-29_2000_educational-java-integer-cache-128.mp4",
-      "status": "posted: YouTube TA0AiuSyZ4A (UCZ6m5Lh_vmFjOLL_RAHNTxw), Facebook 2952433901757991 (page 926523670552408); instagram skipped"
-    },
-    {
-      "date": "2026-10-30 10:00",
-      "slot": "go",
-      "title": "b बदला तो a क्यों बदला? Go Slicing | Go Part 17 #shorts",
-      "tone": "friendly teacher",
-      "hook_format": "question",
-      "style": "cwc-poster",
-      "video": "2026-10-30_1000_go-p17-slicing-a-slice.mp4",
-      "status": "posted: YouTube T52JFhPs8QM (UCZ6m5Lh_vmFjOLL_RAHNTxw), Facebook 1116935841079096 (page 926523670552408); instagram skipped"
-    }
-  ],
-  "inspiring": {
-    "posted": [
-      "Every developer runs this loop (consistency beats talent)"
-    ]
+  "python": {
+   "next_part": 4,
+   "posted": [
+    "Part 1: print and f-strings",
+    "Part 2: Variables and dynamic typing",
+    "Part 3: Lists basics"
+   ]
   }
+ },
+ "educational": {
+  "posted": [
+   "JavaScript == vs ===",
+   "Python mutable default arguments",
+   "Build a Web API in Go (net/http, JSON, 1.22 routes)",
+   "Git: undo last commit with reset --soft",
+   "JavaScript sort() sorts numbers as strings",
+   "Python enumerate() instead of range(len()) loops",
+   "SQL: = NULL never matches, use IS NULL",
+   "Python: 0.1 + 0.2 != 0.3 (floating point)",
+   "JavaScript: NaN === NaN is false, use Number.isNaN()",
+   "JavaScript: typeof null is \"object\" (1995 bug)",
+   "Python: round(2.5) == 2 (banker's rounding)",
+   "JavaScript: parseInt(0.0000005) returns 5 (5e-7)",
+   "Python: [[0]*3]*3 shares one inner list",
+   "JavaScript: ['1','7','11'].map(parseInt) gives [1, NaN, 3] (index as radix)",
+   "SQL: COUNT(col) skips NULLs, use COUNT(*) for rows",
+   "Python: bool(\"False\") is True (non-empty strings are truthy)",
+   "Python: -7 // 2 is -4 (floor division rounds toward -infinity)",
+   "JavaScript: Math.min() > Math.max() is true (empty max is -Infinity)",
+   "JavaScript: \"5\" + 2 is \"52\" (+ concatenates strings, - and * convert)",
+   "Python: 1 and True are the same dict key (bool is an int)",
+   "Java: Integer 128 == 128 is false (Integer cache -128..127), use .equals()",
+   "Python: list.sort() returns None (sorts in place), use sorted() for a new list"
+  ]
+ },
+ "learn": {
+  "posted": [
+   "How to escape tutorial hell",
+   "How much to study per day",
+   "How to use AI to learn coding the right way"
+  ]
+ },
+ "log": [
+  {
+   "date": "2026-10-13 09:42",
+   "slot": "educational",
+   "title": "== vs === in JavaScript (in 15 seconds) #shorts",
+   "video": "2026-10-13_0936_educational-js-double-vs-triple-equals.mp4",
+   "status": "published: yt Juuq_QX4Ufw, ig, fb",
+   "tone": "myth-buster",
+   "hook_format": "comparison"
+  },
+  {
+   "date": "2026-10-13 09:57",
+   "slot": "inspiring",
+   "title": "Every developer runs this loop 💻 #shorts #coding",
+   "video": "2026-10-13_0950_inspiring-the-developer-loop.mp4",
+   "status": "published: yt LM3RZOemqOg, ig, fb",
+   "tone": "motivating mentor",
+   "hook_format": "myth-vs-fact"
+  },
+  {
+   "date": "2026-10-13 14:00",
+   "slot": "educational",
+   "title": "This Python default argument myth trips up everyone #shorts",
+   "tone": "myth-buster",
+   "hook_format": "myth-vs-fact",
+   "video": "2026-10-13_1400_educational-python-mutable-default-args.mp4",
+   "status": "scheduled: metricool 394701744 (yt, ig, fb) for 14:00 IST"
+  },
+  {
+   "date": "2026-10-13 17:00",
+   "slot": "learn",
+   "title": "How I escaped tutorial hell (the 1:3 rule) #shorts",
+   "tone": "motivating mentor",
+   "hook_format": "mini-story",
+   "video": "2026-10-13_1700_learn-escape-tutorial-hell.mp4",
+   "status": "scheduled: metricool 394840864 (yt, ig, fb) for 17:00 IST"
+  },
+  {
+   "date": "2026-10-13 20:00",
+   "slot": "python",
+   "title": "Can you guess what this Python f-string prints? 🐍 Part 1 #shorts",
+   "tone": "playful & relatable",
+   "hook_format": "quiz",
+   "video": "2026-10-13_2000_python-p01-print-and-fstrings.mp4",
+   "status": "scheduled: metricool 394998906 (yt, ig, fb) for 20:00 IST"
+  },
+  {
+   "date": "2026-10-13 21:05",
+   "slot": "educational",
+   "title": "Build a Web API in Go (no framework!) #shorts",
+   "tone": "practical quick win",
+   "hook_format": "bold-claim",
+   "style": "handwritten",
+   "video": "2026-10-13_2110_educational-go-web-api.mp4",
+   "status": "scheduled: metricool 395069359 (yt, ig, fb) for 21:05 IST"
+  },
+  {
+   "date": "2026-10-14 08:00",
+   "slot": "go",
+   "title": "Your first Go program won't run? Here's why | Go Part 1 #shorts",
+   "tone": "friendly teacher",
+   "hook_format": "common-mistake",
+   "video": "2026-10-14_0800_go-p01-hello-world-package-main.mp4",
+   "status": "scheduled: metricool 395489840 (yt, ig, fb) for 08:00 IST"
+  },
+  {
+   "date": "2026-10-14 11:00",
+   "slot": "educational",
+   "title": "Committed too early? Undo it in 1 line (Git) #shorts",
+   "tone": "practical quick win",
+   "hook_format": "question",
+   "style": "handwritten",
+   "video": "2026-10-14_1100_educational-git-undo-last-commit.mp4",
+   "status": "scheduled: metricool 395556694 (yt, ig, fb) for 11:00 IST"
+  },
+  {
+   "date": "2026-10-14 14:00",
+   "slot": "educational",
+   "title": "JavaScript sort() is lying to you (most devs miss this) #shorts",
+   "tone": "myth-buster",
+   "hook_format": "quiz",
+   "style": "handwritten",
+   "video": "2026-10-14_1400_educational-js-sort-numbers.mp4",
+   "status": "scheduled: metricool 395650640 (yt, ig, fb) for 14:00 IST"
+  },
+  {
+   "date": "2026-10-14 17:00",
+   "slot": "learn",
+   "title": "1 hour a day beats 8 on Sunday (my coding study plan) #shorts",
+   "tone": "motivating mentor",
+   "hook_format": "bold-claim",
+   "style": "handwritten",
+   "video": "2026-10-14_1700_learn-how-much-to-study-per-day.mp4",
+   "status": "scheduled: metricool 395784313 (yt, ig, fb) for 17:00 IST"
+  },
+  {
+   "date": "2026-10-14 20:00",
+   "slot": "python",
+   "title": "My variable changed type and Python didn't care 🐍 Part 2 #shorts",
+   "tone": "playful & relatable",
+   "hook_format": "mini-story",
+   "style": "handwritten",
+   "video": "2026-10-14_2000_python-p02-variables-dynamic-typing.mp4",
+   "status": "scheduled: metricool 395935591 (yt, ig, fb) for 20:00 IST"
+  },
+  {
+   "date": "2026-10-15 10:00",
+   "slot": "educational",
+   "title": "Stop using range(len()) in Python - try this today #shorts",
+   "tone": "practical quick win",
+   "hook_format": "challenge",
+   "style": "handwritten",
+   "video": "2026-10-15_1000_educational-python-enumerate.mp4",
+   "status": "scheduled: metricool 396487282 (yt, ig, fb) for 10:00 IST"
+  },
+  {
+   "date": "2026-10-15 14:00",
+   "slot": "educational",
+   "title": "Why = NULL returns 0 rows in SQL (myth busted) #shorts",
+   "tone": "myth-buster",
+   "hook_format": "myth-vs-fact",
+   "style": "handwritten",
+   "video": "2026-10-15_1400_educational-sql-null-equals.mp4",
+   "status": "scheduled: metricool 396605325 (yt, ig, fb) for 14:00 IST"
+  },
+  {
+   "date": "2026-10-15 17:00",
+   "slot": "learn",
+   "title": "Stop letting AI code for you (how I use AI to learn) #shorts",
+   "tone": "motivating mentor",
+   "hook_format": "common-mistake",
+   "style": "handwritten",
+   "video": "2026-10-15_1700_learn-use-ai-to-learn-coding.mp4",
+   "status": "scheduled: metricool 396732755 (yt, ig, fb) for 17:00 IST"
+  },
+  {
+   "date": "2026-10-15 20:00",
+   "slot": "python",
+   "title": "This one line turned my Python list into None 😭 Part 3 #shorts",
+   "tone": "playful & relatable",
+   "hook_format": "common-mistake",
+   "style": "handwritten",
+   "video": "2026-10-15_2000_python-p03-lists-basics.mp4",
+   "status": "scheduled: metricool 396883772 (yt, ig, fb) for 20:00 IST"
+  },
+  {
+   "date": "2026-10-16 06:00",
+   "slot": "go",
+   "title": "Quick Go quiz: var vs := (what does it print?) | Go Part 2 #shorts",
+   "tone": "friendly teacher",
+   "hook_format": "quiz",
+   "style": "handwritten",
+   "video": "2026-10-16_0600_go-p02-var-vs-short-declare.mp4",
+   "status": "scheduled: metricool 397313485 (yt, ig, fb) for 06:00 IST"
+  },
+  {
+   "date": "2026-10-16 10:00",
+   "slot": "go",
+   "title": "Did you know Go can count for you? iota | Go Part 3 #shorts",
+   "tone": "friendly teacher",
+   "hook_format": "question",
+   "style": "handwritten",
+   "video": "2026-10-16_1000_go-p03-constants-iota.mp4",
+   "status": "scheduled: metricool 397403289 (yt, ig, fb) for 10:00 IST"
+  },
+  {
+   "date": "2026-10-16 16:00",
+   "slot": "educational",
+   "title": "Why is 0.1 + 0.2 not 0.3 in Python? (myth busted) #shorts",
+   "tone": "myth-buster",
+   "hook_format": "question",
+   "style": "handwritten",
+   "video": "2026-10-16_1600_educational-python-float-0-1-plus-0-2.mp4",
+   "status": "scheduled: metricool 397609965 (yt, ig, fb) for 16:00 IST"
+  },
+  {
+   "date": "2026-10-17 10:00",
+   "slot": "go",
+   "title": "You never typed float64. Go did! | Go Part 4 #shorts",
+   "tone": "friendly teacher",
+   "hook_format": "bold-claim",
+   "style": "handwritten",
+   "video": "2026-10-17_1000_go-p04-basic-types.mp4",
+   "status": "scheduled: metricool 398298764 (yt, ig, fb) for 10:00 IST"
+  },
+  {
+   "date": "2026-10-17 16:00",
+   "slot": "educational",
+   "title": "Myth: NaN equals NaN in JavaScript? Not even close #shorts",
+   "tone": "myth-buster",
+   "hook_format": "myth-vs-fact",
+   "style": "handwritten",
+   "video": "2026-10-17_1600_educational-js-nan-not-equal-nan.mp4",
+   "status": "scheduled: metricool 398423804 (yt, ig, fb) for 16:00 IST"
+  },
+  {
+   "date": "2026-10-18 10:00",
+   "slot": "go",
+   "title": "What's inside a Go variable you never set? | Go Part 5 #shorts",
+   "tone": "friendly teacher",
+   "hook_format": "question",
+   "style": "handwritten",
+   "video": "2026-10-18_1000_go-p05-zero-values.mp4",
+   "status": "scheduled: metricool 398913005 (yt, ig, fb) for 10:00 IST"
+  },
+  {
+   "date": "2026-10-18 16:00",
+   "slot": "educational",
+   "title": "Why is typeof null \"object\" in JavaScript? #shorts",
+   "tone": "myth-buster",
+   "hook_format": "question",
+   "style": "handwritten",
+   "video": "2026-10-18_1600_educational-js-typeof-null-object.mp4",
+   "status": "scheduled: metricool 399038191 (yt, ig, fb) for 16:00 IST"
+  },
+  {
+   "date": "2026-10-19 10:00",
+   "slot": "go",
+   "title": "Go refuses to multiply 7 by 2.5?! | Go Part 6 #shorts",
+   "tone": "friendly teacher",
+   "hook_format": "bold-claim",
+   "style": "handwritten",
+   "video": "2026-10-19_1000_go-p06-type-conversion.mp4",
+   "status": "scheduled: metricool 399616352 (yt, ig, fb) for 10:00 IST"
+  },
+  {
+   "date": "2026-10-19 16:00",
+   "slot": "educational",
+   "title": "Myth: round(2.5) is 3 in Python? Nope, it's 2 #shorts",
+   "tone": "myth-buster",
+   "hook_format": "myth-vs-fact",
+   "style": "handwritten",
+   "video": "2026-10-19_1600_educational-python-round-bankers.mp4",
+   "status": "queued: github action (yt, ig, fb) for 16:00 IST"
+  },
+  {
+   "date": "2026-10-20 10:00",
+   "slot": "go",
+   "title": "Did you know Go's if can declare variables? | Go Part 7 #shorts",
+   "tone": "friendly teacher",
+   "hook_format": "question",
+   "style": "handwritten",
+   "video": "2026-10-20_1000_go-p07-if-short-statement.mp4",
+   "status": "queued: github action (yt, ig, fb) for 10:00 IST"
+  },
+  {
+   "date": "2026-10-20 16:00",
+   "slot": "educational",
+   "title": "Why does parseInt(0.0000005) give 5 in JavaScript? #shorts",
+   "tone": "myth-buster",
+   "hook_format": "question",
+   "style": "handwritten",
+   "video": "2026-10-20_1600_educational-js-parseint-tiny-number.mp4",
+   "status": "queued: github action (yt, ig, fb) for 16:00 IST"
+  },
+  {
+   "date": "2026-10-21 10:00",
+   "slot": "go",
+   "title": "Go has NO while loop?! | Go Part 8 #shorts",
+   "tone": "friendly teacher",
+   "hook_format": "bold-claim",
+   "style": "handwritten",
+   "video": "2026-10-21_1000_go-p08-for-only-loop.mp4",
+   "status": "scheduled: metricool 401763858 (fallback: yt, ig, fb; direct: none) for 10:00 IST"
+  },
+  {
+   "date": "2026-10-21 16:00",
+   "slot": "educational",
+   "title": "Myth: [[0]*3]*3 makes a 3x3 grid in Python? Nope #shorts",
+   "tone": "myth-buster",
+   "hook_format": "myth-vs-fact",
+   "style": "handwritten",
+   "video": "2026-10-21_1600_educational-python-list-multiply-shared.mp4",
+   "status": "scheduled: metricool 401975944 (fallback: yt, ig, fb; direct: none) for 16:00 IST"
+  },
+  {
+   "date": "2026-10-22 10:00",
+   "slot": "go",
+   "title": "Still counting with i++ in Go? | Go Part 9 #shorts",
+   "tone": "friendly teacher",
+   "hook_format": "question",
+   "style": "handwritten",
+   "video": "2026-10-22_1000_go-p09-range-loops.mp4",
+   "status": "not posted: not connected in Zapier (YouTube connection reaches CuriosityBox UCtJ6818H8WuXS071samDcPA, not UCZ6m5Lh_vmFjOLL_RAHNTxw; Facebook connection lists only page 1380858578445805, not 926523670552408); instagram skipped (not in Zapier)"
+  },
+  {
+   "date": "2026-10-22 16:00",
+   "slot": "educational",
+   "title": "Why does map(parseInt) give NaN in JavaScript? #shorts",
+   "tone": "myth-buster",
+   "hook_format": "question",
+   "style": "handwritten",
+   "video": "2026-10-22_1600_educational-js-map-parseint-nan.mp4",
+   "status": "not posted: not connected in Zapier (YouTube connection reaches CuriosityBox UCtJ6818H8WuXS071samDcPA, not UCZ6m5Lh_vmFjOLL_RAHNTxw; Facebook connection lists only page 1380858578445805, not 926523670552408); instagram skipped (not in Zapier)"
+  },
+  {
+   "date": "2026-10-23 10:00",
+   "slot": "go",
+   "title": "Go's switch never needs break! | Go Part 10 #shorts",
+   "tone": "friendly teacher",
+   "hook_format": "bold-claim",
+   "style": "handwritten",
+   "video": "2026-10-23_1000_go-p10-switch-no-break.mp4",
+   "status": "not posted: not connected in Zapier (YouTube connection reaches CuriosityBox UCtJ6818H8WuXS071samDcPA, not UCZ6m5Lh_vmFjOLL_RAHNTxw; Facebook connection lists only page 1380858578445805, not 926523670552408); instagram skipped (not in Zapier)"
+  },
+  {
+   "date": "2026-10-23 20:00",
+   "slot": "educational",
+   "title": "Myth: COUNT(email) counts every row in SQL? Nope #shorts",
+   "tone": "myth-buster / surprising",
+   "hook_format": "myth-vs-fact",
+   "video": "2026-10-23_2000_educational-sql-count-skips-null.mp4",
+   "status": "not posted: not connected in Zapier (YouTube connection reaches CuriosityBox UCtJ6818H8WuXS071samDcPA, not UCZ6m5Lh_vmFjOLL_RAHNTxw; Facebook connection lists only page 1380858578445805, not 926523670552408); instagram skipped (not in Zapier)"
+  },
+  {
+   "date": "2026-10-24 10:00",
+   "slot": "go",
+   "title": "Can a Go function return two values? | Go Part 11 #shorts",
+   "tone": "friendly teacher",
+   "hook_format": "question",
+   "style": "handwritten",
+   "video": "2026-10-24_1000_go-p11-multiple-returns.mp4",
+   "status": "not posted: not connected in Zapier (YouTube connection reaches CuriosityBox UCtJ6818H8WuXS071samDcPA, not UCZ6m5Lh_vmFjOLL_RAHNTxw; Facebook connection lists only page 1380858578445805, not 926523670552408); instagram skipped (not in Zapier)"
+  },
+  {
+   "date": "2026-10-24 20:00",
+   "slot": "educational",
+   "title": "Why is bool(\"False\") True in Python? #shorts",
+   "tone": "myth-buster / surprising",
+   "hook_format": "question",
+   "video": "2026-10-24_2000_educational-python-bool-false-string.mp4",
+   "status": "not posted: not connected in Zapier (YouTube connection reaches CuriosityBox UCtJ6818H8WuXS071samDcPA, not UCZ6m5Lh_vmFjOLL_RAHNTxw; Facebook connection lists only page 1380858578445805, not 926523670552408); instagram skipped (not in Zapier)"
+  },
+  {
+   "date": "2026-10-25 10:00",
+   "slot": "go",
+   "title": "This Go return has no values. It works! | Go Part 12 #shorts",
+   "tone": "friendly teacher",
+   "hook_format": "bold-claim",
+   "style": "handwritten",
+   "video": "2026-10-25_1000_go-p12-named-returns.mp4",
+   "status": "not posted: not connected in Zapier (YouTube connection reaches CuriosityBox UCtJ6818H8WuXS071samDcPA, not UCZ6m5Lh_vmFjOLL_RAHNTxw; Facebook connection lists only page 1380858578445805, not 926523670552408); instagram skipped (not in Zapier)"
+  },
+  {
+   "date": "2026-10-25 20:00",
+   "slot": "educational",
+   "title": "Myth: -7 // 2 is -3 in Python? Nope #shorts",
+   "tone": "myth-buster / surprising",
+   "hook_format": "myth-vs-fact",
+   "video": "2026-10-25_2000_educational-python-floor-division-negative.mp4",
+   "status": "not posted: not connected in Zapier (YouTube connection reaches CuriosityBox UCtJ6818H8WuXS071samDcPA, not UCZ6m5Lh_vmFjOLL_RAHNTxw; Facebook connection lists only page 1380858578445805, not 926523670552408); instagram skipped (not in Zapier)"
+  },
+  {
+   "date": "2026-10-26 10:00",
+   "slot": "go",
+   "title": "Can one Go function take ANY number of args? | Go Part 13 #shorts",
+   "tone": "friendly teacher",
+   "hook_format": "question",
+   "style": "handwritten",
+   "video": "2026-10-26_1000_go-p13-variadic-functions.mp4",
+   "status": "not posted: not connected in Zapier (YouTube connection reaches CuriosityBox UCtJ6818H8WuXS071samDcPA, not UCZ6m5Lh_vmFjOLL_RAHNTxw; Facebook connection lists only page 1380858578445805, not 926523670552408); instagram skipped (not in Zapier)"
+  },
+  {
+   "date": "2026-10-26 20:00",
+   "slot": "educational",
+   "title": "Why is Math.min() bigger than Math.max() in JS? #shorts",
+   "tone": "myth-buster / surprising",
+   "hook_format": "question",
+   "video": "2026-10-26_2000_educational-js-math-max-empty.mp4",
+   "status": "posted 2026-10-27 via Zapier: YouTube cJd-56BQl1w, Facebook 2374972649917597; instagram skipped"
+  },
+  {
+   "date": "2026-10-27 10:00",
+   "slot": "go",
+   "title": "Which line prints first? Go defer | Go Part 14 #shorts",
+   "tone": "friendly teacher",
+   "hook_format": "quiz",
+   "style": "handwritten",
+   "video": "2026-10-27_1000_go-p14-defer.mp4",
+   "status": "posted: YouTube d__XKQa8zLQ (UCZ6m5Lh_vmFjOLL_RAHNTxw), Facebook 1953301259387770 (page 926523670552408); instagram skipped"
+  },
+  {
+   "date": "2026-10-27 20:00",
+   "slot": "educational",
+   "title": "Myth: \"5\" + 2 = 7 in JavaScript? Nope! #shorts",
+   "tone": "myth-buster / surprising",
+   "hook_format": "myth-vs-fact",
+   "style": "cwc-poster",
+   "video": "2026-10-27_2000_educational-js-plus-string-concat.mp4",
+   "status": "Facebook 2660902848069718 (page 926523670552408); YouTube not posted: Zapier upload_video 'throttled without retry' twice (channel UCZ6m5Lh_vmFjOLL_RAHNTxw verified); instagram skipped"
+  },
+  {
+   "date": "2026-10-28 10:00",
+   "slot": "go",
+   "title": "Array या Slice? Go में फर्क क्या है? | Go Part 15 #shorts",
+   "tone": "friendly teacher",
+   "hook_format": "question",
+   "style": "cwc-poster",
+   "video": "2026-10-28_1000_go-p15-arrays-vs-slices.mp4",
+   "status": "posted: YouTube buVyCFB0uB8 (UCZ6m5Lh_vmFjOLL_RAHNTxw), Facebook 1138577469108232 (page 926523670552408); instagram skipped"
+  },
+  {
+   "date": "2026-10-28 20:00",
+   "slot": "educational",
+   "title": "Why are 1 and True the same dict key in Python? #shorts",
+   "tone": "myth-buster / surprising",
+   "hook_format": "question",
+   "style": "cwc-poster",
+   "video": "2026-10-28_2000_educational-python-true-equals-1-dict-key.mp4",
+   "status": "posted: YouTube gZ7T1xg7d8I (UCZ6m5Lh_vmFjOLL_RAHNTxw), Facebook 1792809698637213 (page 926523670552408); instagram skipped"
+  },
+  {
+   "date": "2026-10-29 10:00",
+   "slot": "go",
+   "title": "append के बाद cap कितना होगा? Go Part 16 #shorts",
+   "tone": "friendly teacher",
+   "hook_format": "quiz",
+   "style": "cwc-poster",
+   "video": "2026-10-29_1000_go-p16-append-capacity.mp4",
+   "status": "posted: YouTube EzH-J1psVmU (UCZ6m5Lh_vmFjOLL_RAHNTxw), Facebook 1851857645879518 (page 926523670552408); instagram skipped"
+  },
+  {
+   "date": "2026-10-29 20:00",
+   "slot": "educational",
+   "title": "Myth: 128 == 128 is always true in Java? Nope! #shorts",
+   "tone": "myth-buster / surprising",
+   "hook_format": "myth-vs-fact",
+   "style": "cwc-poster",
+   "video": "2026-10-29_2000_educational-java-integer-cache-128.mp4",
+   "status": "posted: YouTube TA0AiuSyZ4A (UCZ6m5Lh_vmFjOLL_RAHNTxw), Facebook 2952433901757991 (page 926523670552408); instagram skipped"
+  },
+  {
+   "date": "2026-10-30 10:00",
+   "slot": "go",
+   "title": "b बदला तो a क्यों बदला? Go Slicing | Go Part 17 #shorts",
+   "tone": "friendly teacher",
+   "hook_format": "question",
+   "style": "cwc-poster",
+   "video": "2026-10-30_1000_go-p17-slicing-a-slice.mp4",
+   "status": "posted: YouTube T52JFhPs8QM (UCZ6m5Lh_vmFjOLL_RAHNTxw), Facebook 1116935841079096 (page 926523670552408); instagram skipped"
+  },
+  {
+   "date": "2026-10-30 20:00",
+   "slot": "educational",
+   "title": "Why does list.sort() give None in Python? #shorts",
+   "tone": "myth-buster / surprising",
+   "hook_format": "question",
+   "style": "cwc-story",
+   "video": "2026-10-30_2000_educational-python-list-sort-returns-none.mp4",
+   "status": "posted: YouTube AUii3SygnRw (UCZ6m5Lh_vmFjOLL_RAHNTxw), Facebook photo 122128957245255823 / post 926523670552408_122128957269255823 (page 926523670552408); instagram skipped; media hosted on branch claude/shorts-2026-10-30-2000 (push to main rejected)"
+  }
+ ],
+ "inspiring": {
+  "posted": [
+   "Every developer runs this loop (consistency beats talent)"
+  ]
+ }
 }

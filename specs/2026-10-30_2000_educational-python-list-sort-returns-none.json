@@ -1,0 +1,61 @@
+{
+ "voice": "hm_omega",
+ "speed": 1.12,
+ "still_scene": 4,
+ "scenes": [
+  {
+   "title": [
+    {"text": "Python Myth:", "color": "black", "box": "yellow"},
+    {"text": "sort() नई list", "color": "white"},
+    {"text": "देता है?", "color": "white", "box": "red"}
+   ],
+   "note": "सोचो और\nबताओ!",
+   "face": "thinking",
+   "palette": "blue",
+   "say": "क्या आप जानते हो? Python में list dot sort, sorted list return नहीं करता!"
+  },
+  {
+   "title": [
+    {"text": "ये चलाओ", "color": "white"},
+    {"text": "और देखो", "color": "yellow"}
+   ],
+   "list": {"type": "steps", "items": ["nums = [3, 1, 2]", "nums = nums.sort()", "print(nums)", "None"]},
+   "face": "worried",
+   "palette": "orange",
+   "say": "nums equals nums dot sort लिखो, फिर print करो। Output आता है None. पूरी list गायब!"
+  },
+  {
+   "title": [
+    {"text": "ऐसा क्यों?", "color": "black", "box": "yellow"},
+    {"text": "In-place", "color": "white"},
+    {"text": "sorting", "color": "white", "box": "red"}
+   ],
+   "list": {"type": "check", "items": ["sort() उसी list को बदलता है", "Return करता है None", "फिर a = [1, 2, 3]"]},
+   "face": "thinking",
+   "palette": "purple",
+   "say": "क्योंकि sort उसी list को अंदर ही अंदर बदल देता है, और return करता है None."
+  },
+  {
+   "title": [
+    {"text": "ये गलती", "color": "white"},
+    {"text": "मत करना!", "color": "white", "box": "red"}
+   ],
+   "list": {"type": "cross", "items": ["x = x.sort()", "return items.sort()", "print(a.sort())"]},
+   "face": "worried",
+   "palette": "orange",
+   "say": "तो sort का result किसी variable में मत रखो, और उसे return भी मत करो।"
+  },
+  {
+   "title": [
+    {"text": "सही तरीका", "color": "black", "box": "yellow"},
+    {"text": "ये है!", "color": "white"}
+   ],
+   "list": {"type": "check", "items": ["nums.sort()", "new = sorted(nums)", "sorted() = नई list"]},
+   "banner": "sort() बदलता है, sorted() देता है",
+   "note": "Follow करो\nCareerWithCode",
+   "face": "happy",
+   "palette": "blue",
+   "say": "बस nums dot sort लिखो, या नई list चाहिए तो sorted use करो। ऐसी tricks के लिए CareerWithCode follow करो!"
+  }
+ ]
+}
