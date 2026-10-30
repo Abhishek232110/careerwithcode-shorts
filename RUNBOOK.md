@@ -98,7 +98,7 @@ caption with an engaging question or "comment X" prompt to grow reach.
    CareerWithCode; confirm with youtube_make_api_get_request (`url: https://www.googleapis.com/youtube/v3/channels`, `querystring: {"part": "snippet", "mine": "true"}`, `fail_on_errors: false`) that it returns
    `UCZ6m5Lh_vmFjOLL_RAHNTxw` and pass it as `connection_id`. Facebook uses connection
    `0255d81b-a11a-8f8c-9c7a-002223e547ee`. YouTube rejects descriptions containing `<` or `>`. For Facebook, check that page
-   `926523670552408` is in the `page` dropdown of `facebook_pages_create_page_video`. If a
+   `926523670552408` is in the `page` dropdown of `facebook_pages_create_page_photo`. If a
    CareerWithCode account isn't connected, don't post to it: keep the video and record
    "not posted: not connected in Zapier" for that platform.
 
