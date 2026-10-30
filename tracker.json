@@ -2,7 +2,7 @@
   "_note": "Updated automatically after every post. Edit next_part to jump a series forward/back.",
   "series": {
     "go": {
-      "next_part": 17,
+      "next_part": 18,
       "posted": [
         "Part 1: Hello World and package main",
         "Part 2: Variables: var vs :=",
@@ -19,7 +19,8 @@
         "Part 13: Variadic functions",
         "Part 14: Defer",
         "Part 15: Arrays vs slices",
-        "Part 16: append and slice capacity"
+        "Part 16: append and slice capacity",
+        "Part 17: Slicing a slice"
       ]
     },
     "python": {
@@ -493,6 +494,16 @@
       "style": "cwc-poster",
       "video": "2026-10-29_2000_educational-java-integer-cache-128.mp4",
       "status": "posted: YouTube TA0AiuSyZ4A (UCZ6m5Lh_vmFjOLL_RAHNTxw), Facebook 2952433901757991 (page 926523670552408); instagram skipped"
+    },
+    {
+      "date": "2026-10-30 10:00",
+      "slot": "go",
+      "title": "b बदला तो a क्यों बदला? Go Slicing | Go Part 17 #shorts",
+      "tone": "friendly teacher",
+      "hook_format": "question",
+      "style": "cwc-poster",
+      "video": "2026-10-30_1000_go-p17-slicing-a-slice.mp4",
+      "status": "posted: YouTube T52JFhPs8QM (UCZ6m5Lh_vmFjOLL_RAHNTxw), Facebook 1116935841079096 (page 926523670552408); instagram skipped"
     }
   ],
   "inspiring": {
