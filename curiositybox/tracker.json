@@ -59,7 +59,8 @@
       "Nalanda Mahavihara: 700+ saal chala, Xuanzang ne padhai ki",
       "Roopkund: kankal jheel, DNA se 1000 saal ka antar",
       "Mary Celeste 1872: khali jahaz, 10 log gayab",
-      "Sher Shah Suri: 5 saal ka raaj, rupiya sikka, GT Road"
+      "Sher Shah Suri: 5 saal ka raaj, rupiya sikka, GT Road",
+      "Great Wall chand se nahi dikhti (myth vs fact, Yang Liwei 2003)"
     ]
   },
   "log": [
@@ -532,6 +533,16 @@
       "mood": "upbeat",
       "video": "curiositybox/shorts/2026-10-31_1000_ai-pehla-computer-bug-moth.mp4",
       "status": "posted via Zapier: YouTube EAXlK9mncgU (10:00 IST), Facebook photo 122108460297515109 (post 1380858578445805_122108460321515109)"
+    },
+    {
+      "date": "2026-10-31 20:00",
+      "slot": "kahani",
+      "title": "Kya Chand Se Dikhti Hai Cheen Ki Deewar? Asli Sach #shorts",
+      "tone": "storyteller, suspense",
+      "hook_format": "myth-vs-fact",
+      "mood": "mysterious",
+      "video": "curiositybox/shorts/2026-10-31_2000_kahani-great-wall-chand-myth.mp4",
+      "status": "Facebook photo 122108647371515109 (post 1380858578445805_122108647401515109) via Zapier 20:00 IST; YouTube NOT posted: upload_video call blocked by session permission check (External System Writes), video ready at curiositybox/shorts/2026-10-31_2000_kahani-great-wall-chand-myth.mp4"
     }
   ]
 }
