@@ -56,7 +56,8 @@
    "JavaScript: \"5\" + 2 is \"52\" (+ concatenates strings, - and * convert)",
    "Python: 1 and True are the same dict key (bool is an int)",
    "Java: Integer 128 == 128 is false (Integer cache -128..127), use .equals()",
-   "Python: list.sort() returns None (sorts in place), use sorted() for a new list"
+   "Python: list.sort() returns None (sorts in place), use sorted() for a new list",
+   "Python: 'copy.py'.rstrip('.py') is 'co' (strip removes a character set), use removesuffix()"
   ]
  },
  "learn": {
@@ -526,6 +527,16 @@
    "style": "cwc-story",
    "video": "2026-10-31_1000_go-p18-maps-create-read-delete.mp4",
    "status": "posted: YouTube a7xFoCDSntA (UCZ6m5Lh_vmFjOLL_RAHNTxw), Facebook photo 926523670552408_122129007957255823 (page 926523670552408); instagram skipped"
+  },
+  {
+   "date": "2026-10-31 20:00",
+   "slot": "educational",
+   "title": "Myth: rstrip('.py') removes .py in Python? Nope! #shorts",
+   "tone": "myth-buster / surprising",
+   "hook_format": "myth-vs-fact",
+   "style": "cwc-story",
+   "video": "2026-10-31_2000_educational-python-rstrip-removes-characters.mp4",
+   "status": "posted: YouTube pQNRirpRI_c (UCZ6m5Lh_vmFjOLL_RAHNTxw), Facebook photo 122129049129255823 / post 926523670552408_122129049153255823 (page 926523670552408); instagram skipped"
   }
  ],
  "inspiring": {
