@@ -2,7 +2,7 @@
  "_note": "Updated automatically after every post. Edit next_part to jump a series forward/back.",
  "series": {
   "go": {
-   "next_part": 18,
+   "next_part": 19,
    "posted": [
     "Part 1: Hello World and package main",
     "Part 2: Variables: var vs :=",
@@ -20,7 +20,8 @@
     "Part 14: Defer",
     "Part 15: Arrays vs slices",
     "Part 16: append and slice capacity",
-    "Part 17: Slicing a slice"
+    "Part 17: Slicing a slice",
+    "Part 18: Maps: create, read, delete"
    ]
   },
   "python": {
@@ -515,6 +516,16 @@
    "style": "cwc-story",
    "video": "2026-10-30_2000_educational-python-list-sort-returns-none.mp4",
    "status": "posted: YouTube AUii3SygnRw (UCZ6m5Lh_vmFjOLL_RAHNTxw), Facebook photo 122128957245255823 / post 926523670552408_122128957269255823 (page 926523670552408); instagram skipped; media hosted on branch claude/shorts-2026-10-30-2000 (push to main rejected)"
+  },
+  {
+   "date": "2026-10-31 10:00",
+   "slot": "go",
+   "title": "delete के बाद Map क्या देगा? Go Maps | Go Part 18 #shorts",
+   "tone": "friendly teacher",
+   "hook_format": "quiz",
+   "style": "cwc-story",
+   "video": "2026-10-31_1000_go-p18-maps-create-read-delete.mp4",
+   "status": "posted: YouTube a7xFoCDSntA (UCZ6m5Lh_vmFjOLL_RAHNTxw), Facebook photo 926523670552408_122129007957255823 (page 926523670552408); instagram skipped"
   }
  ],
  "inspiring": {
