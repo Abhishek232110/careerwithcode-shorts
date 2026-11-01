@@ -1,0 +1,88 @@
+1
+00:00:00,250 --> 00:00:01,453
+Go Part 20.
+
+2
+00:00:01,673 --> 00:00:02,615
+Want to keep a
+
+3
+00:00:02,615 --> 00:00:03,625
+name and an age
+
+4
+00:00:03,625 --> 00:00:05,105
+together in one value?
+
+5
+00:00:05,325 --> 00:00:06,117
+That is what a
+
+6
+00:00:06,117 --> 00:00:06,909
+struct is for.
+
+7
+00:00:07,629 --> 00:00:09,159
+We make a User with
+
+8
+00:00:09,159 --> 00:00:10,849
+name Asha and age 21.
+
+9
+00:00:11,069 --> 00:00:12,954
+Then u dot Age equals
+
+10
+00:00:12,954 --> 00:00:14,840
+22 updates one field.
+
+11
+00:00:15,060 --> 00:00:16,541
+Run it, and it prints
+
+12
+00:00:16,541 --> 00:00:18,163
+Asha 22, then the whole
+
+13
+00:00:18,163 --> 00:00:19,785
+struct in curly braces.
+
+14
+00:00:20,505 --> 00:00:21,653
+Think of u as one
+
+15
+00:00:21,653 --> 00:00:23,340
+box with two named slots.
+
+16
+00:00:23,560 --> 00:00:24,681
+Use a dot to read
+
+17
+00:00:24,681 --> 00:00:25,868
+or change a field.
+
+18
+00:00:26,588 --> 00:00:28,850
+Recap: type struct defines it,
+
+19
+00:00:28,850 --> 00:00:30,811
+curly braces build it, dot
+
+20
+00:00:30,811 --> 00:00:32,470
+reads or sets a field.
+
+21
+00:00:32,690 --> 00:00:34,626
+Next time, methods on structs.
+
+22
+00:00:34,846 --> 00:00:36,324
+Follow CareerWithCode!
+
