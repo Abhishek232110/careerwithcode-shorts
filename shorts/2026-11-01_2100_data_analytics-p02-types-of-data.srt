@@ -1,0 +1,116 @@
+1
+00:00:00,250 --> 00:00:01,271
+Welcome to Data
+
+2
+00:00:01,271 --> 00:00:02,496
+Analytics, Part 2.
+
+3
+00:00:02,716 --> 00:00:03,840
+Look at this table.
+
+4
+00:00:04,060 --> 00:00:05,254
+Every column holds a
+
+5
+00:00:05,254 --> 00:00:06,627
+different type of data.
+
+6
+00:00:06,847 --> 00:00:08,219
+Can you spot all four?
+
+7
+00:00:08,939 --> 00:00:10,223
+Numbers you can add
+
+8
+00:00:10,223 --> 00:00:11,709
+and average, like age.
+
+9
+00:00:11,929 --> 00:00:13,098
+Text, like names.
+
+10
+00:00:13,318 --> 00:00:15,267
+Dates, like when someone joined.
+
+11
+00:00:15,487 --> 00:00:17,183
+And categories, a small set
+
+12
+00:00:17,183 --> 00:00:18,754
+of labels, like the plan.
+
+13
+00:00:19,474 --> 00:00:20,929
+In Python, pandas tells
+
+14
+00:00:20,929 --> 00:00:22,385
+you each column's type.
+
+15
+00:00:22,605 --> 00:00:24,011
+Tell it which column is
+
+16
+00:00:24,011 --> 00:00:25,233
+a date, and turn the
+
+17
+00:00:25,233 --> 00:00:26,517
+plan into a category.
+
+18
+00:00:27,237 --> 00:00:28,691
+The right type unlocks
+
+19
+00:00:28,691 --> 00:00:29,947
+the right analysis.
+
+20
+00:00:30,167 --> 00:00:31,628
+Categories let you count
+
+21
+00:00:31,628 --> 00:00:32,542
+users per plan.
+
+22
+00:00:32,762 --> 00:00:33,834
+Three of our five
+
+23
+00:00:33,834 --> 00:00:34,907
+users are on Pro.
+
+24
+00:00:35,627 --> 00:00:36,771
+So, numbers, text,
+
+25
+00:00:36,771 --> 00:00:38,107
+dates and categories.
+
+26
+00:00:38,327 --> 00:00:39,275
+In Part 3, we
+
+27
+00:00:39,275 --> 00:00:40,515
+learn to think in
+
+28
+00:00:40,515 --> 00:00:41,754
+rows and columns.
+
+29
+00:00:41,974 --> 00:00:43,453
+Follow CareerWithCode!
+
