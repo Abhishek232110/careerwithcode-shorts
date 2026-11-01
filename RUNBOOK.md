@@ -7,7 +7,7 @@ skipped because Zapier can't post to it.
 | Slot (IST) | `SLOT` value   | Content |
 |-----------|----------------|---------|
 | 20:00     | `go`           | Go series, next part from `curriculum.json` (English) |
-| 21:00     | `python`       | Python series, next part from `curriculum.json` (English) |
+| 21:00     | `data_analytics` | Data Analytics series, next part from `curriculum.json` (English). Python series is retired (Abhishek posts it himself). |
 
 Abhishek (Nov 1 2026): CareerWithCode posts only in the night shift (8-9 PM IST), only in English,
 and only as series in order (no random one-off topics). The other slots below are retired.
@@ -45,7 +45,7 @@ caption with an engaging question or "comment X" prompt to grow reach.
    Work inside the clone.
 
 2. **Pick the topic.** Read `tracker.json` and `curriculum.json`.
-   - `go` / `python`: topic = `curriculum[SLOT][next_part - 1]`. If the list has run out,
+   - `go` / `data_analytics`: topic = `curriculum[SLOT][next_part - 1]`. If the list has run out,
      write the next sensible topic for that series yourself and append it to the list.
    - `educational` / `learn`: choose a topic NOT already in `tracker[SLOT].posted`
      (use the `*_ideas` lists for inspiration; vary languages and formats; never repeat).
