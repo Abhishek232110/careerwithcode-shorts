@@ -1,0 +1,29 @@
+{
+ "voice": "am_michael",
+ "speed": 1.0,
+ "still_scene": 1,
+ "title_yt": "Go Part 20: Structs #shorts",
+ "scenes": [
+  {"title": [{"text": "Go Part 20", "box": "yellow"}, {"text": "Structs!"}, {"text": "Why use them?", "box": "red"}],
+   "image": {"type": "code", "file": "main.go",
+             "lines": ["type User struct {", "    Name string", "    Age  int", "}"], "highlight": [0]},
+   "face": "thinking", "palette": "blue",
+   "say": "Go Part 20. Want to keep a name and an age together in one value? That is what a struct is for."},
+  {"title": [{"text": "Make one", "box": "yellow"}, {"text": "and change it"}],
+   "image": {"type": "code", "file": "main.go",
+             "lines": ["u := User{Name: \"Asha\", Age: 21}", "u.Age = 22", "fmt.Println(u.Name, u.Age)", "fmt.Println(u)"],
+             "highlight": [1], "output": ["Asha 22", "{Asha 22}"]},
+   "face": "happy", "palette": "orange", "reveal": [0.4, 0.5, 0.5, 0.5, 1.2],
+   "say": "We make a User with name Asha and age 21. Then u dot Age equals 22 updates one field. Run it, and it prints Asha 22, then the whole struct in curly braces."},
+  {"title": [{"text": "One value,", "box": "yellow"}, {"text": "named fields"}],
+   "image": {"type": "refs", "names": ["u"], "boxes": [["Asha", "22"]],
+             "links": [[0, 0]], "new": [[0, 1]], "label": "ONE USER VALUE"},
+   "face": "thinking", "palette": "purple",
+   "say": "Think of u as one box with two named slots. Use a dot to read or change a field."},
+  {"title": [{"text": "Remember", "box": "yellow"}, {"text": "this!", "color": "yellow"}],
+   "image": {"type": "check", "items": ["type X struct { ... }", "X{Field: value}", "x.Field reads or sets", "Next: methods on structs"]},
+   "banner": "Next: Go Part 21", "note": "Follow\nCareerWithCode",
+   "face": "happy", "palette": "blue",
+   "say": "Recap: type struct defines it, curly braces build it, dot reads or sets a field. Next time, methods on structs. Follow CareerWithCode!"}
+ ]
+}
