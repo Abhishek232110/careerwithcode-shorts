@@ -2,7 +2,7 @@
  "_note": "Updated automatically after every post. Edit next_part to jump a series forward/back.",
  "series": {
   "go": {
-   "next_part": 19,
+   "next_part": 20,
    "posted": [
     "Part 1: Hello World and package main",
     "Part 2: Variables: var vs :=",
@@ -21,7 +21,8 @@
     "Part 15: Arrays vs slices",
     "Part 16: append and slice capacity",
     "Part 17: Slicing a slice",
-    "Part 18: Maps: create, read, delete"
+    "Part 18: Maps: create, read, delete",
+    "Part 19: Checking if a map key exists (comma ok)"
    ]
   },
   "python": {
@@ -537,6 +538,16 @@
    "style": "cwc-story",
    "video": "2026-10-31_2000_educational-python-rstrip-removes-characters.mp4",
    "status": "posted: YouTube pQNRirpRI_c (UCZ6m5Lh_vmFjOLL_RAHNTxw), Facebook photo 122129049129255823 / post 926523670552408_122129049153255823 (page 926523670552408); instagram skipped"
+  },
+  {
+   "date": "2026-11-01 10:00",
+   "slot": "go",
+   "title": "Map से 0 मिला, key है या नहीं? Go Comma ok | Go Part 19 #shorts",
+   "tone": "friendly teacher",
+   "hook_format": "question",
+   "style": "cwc-story",
+   "video": "2026-11-01_1000_go-p19-map-comma-ok.mp4",
+   "status": "posted: YouTube dmy5InVoeBE (UCZ6m5Lh_vmFjOLL_RAHNTxw), Facebook photo 926523670552408_122129131383255823 (page 926523670552408); instagram skipped"
   }
  ],
  "inspiring": {
