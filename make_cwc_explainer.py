@@ -211,8 +211,119 @@ def check_image(img, shown):
     return im
 
 
+def table_image(img, shown):
+    """Spreadsheet-style table. Rows appear one by one; then `bad` cells/rows get a red mark.
+    {"type": "table", "cols": [...], "rows": [[...]], "bad": [[r, c] or [r, -1 for whole row]],
+     "good_rows": [r, ...], "file": "sales.csv"}"""
+    cols, rows = img["cols"], img["rows"]
+    bad = [tuple(x) for x in img.get("bad", [])]
+    good = set(img.get("good_rows", []))
+    rh = 104
+    w = CARD_W
+    cw = (w - 60) / len(cols)
+    im, d = card(w, 120 + rh * (len(rows) + 1) + 20, img.get("file", "data.csv"))
+    y0 = 20 + 110
+    d.rectangle([40, y0, w, y0 + rh], fill=(40, 70, 130, 255))
+    for c, name in enumerate(cols):
+        d.text((50 + cw * c + 14, y0 + 26), name, font=FM(40), fill=WHITE)
+    for r, row in enumerate(rows[:shown]):
+        y = y0 + rh * (r + 1)
+        fill = (32, 34, 46, 255) if r % 2 else (26, 28, 38, 255)
+        if r in good:
+            fill = (20, 80, 40, 255)
+        d.rectangle([40, y, w, y + rh], fill=fill)
+        for c, val in enumerate(row):
+            d.text((50 + cw * c + 14, y + 26), str(val), font=FM(42), fill=(230, 232, 240))
+    if shown > len(rows):
+        for r, c in bad:
+            y = y0 + rh * (r + 1)
+            if c < 0:
+                d.rounded_rectangle([44, y + 6, w - 4, y + rh - 6], 12, outline=RED, width=7)
+                d.text((w - 210, y + 24), "DUPLICATE", font=FM(34), fill=RED)
+            else:
+                x = 50 + cw * c
+                d.rounded_rectangle([x + 4, y + 6, x + cw - 4, y + rh - 6], 12, outline=RED, width=7)
+                d.text((x + 18, y + 24), img.get("blank_label", "BLANK"), font=FM(34), fill=RED)
+    for c in range(1, len(cols)):
+        d.line([(50 + cw * c, y0), (50 + cw * c, y0 + rh * (min(shown, len(rows)) + 1))], fill=(70, 80, 110), width=2)
+    return im
+
+
+def table_steps(img):
+    return len(img["rows"]) + (1 if img.get("bad") else 0)
+
+
+def flow_image(img, shown):
+    """Numbered steps in boxes joined by arrows, two per row (zig-zag).
+    {"type": "flow", "steps": [["Collect", "get the data"], ...]}"""
+    steps = img["steps"]
+    n = len(steps); rows = math.ceil(n / 2)
+    bw, bh, gap = 420, 210, 120
+    h = 60 + rows * bh + (rows - 1) * gap + 40
+    im, d = card(CARD_W, h)
+    cols = [(255, 212, 0), (80, 250, 123), (70, 150, 255), (255, 121, 198), (255, 150, 60), (189, 147, 249)]
+    pos = []
+    for i in range(n):
+        r, c = divmod(i, 2)
+        if r % 2: c = 1 - c
+        x = 60 + c * (bw + 100); y = 60 + r * (bh + gap)
+        pos.append((x, y))
+    for i in range(min(shown, n)):
+        x, y = pos[i]; col = cols[i % len(cols)]
+        if i > 0:
+            px, py = pos[i - 1]
+            if py == y:
+                a, b = ((px + bw, y + bh / 2), (x, y + bh / 2)) if px < x else ((px, y + bh / 2), (x + bw, y + bh / 2))
+            else:
+                a, b = (px + bw / 2, py + bh), (x + bw / 2, y)
+            d.line([a, b], fill=(200, 205, 220), width=10)
+            ang = math.atan2(b[1] - a[1], b[0] - a[0]); L = 30
+            d.polygon([b, (b[0] - L * math.cos(ang - 0.5), b[1] - L * math.sin(ang - 0.5)),
+                       (b[0] - L * math.cos(ang + 0.5), b[1] - L * math.sin(ang + 0.5))], fill=(200, 205, 220))
+        d.rounded_rectangle([x, y, x + bw, y + bh], 28, fill=(30, 34, 50, 255), outline=col + (255,), width=6)
+        d.ellipse([x + 24, y + 24, x + 94, y + 94], fill=col + (255,))
+        l, t, r_, b_ = FM(44).getbbox(str(i + 1))
+        d.text((x + 59 - (r_ + l) / 2, y + 59 - (b_ + t) / 2), str(i + 1), font=FM(44), fill=BLACK)
+        title, sub = steps[i][0], (steps[i][1] if len(steps[i]) > 1 else "")
+        fs = 64
+        while F(fs).getlength(title) > bw - 130 and fs > 36: fs -= 2
+        d.text((x + 112, y + 22), title, font=F(fs), fill=WHITE)
+        fs = 40
+        while F(fs).getlength(sub) > bw - 50 and fs > 26: fs -= 2
+        d.text((x + 28, y + 128), sub, font=F(fs), fill=(190, 195, 215))
+    return im
+
+
+def chart_image(img, shown):
+    """Bar chart; bars grow in one by one, `highlight` bar is yellow, others blue.
+    {"type": "chart", "title": "Sales this week", "bars": [["Mon", 250], ...], "highlight": 5}"""
+    bars = img["bars"]; hi = img.get("highlight", -1)
+    h = 760
+    im, d = card(CARD_W, h)
+    d.text((60, 50), img.get("title", ""), font=F(54), fill=WHITE)
+    top, base = 170, h - 60
+    left, right = 70, CARD_W - 20
+    mx = max(v for _, v in bars) or 1
+    bw = (right - left) / len(bars)
+    d.line([(left, base), (right, base)], fill=(150, 160, 190), width=4)
+    for i, (lab, v) in enumerate(bars):
+        x = left + bw * i
+        l, t, r, b = FM(34).getbbox(lab)
+        d.text((x + bw / 2 - (r + l) / 2, base + 10), lab, font=FM(34), fill=(200, 205, 220))
+        if i >= shown:
+            continue
+        bh = (base - top - 60) * v / mx
+        col = YELLOW if i == hi else (70, 150, 255)
+        d.rounded_rectangle([x + 14, base - bh, x + bw - 14, base - 2], 10, fill=col)
+        s = str(v); l, t, r, b = FM(32).getbbox(s)
+        d.text((x + bw / 2 - (r + l) / 2, base - bh - 44), s, font=FM(32), fill=YELLOW if i == hi else WHITE)
+    return im
+
+
 IMAGES = {"code": (code_image, code_steps), "refs": (refs_image, refs_steps),
-          "check": (check_image, lambda img: len(img["items"]))}
+          "check": (check_image, lambda img: len(img["items"])),
+          "table": (table_image, table_steps), "flow": (flow_image, lambda img: len(img["steps"])),
+          "chart": (chart_image, lambda img: len(img["bars"]))}
 
 
 # ---------------------------------------------------------------- captions
