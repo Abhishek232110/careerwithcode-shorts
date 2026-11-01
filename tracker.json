@@ -35,9 +35,10 @@
    ]
   },
   "data_analytics": {
-   "next_part": 2,
+   "next_part": 3,
    "posted": [
-    "Part 1: What is Data Analytics? (the 4 steps)"
+    "Part 1: What is Data Analytics? (the 4 steps)",
+    "Part 2: Types of data: numbers, text, dates, categories"
    ]
   }
  },
@@ -574,6 +575,15 @@
    "style": "cwc-explainer",
    "video": "2026-11-01_2000_go-p20-structs.mp4",
    "status": "posted: YouTube M80-tDaQlZc (UCZ6m5Lh_vmFjOLL_RAHNTxw), Facebook photo 926523670552408_122129164659255823 (page 926523670552408); instagram skipped"
+  },
+  {
+   "date": "2026-11-01",
+   "slot": "data_analytics",
+   "title": "Data Analytics Part 2: Types of Data #shorts",
+   "tone": "friendly teacher",
+   "hook_format": "question",
+   "video": "2026-11-01_2100_data_analytics-p02-types-of-data.mp4",
+   "status": "facebook posted (photo 122129168163255823); youtube NOT posted: Zapier upload_video throttled 3x (21:00-21:05 IST)"
   }
  ],
  "inspiring": {
