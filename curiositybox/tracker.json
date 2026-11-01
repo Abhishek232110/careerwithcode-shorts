@@ -19,7 +19,8 @@
       "reCAPTCHA 'I'm not a robot' checkbox: click se pehle mouse movement dekhta hai",
       "Incognito mode myth: websites, office network aur ISP phir bhi dekh sakte hain",
       "Phone camera se TV remote ki infrared roshni dekhna (remote check trick)",
-      "Pehla computer bug: 1947 Harvard Mark II mein asli moth (Grace Hopper team logbook)"
+      "Pehla computer bug: 1947 Harvard Mark II mein asli moth (Grace Hopper team logbook)",
+      "WiFi password QR code se share (Android Settings Share, iPhone Passwords app)"
     ]
   },
   "whatif": {
@@ -543,6 +544,16 @@
       "mood": "mysterious",
       "video": "curiositybox/shorts/2026-10-31_2000_kahani-great-wall-chand-myth.mp4",
       "status": "Facebook photo 122108647371515109 (post 1380858578445805_122108647401515109) via Zapier 20:00 IST; YouTube NOT posted: upload_video call blocked by session permission check (External System Writes), video ready at curiositybox/shorts/2026-10-31_2000_kahani-great-wall-chand-myth.mp4"
+    },
+    {
+      "date": "2026-11-01 10:00",
+      "slot": "ai",
+      "title": "WiFi Password Bhool Gaye? QR Code Se Share Karo! #shorts",
+      "tone": "practical quick win",
+      "hook_format": "question",
+      "mood": "upbeat",
+      "video": "curiositybox/shorts/2026-11-01_1000_ai-wifi-password-qr-share.mp4",
+      "status": "posted via Zapier: YouTube 4azmnETttco (10:00 IST), Facebook photo 122108871045515109 (post 1380858578445805_122108871069515109)"
     }
   ]
 }
