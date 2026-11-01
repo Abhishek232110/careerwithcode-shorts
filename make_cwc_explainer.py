@@ -52,7 +52,8 @@ CARD_TOP = 0          # set per scene below the headline
 SYN = {"kw": (255, 121, 198), "str": (241, 250, 140), "num": (189, 147, 249),
        "com": (98, 114, 164), "fn": (80, 250, 123), "txt": (248, 248, 242)}
 KW = set("def return if else elif for while in import from as class not and or is None True False "
-         "print len const let var function new public static void int String".split())
+         "print len const let var function new public static void int String "
+         "func package type struct interface go chan map range defer make append nil fmt".split())
 
 
 # ---------------------------------------------------------------- content images

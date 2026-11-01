@@ -1,16 +1,16 @@
 # CareerWithCode Shorts — run instructions
 
-Each scheduled run makes ONE Short of **more than 30 seconds (31–60 s; Abhishek, Oct 29)**, built from **4-6 poster images with a Hindi voiceover explaining the topic (Abhishek, Oct 30)**, for ONE slot and posts it publicly to YouTube (Short) and
+Each scheduled run makes ONE Short of **more than 30 seconds (31–60 s; Abhishek, Oct 29)**, built from **4-6 content images with an ENGLISH voiceover and captions (Abhishek, Nov 1; English only, series only)**, for ONE slot and posts it publicly to YouTube (Short) and
 Facebook (image post of the poster, never a reel) through **Zapier only** (step 6). Metricool is no longer used. Instagram is
 skipped because Zapier can't post to it.
 
 | Slot (IST) | `SLOT` value   | Content |
 |-----------|----------------|---------|
-| 08:00     | `go`           | Go series, next part from `curriculum.json` |
-| 11:00     | `educational`  | Helpful coding tip / concept, new topic |
-| 14:00     | `educational`  | Helpful coding tip / concept, new topic |
-| 17:00     | `learn`        | How to learn programming (roadmaps, study tips) |
-| 20:00     | `python`       | Python series, next part from `curriculum.json` |
+| 20:00     | `go`           | Go series, next part from `curriculum.json` (English) |
+| 21:00     | `python`       | Python series, next part from `curriculum.json` (English) |
+
+Abhishek (Nov 1 2026): CareerWithCode posts only in the night shift (8-9 PM IST), only in English,
+and only as series in order (no random one-off topics). The other slots below are retired.
 
 ## Tone — every Short must feel different
 
@@ -18,11 +18,11 @@ Each slot has its own voice. Hook, takeaway, CTA and caption must all match it.
 
 | Slot  | Tone | Feel |
 |-------|------|------|
-| 08:00 Go series | **Friendly teacher** | Clear, encouraging, "let's learn this together". CTA teases the next part. |
+| 20:00 Go series | **Friendly teacher** | Clear, encouraging, "let's learn this together". CTA teases the next part. |
 | 11:00 educational | **Practical quick win** | Energetic and useful: "Save this", a trick you can use today. |
 | 14:00 educational | **Myth-buster / surprising** | "You've been doing this wrong", "Most devs don't know this". |
 | 17:00 learn | **Motivating mentor** | Inspiring, growth-focused, speaks to beginners chasing a dev career. |
-| 20:00 Python series | **Playful & relatable** | Light humour, relatable dev moments, still teaches the topic properly. |
+| 21:00 Python series | **Playful & relatable** | Light humour, relatable dev moments, still teaches the topic properly. |
 
 **Rotate the hook format** so the same slot never uses the same format twice in a row
 (check that slot's last entry in `tracker.log`, field `hook_format`):
@@ -50,50 +50,33 @@ caption with an engaging question or "comment X" prompt to grow reach.
    - `educational` / `learn`: choose a topic NOT already in `tracker[SLOT].posted`
      (use the `*_ideas` lists for inspiration; vary languages and formats; never repeat).
 
-3. **Write the spec** (multi-image voiceover Short, from Oct 30 2026) to `specs/<YYYY-MM-DD>_<HHMM>_<slot>-<slug>.json` (IST).
-   Abhishek: "generate multiple images and make 30 sec shorts using those images and use voice to
-   explain this". The Short is 4-6 scenes. Each scene is one image in his cartoon poster design
-   (big Hindi + English headline on yellow/red boxes, a check / cross / steps panel, the cartoon boy
-   in the "Career With Code" hoodie, optional sticky note and red banner, CareerWithCode footer),
-   and a Hindi voice line (`say`) explains it while it is on screen. `make_cwc_story.py` draws the
-   scenes, speaks the lines (offline Kokoro voice) and joins everything:
-   ```json
-   {
-     "voice": "hm_omega", "speed": 1.12,
-     "still_scene": 4,                     // the scene used as the Facebook image (pick the most useful one)
-     "scenes": [
-       {"title": [{"text": "Python Myth:", "color": "black", "box": "yellow"},   // 1-3 lines, <= 16 chars
-                  {"text": "0.1 + 0.2", "color": "white"},
-                  {"text": "= 0.3 ?", "color": "white", "box": "red"}],
-        "note": "सोचो और\nबताओ!", "face": "thinking", "palette": "blue",
-        "say": "क्या आप जानते हो? Python में zero point one plus zero point two, zero point three नहीं होता!"},
-       {"title": [...], "list": {"type": "steps", "items": ["print(0.1 + 0.2)", "0.30000000000000004"]},
-        "face": "worried", "palette": "orange",
-        "say": "Print करो तो आता है zero point three, फिर बहुत zeros के बाद चार।"},
-       ...
-     ]
-   }
-   ```
-   Full example: `specs/sample_story_float.json`. Scene keys are the same as the old poster spec
-   (`title`, `list` {type: check|cross|steps, items 2-5}, `note`, `banner`, `face`, `palette`), plus `say`.
-   - Story shape: scene 1 = hook question; middle scenes = explanation / code / output / why;
-     last scene = the answer or fix, plus "CareerWithCode follow करो" (series: tease the next part).
-   - `say`: simple spoken Hindi in Devanagari, 1-2 short sentences, about 6-9 s each. Tech words
-     stay in English letters (Python, slice, append). Write symbols and code as they are spoken
-     ("zero point one", "math dot isclose", "double equals"), never raw code in `say`.
-   - The images carry the real content (code, output, steps); the voice explains them. Everything
-     must be correct; for code, run it and use the real output.
-   - Vary `palette` and `face` between scenes. Mix Hindi and English on the images; no emoji.
-   - Series slots: put "Go Part N" in scene 1's title or note.
+3. **Write the spec** (ENGLISH explainer Short, from Nov 1 2026) to `specs/<YYYY-MM-DD>_<HHMM>_<slot>-<slug>.json` (IST).
+   Abhishek (Nov 1): "generate images of the content, then make shorts using these images and explain
+   in English", and "post only in English on the CareerWithCode channel and page". EVERYTHING is
+   English: titles, image text, voice, captions, YouTube title/description, Facebook caption.
+   No Hindi, no Hinglish, no Devanagari anywhere. `make_cwc_explainer.py` draws 4-6 content images
+   (code editor, output, memory/flow diagrams, checklist) in the CareerWithCode poster look, speaks an
+   English voiceover (offline Kokoro, am_michael) and burns in word-by-word English captions.
+   Full example: `specs/sample_explainer_list_alias.json`. Scene keys:
+   - `title`: 1-3 short English lines (<= 16 chars), `box`: yellow | red optional.
+   - `image` (what the scene SHOWS, the real content):
+     `{"type": "code", "file": "main.go", "lines": [...], "highlight": [i], "output": [...]}` (lines type in one by one, output last),
+     `{"type": "refs", "names": [...], "boxes": [[...]], "links": [[name, box]], "new": [[box, cell]], "label": "..."}` (names pointing at values in memory),
+     `{"type": "check", "items": [...], "kind": "check|cross|steps"}`.
+   - `face` happy|thinking|worried, `palette` blue|orange|purple (vary them), optional `banner`, `note`, `reveal` (seconds per step).
+   - `say`: 1-3 short spoken English sentences explaining that image. Write code as spoken
+     ("x colon equals five", "a dot copy"), never raw code.
+   - Story: scene 1 = "Go Part N" / "Python Part N" + hook question; middle = code, real output, why;
+     last = recap checklist + tease Part N+1 + "Follow CareerWithCode".
+   - Code must be correct: run it (go run / python3) and use the real output.
 
-4. **Render:** first `python3 -m pip install -q kokoro-onnx soundfile` (the voice model, ~120 MB,
-   downloads itself from GitHub on first use), then
-   `python3 make_cwc_story.py specs/<name>.json shorts/<name>.mp4`
-   It prints the length; it must be MORE than 30 s and at most 60 s. If it says the voiceover is too
-   long, shorten the `say` lines. Then check the images on a contact sheet:
-   `ffmpeg -y -i shorts/<name>.mp4 -vf "fps=1/4,scale=270:-1,tile=6x2" /tmp/sheet.png` and Read it:
-   no empty boxes instead of letters, nothing cut off or overlapping. Fix the spec and re-render if needed.
-   (`make_cwc_poster.py` alone, the old single-poster video, is no longer used.)
+4. **Render:** first `python3 -m pip install -q kokoro-onnx soundfile` (the voice model downloads
+   itself from GitHub on first use), then
+   `python3 make_cwc_explainer.py specs/<name>.json shorts/<name>.mp4`
+   It prints the length; it must be MORE than 30 s and at most 60 s. If the voiceover is too long,
+   shorten the `say` lines. Check the images: `python3 make_cwc_explainer.py specs/<name>.json /tmp/imgs --images`
+   and Read them (nothing cut off or overlapping, all text English).
+   (`make_cwc_story.py` = old Hindi version, no longer used for posting.)
 
 5. **Upload:** `./publish_video.sh shorts/<name>.mp4` → commits the video to `shorts/`
    on main (every video is kept in the repo permanently) and prints its public URL.
@@ -124,7 +107,7 @@ caption with an engaging question or "comment X" prompt to grow reach.
       (Education), `tags` (list), `notify_subscribers: "true"`.
       Check the result's `channelId` is `UCZ6m5Lh_vmFjOLL_RAHNTxw`; record the video `id`.
    b. **Facebook: IMAGE POST ONLY, never a video or reel** (Abhishek, 30 Oct 2026).
-      Make the image: `python3 make_cwc_story.py specs/<name>.json shorts/<name>.jpg --still` (the `still_scene` poster as one 1080x1920 JPEG), look at it with Read,
+      Make the image: `python3 make_cwc_explainer.py specs/<name>.json shorts/<name>.jpg --still` (the `still_scene` poster as one 1080x1920 JPEG), look at it with Read,
       then publish it: `./publish_video.sh shorts/<name>.jpg` (prints its public URL).
       Post it with `execute_zapier_write_action`, `selected_api: "FacebookV2CLIAPI"`,
       `action: "page_photo"`, `tool_name: "facebook_pages_create_page_photo"`, connection_id
