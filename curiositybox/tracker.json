@@ -61,7 +61,8 @@
       "Roopkund: kankal jheel, DNA se 1000 saal ka antar",
       "Mary Celeste 1872: khali jahaz, 10 log gayab",
       "Sher Shah Suri: 5 saal ka raaj, rupiya sikka, GT Road",
-      "Great Wall chand se nahi dikhti (myth vs fact, Yang Liwei 2003)"
+      "Great Wall chand se nahi dikhti (myth vs fact, Yang Liwei 2003)",
+      "Lonar Lake: ulkapind se bani jheel, 2020 mein gulabi (haloarchaea)"
     ]
   },
   "log": [
@@ -554,6 +555,16 @@
       "mood": "upbeat",
       "video": "curiositybox/shorts/2026-11-01_1000_ai-wifi-password-qr-share.mp4",
       "status": "posted via Zapier: YouTube 4azmnETttco (10:00 IST), Facebook photo 122108871045515109 (post 1380858578445805_122108871069515109)"
+    },
+    {
+      "date": "2026-11-01 20:00",
+      "slot": "kahani",
+      "title": "Aasmaan Se Gira Patthar Aur Ban Gayi Jheel! Lonar Ka Rahasya #shorts",
+      "tone": "storyteller, suspense",
+      "hook_format": "story-open",
+      "mood": "mysterious",
+      "video": "curiositybox/shorts/2026-11-01_2000_kahani-lonar-ulka-jheel.mp4",
+      "status": "Facebook photo 122109060939515109 (post 1380858578445805_122109060963515109) via Zapier 20:00 IST; YouTube NOT posted: Zapier upload_video throttled twice ('This action has been throttled without retry'), video ready at the path above"
     }
   ]
 }
