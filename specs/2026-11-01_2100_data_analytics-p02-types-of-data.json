@@ -1,0 +1,32 @@
+{
+ "voice": "am_michael",
+ "speed": 1.0,
+ "still_scene": 1,
+ "scenes": [
+  {"title": [{"text": "Data Analytics", "box": "yellow"}, {"text": "Part 2"}, {"text": "What type?", "box": "red"}],
+   "image": {"type": "table", "file": "users.csv", "cols": ["name", "age", "joined", "plan"], "widths": [1.05, 0.7, 1.6, 0.95],
+             "rows": [["Asha", "24", "2026-01-15", "Pro"], ["Ravi", "31", "2026-02-03", "Free"], ["Meena", "28", "2026-02-20", "Pro"], ["John", "35", "2026-03-08", "Basic"], ["Sara", "22", "2026-03-30", "Pro"]]},
+   "face": "thinking", "palette": "purple",
+   "say": "Welcome to Data Analytics, Part 2. Look at this table. Every column holds a different type of data. Can you spot all four?"},
+  {"title": [{"text": "4 types", "box": "yellow"}, {"text": "of data"}],
+   "image": {"type": "flow", "steps": [["Numbers", "age: 24, 31"], ["Text", "name: Asha"], ["Dates", "joined: 2026-01-15"], ["Categories", "plan: Pro, Free"]]},
+   "face": "happy", "palette": "blue",
+   "say": "Numbers you can add and average, like age. Text, like names. Dates, like when someone joined. And categories, a small set of labels, like the plan."},
+  {"title": [{"text": "Check types", "box": "yellow"}, {"text": "in pandas"}],
+   "image": {"type": "code", "file": "types.py",
+             "lines": ["import pandas as pd", "df = pd.read_csv('users.csv',", "      parse_dates=['joined'])", "df['plan'] = df['plan'].astype('category')", "print(df.dtypes)"],
+             "highlight": [2, 3], "output": ["name            str", "age           int64", "joined  datetime64[us]", "plan       category"]},
+   "face": "thinking", "palette": "orange",
+   "say": "In Python, pandas tells you each column's type. Tell it which column is a date, and turn the plan into a category."},
+  {"title": [{"text": "Why it", "box": "yellow"}, {"text": "matters", "box": "red"}],
+   "image": {"type": "chart", "title": "Users per plan", "highlight": 0,
+             "bars": [["Pro", 3], ["Basic", 1], ["Free", 1]]},
+   "face": "happy", "palette": "purple",
+   "say": "The right type unlocks the right analysis. Categories let you count users per plan. Three of our five users are on Pro."},
+  {"title": [{"text": "Recap", "box": "yellow"}, {"text": "Part 2", "color": "yellow"}],
+   "image": {"type": "check", "kind": "check", "items": ["Numbers: add and average", "Text: names and words", "Dates: when it happened", "Categories: count groups"]},
+   "banner": "Next: Part 3 - Rows and columns", "note": "Follow\nCareerWithCode",
+   "face": "happy", "palette": "blue",
+   "say": "So, numbers, text, dates and categories. In Part 3, we learn to think in rows and columns. Follow CareerWithCode!"}
+ ]
+}

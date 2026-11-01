@@ -221,11 +221,13 @@ def table_image(img, shown):
     rh = 104
     w = CARD_W
     cw = (w - 60) / len(cols)
+    fr = img.get("widths") or [1] * len(cols)
+    xs = [50 + (w - 60) * sum(fr[:c]) / sum(fr) for c in range(len(cols) + 1)]
     im, d = card(w, 120 + rh * (len(rows) + 1) + 20, img.get("file", "data.csv"))
     y0 = 20 + 110
     d.rectangle([40, y0, w, y0 + rh], fill=(40, 70, 130, 255))
     for c, name in enumerate(cols):
-        d.text((50 + cw * c + 14, y0 + 26), name, font=FM(40), fill=WHITE)
+        d.text((xs[c] + 14, y0 + 26), name, font=FM(40), fill=WHITE)
     for r, row in enumerate(rows[:shown]):
         y = y0 + rh * (r + 1)
         fill = (32, 34, 46, 255) if r % 2 else (26, 28, 38, 255)
@@ -233,7 +235,7 @@ def table_image(img, shown):
             fill = (20, 80, 40, 255)
         d.rectangle([40, y, w, y + rh], fill=fill)
         for c, val in enumerate(row):
-            d.text((50 + cw * c + 14, y + 26), str(val), font=FM(42), fill=(230, 232, 240))
+            d.text((xs[c] + 14, y + 26), str(val), font=FM(42), fill=(230, 232, 240))
     if shown > len(rows):
         for r, c in bad:
             y = y0 + rh * (r + 1)
@@ -241,11 +243,11 @@ def table_image(img, shown):
                 d.rounded_rectangle([44, y + 6, w - 4, y + rh - 6], 12, outline=RED, width=7)
                 d.text((w - 210, y + 24), "DUPLICATE", font=FM(34), fill=RED)
             else:
-                x = 50 + cw * c
-                d.rounded_rectangle([x + 4, y + 6, x + cw - 4, y + rh - 6], 12, outline=RED, width=7)
+                x = xs[c]
+                d.rounded_rectangle([x + 4, y + 6, xs[c + 1] - 4, y + rh - 6], 12, outline=RED, width=7)
                 d.text((x + 18, y + 24), img.get("blank_label", "BLANK"), font=FM(34), fill=RED)
     for c in range(1, len(cols)):
-        d.line([(50 + cw * c, y0), (50 + cw * c, y0 + rh * (min(shown, len(rows)) + 1))], fill=(70, 80, 110), width=2)
+        d.line([(xs[c], y0), (xs[c], y0 + rh * (min(shown, len(rows)) + 1))], fill=(70, 80, 110), width=2)
     return im
 
 
