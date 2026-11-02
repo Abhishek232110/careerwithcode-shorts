@@ -63,7 +63,8 @@
       "Mary Celeste 1872: khali jahaz, 10 log gayab",
       "Sher Shah Suri: 5 saal ka raaj, rupiya sikka, GT Road",
       "Great Wall chand se nahi dikhti (myth vs fact, Yang Liwei 2003)",
-      "Lonar Lake: ulkapind se bani jheel, 2020 mein gulabi (haloarchaea)"
+      "Lonar Lake: ulkapind se bani jheel, 2020 mein gulabi (haloarchaea)",
+      "Mohenjo-daro: 4500 saal purani dhaki naaliyan, Great Bath (bitumen)"
     ]
   },
   "log": [
@@ -575,6 +576,16 @@
       "hook_format": "number",
       "video": "curiositybox/shorts/2026-11-02_1000_ai-pehli-website-info-cern.mp4",
       "status": "posted via Zapier: YouTube K-TujkQCVBE (10:00 IST), Facebook photo 122109225441515109 (post 1380858578445805_122109225465515109)"
+    },
+    {
+      "date": "2026-11-02 20:00",
+      "slot": "kahani",
+      "title": "4500 Saal Pehle Dhaki Hui Naaliyan! Mohenjo-daro Ka Kamaal #shorts",
+      "tone": "storyteller, suspense",
+      "hook_format": "shocking-fact",
+      "mood": "epic",
+      "video": "curiositybox/shorts/2026-11-02_2000_kahani-mohenjodaro-naliyan.mp4",
+      "status": "posted via Zapier: YouTube sMti1CrLl_w (20:59 IST), Facebook photo 122109382659515109 (post 1380858578445805_122109382683515109)"
     }
   ]
 }
