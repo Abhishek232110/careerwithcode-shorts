@@ -20,7 +20,8 @@
       "Incognito mode myth: websites, office network aur ISP phir bhi dekh sakte hain",
       "Phone camera se TV remote ki infrared roshni dekhna (remote check trick)",
       "Pehla computer bug: 1947 Harvard Mark II mein asli moth (Grace Hopper team logbook)",
-      "WiFi password QR code se share (Android Settings Share, iPhone Passwords app)"
+      "WiFi password QR code se share (Android Settings Share, iPhone Passwords app)",
+      "Duniya ki pehli website info.cern.ch (1991, Tim Berners-Lee, CERN) aaj bhi online"
     ]
   },
   "whatif": {
@@ -565,6 +566,15 @@
       "mood": "mysterious",
       "video": "curiositybox/shorts/2026-11-01_2000_kahani-lonar-ulka-jheel.mp4",
       "status": "Facebook photo 122109060939515109 (post 1380858578445805_122109060963515109) via Zapier 20:00 IST; YouTube NOT posted: Zapier upload_video throttled twice ('This action has been throttled without retry'), video ready at the path above"
+    },
+    {
+      "date": "2026-11-02 10:00",
+      "slot": "ai",
+      "title": "Duniya Ki Pehli Website Aaj Bhi Chalti Hai! 1991 Ka Sach #shorts",
+      "tone": "surprising tech fact, energetic",
+      "hook_format": "number",
+      "video": "curiositybox/shorts/2026-11-02_1000_ai-pehli-website-info-cern.mp4",
+      "status": "posted via Zapier: YouTube K-TujkQCVBE (10:00 IST), Facebook photo 122109225441515109 (post 1380858578445805_122109225465515109)"
     }
   ]
 }
