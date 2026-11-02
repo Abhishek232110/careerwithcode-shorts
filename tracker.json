@@ -2,7 +2,7 @@
  "_note": "Updated automatically after every post. Edit next_part to jump a series forward/back.",
  "series": {
   "go": {
-   "next_part": 21,
+   "next_part": 22,
    "posted": [
     "Part 1: Hello World and package main",
     "Part 2: Variables: var vs :=",
@@ -23,7 +23,8 @@
     "Part 17: Slicing a slice",
     "Part 18: Maps: create, read, delete",
     "Part 19: Checking if a map key exists (comma ok)",
-    "Part 20: Structs"
+    "Part 20: Structs",
+    "Part 21: Methods on structs"
    ]
   },
   "python": {
@@ -584,6 +585,16 @@
    "hook_format": "question",
    "video": "2026-11-01_2100_data_analytics-p02-types-of-data.mp4",
    "status": "facebook posted (photo 122129168163255823); youtube NOT posted: Zapier upload_video throttled 3x (21:00-21:05 IST)"
+  },
+  {
+   "date": "2026-11-02 20:00",
+   "slot": "go",
+   "title": "Go Part 21: Methods on structs #shorts",
+   "tone": "friendly teacher",
+   "hook_format": "quiz",
+   "style": "cwc-explainer",
+   "video": "2026-11-02_2000_go-p21-methods-on-structs.mp4",
+   "status": "posted: YouTube qiBs01HhYkg (UCZ6m5Lh_vmFjOLL_RAHNTxw), Facebook photo 122129241897255823 / post 926523670552408_122129241921255823 (page 926523670552408); instagram skipped"
   }
  ],
  "inspiring": {
