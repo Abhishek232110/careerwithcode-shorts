@@ -1,0 +1,112 @@
+1
+00:00:00,250 --> 00:00:01,213
+Go Part 21,
+
+2
+00:00:01,213 --> 00:00:02,878
+methods on structs.
+
+3
+00:00:03,098 --> 00:00:04,313
+Quick quiz: we grow
+
+4
+00:00:04,313 --> 00:00:05,720
+this rectangle by one.
+
+5
+00:00:05,940 --> 00:00:06,504
+What do the
+
+6
+00:00:06,504 --> 00:00:07,325
+two prints show?
+
+7
+00:00:08,045 --> 00:00:08,869
+A method is a
+
+8
+00:00:08,869 --> 00:00:10,390
+function with a receiver
+
+9
+00:00:10,390 --> 00:00:11,404
+before its name.
+
+10
+00:00:11,624 --> 00:00:12,902
+Here, r Rect means
+
+11
+00:00:12,902 --> 00:00:14,394
+Area belongs to Rect,
+
+12
+00:00:14,394 --> 00:00:15,389
+so you call it
+
+13
+00:00:15,389 --> 00:00:16,525
+with r dot Area.
+
+14
+00:00:17,245 --> 00:00:18,630
+Grow uses star Rect,
+
+15
+00:00:18,630 --> 00:00:19,946
+a pointer receiver.
+
+16
+00:00:20,166 --> 00:00:21,490
+That lets the method
+
+17
+00:00:21,490 --> 00:00:23,211
+change the real rectangle,
+
+18
+00:00:23,211 --> 00:00:23,940
+not a copy.
+
+19
+00:00:24,660 --> 00:00:25,326
+Run it.
+
+20
+00:00:25,546 --> 00:00:26,797
+First, three times
+
+21
+00:00:26,797 --> 00:00:27,561
+four is 12.
+
+22
+00:00:27,781 --> 00:00:29,432
+After Grow, it is four
+
+23
+00:00:29,432 --> 00:00:30,782
+times five, so 20.
+
+24
+00:00:31,502 --> 00:00:33,654
+Recap: a value receiver reads,
+
+25
+00:00:33,654 --> 00:00:35,592
+a pointer receiver changes.
+
+26
+00:00:35,812 --> 00:00:37,355
+Next time, Part 22:
+
+27
+00:00:37,355 --> 00:00:39,874
+pointer versus value receivers.
+
+28
+00:00:40,094 --> 00:00:41,573
+Follow CareerWithCode!
+
