@@ -65,7 +65,8 @@
       "Sher Shah Suri: 5 saal ka raaj, rupiya sikka, GT Road",
       "Great Wall chand se nahi dikhti (myth vs fact, Yang Liwei 2003)",
       "Lonar Lake: ulkapind se bani jheel, 2020 mein gulabi (haloarchaea)",
-      "Mohenjo-daro: 4500 saal purani dhaki naaliyan, Great Bath (bitumen)"
+      "Mohenjo-daro: 4500 saal purani dhaki naaliyan, Great Bath (bitumen)",
+      "Taj Mahal: kareeb 22 saal (1632-1653), Makrana marble, UNESCO 1983"
     ]
   },
   "log": [
@@ -596,6 +597,16 @@
       "hook_format": "shocking-fact",
       "video": "curiositybox/shorts/2026-11-03_1000_ai-pehla-mouse-lakdi.mp4",
       "status": "posted via Zapier: YouTube r9xyawYonc8 (10:00 IST), Facebook photo 122109545847515109 (post 1380858578445805_122109545871515109)"
+    },
+    {
+      "date": "2026-11-03 20:00",
+      "slot": "kahani",
+      "title": "Taj Mahal Banne Mein Kitne Saal Lage? Jawab Chauka Dega #shorts",
+      "tone": "storyteller, suspense",
+      "hook_format": "question",
+      "mood": "epic",
+      "video": "curiositybox/shorts/2026-11-03_2000_kahani-tajmahal-22-saal.mp4",
+      "status": "posted via Zapier: YouTube JgW7cMr64gU (20:00 IST), Facebook photo 122109721125515109 (post 1380858578445805_122109721149515109)"
     }
   ]
 }
