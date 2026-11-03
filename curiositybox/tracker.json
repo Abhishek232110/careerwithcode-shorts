@@ -21,7 +21,8 @@
       "Phone camera se TV remote ki infrared roshni dekhna (remote check trick)",
       "Pehla computer bug: 1947 Harvard Mark II mein asli moth (Grace Hopper team logbook)",
       "WiFi password QR code se share (Android Settings Share, iPhone Passwords app)",
-      "Duniya ki pehli website info.cern.ch (1991, Tim Berners-Lee, CERN) aaj bhi online"
+      "Duniya ki pehli website info.cern.ch (1991, Tim Berners-Lee, CERN) aaj bhi online",
+      "Pehla computer mouse lakdi ka tha (1964, Engelbart & Bill English, SRI; 1968 demo)"
     ]
   },
   "whatif": {
@@ -586,6 +587,15 @@
       "mood": "epic",
       "video": "curiositybox/shorts/2026-11-02_2000_kahani-mohenjodaro-naliyan.mp4",
       "status": "posted via Zapier: YouTube sMti1CrLl_w (20:59 IST), Facebook photo 122109382659515109 (post 1380858578445805_122109382683515109)"
+    },
+    {
+      "date": "2026-11-03 10:00",
+      "slot": "ai",
+      "title": "Pehla Computer Mouse Lakdi Ka Tha! 1964 Ka Sach #shorts",
+      "tone": "practical quick win / surprising tech fact",
+      "hook_format": "shocking-fact",
+      "video": "curiositybox/shorts/2026-11-03_1000_ai-pehla-mouse-lakdi.mp4",
+      "status": "posted via Zapier: YouTube r9xyawYonc8 (10:00 IST), Facebook photo 122109545847515109 (post 1380858578445805_122109545871515109)"
     }
   ]
 }
