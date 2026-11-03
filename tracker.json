@@ -2,7 +2,7 @@
  "_note": "Updated automatically after every post. Edit next_part to jump a series forward/back.",
  "series": {
   "go": {
-   "next_part": 22,
+   "next_part": 23,
    "posted": [
     "Part 1: Hello World and package main",
     "Part 2: Variables: var vs :=",
@@ -24,7 +24,8 @@
     "Part 18: Maps: create, read, delete",
     "Part 19: Checking if a map key exists (comma ok)",
     "Part 20: Structs",
-    "Part 21: Methods on structs"
+    "Part 21: Methods on structs",
+    "Part 22: Pointer vs value receivers"
    ]
   },
   "python": {
@@ -595,6 +596,16 @@
    "style": "cwc-explainer",
    "video": "2026-11-02_2000_go-p21-methods-on-structs.mp4",
    "status": "posted: YouTube qiBs01HhYkg (UCZ6m5Lh_vmFjOLL_RAHNTxw), Facebook photo 122129241897255823 / post 926523670552408_122129241921255823 (page 926523670552408); instagram skipped"
+  },
+  {
+   "date": "2026-11-03 20:00",
+   "slot": "go",
+   "title": "Go Part 22: Pointer vs value receivers #shorts",
+   "tone": "friendly teacher",
+   "hook_format": "comparison",
+   "style": "cwc-explainer",
+   "video": "2026-11-03_2000_go-p22-pointer-vs-value-receivers.mp4",
+   "status": "posted: YouTube b67hBE2JhQU (UCZ6m5Lh_vmFjOLL_RAHNTxw), Facebook photo 122129312685255823 / post 926523670552408_122129312709255823 (page 926523670552408); instagram skipped"
   }
  ],
  "inspiring": {
