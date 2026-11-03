@@ -1,0 +1,144 @@
+1
+00:00:00,250 --> 00:00:01,275
+Welcome to Data
+
+2
+00:00:01,275 --> 00:00:02,505
+Analytics, Part 3.
+
+3
+00:00:02,725 --> 00:00:03,540
+Quick quiz.
+
+4
+00:00:03,760 --> 00:00:04,949
+In this table, what
+
+5
+00:00:04,949 --> 00:00:05,887
+is one row, and
+
+6
+00:00:05,887 --> 00:00:07,076
+what is one column?
+
+7
+00:00:07,796 --> 00:00:08,637
+A row is one
+
+8
+00:00:08,637 --> 00:00:10,247
+record, here one order.
+
+9
+00:00:10,467 --> 00:00:11,450
+A column is one
+
+10
+00:00:11,450 --> 00:00:13,154
+detail about every record,
+
+11
+00:00:13,154 --> 00:00:14,072
+like the city.
+
+12
+00:00:14,292 --> 00:00:15,164
+A cell holds a
+
+13
+00:00:15,164 --> 00:00:16,471
+single value, and the
+
+14
+00:00:16,471 --> 00:00:18,028
+header names each column.
+
+15
+00:00:18,748 --> 00:00:20,317
+Here is a common mistake.
+
+16
+00:00:20,537 --> 00:00:21,709
+Two orders squeezed
+
+17
+00:00:21,709 --> 00:00:22,512
+into one row.
+
+18
+00:00:22,732 --> 00:00:23,969
+Now you cannot count
+
+19
+00:00:23,969 --> 00:00:25,824
+orders or customers correctly.
+
+20
+00:00:26,044 --> 00:00:27,349
+One row should always
+
+21
+00:00:27,349 --> 00:00:28,220
+be one record.
+
+22
+00:00:28,940 --> 00:00:30,251
+In Python, df dot
+
+23
+00:00:30,251 --> 00:00:31,871
+shape gives five rows
+
+24
+00:00:31,871 --> 00:00:33,183
+and four columns.
+
+25
+00:00:33,403 --> 00:00:34,471
+Then group by the
+
+26
+00:00:34,471 --> 00:00:35,665
+city column and add
+
+27
+00:00:35,665 --> 00:00:36,545
+up the amount.
+
+28
+00:00:37,265 --> 00:00:38,965
+Clean rows and columns turn
+
+29
+00:00:38,965 --> 00:00:40,225
+into a clear answer.
+
+30
+00:00:40,445 --> 00:00:41,769
+Mumbai has the most
+
+31
+00:00:41,769 --> 00:00:43,582
+sales, nine hundred fifty.
+
+32
+00:00:44,302 --> 00:00:45,972
+So, one row per record,
+
+33
+00:00:45,972 --> 00:00:47,569
+one column per detail.
+
+34
+00:00:47,789 --> 00:00:48,604
+In Part 4,
+
+35
+00:00:48,604 --> 00:00:50,153
+mean versus median.
+
+36
+00:00:50,373 --> 00:00:51,851
+Follow CareerWithCode!
+
