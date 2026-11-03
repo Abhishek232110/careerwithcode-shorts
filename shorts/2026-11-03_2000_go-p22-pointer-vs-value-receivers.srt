@@ -1,0 +1,112 @@
+1
+00:00:00,250 --> 00:00:01,857
+Go Part 22, pointer
+
+2
+00:00:01,857 --> 00:00:03,802
+versus value receivers.
+
+3
+00:00:04,022 --> 00:00:05,298
+These two methods have
+
+4
+00:00:05,298 --> 00:00:06,458
+the exact same body.
+
+5
+00:00:06,678 --> 00:00:07,870
+So why does only one
+
+6
+00:00:07,870 --> 00:00:09,061
+of them really work?
+
+7
+00:00:09,781 --> 00:00:11,318
+We call IncValue, and
+
+8
+00:00:11,318 --> 00:00:12,490
+N is still zero.
+
+9
+00:00:12,710 --> 00:00:14,322
+Then we call IncPointer,
+
+10
+00:00:14,322 --> 00:00:15,532
+and N becomes one.
+
+11
+00:00:16,252 --> 00:00:17,702
+A value receiver gets a
+
+12
+00:00:17,702 --> 00:00:18,900
+copy of the struct.
+
+13
+00:00:19,120 --> 00:00:20,518
+The method adds one to
+
+14
+00:00:20,518 --> 00:00:21,916
+the copy, and the copy
+
+15
+00:00:21,916 --> 00:00:22,869
+is thrown away.
+
+16
+00:00:23,089 --> 00:00:24,690
+Your c never changes.
+
+17
+00:00:25,410 --> 00:00:26,727
+A pointer receiver gets
+
+18
+00:00:26,727 --> 00:00:27,701
+the address of c.
+
+19
+00:00:27,921 --> 00:00:28,752
+So it changes
+
+20
+00:00:28,752 --> 00:00:29,839
+the real counter.
+
+21
+00:00:30,059 --> 00:00:31,753
+Go even takes the address
+
+22
+00:00:31,753 --> 00:00:33,243
+for you when you write
+
+23
+00:00:33,243 --> 00:00:34,395
+c dot IncPointer.
+
+24
+00:00:35,115 --> 00:00:37,216
+Recap: a value receiver works
+
+25
+00:00:37,216 --> 00:00:38,665
+on a copy, a pointer
+
+26
+00:00:38,665 --> 00:00:40,838
+receiver changes the original.
+
+27
+00:00:41,058 --> 00:00:43,851
+Next, Part 23: pointers basics.
+
+28
+00:00:44,071 --> 00:00:45,550
+Follow CareerWithCode!
+
