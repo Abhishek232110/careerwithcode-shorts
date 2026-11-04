@@ -1,0 +1,30 @@
+{
+ "voice": "am_michael", "speed": 1.0, "theme": "light", "still_scene": 1,
+ "scenes": [
+  {"title": [{"text": "Still adding", "box": "red"}, {"text": "by hand?"}, {"text": "Data Analytics 5", "box": "yellow"}],
+   "image": {"type": "table", "file": "sales.xlsx", "cols": ["day", "sales"],
+             "rows": [["Mon", "120"], ["Tue", "150"], ["Wed", "90"], ["Thu", "200"], ["Fri", "140"]]},
+   "face": "thinking", "palette": "blue",
+   "say": "Still adding numbers by hand? This is Data Analytics, Part 5. Here is one week of sales from a small shop. Three formulas answer most questions."},
+  {"title": [{"text": "SUM", "box": "yellow"}, {"text": "the total"}],
+   "image": {"type": "code", "file": "sales.xlsx",
+             "lines": ["B7: =SUM(B2:B6)"], "highlight": [0], "output": ["700"]},
+   "face": "happy", "palette": "orange",
+   "say": "SUM adds every cell in the range, B2 to B6. Total sales this week: seven hundred."},
+  {"title": [{"text": "AVERAGE", "box": "yellow"}, {"text": "a normal day"}],
+   "image": {"type": "chart", "title": "Sales (avg = 140)", "highlight": 4,
+             "bars": [["Mon", 120], ["Tue", 150], ["Wed", 90], ["Thu", 200], ["Fri", 140]]},
+   "face": "thinking", "palette": "purple",
+   "say": "AVERAGE adds them and divides by the count. That is one hundred and forty, exactly what Friday sold."},
+  {"title": [{"text": "COUNT", "box": "yellow"}, {"text": "how many?"}],
+   "image": {"type": "code", "file": "sales.xlsx",
+             "lines": ["B8: =AVERAGE(B2:B6)", "B9: =COUNT(B2:B6)"], "highlight": [1], "output": ["140", "5"]},
+   "face": "happy", "palette": "blue",
+   "say": "COUNT tells you how many cells hold numbers. Here, five days. Text and blank cells are skipped."},
+  {"title": [{"text": "Recap", "box": "yellow"}, {"text": "Part 5", "color": "yellow"}],
+   "image": {"type": "check", "kind": "check", "items": ["SUM = the total", "AVERAGE = total / count", "COUNT = how many numbers"]},
+   "banner": "Next: Part 6 - Sorting and filtering", "note": "SUM or AVERAGE?\nPick 1!",
+   "face": "happy", "palette": "orange",
+   "say": "To find your total monthly spend, SUM or AVERAGE? Pick one in the comments! Follow CareerWithCode for Part 6."}
+ ]
+}
