@@ -22,6 +22,11 @@ and only as series in order (no random one-off topics). The other slots below ar
 - SUPER-EASY END QUESTION: the last scene asks a one-word choice ("Value or pointer - pick 1",
   "Row or column? Pick 1!"), put it in the sticky `note` and say it; repeat it at the end of the
   YouTube description and Facebook caption.
+- FIRST COMMENT (Abhishek, Nov 4): after posting, add a first comment from the channel/page on every post:
+  YouTube via youtube_make_api_mutating_request POST https://www.googleapis.com/youtube/v3/commentThreads
+  (querystring part=snippet, body {"snippet": {"videoId": ID, "topLevelComment": {"snippet": {"textOriginal": TEXT}}}}).
+  TEXT = the pick-1 question + a tiny bonus quiz + what the next part is. Facebook: only if a Zapier
+  Facebook Pages comment action is enabled; otherwise record "fb first comment: no action".
 - Times: Go series 21:30 IST, Data Analytics 22:00 IST (followers are most active around 9:30 PM).
 
 ## Tone — every Short must feel different

@@ -37,11 +37,12 @@
       ]
     },
     "data_analytics": {
-      "next_part": 4,
+      "next_part": 5,
       "posted": [
         "Part 1: What is Data Analytics? (the 4 steps)",
         "Part 2: Types of data: numbers, text, dates, categories",
-        "Part 3: Rows and columns: thinking in tables"
+        "Part 3: Rows and columns: thinking in tables",
+        "Part 4: Mean vs median: which average to trust"
       ]
     }
   },
@@ -626,6 +627,16 @@
       "style": "light + indian character",
       "video": "2026-11-04_reel_data_analytics-p03-rows-and-columns.mp4",
       "status": "posted (restyled repost of Part 3): YouTube wFY09_5ZDdg, Facebook video 1110906631704538"
+    },
+    {
+      "date": "2026-11-04 08:34",
+      "slot": "data_analytics",
+      "title": "Average salary 1 lakh? It's a trap! | Data Analytics Part 4: Mean vs Median #shorts",
+      "tone": "friendly teacher",
+      "hook_format": "bold-claim",
+      "style": "light + indian character",
+      "video": "2026-11-04_0835_data_analytics-p04-mean-vs-median.mp4",
+      "status": "posted early on request: YouTube u3ghvduY66A (+ first comment), Facebook video 1180146411164693 (no first comment: no Zapier comment action)"
     }
   ],
   "inspiring": {
