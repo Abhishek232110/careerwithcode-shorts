@@ -118,7 +118,10 @@ caption with an engaging question or "comment X" prompt to grow reach.
       from step 5), `privacy_status: "public"`, `made_for_kids: "false"`, `category_id: "27"`
       (Education), `tags` (list), `notify_subscribers: "true"`.
       Check the result's `channelId` is `UCZ6m5Lh_vmFjOLL_RAHNTxw`; record the video `id`.
-   b. **Facebook: IMAGE POST ONLY, never a video or reel** (Abhishek, 30 Oct 2026).
+   b. **Facebook (Nov 4 2026): post the SAME video as a Facebook video/reel** (photo posts got 7-10 views;
+      reels reach far wider). Find the page video action with inspect_zapier_actions (FacebookV2CLIAPI,
+      facebook_pages_create_page_video), page 926523670552408, video = the public mp4 URL. Only if that
+      fails twice, fall back to the image post below. (Old rule, 30 Oct: image post only.)
       Make the image: `python3 make_cwc_explainer.py specs/<name>.json shorts/<name>.jpg --still` (the `still_scene` poster as one 1080x1920 JPEG), look at it with Read,
       then publish it: `./publish_video.sh shorts/<name>.jpg` (prints its public URL).
       Post it with `execute_zapier_write_action`, `selected_api: "FacebookV2CLIAPI"`,
