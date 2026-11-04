@@ -67,7 +67,8 @@
       "Great Wall chand se nahi dikhti (myth vs fact, Yang Liwei 2003)",
       "Lonar Lake: ulkapind se bani jheel, 2020 mein gulabi (haloarchaea)",
       "Mohenjo-daro: 4500 saal purani dhaki naaliyan, Great Bath (bitumen)",
-      "Taj Mahal: kareeb 22 saal (1632-1653), Makrana marble, UNESCO 1983"
+      "Taj Mahal: kareeb 22 saal (1632-1653), Makrana marble, UNESCO 1983",
+      "Nepal ka jhanda: duniya ka akela non-rectangular flag (2 tikone, 1962)"
     ]
   },
   "log": [
@@ -617,6 +618,16 @@
       "hook_format": "question",
       "video": "curiositybox/shorts/2026-11-04_1000_ai-bluetooth-naam-viking-raja.mp4",
       "status": "posted via Zapier: YouTube 6MEGEyfU9pk (10:00 IST), Facebook photo 122109910407515109 (post 1380858578445805_122109910431515109)"
+    },
+    {
+      "date": "2026-11-04 20:00",
+      "slot": "kahani",
+      "title": "Duniya Ka Akela Jhanda Jo Chaukor Nahi! Nepal Ka Kamaal #shorts",
+      "tone": "storyteller, suspense",
+      "hook_format": "shocking-fact",
+      "mood": "inspiring",
+      "video": "curiositybox/shorts/2026-11-04_2000_kahani-nepal-jhanda-2-tikone.mp4",
+      "status": "posted via Zapier: YouTube zprOSR1hVas (20:00 IST), Facebook photo 122110055235515109 (post 1380858578445805_122110055271515109)"
     }
   ]
 }
