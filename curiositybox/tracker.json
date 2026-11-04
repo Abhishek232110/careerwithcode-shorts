@@ -22,7 +22,8 @@
       "Pehla computer bug: 1947 Harvard Mark II mein asli moth (Grace Hopper team logbook)",
       "WiFi password QR code se share (Android Settings Share, iPhone Passwords app)",
       "Duniya ki pehli website info.cern.ch (1991, Tim Berners-Lee, CERN) aaj bhi online",
-      "Pehla computer mouse lakdi ka tha (1964, Engelbart & Bill English, SRI; 1968 demo)"
+      "Pehla computer mouse lakdi ka tha (1964, Engelbart & Bill English, SRI; 1968 demo)",
+      "Bluetooth naam: Viking raja Harald Bluetooth (Denmark-Norway, 1997 Jim Kardach Intel, logo H+B runes)"
     ]
   },
   "whatif": {
@@ -607,6 +608,15 @@
       "mood": "epic",
       "video": "curiositybox/shorts/2026-11-03_2000_kahani-tajmahal-22-saal.mp4",
       "status": "posted via Zapier: YouTube JgW7cMr64gU (20:00 IST), Facebook photo 122109721125515109 (post 1380858578445805_122109721149515109)"
+    },
+    {
+      "date": "2026-11-04 10:00",
+      "slot": "ai",
+      "title": "Bluetooth Naam Kahan Se Aaya? Ek Viking Raja Ki Kahani! #shorts",
+      "tone": "surprising tech fact, energetic",
+      "hook_format": "question",
+      "video": "curiositybox/shorts/2026-11-04_1000_ai-bluetooth-naam-viking-raja.mp4",
+      "status": "posted via Zapier: YouTube 6MEGEyfU9pk (10:00 IST), Facebook photo 122109910407515109 (post 1380858578445805_122109910431515109)"
     }
   ]
 }
