@@ -12,6 +12,18 @@ skipped because Zapier can't post to it.
 Abhishek (Nov 1 2026): CareerWithCode posts only in the night shift (8-9 PM IST), only in English,
 and only as series in order (no random one-off topics). The other slots below are retired.
 
+
+**STYLE + GROWTH RULES (Abhishek, Nov 4 2026, from his Facebook insights review):**
+- Light background on every short and post (make_cwc_explainer.py default `"theme": "light"`), and the
+  Indian cartoon character (brown skin, "Career With Code" hoodie, drawn by the renderer). Voice stays English.
+- HOOK IN THE FIRST 3 SECONDS: scene 1's first `say` sentence is the hook (a question or surprise,
+  max 8 words, e.g. "Row or column? Most beginners mix them up!"); the series name and part number
+  come after it. Scene 1's first title line is the same hook.
+- SUPER-EASY END QUESTION: the last scene asks a one-word choice ("Value or pointer - pick 1",
+  "Row or column? Pick 1!"), put it in the sticky `note` and say it; repeat it at the end of the
+  YouTube description and Facebook caption.
+- Times: Go series 21:30 IST, Data Analytics 22:00 IST (followers are most active around 9:30 PM).
+
 ## Tone — every Short must feel different
 
 Each slot has its own voice. Hook, takeaway, CTA and caption must all match it.

@@ -97,7 +97,7 @@ def code_image(img, shown):
     for i, ln in enumerate(lines[:shown]):
         y = 20 + 120 + lh * i
         if i in hl:
-            d.rounded_rectangle([34, y - 8, CARD_W + 6, y + lh - 14], 12, fill=(255, 212, 0, 55), outline=YELLOW + (255,), width=3)
+            d.rounded_rectangle([34, y - 8, CARD_W + 6, y + lh - 14], 12, fill=(70, 64, 30, 255), outline=YELLOW + (255,), width=3)
         d.text((44, y), str(i + 1), font=FM(int(size * 0.8)), fill=(98, 114, 164))
         x = 110
         for tok, kind in tokens(ln):
@@ -385,12 +385,67 @@ def voice(spec):
     return out
 
 
+# ---------------------------------------------------------------- light theme + Indian character
+# Abhishek (Nov 4 2026): "for post and shorts use light background, and use Indian character but
+# voice should be english". Light is the default; a spec can set "theme": "dark" for the old look.
+THEME = "light"
+LIGHT = {  # (top, bottom, accent)
+    "blue":   ((250, 252, 255), (214, 230, 252), (70, 140, 240)),
+    "orange": ((255, 251, 244), (255, 225, 190), (245, 140, 50)),
+    "purple": ((252, 249, 255), (228, 216, 252), (150, 110, 230)),
+}
+INDIAN_SKIN, INDIAN_SKIN_D = (196, 134, 94), (160, 102, 66)
+
+
+def light_background(pal, rng):
+    top, bottom, acc = LIGHT.get(pal, LIGHT["blue"])
+    y = np.linspace(0, 1, H)[:, None, None]
+    arr = np.array(top, np.float32) * (1 - y) + np.array(bottom, np.float32) * y
+    img = Image.fromarray(np.repeat(arr, W, axis=1).astype(np.uint8)).convert("RGBA")
+    lay = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(lay)
+    for gx in range(30, W, 60):          # notebook dot grid
+        for gy in range(30, 1640, 60):
+            d.ellipse([gx - 2, gy - 2, gx + 2, gy + 2], fill=acc + (45,))
+    for _ in range(9):                   # soft pastel blobs
+        x, yy, r = rng.uniform(0, W), rng.uniform(100, 1500), rng.uniform(90, 220)
+        d.ellipse([x - r, yy - r, x + r, yy + r], fill=acc + (rng.randint(14, 30),))
+    img.alpha_composite(lay)
+    g = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    ImageDraw.Draw(g).ellipse([560, 980, 1160, 1680], fill=(255, 255, 255, 200))  # light behind the boy
+    img.alpha_composite(g.filter(ImageFilter.GaussianBlur(90)))
+    d = ImageDraw.Draw(img)
+    d.rectangle([0, 1640, W, H], fill=(236, 232, 226, 255))   # light desk
+    d.line([(0, 1640), (W, 1640)], fill=acc + (200,), width=5)
+    return img
+
+
+def footer_dark():
+    f = F(50)
+    t = "CareerWithCode"; l, tp, r, b = f.getbbox(t)
+    im = Image.new("RGBA", (r - l + 130, 90), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+    cy = 45
+    d.rounded_rectangle([10, cy - 26, 86, cy + 26], 16, fill=(255, 0, 0, 255))
+    d.polygon([(40, cy - 14), (40, cy + 14), (64, cy)], fill=WHITE)
+    d.text((100 - l, cy - (b + tp) / 2), t, font=f, fill=(25, 25, 35))
+    return im
+
+
+def indian_boy(face):
+    old = P.SKIN, P.SKIN_D
+    P.SKIN, P.SKIN_D = INDIAN_SKIN, INDIAN_SKIN_D
+    try:
+        return P.boy(face)
+    finally:
+        P.SKIN, P.SKIN_D = old
+
+
 # ---------------------------------------------------------------- scene
 class Scene:
     def __init__(self, sc, dur, captions=()):
         self.sc, self.dur, self.caps = sc, dur, list(captions)
         rng = random.Random(sc.get("seed", 11))
-        self.bg = P.build_background(sc.get("palette", "blue"), rng)
+        light = sc.get("theme", THEME) == "light"
+        self.bg = (light_background if light else P.build_background)(sc.get("palette", "blue"), rng)
         n = len(sc["title"]); size = {1: 150, 2: 124}.get(n, 104)
         lines = [dict(ln) for ln in sc["title"]]
         self.title = [P.title_line(ln, size, rng) for ln in lines]
@@ -410,11 +465,11 @@ class Scene:
         self.step_t = [0.6 + i * (end - 0.6) / max(1, self.n) for i in range(self.n)]
         if sc.get("reveal"):  # optional explicit seconds for each step
             self.step_t = sc["reveal"][:self.n] + self.step_t[len(sc["reveal"]):]
-        self.boy = P.boy(sc.get("face", "happy"))
+        self.boy = indian_boy(sc.get("face", "happy"))
         self.boy = self.boy.resize((int(self.boy.width * 0.58), int(self.boy.height * 0.58)), Image.LANCZOS)
         self.note = P.sticky_note(sc["note"], rng) if sc.get("note") else None
         self.banner = P.banner_layer(sc["banner"], rng) if sc.get("banner") else None
-        self.footer = P.footer_layer()
+        self.footer = footer_dark() if light else P.footer_layer()
         self.cap_cache = {}
 
     def frame(self, t, captions=True):
@@ -457,6 +512,7 @@ def srt_time(x):
 
 def main(spec_path, out):
     spec = json.load(open(spec_path))
+    globals()['THEME'] = spec.get('theme', 'light')
     vo = voice(spec)
     lens = [max(4.0, len(a) / SR + 0.5) for a, _ in vo]
     if sum(lens) < 32:
@@ -511,9 +567,11 @@ def still(sc, path):
 if __name__ == "__main__":
     if len(sys.argv) == 4 and sys.argv[3] == "--still":
         spec = json.load(open(sys.argv[1]))
+        globals()['THEME'] = spec.get('theme', 'light')
         still(spec["scenes"][spec.get("still_scene", 0)], sys.argv[2])
     elif len(sys.argv) == 4 and sys.argv[3] == "--images":
-        spec = json.load(open(sys.argv[1])); os.makedirs(sys.argv[2], exist_ok=True)
+        spec = json.load(open(sys.argv[1]))
+        globals()['THEME'] = spec.get('theme', 'light'); os.makedirs(sys.argv[2], exist_ok=True)
         for i, sc in enumerate(spec["scenes"]):
             still(sc, os.path.join(sys.argv[2], f"scene_{i + 1:02}.png"))
     else:
