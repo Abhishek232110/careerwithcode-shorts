@@ -1,0 +1,104 @@
+1
+00:00:00,250 --> 00:00:01,258
+Can you change x
+
+2
+00:00:01,258 --> 00:00:02,455
+without touching x?
+
+3
+00:00:02,675 --> 00:00:03,922
+This is Go Part
+
+4
+00:00:03,922 --> 00:00:05,586
+23, pointers basics.
+
+5
+00:00:05,806 --> 00:00:07,119
+Watch this little trick.
+
+6
+00:00:07,839 --> 00:00:09,262
+Ampersand x gives the
+
+7
+00:00:09,262 --> 00:00:10,142
+address of x.
+
+8
+00:00:10,362 --> 00:00:11,574
+So p points at the
+
+9
+00:00:11,574 --> 00:00:12,853
+same box in memory.
+
+10
+00:00:13,073 --> 00:00:14,296
+Star p means the
+
+11
+00:00:14,296 --> 00:00:15,977
+value inside that box.
+
+12
+00:00:16,697 --> 00:00:18,439
+Printing star p gives five.
+
+13
+00:00:18,659 --> 00:00:20,037
+Then we set star p
+
+14
+00:00:20,037 --> 00:00:21,339
+to ten, and now x
+
+15
+00:00:21,339 --> 00:00:22,181
+is ten too.
+
+16
+00:00:22,401 --> 00:00:23,852
+Same box, two names.
+
+17
+00:00:24,572 --> 00:00:26,017
+Pass the address into a
+
+18
+00:00:26,017 --> 00:00:27,901
+function, and the function can
+
+19
+00:00:27,901 --> 00:00:29,534
+change your real variable.
+
+20
+00:00:29,754 --> 00:00:31,291
+Double makes x twenty.
+
+21
+00:00:32,011 --> 00:00:34,139
+Quick question: which symbol gets
+
+22
+00:00:34,139 --> 00:00:35,236
+the address of x?
+
+23
+00:00:35,456 --> 00:00:36,784
+Ampersand or star?
+
+24
+00:00:37,004 --> 00:00:38,383
+Pick one in the comments!
+
+25
+00:00:38,603 --> 00:00:41,048
+Next is Part 24, interfaces.
+
+26
+00:00:41,268 --> 00:00:42,747
+Follow CareerWithCode!
+
