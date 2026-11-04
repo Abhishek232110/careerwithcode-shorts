@@ -1,0 +1,33 @@
+{
+ "voice": "am_michael", "speed": 1.0, "theme": "light", "still_scene": 2,
+ "title_yt": "Go Part 23: Pointers basics #shorts",
+ "scenes": [
+  {"title": [{"text": "Change x", "box": "red"}, {"text": "without x?"}, {"text": "Go Part 23", "box": "yellow"}],
+   "image": {"type": "code", "file": "main.go",
+             "lines": ["x := 5", "p := &x", "", "*p = 10", "fmt.Println(x)"], "highlight": [1, 3]},
+   "face": "thinking", "palette": "blue",
+   "say": "Can you change x without touching x? This is Go Part 23, pointers basics. Watch this little trick."},
+  {"title": [{"text": "& = address", "box": "yellow"}, {"text": "* = value there"}],
+   "image": {"type": "refs", "names": ["x", "p"], "boxes": [["5"]],
+             "links": [[0, 0], [1, 0]], "label": "p HOLDS THE ADDRESS OF x"},
+   "face": "happy", "palette": "orange",
+   "say": "Ampersand x gives the address of x. So p points at the same box in memory. Star p means the value inside that box."},
+  {"title": [{"text": "Let's run it", "box": "yellow"}, {"text": "5, then 10", "color": "yellow"}],
+   "image": {"type": "code", "file": "main.go",
+             "lines": ["x := 5", "p := &x", "fmt.Println(*p)", "*p = 10", "fmt.Println(x)"],
+             "highlight": [3], "output": ["5", "10"]},
+   "face": "worried", "palette": "purple",
+   "say": "Printing star p gives five. Then we set star p to ten, and now x is ten too. Same box, two names."},
+  {"title": [{"text": "Pass a pointer", "box": "yellow"}, {"text": "func changes it!", "box": "red"}],
+   "image": {"type": "code", "file": "main.go",
+             "lines": ["func double(n *int) {", "    *n = *n * 2", "}", "", "x := 10", "double(&x)", "fmt.Println(x)"],
+             "highlight": [5], "output": ["20"]},
+   "face": "happy", "palette": "blue",
+   "say": "Pass the address into a function, and the function can change your real variable. Double makes x twenty."},
+  {"title": [{"text": "Recap", "box": "yellow"}, {"text": "Part 23", "color": "yellow"}],
+   "image": {"type": "check", "kind": "check", "items": ["&x  ->  address of x", "*p  ->  value at that address", "var q *int  ->  nil", "Next: Part 24 - Interfaces"]},
+   "banner": "Next: Go Part 24 - Interfaces", "note": "Address of x:\n& or * ? Pick 1!",
+   "face": "happy", "palette": "orange",
+   "say": "Quick question: which symbol gets the address of x? Ampersand or star? Pick one in the comments! Next is Part 24, interfaces. Follow CareerWithCode!"}
+ ]
+}
