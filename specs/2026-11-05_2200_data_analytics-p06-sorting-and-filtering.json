@@ -1,0 +1,31 @@
+{
+ "voice": "am_michael", "speed": 1.0, "theme": "light", "still_scene": 1,
+ "scenes": [
+  {"title": [{"text": "Best day?", "box": "red"}, {"text": "Find it fast!"}, {"text": "Data Analytics 6", "box": "yellow"}],
+   "image": {"type": "table", "file": "sales.xlsx", "cols": ["day", "city", "sales"],
+             "rows": [["Mon", "Pune", "120"], ["Tue", "Delhi", "150"], ["Wed", "Pune", "90"], ["Thu", "Delhi", "200"], ["Fri", "Pune", "140"]]},
+   "face": "thinking", "palette": "blue",
+   "say": "Which day sold the most? Find it in one click! This is Data Analytics, Part 6. Here are five days of sales from two cities."},
+  {"title": [{"text": "SORT", "box": "yellow"}, {"text": "big to small"}],
+   "image": {"type": "table", "file": "sales.xlsx", "cols": ["day", "city", "sales"], "good_rows": [0],
+             "rows": [["Thu", "Delhi", "200"], ["Tue", "Delhi", "150"], ["Fri", "Pune", "140"], ["Mon", "Pune", "120"], ["Wed", "Pune", "90"]]},
+   "face": "happy", "palette": "orange",
+   "say": "Sorting puts rows in order. Sort sales from largest to smallest, and Thursday jumps to the top with two hundred."},
+  {"title": [{"text": "FILTER", "box": "yellow"}, {"text": "only Pune"}],
+   "image": {"type": "table", "file": "sales.xlsx", "cols": ["day", "city", "sales"], "good_rows": [0, 2, 4],
+             "rows": [["Mon", "Pune", "120"], ["Tue", "Delhi", "150"], ["Wed", "Pune", "90"], ["Thu", "Delhi", "200"], ["Fri", "Pune", "140"]]},
+   "face": "thinking", "palette": "purple",
+   "say": "Filtering hides the rows you do not need. Keep only Pune, and you see three rows. Nothing is deleted."},
+  {"title": [{"text": "In Excel", "box": "yellow"}, {"text": "one formula"}],
+   "image": {"type": "code", "file": "sales.xlsx",
+             "lines": ["=FILTER(A2:C6, B2:B6=\"Pune\")", "=SUMIF(B2:B6,\"Pune\",C2:C6)"], "highlight": [0],
+             "output": ["Mon  Pune  120", "Wed  Pune   90", "Fri  Pune  140", "SUMIF = 350"]},
+   "face": "happy", "palette": "blue",
+   "say": "In Excel, the FILTER formula does it for you, and SUMIF adds just those rows. Pune sold three hundred and fifty in total."},
+  {"title": [{"text": "Recap", "box": "yellow"}, {"text": "Part 6", "color": "yellow"}],
+   "image": {"type": "check", "kind": "check", "items": ["SORT = put rows in order", "FILTER = show only some rows", "Filter hides, never deletes"]},
+   "banner": "Next: Part 7 - Pivot tables", "note": "Sort or filter?\nPick 1!",
+   "face": "happy", "palette": "orange",
+   "say": "To see only Delhi sales, sort or filter? Pick one in the comments! Follow CareerWithCode for Part 7, pivot tables."}
+ ]
+}
