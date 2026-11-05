@@ -1,0 +1,100 @@
+1
+00:00:00,250 --> 00:00:01,642
+Which day sold the most?
+
+2
+00:00:01,862 --> 00:00:03,158
+Find it in one click!
+
+3
+00:00:03,378 --> 00:00:04,246
+This is Data
+
+4
+00:00:04,246 --> 00:00:05,548
+Analytics, Part 6.
+
+5
+00:00:05,768 --> 00:00:07,047
+Here are five days of
+
+6
+00:00:07,047 --> 00:00:08,385
+sales from two cities.
+
+7
+00:00:09,105 --> 00:00:10,873
+Sorting puts rows in order.
+
+8
+00:00:11,093 --> 00:00:12,758
+Sort sales from largest to
+
+9
+00:00:12,758 --> 00:00:14,745
+smallest, and Thursday jumps to
+
+10
+00:00:14,745 --> 00:00:16,346
+the top with two hundred.
+
+11
+00:00:17,066 --> 00:00:18,677
+Filtering hides the rows
+
+12
+00:00:18,677 --> 00:00:19,750
+you do not need.
+
+13
+00:00:19,970 --> 00:00:21,281
+Keep only Pune, and
+
+14
+00:00:21,281 --> 00:00:22,591
+you see three rows.
+
+15
+00:00:22,811 --> 00:00:24,210
+Nothing is deleted.
+
+16
+00:00:24,930 --> 00:00:26,834
+In Excel, the FILTER formula
+
+17
+00:00:26,834 --> 00:00:28,194
+does it for you, and
+
+18
+00:00:28,194 --> 00:00:30,030
+SUMIF adds just those rows.
+
+19
+00:00:30,250 --> 00:00:31,664
+Pune sold three hundred
+
+20
+00:00:31,664 --> 00:00:32,833
+and fifty in total.
+
+21
+00:00:33,553 --> 00:00:34,711
+To see only Delhi
+
+22
+00:00:34,711 --> 00:00:36,209
+sales, sort or filter?
+
+23
+00:00:36,429 --> 00:00:37,808
+Pick one in the comments!
+
+24
+00:00:38,028 --> 00:00:40,329
+Follow CareerWithCode for Part
+
+25
+00:00:40,329 --> 00:00:41,556
+7, pivot tables.
+
