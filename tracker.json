@@ -2,7 +2,7 @@
  "_note": "Updated automatically after every post. Edit next_part to jump a series forward/back.",
  "series": {
   "go": {
-   "next_part": 24,
+   "next_part": 25,
    "posted": [
     "Part 1: Hello World and package main",
     "Part 2: Variables: var vs :=",
@@ -26,7 +26,8 @@
     "Part 20: Structs",
     "Part 21: Methods on structs",
     "Part 22: Pointer vs value receivers",
-    "Part 23: Pointers basics"
+    "Part 23: Pointers basics",
+    "Part 24: Interfaces"
    ]
   },
   "python": {
@@ -659,6 +660,16 @@
    "style": "light + indian character",
    "video": "2026-11-04_2200_data_analytics-p05-spreadsheet-basics.mp4",
    "status": "partial: Facebook video 1746467180813387 (page 926523670552408); fb first comment: no Zapier action; YouTube NOT posted: Zapier upload_video 'throttled without retry' 4x (22:00-22:06 IST), so no YouTube first comment - video kept in shorts/ for manual upload; instagram skipped"
+  },
+  {
+   "date": "2026-11-05 21:30",
+   "slot": "go",
+   "title": "Go Part 24: Interfaces #shorts",
+   "tone": "friendly teacher",
+   "hook_format": "comparison",
+   "style": "cwc-explainer light",
+   "video": "2026-11-05_2130_go-p24-interfaces.mp4",
+   "status": "posted: YouTube 0ySqLYyCj_0 (UCZ6m5Lh_vmFjOLL_RAHNTxw), YouTube first comment UgwaHDfhGxhJmn1-UVZ4AaABAg; Facebook video 1483687880531203 (page 926523670552408); fb first comment: no Zapier action; instagram skipped"
   }
  ],
  "inspiring": {

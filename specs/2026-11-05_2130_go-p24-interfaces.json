@@ -1,0 +1,150 @@
+{
+ "voice": "am_michael",
+ "speed": 1.0,
+ "theme": "light",
+ "still_scene": 2,
+ "title_yt": "Go Part 24: Interfaces #shorts",
+ "scenes": [
+  {
+   "title": [
+    {
+     "text": "Dog or robot?",
+     "box": "red"
+    },
+    {
+     "text": "Same code!"
+    },
+    {
+     "text": "Go Part 24",
+     "box": "yellow"
+    }
+   ],
+   "image": {
+    "type": "check",
+    "kind": "steps",
+    "items": [
+     "Dog says: Woof!",
+     "Robot says: Beep boop",
+     "One loop for both?"
+    ]
+   },
+   "face": "thinking",
+   "palette": "blue",
+   "say": "A dog and a robot, in one loop? This is Go Part 24, interfaces. Let's make different types work together."
+  },
+  {
+   "title": [
+    {
+     "text": "An interface",
+     "box": "yellow"
+    },
+    {
+     "text": "is a promise"
+    }
+   ],
+   "image": {
+    "type": "code",
+    "file": "main.go",
+    "lines": [
+     "type Speaker interface {",
+     "    Speak() string",
+     "}"
+    ],
+    "highlight": [
+     1
+    ]
+   },
+   "face": "happy",
+   "palette": "orange",
+   "say": "An interface is a list of methods. Speaker says: any type with a Speak method that returns a string is a Speaker."
+  },
+  {
+   "title": [
+    {
+     "text": "No implements",
+     "box": "yellow"
+    },
+    {
+     "text": "keyword!"
+    }
+   ],
+   "image": {
+    "type": "code",
+    "file": "main.go",
+    "lines": [
+     "func (Dog) Speak() string {",
+     "    return \"Woof!\"",
+     "}",
+     "func (Robot) Speak() string {",
+     "    return \"Beep boop\"",
+     "}"
+    ],
+    "highlight": [
+     0,
+     3
+    ]
+   },
+   "face": "thinking",
+   "palette": "purple",
+   "say": "Dog and Robot each get a Speak method. That's it. Go has no implements keyword. If the methods match, the type fits."
+  },
+  {
+   "title": [
+    {
+     "text": "Let's run it",
+     "box": "yellow"
+    },
+    {
+     "text": "one loop",
+     "color": "yellow"
+    }
+   ],
+   "image": {
+    "type": "code",
+    "file": "main.go",
+    "lines": [
+     "things := []Speaker{Dog{}, Robot{}}",
+     "for _, t := range things {",
+     "    fmt.Println(t.Speak())",
+     "}"
+    ],
+    "highlight": [
+     2
+    ],
+    "output": [
+     "Woof!",
+     "Beep boop"
+    ]
+   },
+   "face": "happy",
+   "palette": "blue",
+   "say": "Now put both in a slice of Speaker and loop. We get Woof, then Beep boop. One loop, two types."
+  },
+  {
+   "title": [
+    {
+     "text": "Recap",
+     "box": "yellow"
+    },
+    {
+     "text": "Part 24",
+     "color": "yellow"
+    }
+   ],
+   "image": {
+    "type": "check",
+    "kind": "check",
+    "items": [
+     "Interface = list of methods",
+     "No implements keyword",
+     "One loop, many types"
+    ]
+   },
+   "banner": "Next: Part 25 - Empty interface and any",
+   "note": "Dog or Robot?\nPick 1!",
+   "face": "happy",
+   "palette": "orange",
+   "say": "Next time, the empty interface and any. Quick one: dog or robot? Pick one in the comments, and follow CareerWithCode!"
+  }
+ ]
+}
