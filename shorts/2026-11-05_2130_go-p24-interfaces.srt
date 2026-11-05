@@ -1,0 +1,108 @@
+1
+00:00:00,250 --> 00:00:00,977
+A dog and a
+
+2
+00:00:00,977 --> 00:00:02,233
+robot, in one loop?
+
+3
+00:00:02,453 --> 00:00:03,327
+This is Go
+
+4
+00:00:03,327 --> 00:00:05,075
+Part 24, interfaces.
+
+5
+00:00:05,295 --> 00:00:06,312
+Let's make different
+
+6
+00:00:06,312 --> 00:00:07,328
+types work together.
+
+7
+00:00:08,048 --> 00:00:09,208
+An interface is a
+
+8
+00:00:09,208 --> 00:00:10,300
+list of methods.
+
+9
+00:00:10,520 --> 00:00:12,279
+Speaker says: any type with
+
+10
+00:00:12,279 --> 00:00:14,038
+a Speak method that returns
+
+11
+00:00:14,038 --> 00:00:15,471
+a string is a Speaker.
+
+12
+00:00:16,191 --> 00:00:17,397
+Dog and Robot each
+
+13
+00:00:17,397 --> 00:00:18,669
+get a Speak method.
+
+14
+00:00:18,889 --> 00:00:19,673
+That's it.
+
+15
+00:00:19,893 --> 00:00:21,744
+Go has no implements keyword.
+
+16
+00:00:21,964 --> 00:00:23,168
+If the methods match,
+
+17
+00:00:23,168 --> 00:00:23,971
+the type fits.
+
+18
+00:00:24,691 --> 00:00:25,749
+Now put both in a
+
+19
+00:00:25,749 --> 00:00:27,367
+slice of Speaker and loop.
+
+20
+00:00:27,587 --> 00:00:28,359
+We get Woof,
+
+21
+00:00:28,359 --> 00:00:29,324
+then Beep boop.
+
+22
+00:00:29,544 --> 00:00:30,838
+One loop, two types.
+
+23
+00:00:31,558 --> 00:00:32,770
+Next time, the empty
+
+24
+00:00:32,770 --> 00:00:33,862
+interface and any.
+
+25
+00:00:34,082 --> 00:00:35,865
+Quick one: dog or robot?
+
+26
+00:00:36,085 --> 00:00:37,016
+Pick one in the
+
+27
+00:00:37,016 --> 00:00:39,250
+comments, and follow CareerWithCode!
+
