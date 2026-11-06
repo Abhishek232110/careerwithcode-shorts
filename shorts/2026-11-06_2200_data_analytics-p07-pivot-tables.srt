@@ -1,0 +1,120 @@
+1
+00:00:00,250 --> 00:00:01,671
+Summarize a whole table
+
+2
+00:00:01,671 --> 00:00:02,474
+in one click?
+
+3
+00:00:02,694 --> 00:00:03,307
+Yes!
+
+4
+00:00:03,527 --> 00:00:05,265
+This is Data Analytics,
+
+5
+00:00:05,265 --> 00:00:06,851
+Part 7: pivot tables.
+
+6
+00:00:07,071 --> 00:00:08,118
+Here are six sales
+
+7
+00:00:08,118 --> 00:00:09,282
+from Pune and Delhi.
+
+8
+00:00:10,002 --> 00:00:11,289
+In Excel, click any
+
+9
+00:00:11,289 --> 00:00:13,320
+cell, then Insert, PivotTable.
+
+10
+00:00:13,540 --> 00:00:15,047
+Drag city into Rows,
+
+11
+00:00:15,047 --> 00:00:16,704
+and sales into Values.
+
+12
+00:00:17,424 --> 00:00:18,003
+Boom.
+
+13
+00:00:18,223 --> 00:00:19,757
+Six rows become two.
+
+14
+00:00:19,977 --> 00:00:20,932
+Delhi sold four
+
+15
+00:00:20,932 --> 00:00:21,951
+hundred and ten.
+
+16
+00:00:22,171 --> 00:00:23,085
+Pune sold three
+
+17
+00:00:23,085 --> 00:00:24,182
+hundred and fifty.
+
+18
+00:00:24,902 --> 00:00:25,845
+Put it on a chart,
+
+19
+00:00:25,845 --> 00:00:27,102
+and the winner is clear.
+
+20
+00:00:27,322 --> 00:00:28,981
+Delhi is ahead by sixty.
+
+21
+00:00:29,701 --> 00:00:31,458
+In Python, pandas does the
+
+22
+00:00:31,458 --> 00:00:32,944
+same with pivot table.
+
+23
+00:00:33,164 --> 00:00:34,557
+Index is city, values
+
+24
+00:00:34,557 --> 00:00:35,684
+is sales, and the
+
+25
+00:00:35,684 --> 00:00:36,745
+function is sum.
+
+26
+00:00:37,465 --> 00:00:38,945
+To get totals for every
+
+27
+00:00:38,945 --> 00:00:40,296
+city, pivot or SUMIF?
+
+28
+00:00:40,516 --> 00:00:41,895
+Pick one in the comments!
+
+29
+00:00:42,115 --> 00:00:44,238
+Follow CareerWithCode for Part
+
+30
+00:00:44,238 --> 00:00:45,442
+8, cleaning data.
+
