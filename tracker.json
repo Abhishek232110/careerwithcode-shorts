@@ -2,7 +2,7 @@
  "_note": "Updated automatically after every post. Edit next_part to jump a series forward/back.",
  "series": {
   "go": {
-   "next_part": 25,
+   "next_part": 26,
    "posted": [
     "Part 1: Hello World and package main",
     "Part 2: Variables: var vs :=",
@@ -27,7 +27,8 @@
     "Part 21: Methods on structs",
     "Part 22: Pointer vs value receivers",
     "Part 23: Pointers basics",
-    "Part 24: Interfaces"
+    "Part 24: Interfaces",
+    "Part 25: Empty interface and any"
    ]
   },
   "python": {
@@ -681,6 +682,22 @@
    "style": "cwc-explainer light + indian character",
    "video": "2026-11-05_2200_data_analytics-p06-sorting-and-filtering.mp4",
    "status": "posted: YouTube uIDkilVc2W4 (UCZ6m5Lh_vmFjOLL_RAHNTxw), YouTube first comment UgzHFpcs_qZZwcA1FER4AaABAg; Facebook video 29490978530509430 (page 926523670552408); fb first comment: no Zapier action; instagram skipped"
+  },
+  {
+   "date": "2026-11-06",
+   "slot": "go",
+   "time": "21:30",
+   "title": "Go Part 25: Empty interface and any #shorts",
+   "tone": "friendly teacher",
+   "hook_format": "question",
+   "video": "2026-11-06_2130_go-p25-empty-interface-and-any.mp4",
+   "duration_s": 38.6,
+   "status": "posted",
+   "youtube_id": "gx1lASF5Y5I",
+   "facebook_id": "28869331942760693",
+   "facebook_type": "video",
+   "yt_first_comment": "Ugy6BvYWPuGpXf0qEdx4AaABAg",
+   "fb_first_comment": "no Zapier action"
   }
  ],
  "inspiring": {

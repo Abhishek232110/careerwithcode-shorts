@@ -1,0 +1,41 @@
+{
+ "voice": "am_michael",
+ "speed": 1.0,
+ "theme": "light",
+ "still_scene": 2,
+ "title_yt": "Go Part 25: Empty interface and any #shorts",
+ "scenes": [
+  {
+   "title": [{"text": "One box,", "box": "red"}, {"text": "any value?"}, {"text": "Go Part 25", "box": "yellow"}],
+   "image": {"type": "check", "kind": "steps", "items": ["Put in a number", "Put in a string", "Put in a bool", "Same variable!"]},
+   "face": "thinking", "palette": "blue",
+   "say": "One variable that holds any value? This is Go Part 25, the empty interface and any."
+  },
+  {
+   "title": [{"text": "any =", "box": "yellow"}, {"text": "interface{}"}],
+   "image": {"type": "code", "file": "main.go", "lines": ["// these two mean the same", "var a interface{}", "var b any"], "highlight": [2]},
+   "face": "happy", "palette": "orange",
+   "say": "An empty interface has zero methods, so every type fits it. Since Go 1.18, any is just a short name for it."
+  },
+  {
+   "title": [{"text": "Let's run it", "box": "yellow"}, {"text": "one box"}],
+   "image": {"type": "code", "file": "main.go", "lines": ["var box any", "box = 42", "fmt.Println(box)", "box = \"hi\"", "fmt.Println(box)", "box = true", "fmt.Println(box)"], "highlight": [0], "output": ["42", "hi", "true"]},
+   "face": "happy", "palette": "purple",
+   "say": "We make box of type any. We put in forty two, then hi, then true. It prints all three. One box, any value."
+  },
+  {
+   "title": [{"text": "Mixed slice", "box": "yellow"}, {"text": "with %T"}],
+   "image": {"type": "code", "file": "main.go", "lines": ["things := []any{7, \"Go\", 3.5}", "for _, t := range things {", "    fmt.Printf(\"%v is %T\\n\", t, t)", "}"], "highlight": [2], "output": ["7 is int", "Go is string", "3.5 is float64"]},
+   "face": "thinking", "palette": "blue",
+   "say": "A slice of any can mix types. Percent T prints the real type inside: int, string, and float sixty four."
+  },
+  {
+   "title": [{"text": "Recap", "box": "yellow"}, {"text": "Part 25"}],
+   "image": {"type": "check", "kind": "check", "items": ["Empty interface = 0 methods", "any = interface{}", "Holds any type", "%T shows the real type"]},
+   "banner": "Next: Part 26 - Type assertions",
+   "note": "any or interface{}?\nPick 1!",
+   "face": "happy", "palette": "orange",
+   "say": "Next time, type assertions. Quick one: any or interface? Pick one in the comments, and follow CareerWithCode!"
+  }
+ ]
+}
