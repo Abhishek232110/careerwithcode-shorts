@@ -40,14 +40,15 @@
    ]
   },
   "data_analytics": {
-   "next_part": 7,
+   "next_part": 8,
    "posted": [
     "Part 1: What is Data Analytics? (the 4 steps)",
     "Part 2: Types of data: numbers, text, dates, categories",
     "Part 3: Rows and columns: thinking in tables",
     "Part 4: Mean vs median: which average to trust",
     "Part 5: Spreadsheet basics: SUM, AVERAGE, COUNT",
-    "Part 6: Sorting and filtering data"
+    "Part 6: Sorting and filtering data",
+    "Part 7: Pivot tables in 60 seconds"
    ]
   }
  },
@@ -698,6 +699,16 @@
    "facebook_type": "video",
    "yt_first_comment": "Ugy6BvYWPuGpXf0qEdx4AaABAg",
    "fb_first_comment": "no Zapier action"
+  },
+  {
+   "date": "2026-11-06 22:00",
+   "slot": "data_analytics",
+   "title": "Data Analytics Part 7: Pivot Tables in 60 Seconds #shorts",
+   "tone": "friendly teacher",
+   "hook_format": "question",
+   "style": "cwc-explainer light + indian character",
+   "video": "2026-11-06_2200_data_analytics-p07-pivot-tables.mp4",
+   "status": "posted: YouTube JK93v3Uvw-Y (UCZ6m5Lh_vmFjOLL_RAHNTxw), YouTube first comment UgzsdaXlT1KtnnZP2154AaABAg; Facebook video 1120068010882266 (page 926523670552408); fb first comment: no Zapier action; instagram skipped"
   }
  ],
  "inspiring": {
