@@ -1,0 +1,100 @@
+1
+00:00:00,250 --> 00:00:01,364
+One variable that
+
+2
+00:00:01,364 --> 00:00:02,412
+holds any value?
+
+3
+00:00:02,632 --> 00:00:04,061
+This is Go Part 25,
+
+4
+00:00:04,061 --> 00:00:06,168
+the empty interface and any.
+
+5
+00:00:06,888 --> 00:00:08,382
+An empty interface has
+
+6
+00:00:08,382 --> 00:00:09,877
+zero methods, so every
+
+7
+00:00:09,877 --> 00:00:10,760
+type fits it.
+
+8
+00:00:10,980 --> 00:00:12,491
+Since Go 1.18, any
+
+9
+00:00:12,491 --> 00:00:13,750
+is just a short
+
+10
+00:00:13,750 --> 00:00:14,757
+name for it.
+
+11
+00:00:15,477 --> 00:00:16,172
+We make box
+
+12
+00:00:16,172 --> 00:00:16,930
+of type any.
+
+13
+00:00:17,150 --> 00:00:18,341
+We put in forty two,
+
+14
+00:00:18,341 --> 00:00:19,473
+then hi, then true.
+
+15
+00:00:19,693 --> 00:00:20,971
+It prints all three.
+
+16
+00:00:21,191 --> 00:00:22,627
+One box, any value.
+
+17
+00:00:23,347 --> 00:00:24,263
+A slice of any
+
+18
+00:00:24,263 --> 00:00:25,178
+can mix types.
+
+19
+00:00:25,398 --> 00:00:27,173
+Percent T prints the real
+
+20
+00:00:27,173 --> 00:00:29,231
+type inside: int, string, and
+
+21
+00:00:29,231 --> 00:00:30,438
+float sixty four.
+
+22
+00:00:31,158 --> 00:00:32,904
+Next time, type assertions.
+
+23
+00:00:33,124 --> 00:00:34,778
+Quick one: any or interface?
+
+24
+00:00:34,998 --> 00:00:35,929
+Pick one in the
+
+25
+00:00:35,929 --> 00:00:38,164
+comments, and follow CareerWithCode!
+
