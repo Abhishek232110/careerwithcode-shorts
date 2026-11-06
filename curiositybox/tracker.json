@@ -24,7 +24,8 @@
       "Duniya ki pehli website info.cern.ch (1991, Tim Berners-Lee, CERN) aaj bhi online",
       "Pehla computer mouse lakdi ka tha (1964, Engelbart & Bill English, SRI; 1968 demo)",
       "Bluetooth naam: Viking raja Harald Bluetooth (Denmark-Norway, 1997 Jim Kardach Intel, logo H+B runes)",
-      "Pehla mobile call: 3 April 1973, Martin Cooper (Motorola), New York, ~1 kg phone, Bell Labs ko call"
+      "Pehla mobile call: 3 April 1973, Martin Cooper (Motorola), New York, ~1 kg phone, Bell Labs ko call",
+      "Email mein @ kyun: Ray Tomlinson 1971 pehla network email (dono computer ek kamre mein)"
     ]
   },
   "whatif": {
@@ -649,6 +650,16 @@
       "mood": "epic",
       "video": "curiositybox/shorts/2026-11-05_2000_kahani-chandragupta-500-hathi.mp4",
       "status": "posted via Zapier: YouTube GQ-RS8scg0I (20:00 IST), Facebook photo 122110393311515109 (post 1380858578445805_122110393347515109)"
+    },
+    {
+      "date": "2026-11-06 10:00",
+      "slot": "ai",
+      "title": "Email Mein @ Kyun Hota Hai? 1971 Ka Sach #shorts",
+      "tone": "surprising tech fact, energetic",
+      "hook_format": "question",
+      "mood": "upbeat",
+      "video": "curiositybox/shorts/2026-11-06_1000_ai-email-at-symbol-1971.mp4",
+      "status": "posted via Zapier: YouTube jtzVJrE1WHE (10:00 IST), Facebook photo 122110576167515109 (post 1380858578445805_122110576191515109)"
     }
   ]
 }
