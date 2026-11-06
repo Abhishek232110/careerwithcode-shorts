@@ -71,7 +71,8 @@
       "Mohenjo-daro: 4500 saal purani dhaki naaliyan, Great Bath (bitumen)",
       "Taj Mahal: kareeb 22 saal (1632-1653), Makrana marble, UNESCO 1983",
       "Nepal ka jhanda: duniya ka akela non-rectangular flag (2 tikone, 1962)",
-      "Chandragupta Maurya: Chanakya, Nanda vansh, Seleucus sandhi, 500 hathi"
+      "Chandragupta Maurya: Chanakya, Nanda vansh, Seleucus sandhi, 500 hathi",
+      "Wow! Signal 1977: Big Ear, 72 second, Sagittarius, dobara nahi mila"
     ]
   },
   "log": [
@@ -660,6 +661,16 @@
       "mood": "upbeat",
       "video": "curiositybox/shorts/2026-11-06_1000_ai-email-at-symbol-1971.mp4",
       "status": "posted via Zapier: YouTube jtzVJrE1WHE (10:00 IST), Facebook photo 122110576167515109 (post 1380858578445805_122110576191515109)"
+    },
+    {
+      "date": "2026-11-06 20:00",
+      "slot": "kahani",
+      "title": "Antariksh Se Aaya 72 Second Ka Signal! Wow Signal Ka Rahasya #shorts",
+      "tone": "storyteller, suspense",
+      "hook_format": "number",
+      "mood": "mysterious",
+      "video": "curiositybox/shorts/2026-11-06_2000_kahani-wow-signal-72-second.mp4",
+      "status": "posted via Zapier: YouTube 7wHr1xT8nbI (20:00 IST), Facebook photo 122110728633515109 (post 1380858578445805_122110728657515109)"
     }
   ]
 }
