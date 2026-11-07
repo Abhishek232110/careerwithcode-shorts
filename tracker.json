@@ -41,7 +41,7 @@
    ]
   },
   "data_analytics": {
-   "next_part": 8,
+   "next_part": 9,
    "posted": [
     "Part 1: What is Data Analytics? (the 4 steps)",
     "Part 2: Types of data: numbers, text, dates, categories",
@@ -49,7 +49,8 @@
     "Part 4: Mean vs median: which average to trust",
     "Part 5: Spreadsheet basics: SUM, AVERAGE, COUNT",
     "Part 6: Sorting and filtering data",
-    "Part 7: Pivot tables in 60 seconds"
+    "Part 7: Pivot tables in 60 seconds",
+    "Part 8: Cleaning data: duplicates and blanks"
    ]
   }
  },
@@ -725,6 +726,25 @@
    "facebook_video_id": "1845236690242013",
    "facebook_note": "first page_video attempt returned Service Unavailable (verified not posted), retry succeeded",
    "fb_first_comment": "no Zapier action"
+  },
+  {
+   "date": "2026-11-07",
+   "slot": "data_analytics",
+   "time": "22:00",
+   "title": "Data Analytics Part 8: Cleaning Data - Duplicates and Blanks #shorts",
+   "tone": "friendly teacher",
+   "hook_format": "question",
+   "style": "cwc-explainer light + indian character",
+   "video": "2026-11-07_2200_data_analytics-p08-cleaning-duplicates-blanks.mp4",
+   "duration_s": 53.8,
+   "status": "posted",
+   "youtube_id": "HsujZPtV5TI",
+   "youtube_channel": "UCZ6m5Lh_vmFjOLL_RAHNTxw",
+   "youtube_first_comment": "UgwJFbhmzB51onn9oGl4AaABAg",
+   "facebook_video_id": "1916333356204114",
+   "facebook_page": "926523670552408",
+   "fb_first_comment": "no Zapier action",
+   "instagram": "skipped"
   }
  ],
  "inspiring": {

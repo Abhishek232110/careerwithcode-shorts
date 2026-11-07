@@ -1,0 +1,120 @@
+1
+00:00:00,250 --> 00:00:01,024
+Is your data
+
+2
+00:00:01,024 --> 00:00:01,863
+lying to you?
+
+3
+00:00:02,083 --> 00:00:03,686
+This is Data Analytics,
+
+4
+00:00:03,686 --> 00:00:05,220
+Part 8: cleaning data.
+
+5
+00:00:05,440 --> 00:00:07,056
+Here are six sales rows.
+
+6
+00:00:07,276 --> 00:00:08,212
+Look closely.
+
+7
+00:00:08,932 --> 00:00:10,722
+Ravi appears twice, so his
+
+8
+00:00:10,722 --> 00:00:12,651
+sale gets counted two times.
+
+9
+00:00:12,871 --> 00:00:14,421
+Meena has no city, and
+
+10
+00:00:14,421 --> 00:00:16,183
+John has no sales number.
+
+11
+00:00:16,403 --> 00:00:17,873
+These break your totals.
+
+12
+00:00:18,593 --> 00:00:21,198
+First, remove exact duplicate rows.
+
+13
+00:00:21,418 --> 00:00:23,297
+Then handle blanks: fill them
+
+14
+00:00:23,297 --> 00:00:24,593
+in, or drop the row.
+
+15
+00:00:24,813 --> 00:00:26,612
+Finally, count your rows again.
+
+16
+00:00:27,332 --> 00:00:29,131
+In pandas, df dot drop
+
+17
+00:00:29,131 --> 00:00:31,422
+duplicates leaves five rows.
+
+18
+00:00:31,642 --> 00:00:32,936
+Then df dot drop n
+
+19
+00:00:32,936 --> 00:00:34,877
+a removes rows with blanks.
+
+20
+00:00:35,097 --> 00:00:36,586
+Three clean rows left.
+
+21
+00:00:37,306 --> 00:00:38,334
+Six rows became
+
+22
+00:00:38,334 --> 00:00:39,499
+three clean ones.
+
+23
+00:00:39,719 --> 00:00:41,132
+In Excel, use Data,
+
+24
+00:00:41,132 --> 00:00:42,992
+Remove Duplicates for the
+
+25
+00:00:42,992 --> 00:00:44,182
+same first step.
+
+26
+00:00:44,902 --> 00:00:47,262
+Clean data first, then analyze.
+
+27
+00:00:47,482 --> 00:00:48,400
+A blank cell:
+
+28
+00:00:48,400 --> 00:00:49,317
+fill or drop?
+
+29
+00:00:49,537 --> 00:00:50,916
+Pick one in the comments!
+
+30
+00:00:51,136 --> 00:00:53,365
+Follow CareerWithCode for Part 9.
+
