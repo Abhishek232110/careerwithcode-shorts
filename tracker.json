@@ -2,7 +2,7 @@
  "_note": "Updated automatically after every post. Edit next_part to jump a series forward/back.",
  "series": {
   "go": {
-   "next_part": 26,
+   "next_part": 27,
    "posted": [
     "Part 1: Hello World and package main",
     "Part 2: Variables: var vs :=",
@@ -28,7 +28,8 @@
     "Part 22: Pointer vs value receivers",
     "Part 23: Pointers basics",
     "Part 24: Interfaces",
-    "Part 25: Empty interface and any"
+    "Part 25: Empty interface and any",
+    "Part 26: Type assertions"
    ]
   },
   "python": {
@@ -709,6 +710,21 @@
    "style": "cwc-explainer light + indian character",
    "video": "2026-11-06_2200_data_analytics-p07-pivot-tables.mp4",
    "status": "posted: YouTube JK93v3Uvw-Y (UCZ6m5Lh_vmFjOLL_RAHNTxw), YouTube first comment UgzsdaXlT1KtnnZP2154AaABAg; Facebook video 1120068010882266 (page 926523670552408); fb first comment: no Zapier action; instagram skipped"
+  },
+  {
+   "date": "2026-11-07",
+   "slot": "go",
+   "time": "21:30",
+   "title": "Go Part 26: Type assertions #shorts",
+   "tone": "friendly teacher",
+   "hook_format": "question",
+   "video": "2026-11-07_2130_go-p26-type-assertions.mp4",
+   "status": "posted",
+   "youtube_id": "hg9Pau5_V4o",
+   "youtube_first_comment": "UgzU5UFb1g7gsHV_JFR4AaABAg",
+   "facebook_video_id": "1845236690242013",
+   "facebook_note": "first page_video attempt returned Service Unavailable (verified not posted), retry succeeded",
+   "fb_first_comment": "no Zapier action"
   }
  ],
  "inspiring": {

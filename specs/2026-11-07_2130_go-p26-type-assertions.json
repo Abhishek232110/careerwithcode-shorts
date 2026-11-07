@@ -1,0 +1,41 @@
+{
+ "voice": "am_michael",
+ "speed": 1.0,
+ "theme": "light",
+ "still_scene": 2,
+ "title_yt": "Go Part 26: Type assertions #shorts",
+ "scenes": [
+  {
+   "title": [{"text": "What's inside", "box": "red"}, {"text": "the box?"}, {"text": "Go Part 26", "box": "yellow"}],
+   "image": {"type": "check", "kind": "steps", "items": ["box is any", "Something is inside", "Is it a string?", "Ask with .(type)"]},
+   "face": "thinking", "palette": "purple",
+   "say": "What's really inside your any box? This is Go Part 26, type assertions."
+  },
+  {
+   "title": [{"text": "Take it out", "box": "yellow"}, {"text": "box.(string)"}],
+   "image": {"type": "code", "file": "main.go", "lines": ["var box any = \"Go\"", "s := box.(string)", "fmt.Println(s)"], "highlight": [1], "output": ["Go"]},
+   "face": "happy", "palette": "blue",
+   "say": "Box holds Go. Box dot, string in brackets, says: I am sure it is a string, give it to me. It prints Go."
+  },
+  {
+   "title": [{"text": "Wrong guess?", "box": "red"}, {"text": "panic!"}],
+   "image": {"type": "code", "file": "main.go", "lines": ["var box any = \"Go\"", "n := box.(int)", "fmt.Println(n)"], "highlight": [1], "output": ["panic: interface conversion:", "interface {} is string, not int"]},
+   "face": "worried", "palette": "orange",
+   "say": "But if you guess wrong, like int, your program panics and crashes."
+  },
+  {
+   "title": [{"text": "Safe way", "box": "yellow"}, {"text": "comma ok"}],
+   "image": {"type": "code", "file": "main.go", "lines": ["var box any = \"Go\"", "n, ok := box.(int)", "fmt.Println(n, ok)", "t, ok := box.(string)", "fmt.Println(t, ok)"], "highlight": [1], "output": ["0 false", "Go true"]},
+   "face": "happy", "palette": "purple",
+   "say": "The safe way is comma ok. A wrong guess gives the zero value and false, no crash. A right guess gives Go and true."
+  },
+  {
+   "title": [{"text": "Recap", "box": "yellow"}, {"text": "Part 26"}],
+   "image": {"type": "check", "kind": "check", "items": ["x.(T) takes the value out", "Wrong type = panic", "v, ok := x.(T) is safe", "ok tells you yes or no"]},
+   "banner": "Next: Part 27 - Type switches",
+   "note": "Panic or comma ok?\nPick 1!",
+   "face": "happy", "palette": "blue",
+   "say": "Next time, type switches. Quick one: panic or comma ok? Pick one in the comments, and follow CareerWithCode!"
+  }
+ ]
+}
