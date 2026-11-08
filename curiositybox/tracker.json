@@ -75,7 +75,8 @@
       "Nepal ka jhanda: duniya ka akela non-rectangular flag (2 tikone, 1962)",
       "Chandragupta Maurya: Chanakya, Nanda vansh, Seleucus sandhi, 500 hathi",
       "Wow! Signal 1977: Big Ear, 72 second, Sagittarius, dobara nahi mila",
-      "Abhimanyu chakravyuh: 13va din, andar jana aata tha nikalna nahi, Jayadrath (Mahabharat)"
+      "Abhimanyu chakravyuh: 13va din, andar jana aata tha nikalna nahi, Jayadrath (Mahabharat)",
+      "Napoleon ka kad: myth vs fact (French inch, ~5'7\", British cartoons)"
     ]
   },
   "log": [
@@ -703,6 +704,16 @@
       "hook_format": "question",
       "video": "curiositybox/shorts/2026-11-08_1000_ai-youtube-pehli-video-zoo.mp4",
       "status": "posted via Zapier: YouTube B15XMtShqWk (10:00 IST), Facebook photo 122111265153515109 (post 1380858578445805_122111265177515109)"
+    },
+    {
+      "date": "2026-11-08 20:00",
+      "slot": "kahani",
+      "title": "Kya Napoleon Sach Mein Thigna Tha? Myth vs Fact #shorts",
+      "tone": "storyteller, suspense",
+      "hook_format": "myth-vs-fact",
+      "mood": "epic",
+      "video": "curiositybox/shorts/2026-11-08_2000_kahani-napoleon-kad-myth.mp4",
+      "status": "posted via Zapier: YouTube b1S5pM5db8o (20:00 IST), Facebook photo 122111423835515109 (post 1380858578445805_122111423859515109)"
     }
   ]
 }
