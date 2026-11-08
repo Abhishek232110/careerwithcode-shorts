@@ -1,0 +1,100 @@
+1
+00:00:00,250 --> 00:00:01,600
+Tired of guessing types
+
+2
+00:00:01,600 --> 00:00:02,245
+one by one?
+
+3
+00:00:02,465 --> 00:00:03,734
+This is Go Part
+
+4
+00:00:03,734 --> 00:00:05,256
+27, type switches.
+
+5
+00:00:05,976 --> 00:00:08,027
+Write switch v colon equals
+
+6
+00:00:08,027 --> 00:00:09,774
+x dot type in brackets.
+
+7
+00:00:09,994 --> 00:00:11,415
+Each case is a type,
+
+8
+00:00:11,415 --> 00:00:13,121
+and inside it, v already
+
+9
+00:00:13,121 --> 00:00:14,116
+has that type.
+
+10
+00:00:14,836 --> 00:00:15,919
+Twenty one is an
+
+11
+00:00:15,919 --> 00:00:17,070
+int, so we double
+
+12
+00:00:17,070 --> 00:00:18,154
+it to forty two.
+
+13
+00:00:18,374 --> 00:00:19,187
+Go is a string
+
+14
+00:00:19,187 --> 00:00:20,117
+with length two.
+
+15
+00:00:20,337 --> 00:00:21,810
+True matches no case,
+
+16
+00:00:21,810 --> 00:00:22,932
+so default runs.
+
+17
+00:00:23,652 --> 00:00:25,407
+One case can list many
+
+18
+00:00:25,407 --> 00:00:27,800
+types, like int comma float64.
+
+19
+00:00:28,020 --> 00:00:29,370
+And case nil catches
+
+20
+00:00:29,370 --> 00:00:30,247
+an empty box.
+
+21
+00:00:30,967 --> 00:00:32,851
+Next time, errors as values.
+
+22
+00:00:33,071 --> 00:00:34,059
+Quick one: switch
+
+23
+00:00:34,059 --> 00:00:34,757
+or many ifs?
+
+24
+00:00:34,977 --> 00:00:35,908
+Pick one in the
+
+25
+00:00:35,908 --> 00:00:38,143
+comments, and follow CareerWithCode!
+
