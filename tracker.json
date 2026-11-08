@@ -745,6 +745,18 @@
    "facebook_page": "926523670552408",
    "fb_first_comment": "no Zapier action",
    "instagram": "skipped"
+  },
+  {
+   "date": "2026-11-08",
+   "slot": "morning-qa",
+   "time": "09:00",
+   "title": "Morning Quiz: Go + Data Analytics + 1 Interview Question #shorts",
+   "video": "2026-11-08_0900_morning-qa-type-assertion-dupes-goroutines.mp4",
+   "duration_s": 55.2,
+   "go_part": "Part 26: Type assertions",
+   "da_part": "Part 8: Cleaning data: duplicates and blanks",
+   "interview": "Goroutine vs OS thread: which is lighter?",
+   "status": "rendered, not posted: the Zapier YouTube upload was denied by this session's permission check; Facebook not attempted"
   }
  ],
  "inspiring": {
