@@ -26,7 +26,8 @@
       "Bluetooth naam: Viking raja Harald Bluetooth (Denmark-Norway, 1997 Jim Kardach Intel, logo H+B runes)",
       "Pehla mobile call: 3 April 1973, Martin Cooper (Motorola), New York, ~1 kg phone, Bell Labs ko call",
       "Email mein @ kyun: Ray Tomlinson 1971 pehla network email (dono computer ek kamre mein)",
-      "Pehla SMS: 3 Dec 1992 'Merry Christmas', Neil Papworth computer se Richard Jarvis (Vodafone) ko"
+      "Pehla SMS: 3 Dec 1992 'Merry Christmas', Neil Papworth computer se Richard Jarvis (Vodafone) ko",
+      "YouTube ki pehli video 'Me at the zoo' (23 April 2005, 19 sec, Jawed Karim, San Diego Zoo)"
     ]
   },
   "whatif": {
@@ -693,6 +694,15 @@
       "mood": "epic",
       "video": "curiositybox/shorts/2026-11-07_2000_kahani-abhimanyu-chakravyuh.mp4",
       "status": "posted via Zapier: YouTube 9DRhv3ao0tA (20:00 IST), Facebook photo 122111099613515109 (post 1380858578445805_122111099637515109)"
+    },
+    {
+      "date": "2026-11-08 10:00",
+      "slot": "ai",
+      "title": "YouTube Ki Pehli Video Kaun Si Thi? Sirf 19 Second! #shorts",
+      "tone": "surprising tech fact, energetic",
+      "hook_format": "question",
+      "video": "curiositybox/shorts/2026-11-08_1000_ai-youtube-pehli-video-zoo.mp4",
+      "status": "posted via Zapier: YouTube B15XMtShqWk (10:00 IST), Facebook photo 122111265153515109 (post 1380858578445805_122111265177515109)"
     }
   ]
 }
