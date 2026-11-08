@@ -1,0 +1,104 @@
+1
+00:00:00,250 --> 00:00:01,156
+Find any data
+
+2
+00:00:01,156 --> 00:00:01,992
+in one line?
+
+3
+00:00:02,212 --> 00:00:03,489
+Yes, with SQL!
+
+4
+00:00:03,709 --> 00:00:05,686
+This is Data Analytics, Part
+
+5
+00:00:05,686 --> 00:00:07,099
+9: SELECT and WHERE.
+
+6
+00:00:07,319 --> 00:00:08,803
+Here is our sales table.
+
+7
+00:00:09,523 --> 00:00:11,245
+SQL reads like English.
+
+8
+00:00:11,465 --> 00:00:12,940
+SELECT picks the columns.
+
+9
+00:00:13,160 --> 00:00:14,543
+FROM names the table.
+
+10
+00:00:14,763 --> 00:00:15,938
+WHERE keeps only the
+
+11
+00:00:15,938 --> 00:00:16,760
+rows you want.
+
+12
+00:00:17,480 --> 00:00:19,230
+Select name and sales, from
+
+13
+00:00:19,230 --> 00:00:21,109
+sales, where sales is greater
+
+14
+00:00:21,109 --> 00:00:22,210
+than one hundred.
+
+15
+00:00:22,430 --> 00:00:23,324
+We get Asha,
+
+16
+00:00:23,324 --> 00:00:24,367
+Ravi and Sara.
+
+17
+00:00:25,087 --> 00:00:26,466
+WHERE checks every row.
+
+18
+00:00:26,685 --> 00:00:27,798
+Meena and John are
+
+19
+00:00:27,798 --> 00:00:29,097
+below one hundred, so
+
+20
+00:00:29,097 --> 00:00:30,148
+they are dropped.
+
+21
+00:00:30,368 --> 00:00:31,474
+Three rows stay.
+
+22
+00:00:32,194 --> 00:00:33,577
+To filter rows, do you
+
+23
+00:00:33,577 --> 00:00:34,835
+use SELECT or WHERE?
+
+24
+00:00:35,055 --> 00:00:36,434
+Pick one in the comments!
+
+25
+00:00:36,654 --> 00:00:38,857
+Follow CareerWithCode for Part
+
+26
+00:00:38,857 --> 00:00:39,811
+10, GROUP BY.
+

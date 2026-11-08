@@ -214,7 +214,7 @@ def check_image(img, shown):
 def table_image(img, shown):
     """Spreadsheet-style table. Rows appear one by one; then `bad` cells/rows get a red mark.
     {"type": "table", "cols": [...], "rows": [[...]], "bad": [[r, c] or [r, -1 for whole row]],
-     "good_rows": [r, ...], "file": "sales.csv"}"""
+     "good_rows": [r, ...], "file": "sales.csv", "bad_label": "DUPLICATE"}"""
     cols, rows = img["cols"], img["rows"]
     bad = [tuple(x) for x in img.get("bad", [])]
     good = set(img.get("good_rows", []))
@@ -241,7 +241,8 @@ def table_image(img, shown):
             y = y0 + rh * (r + 1)
             if c < 0:
                 d.rounded_rectangle([44, y + 6, w - 4, y + rh - 6], 12, outline=RED, width=7)
-                d.text((w - 210, y + 24), "DUPLICATE", font=FM(34), fill=RED)
+                lab = img.get("bad_label", "DUPLICATE")
+                d.text((w - 30 - FM(34).getlength(lab), y + 24), lab, font=FM(34), fill=RED)
             else:
                 x = xs[c]
                 d.rounded_rectangle([x + 4, y + 6, xs[c + 1] - 4, y + rh - 6], 12, outline=RED, width=7)
