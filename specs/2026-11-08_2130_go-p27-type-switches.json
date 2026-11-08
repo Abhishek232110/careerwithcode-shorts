@@ -1,0 +1,41 @@
+{
+ "voice": "am_michael",
+ "speed": 1.0,
+ "theme": "light",
+ "still_scene": 2,
+ "title_yt": "Go Part 27: Type switches #shorts",
+ "scenes": [
+  {
+   "title": [{"text": "Too many ifs?", "box": "red"}, {"text": "Use a switch"}, {"text": "Go Part 27", "box": "yellow"}],
+   "image": {"type": "check", "kind": "steps", "items": ["x is any", "Is it an int?", "Is it a string?", "One switch checks all"]},
+   "face": "thinking", "palette": "orange",
+   "say": "Tired of guessing types one by one? This is Go Part 27, type switches."
+  },
+  {
+   "title": [{"text": "switch on", "box": "yellow"}, {"text": "x.(type)"}],
+   "image": {"type": "code", "file": "main.go", "lines": ["func describe(x any) {", "  switch v := x.(type) {", "  case int:", "    fmt.Println(\"int:\", v*2)", "  case string:", "    fmt.Println(\"string:\", len(v))", "  default:", "    fmt.Println(\"other:\", v)", "  }", "}"], "highlight": [1], "output": []},
+   "face": "happy", "palette": "blue",
+   "say": "Write switch v colon equals x dot type in brackets. Each case is a type, and inside it, v already has that type."
+  },
+  {
+   "title": [{"text": "Run it", "box": "yellow"}, {"text": "3 values"}],
+   "image": {"type": "code", "file": "main.go", "lines": ["describe(21)", "describe(\"Go\")", "describe(true)"], "highlight": [2], "output": ["int: 42", "string: 2", "other: true"]},
+   "face": "happy", "palette": "purple",
+   "say": "Twenty one is an int, so we double it to forty two. Go is a string with length two. True matches no case, so default runs."
+  },
+  {
+   "title": [{"text": "Bonus", "box": "red"}, {"text": "many types"}],
+   "image": {"type": "code", "file": "main.go", "lines": ["var x any = 3.5", "switch x.(type) {", "case int, float64:", "  fmt.Println(\"a number\")", "case nil:", "  fmt.Println(\"nothing\")", "}"], "highlight": [2], "output": ["a number"]},
+   "face": "thinking", "palette": "orange",
+   "say": "One case can list many types, like int comma float64. And case nil catches an empty box."
+  },
+  {
+   "title": [{"text": "Recap", "box": "yellow"}, {"text": "Part 27"}],
+   "image": {"type": "check", "kind": "check", "items": ["switch v := x.(type)", "Each case is a type", "v has that type inside", "default catches the rest"]},
+   "banner": "Next: Part 28 - Errors as values",
+   "note": "Switch or many ifs?\nPick 1!",
+   "face": "happy", "palette": "blue",
+   "say": "Next time, errors as values. Quick one: switch or many ifs? Pick one in the comments, and follow CareerWithCode!"
+  }
+ ]
+}

@@ -2,7 +2,7 @@
  "_note": "Updated automatically after every post. Edit next_part to jump a series forward/back.",
  "series": {
   "go": {
-   "next_part": 27,
+   "next_part": 28,
    "posted": [
     "Part 1: Hello World and package main",
     "Part 2: Variables: var vs :=",
@@ -29,7 +29,8 @@
     "Part 23: Pointers basics",
     "Part 24: Interfaces",
     "Part 25: Empty interface and any",
-    "Part 26: Type assertions"
+    "Part 26: Type assertions",
+    "Part 27: Type switches"
    ]
   },
   "python": {
@@ -757,6 +758,21 @@
    "da_part": "Part 8: Cleaning data: duplicates and blanks",
    "interview": "Goroutine vs OS thread: which is lighter?",
    "status": "rendered, not posted: the Zapier YouTube upload was denied by this session's permission check; Facebook not attempted"
+  },
+  {
+   "date": "2026-11-08",
+   "slot": "go",
+   "time": "21:30",
+   "title": "Go Part 27: Type switches #shorts",
+   "tone": "friendly teacher",
+   "hook_format": "question",
+   "video": "2026-11-08_2130_go-p27-type-switches.mp4",
+   "duration_s": 38.6,
+   "status": "posted",
+   "youtube_id": "E7XjoJnMWZI",
+   "youtube_first_comment": "UgwbJZa4myvkZqPHvEt4AaABAg",
+   "facebook": "not posted: Zapier task limit reached",
+   "fb_first_comment": "not posted (no Facebook post; also no Zapier comment action)"
   }
  ],
  "inspiring": {
