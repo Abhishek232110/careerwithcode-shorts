@@ -724,6 +724,16 @@
       "mood": "upbeat",
       "video": "curiositybox/shorts/2026-11-09_1000_ai-pehla-webcam-coffee-pot.mp4",
       "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
+    },
+    {
+      "date": "2026-11-09 20:00",
+      "slot": "kahani",
+      "title": "Kya Aap Gin Sakte Ho Chand Baori Ki 3500 Seedhiyan? #shorts",
+      "tone": "storyteller, suspense",
+      "hook_format": "challenge",
+      "mood": "mysterious",
+      "video": "curiositybox/shorts/2026-11-09_2000_kahani-chand-baori-3500-seedhiyan.mp4",
+      "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
     }
   ]
 }
