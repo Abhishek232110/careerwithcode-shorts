@@ -1,0 +1,41 @@
+{
+ "voice": "am_michael",
+ "speed": 1.0,
+ "theme": "light",
+ "still_scene": 2,
+ "title_yt": "Go Part 28: Errors as values #shorts",
+ "scenes": [
+  {
+   "title": [{"text": "No try catch?", "box": "red"}, {"text": "Errors as values"}, {"text": "Go Part 28", "box": "yellow"}],
+   "image": {"type": "check", "kind": "steps", "items": ["No try and catch", "Errors are values", "Returned like data", "You check them"]},
+   "face": "thinking", "palette": "orange",
+   "say": "Go has no try catch. So how do errors work? This is Go Part 28, errors as values."
+  },
+  {
+   "title": [{"text": "Return", "box": "yellow"}, {"text": "an error"}],
+   "image": {"type": "code", "file": "main.go", "lines": ["func divide(a, b int) (int, error) {", "  if b == 0 {", "    return 0, errors.New(\"cannot divide by zero\")", "  }", "  return a / b, nil", "}"], "highlight": [0], "output": []},
+   "face": "happy", "palette": "blue",
+   "say": "The function returns two things, a result and an error. If something goes wrong, return errors dot New. If all is fine, the error is nil."
+  },
+  {
+   "title": [{"text": "Check it", "box": "yellow"}, {"text": "err != nil"}],
+   "image": {"type": "code", "file": "main.go", "lines": ["r, err := divide(10, 2)", "fmt.Println(r, err)", "_, err = divide(10, 0)", "if err != nil {", "  fmt.Println(\"error:\", err)", "  return", "}"], "highlight": [3], "output": ["5 <nil>", "error: cannot divide by zero"]},
+   "face": "happy", "palette": "purple",
+   "say": "Ten divided by two gives five, and the error is nil. Ten divided by zero gives an error, so if err is not nil, we print it and stop."
+  },
+  {
+   "title": [{"text": "Why?", "box": "red"}, {"text": "No surprises"}],
+   "image": {"type": "check", "kind": "check", "items": ["You see every error", "No hidden jumps", "Handle it right there", "Never ignore err"]},
+   "face": "thinking", "palette": "orange",
+   "say": "Why do it this way? Every error is in plain sight. Nothing jumps away, and you handle it right where it happens."
+  },
+  {
+   "title": [{"text": "Recap", "box": "yellow"}, {"text": "Part 28"}],
+   "image": {"type": "check", "kind": "check", "items": ["Return (value, error)", "errors.New makes one", "nil means no error", "Check if err != nil"]},
+   "banner": "Next: Part 29 - Custom errors",
+   "note": "nil or not nil\nmeans OK? Pick 1!",
+   "face": "happy", "palette": "blue",
+   "say": "Next time, custom errors and errors dot Is. Quick one: does nil or not nil mean no error? Pick one in the comments, and follow CareerWithCode!"
+  }
+ ]
+}

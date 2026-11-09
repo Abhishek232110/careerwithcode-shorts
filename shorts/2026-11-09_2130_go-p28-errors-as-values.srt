@@ -1,0 +1,116 @@
+1
+00:00:00,250 --> 00:00:01,752
+Go has no try catch.
+
+2
+00:00:01,972 --> 00:00:03,432
+So how do errors work?
+
+3
+00:00:03,652 --> 00:00:04,927
+This is Go Part
+
+4
+00:00:04,927 --> 00:00:06,712
+28, errors as values.
+
+5
+00:00:07,432 --> 00:00:09,473
+The function returns two things,
+
+6
+00:00:09,473 --> 00:00:10,876
+a result and an error.
+
+7
+00:00:11,096 --> 00:00:12,580
+If something goes wrong,
+
+8
+00:00:12,580 --> 00:00:13,940
+return errors dot New.
+
+9
+00:00:14,160 --> 00:00:15,049
+If all is fine,
+
+10
+00:00:15,049 --> 00:00:16,057
+the error is nil.
+
+11
+00:00:16,777 --> 00:00:18,039
+Ten divided by two
+
+12
+00:00:18,039 --> 00:00:19,373
+gives five, and the
+
+13
+00:00:19,373 --> 00:00:20,285
+error is nil.
+
+14
+00:00:20,505 --> 00:00:22,365
+Ten divided by zero gives
+
+15
+00:00:22,365 --> 00:00:23,779
+an error, so if err
+
+16
+00:00:23,779 --> 00:00:25,267
+is not nil, we print
+
+17
+00:00:25,267 --> 00:00:26,160
+it and stop.
+
+18
+00:00:26,880 --> 00:00:28,081
+Why do it this way?
+
+19
+00:00:28,301 --> 00:00:29,110
+Every error is
+
+20
+00:00:29,110 --> 00:00:29,977
+in plain sight.
+
+21
+00:00:30,197 --> 00:00:31,619
+Nothing jumps away, and
+
+22
+00:00:31,619 --> 00:00:32,793
+you handle it right
+
+23
+00:00:32,793 --> 00:00:33,844
+where it happens.
+
+24
+00:00:34,564 --> 00:00:36,150
+Next time, custom errors
+
+25
+00:00:36,150 --> 00:00:37,339
+and errors dot Is.
+
+26
+00:00:37,559 --> 00:00:38,926
+Quick one: does nil or
+
+27
+00:00:38,926 --> 00:00:40,293
+not nil mean no error?
+
+28
+00:00:40,513 --> 00:00:41,444
+Pick one in the
+
+29
+00:00:41,444 --> 00:00:43,679
+comments, and follow CareerWithCode!
+
