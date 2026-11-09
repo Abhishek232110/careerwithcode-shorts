@@ -801,9 +801,9 @@
    "go_part": "Part 27: Type switches",
    "da_part": "Part 8: Cleaning data: duplicates and blanks",
    "interview": "WHERE vs HAVING: which filters groups?",
-   "status": "rendered, not posted yet: Zapier task limit reached at 08:41 IST (YouTube channel check); retrying until ~10:30 IST",
-   "youtube": "not posted: Zapier task limit reached",
-   "facebook": "not posted: Zapier task limit reached",
+   "status": "rendered, not posted: Zapier task limit reached on every try (6 tries, 08:41 to 10:25 IST). Video is ready in shorts/ to post as-is once Zapier has tasks.",
+   "youtube": "not posted: Your Zapier account has reached its task limit for the current billing period.",
+   "facebook": "not posted: Your Zapier account has reached its task limit for the current billing period.",
    "fb_first_comment": "no Zapier action"
   }
  ],
