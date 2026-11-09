@@ -714,6 +714,16 @@
       "mood": "epic",
       "video": "curiositybox/shorts/2026-11-08_2000_kahani-napoleon-kad-myth.mp4",
       "status": "posted via Zapier: YouTube b1S5pM5db8o (20:00 IST), Facebook photo 122111423835515109 (post 1380858578445805_122111423859515109)"
+    },
+    {
+      "date": "2026-11-09 10:00",
+      "slot": "ai",
+      "title": "Duniya Ka Pehla Webcam Coffee Ke Liye Bana Tha! #shorts",
+      "tone": "surprising tech fact, energetic",
+      "hook_format": "shocking-fact",
+      "mood": "upbeat",
+      "video": "curiositybox/shorts/2026-11-09_1000_ai-pehla-webcam-coffee-pot.mp4",
+      "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
     }
   ]
 }
