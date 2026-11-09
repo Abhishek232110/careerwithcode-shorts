@@ -789,6 +789,22 @@
    "youtube": "not posted: Zapier task limit reached",
    "facebook": "not posted: Zapier task limit reached",
    "instagram": "skipped"
+  },
+  {
+   "date": "2026-11-09",
+   "slot": "morning-qa",
+   "time": "09:00",
+   "title": "Morning Quiz: Go + Data Analytics + 1 Interview Question #shorts",
+   "video": "2026-11-09_0900_morning-qa-type-switch-dropna-having.mp4",
+   "spec": "specs/2026-11-09_0900_morning-qa-type-switch-dropna-having.json",
+   "duration_s": 52.2,
+   "go_part": "Part 27: Type switches",
+   "da_part": "Part 8: Cleaning data: duplicates and blanks",
+   "interview": "WHERE vs HAVING: which filters groups?",
+   "status": "rendered, not posted yet: Zapier task limit reached at 08:41 IST (YouTube channel check); retrying until ~10:30 IST",
+   "youtube": "not posted: Zapier task limit reached",
+   "facebook": "not posted: Zapier task limit reached",
+   "fb_first_comment": "no Zapier action"
   }
  ],
  "inspiring": {
