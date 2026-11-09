@@ -822,6 +822,19 @@
    "facebook": "not posted: Zapier task limit reached",
    "instagram": "skipped",
    "first_comments": "not posted"
+  },
+  {
+   "date": "2026-11-09",
+   "slot": "data_analytics",
+   "time": "22:00",
+   "title": "Data Analytics Part 9: SQL SELECT and WHERE #shorts",
+   "video": "2026-11-08_2200_data_analytics-p09-sql-select-where.mp4",
+   "spec": "specs/2026-11-08_2200_data_analytics-p09-sql-select-where.json",
+   "status": "not posted: Zapier task limit reached (failed at the YouTube channel check, 21:51 IST). Reused the already-rendered Part 9 video; next_part left at 9 so the next run can post it as-is.",
+   "youtube": "not posted: Zapier task limit reached",
+   "facebook": "not posted: Zapier task limit reached",
+   "instagram": "skipped",
+   "first_comments": "not posted"
   }
  ],
  "inspiring": {
