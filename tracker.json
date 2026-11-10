@@ -852,6 +852,19 @@
    "facebook": "not posted: Your Zapier account has reached its task limit for the current billing period.",
    "first_comments": "not posted",
    "fb_first_comment": "no Zapier action"
+  },
+  {
+   "date": "2026-11-10",
+   "slot": "go",
+   "time": "21:30",
+   "title": "Go Part 28: Errors as values #shorts",
+   "video": "2026-11-09_2130_go-p28-errors-as-values.mp4",
+   "spec": "specs/2026-11-09_2130_go-p28-errors-as-values.json",
+   "status": "not posted: Zapier task limit reached (failed at the YouTube channel check, 21:17 and 21:30 IST). Reused the already-rendered Part 28 video; next_part left at 28 so the next run can post it as-is.",
+   "youtube": "not posted: Zapier task limit reached",
+   "facebook": "not posted: Zapier task limit reached",
+   "instagram": "skipped",
+   "first_comments": "not posted"
   }
  ],
  "inspiring": {
