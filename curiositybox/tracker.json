@@ -734,6 +734,16 @@
       "mood": "mysterious",
       "video": "curiositybox/shorts/2026-11-09_2000_kahani-chand-baori-3500-seedhiyan.mp4",
       "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
+    },
+    {
+      "date": "2026-11-10 10:00",
+      "slot": "ai",
+      "title": "41 Saal Pehle Register Hua Duniya Ka Pehla .com! #shorts",
+      "tone": "surprising tech fact, energetic",
+      "hook_format": "number",
+      "mood": "upbeat",
+      "video": "curiositybox/shorts/2026-11-10_1000_ai-pehla-dotcom-symbolics.mp4",
+      "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
     }
   ]
 }
