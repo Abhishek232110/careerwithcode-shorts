@@ -76,7 +76,8 @@
       "Chandragupta Maurya: Chanakya, Nanda vansh, Seleucus sandhi, 500 hathi",
       "Wow! Signal 1977: Big Ear, 72 second, Sagittarius, dobara nahi mila",
       "Abhimanyu chakravyuh: 13va din, andar jana aata tha nikalna nahi, Jayadrath (Mahabharat)",
-      "Napoleon ka kad: myth vs fact (French inch, ~5'7\", British cartoons)"
+      "Napoleon ka kad: myth vs fact (French inch, ~5'7\", British cartoons)",
+      "Pompeii 79 CE: Vesuvius ki raakh mein dafan shahar, 1748 khudai, plaster casts"
     ]
   },
   "log": [
@@ -743,6 +744,16 @@
       "hook_format": "number",
       "mood": "upbeat",
       "video": "curiositybox/shorts/2026-11-10_1000_ai-pehla-dotcom-symbolics.mp4",
+      "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
+    },
+    {
+      "date": "2026-11-10 20:00",
+      "slot": "kahani",
+      "title": "Raakh Mein Dafan Poora Shahar! Pompeii Ki Kahani #shorts",
+      "tone": "storyteller, suspense",
+      "hook_format": "shocking-fact",
+      "mood": "mysterious",
+      "video": "curiositybox/shorts/2026-11-10_2000_kahani-pompeii-raakh-shahar.mp4",
       "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
     }
   ]
