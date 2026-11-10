@@ -835,11 +835,58 @@
    "facebook": "not posted: Zapier task limit reached",
    "instagram": "skipped",
    "first_comments": "not posted"
+  },
+  {
+   "date": "2026-11-10",
+   "slot": "morning-qa",
+   "time": "09:00",
+   "title": "Morning Quiz: Go + Data Analytics + 1 Interview Question #shorts",
+   "video": "2026-11-10_0900_morning-qa-any-pivot-put-vs-post.mp4",
+   "spec": "specs/2026-11-10_0900_morning-qa-any-pivot-put-vs-post.json",
+   "duration_s": 57.1,
+   "go_part": "Part 25: Empty interface and any",
+   "da_part": "Part 7: Pivot tables in 60 seconds",
+   "interview": "POST vs PUT: which is idempotent?",
+   "status": "rendered, not posted: Zapier task limit reached on every try (08:38, 09:00, 09:45, 10:25 IST, at the YouTube channel check). Video is ready in shorts/ to post as-is.",
+   "youtube": "not posted: Your Zapier account has reached its task limit for the current billing period.",
+   "facebook": "not posted: Your Zapier account has reached its task limit for the current billing period.",
+   "first_comments": "not posted",
+   "fb_first_comment": "no Zapier action"
   }
  ],
  "inspiring": {
   "posted": [
    "Every developer runs this loop (consistency beats talent)"
+  ]
+ },
+ "morning": {
+  "posted": [
+   {
+    "date": "2026-11-08",
+    "go_part": "Part 26: Type assertions",
+    "da_part": "Part 8: Cleaning data: duplicates and blanks",
+    "interview": "Goroutine vs OS thread: which is lighter?",
+    "status": "not posted"
+   },
+   {
+    "date": "2026-11-09",
+    "go_part": "Part 27: Type switches",
+    "da_part": "Part 8: Cleaning data: duplicates and blanks",
+    "interview": "WHERE vs HAVING: which filters groups?",
+    "status": "not posted"
+   },
+   {
+    "date": "2026-11-10",
+    "go_part": "Part 25: Empty interface and any",
+    "da_part": "Part 7: Pivot tables in 60 seconds",
+    "interview": "POST vs PUT: which is idempotent?",
+    "status": "not posted: Zapier task limit"
+   }
+  ],
+  "interview_asked": [
+   "Goroutine vs OS thread: which is lighter?",
+   "WHERE vs HAVING: which filters groups?",
+   "POST vs PUT: which is idempotent?"
   ]
  }
 }
