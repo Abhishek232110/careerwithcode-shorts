@@ -1,0 +1,240 @@
+{
+ "voice": "am_michael",
+ "speed": 1.0,
+ "theme": "light",
+ "still_scene": 1,
+ "title_yt": "Morning Quiz: Go + Data Analytics + 1 Interview Question #shorts",
+ "scenes": [
+  {
+   "title": [
+    {
+     "text": "3 questions",
+     "box": "red"
+    },
+    {
+     "text": "Get all 3?"
+    },
+    {
+     "text": "Morning Quiz",
+     "box": "yellow"
+    }
+   ],
+   "image": {
+    "type": "check",
+    "kind": "steps",
+    "items": [
+     "Go: interfaces",
+     "Data: sort + filter",
+     "Interview: SQL JOIN"
+    ]
+   },
+   "face": "happy",
+   "palette": "blue",
+   "say": "Three questions. Can you get all three? Morning quiz, let's go."
+  },
+  {
+   "title": [
+    {
+     "text": "Q1 Go",
+     "box": "yellow"
+    },
+    {
+     "text": "What prints?"
+    }
+   ],
+   "image": {
+    "type": "code",
+    "file": "main.go",
+    "lines": [
+     "func (Dog) Speak() string { return \"Woof\" }",
+     "func (Bot) Speak() string { return \"Beep\" }",
+     "all := []Speaker{Dog{}, Bot{}}",
+     "for _, s := range all {",
+     "    fmt.Print(s.Speak(), \" \")",
+     "}"
+    ],
+    "highlight": [
+     2
+    ]
+   },
+   "face": "thinking",
+   "palette": "purple",
+   "say": "Question one. A dog and a bot both have a Speak method. What does this loop print? Pause and answer."
+  },
+  {
+   "title": [
+    {
+     "text": "Answer 1",
+     "box": "yellow"
+    },
+    {
+     "text": "Woof Beep"
+    }
+   ],
+   "image": {
+    "type": "code",
+    "file": "main.go",
+    "lines": [
+     "func (Dog) Speak() string { return \"Woof\" }",
+     "func (Bot) Speak() string { return \"Beep\" }",
+     "all := []Speaker{Dog{}, Bot{}}",
+     "for _, s := range all {",
+     "    fmt.Print(s.Speak(), \" \")",
+     "}"
+    ],
+    "highlight": [
+     4
+    ],
+    "output": [
+     "Woof Beep"
+    ]
+   },
+   "face": "happy",
+   "palette": "blue",
+   "say": "Woof Beep. Both types have Speak, so both are Speakers. Go checks this by itself, no implements keyword."
+  },
+  {
+   "title": [
+    {
+     "text": "Q2 Data",
+     "box": "yellow"
+    },
+    {
+     "text": "Top Pune day?"
+    }
+   ],
+   "image": {
+    "type": "table",
+    "file": "sales.xlsx",
+    "cols": [
+     "day",
+     "city",
+     "sales"
+    ],
+    "rows": [
+     [
+      "Mon",
+      "Pune",
+      "120"
+     ],
+     [
+      "Tue",
+      "Delhi",
+      "150"
+     ],
+     [
+      "Wed",
+      "Pune",
+      "90"
+     ],
+     [
+      "Thu",
+      "Delhi",
+      "200"
+     ],
+     [
+      "Fri",
+      "Pune",
+      "140"
+     ]
+    ]
+   },
+   "face": "thinking",
+   "palette": "orange",
+   "say": "Question two. Filter city to Pune, then sort sales from big to small. Which day is on top? Pause and answer."
+  },
+  {
+   "title": [
+    {
+     "text": "Answer 2",
+     "box": "yellow"
+    },
+    {
+     "text": "Friday!"
+    }
+   ],
+   "image": {
+    "type": "table",
+    "file": "sales.xlsx",
+    "cols": [
+     "day",
+     "city",
+     "sales"
+    ],
+    "rows": [
+     [
+      "Fri",
+      "Pune",
+      "140"
+     ],
+     [
+      "Mon",
+      "Pune",
+      "120"
+     ],
+     [
+      "Wed",
+      "Pune",
+      "90"
+     ]
+    ],
+    "good_rows": [
+     0
+    ]
+   },
+   "face": "happy",
+   "palette": "purple",
+   "say": "Friday, with one forty. The filter hides Delhi rows, then sort puts Friday first."
+  },
+  {
+   "title": [
+    {
+     "text": "Q3 Interview",
+     "box": "red"
+    },
+    {
+     "text": "Keep all?"
+    }
+   ],
+   "image": {
+    "type": "check",
+    "kind": "steps",
+    "items": [
+     "customers + orders",
+     "Keep customers with",
+     "zero orders too?",
+     "A) INNER   B) LEFT JOIN"
+    ]
+   },
+   "face": "thinking",
+   "palette": "blue",
+   "say": "Interview question. Which join keeps customers who have zero orders? Inner join or left join? Pause and answer."
+  },
+  {
+   "title": [
+    {
+     "text": "Answer 3",
+     "box": "yellow"
+    },
+    {
+     "text": "LEFT JOIN!"
+    }
+   ],
+   "image": {
+    "type": "check",
+    "kind": "check",
+    "items": [
+     "Q1: Woof Beep",
+     "Q2: Friday",
+     "Q3: LEFT JOIN",
+     "INNER drops no-match rows"
+    ]
+   },
+   "banner": "Follow CareerWithCode",
+   "note": "How many?\n1, 2 or 3?",
+   "face": "happy",
+   "palette": "orange",
+   "say": "Left join. It keeps every customer, and empty orders show as null. Inner join drops them. How many did you get? One, two or three? Follow CareerWithCode!"
+  }
+ ]
+}
