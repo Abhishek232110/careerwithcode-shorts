@@ -27,7 +27,8 @@
       "Pehla mobile call: 3 April 1973, Martin Cooper (Motorola), New York, ~1 kg phone, Bell Labs ko call",
       "Email mein @ kyun: Ray Tomlinson 1971 pehla network email (dono computer ek kamre mein)",
       "Pehla SMS: 3 Dec 1992 'Merry Christmas', Neil Papworth computer se Richard Jarvis (Vodafone) ko",
-      "YouTube ki pehli video 'Me at the zoo' (23 April 2005, 19 sec, Jawed Karim, San Diego Zoo)"
+      "YouTube ki pehli video 'Me at the zoo' (23 April 2005, 19 sec, Jawed Karim, San Diego Zoo)",
+      "Pehla computer virus Creeper (1971, Bob Thomas, BBN, ARPANET; Reaper ne hataya)"
     ]
   },
   "whatif": {
@@ -754,6 +755,16 @@
       "hook_format": "shocking-fact",
       "mood": "mysterious",
       "video": "curiositybox/shorts/2026-11-10_2000_kahani-pompeii-raakh-shahar.mp4",
+      "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
+    },
+    {
+      "date": "2026-11-11 10:00",
+      "slot": "ai",
+      "title": "1971 Ka Pehla Computer Virus Creeper! Nuksaan Nahi Karta Tha #shorts",
+      "tone": "surprising tech fact, energetic",
+      "hook_format": "story-open",
+      "mood": "upbeat",
+      "video": "curiositybox/shorts/2026-11-11_1000_ai-pehla-virus-creeper.mp4",
       "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
     }
   ]
