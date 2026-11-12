@@ -80,7 +80,8 @@
       "Abhimanyu chakravyuh: 13va din, andar jana aata tha nikalna nahi, Jayadrath (Mahabharat)",
       "Napoleon ka kad: myth vs fact (French inch, ~5'7\", British cartoons)",
       "Pompeii 79 CE: Vesuvius ki raakh mein dafan shahar, 1748 khudai, plaster casts",
-      "Kumbhalgarh: 36 km deewar, Rana Kumbha 15vi sadi, Maharana Pratap janm 1540, UNESCO 2013"
+      "Kumbhalgarh: 36 km deewar, Rana Kumbha 15vi sadi, Maharana Pratap janm 1540, UNESCO 2013",
+      "Jantar Mantar Jaipur: Samrat Yantra 27 m, ~2 second sateek, Sawai Jai Singh II, 1734, UNESCO 2010"
     ]
   },
   "log": [
@@ -787,6 +788,16 @@
       "hook_format": "question",
       "mood": "upbeat",
       "video": "curiositybox/shorts/2026-11-12_1000_ai-pehla-camera-phone-photo.mp4",
+      "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
+    },
+    {
+      "date": "2026-11-12 20:00",
+      "slot": "kahani",
+      "title": "Patthar Ki Ghadi Jo 2 Second Tak Sahi Samay Bataye! Jantar Mantar #shorts",
+      "tone": "storyteller, suspense",
+      "hook_format": "question",
+      "mood": "epic",
+      "video": "curiositybox/shorts/2026-11-12_2000_kahani-jantar-mantar-samrat-yantra.mp4",
       "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
     }
   ]
