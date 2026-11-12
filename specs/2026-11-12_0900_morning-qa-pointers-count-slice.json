@@ -1,0 +1,220 @@
+{
+ "voice": "am_michael",
+ "speed": 1.0,
+ "theme": "light",
+ "still_scene": 1,
+ "title_yt": "Morning Quiz: Go + Data Analytics + 1 Interview Question #shorts",
+ "scenes": [
+  {
+   "title": [
+    {
+     "text": "3 questions",
+     "box": "red"
+    },
+    {
+     "text": "Get all 3?"
+    },
+    {
+     "text": "Morning Quiz",
+     "box": "yellow"
+    }
+   ],
+   "image": {
+    "type": "check",
+    "kind": "steps",
+    "items": [
+     "Go: pointers",
+     "Data: COUNT",
+     "Interview: Go slices"
+    ]
+   },
+   "face": "happy",
+   "palette": "blue",
+   "say": "Three questions. Can you get all three? Morning quiz, let's go."
+  },
+  {
+   "title": [
+    {
+     "text": "Q1 Go",
+     "box": "yellow"
+    },
+    {
+     "text": "What prints?"
+    }
+   ],
+   "image": {
+    "type": "code",
+    "file": "main.go",
+    "lines": [
+     "func add(n *int) { *n = *n + 5 }",
+     "",
+     "x := 10",
+     "p := &x",
+     "*p = 20",
+     "add(&x)",
+     "fmt.Println(x)"
+    ],
+    "highlight": [
+     4
+    ]
+   },
+   "face": "thinking",
+   "palette": "purple",
+   "say": "Question one. p points at x. We set star p to twenty, then call add. What does this print? Pause and answer."
+  },
+  {
+   "title": [
+    {
+     "text": "Answer 1",
+     "box": "yellow"
+    },
+    {
+     "text": "25"
+    }
+   ],
+   "image": {
+    "type": "code",
+    "file": "main.go",
+    "lines": [
+     "func add(n *int) { *n = *n + 5 }",
+     "",
+     "x := 10",
+     "p := &x",
+     "*p = 20",
+     "add(&x)",
+     "fmt.Println(x)"
+    ],
+    "highlight": [
+     5
+    ],
+    "output": [
+     "25"
+    ]
+   },
+   "face": "happy",
+   "palette": "blue",
+   "say": "Twenty five. Star p changed x to twenty, and add got the address, so it added five to the real x."
+  },
+  {
+   "title": [
+    {
+     "text": "Q2 Data",
+     "box": "yellow"
+    },
+    {
+     "text": "What is COUNT?"
+    }
+   ],
+   "image": {
+    "type": "table",
+    "file": "sales.xlsx",
+    "cols": [
+     "day",
+     "sales"
+    ],
+    "rows": [
+     [
+      "Mon",
+      "120"
+     ],
+     [
+      "Tue",
+      "n/a"
+     ],
+     [
+      "Wed",
+      "90"
+     ],
+     [
+      "Thu",
+      ""
+     ],
+     [
+      "Fri",
+      "140"
+     ]
+    ]
+   },
+   "face": "thinking",
+   "palette": "orange",
+   "say": "Question two. One cell says N A, one is blank. What does COUNT of B2 to B6 give? Pause and answer."
+  },
+  {
+   "title": [
+    {
+     "text": "Answer 2",
+     "box": "yellow"
+    },
+    {
+     "text": "3!"
+    }
+   ],
+   "image": {
+    "type": "code",
+    "file": "sales.xlsx",
+    "lines": [
+     "B7: =COUNT(B2:B6)"
+    ],
+    "highlight": [
+     0
+    ],
+    "output": [
+     "3"
+    ]
+   },
+   "face": "happy",
+   "palette": "purple",
+   "say": "Three. COUNT only counts numbers. The text cell and the blank cell are skipped."
+  },
+  {
+   "title": [
+    {
+     "text": "Q3 Interview",
+     "box": "red"
+    },
+    {
+     "text": "Which can grow?"
+    }
+   ],
+   "image": {
+    "type": "check",
+    "kind": "steps",
+    "items": [
+     "a := [3]int{1, 2, 3}",
+     "s := []int{1, 2, 3}",
+     "Which one can grow?",
+     "A) array   B) slice"
+    ]
+   },
+   "face": "thinking",
+   "palette": "blue",
+   "say": "Interview question. In Go, which one can grow, an array or a slice? Pause and answer."
+  },
+  {
+   "title": [
+    {
+     "text": "Answer 3",
+     "box": "yellow"
+    },
+    {
+     "text": "Slice!"
+    }
+   ],
+   "image": {
+    "type": "check",
+    "kind": "check",
+    "items": [
+     "Q1: 25",
+     "Q2: 3",
+     "Q3: slice",
+     "Array size is fixed"
+    ]
+   },
+   "banner": "Follow CareerWithCode",
+   "note": "How many?\n1, 2 or 3?",
+   "face": "happy",
+   "palette": "orange",
+   "say": "Slice. Append can grow a slice. An array's size is part of its type, so it never changes. How many did you get? One, two or three? Follow CareerWithCode!"
+  }
+ ]
+}
