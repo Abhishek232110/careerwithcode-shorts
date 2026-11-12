@@ -28,7 +28,8 @@
       "Email mein @ kyun: Ray Tomlinson 1971 pehla network email (dono computer ek kamre mein)",
       "Pehla SMS: 3 Dec 1992 'Merry Christmas', Neil Papworth computer se Richard Jarvis (Vodafone) ko",
       "YouTube ki pehli video 'Me at the zoo' (23 April 2005, 19 sec, Jawed Karim, San Diego Zoo)",
-      "Pehla computer virus Creeper (1971, Bob Thomas, BBN, ARPANET; Reaper ne hataya)"
+      "Pehla computer virus Creeper (1971, Bob Thomas, BBN, ARPANET; Reaper ne hataya)",
+      "Pehla camera phone photo: 11 June 1997, Philippe Kahn ne beti Sophie ki photo share ki"
     ]
   },
   "whatif": {
@@ -776,6 +777,16 @@
       "hook_format": "number",
       "mood": "epic",
       "video": "curiositybox/shorts/2026-11-11_2000_kahani-kumbhalgarh-36km-deewar.mp4",
+      "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
+    },
+    {
+      "date": "2026-11-12 10:00",
+      "slot": "ai",
+      "title": "Phone Se Bheji Gayi Pehli Photo Kiski Thi? 1997 Ka Sach #shorts",
+      "tone": "surprising tech fact, energetic",
+      "hook_format": "question",
+      "mood": "upbeat",
+      "video": "curiositybox/shorts/2026-11-12_1000_ai-pehla-camera-phone-photo.mp4",
       "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
     }
   ]
