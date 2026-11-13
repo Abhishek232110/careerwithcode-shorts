@@ -1,0 +1,235 @@
+{
+ "voice": "am_michael",
+ "speed": 1.0,
+ "theme": "light",
+ "still_scene": 1,
+ "title_yt": "Morning Quiz: Go + Data Analytics + 1 Interview Question #shorts",
+ "scenes": [
+  {
+   "title": [
+    {
+     "text": "3 questions",
+     "box": "red"
+    },
+    {
+     "text": "Get all 3?"
+    },
+    {
+     "text": "Morning Quiz",
+     "box": "yellow"
+    }
+   ],
+   "image": {
+    "type": "check",
+    "kind": "steps",
+    "items": [
+     "Go: method receivers",
+     "Data: the median",
+     "Interview: SQL COUNT"
+    ]
+   },
+   "face": "happy",
+   "palette": "blue",
+   "say": "Three questions. Can you get all three? Morning quiz!"
+  },
+  {
+   "title": [
+    {
+     "text": "Q1 Go",
+     "box": "yellow"
+    },
+    {
+     "text": "What prints?"
+    }
+   ],
+   "image": {
+    "type": "code",
+    "file": "main.go",
+    "lines": [
+     "func (b Box) SetV(n int)  { b.N = n }",
+     "func (b *Box) SetP(n int) { b.N = n }",
+     "",
+     "b := Box{N: 1}",
+     "b.SetV(5)",
+     "b.SetP(9)",
+     "b.SetV(7)",
+     "fmt.Println(b.N)"
+    ],
+    "highlight": [
+     0,
+     1
+    ]
+   },
+   "face": "thinking",
+   "palette": "purple",
+   "say": "Question one. SetV is a value receiver, SetP a pointer receiver. What prints? Pause and answer."
+  },
+  {
+   "title": [
+    {
+     "text": "Answer 1",
+     "box": "yellow"
+    },
+    {
+     "text": "9"
+    }
+   ],
+   "image": {
+    "type": "code",
+    "file": "main.go",
+    "lines": [
+     "func (b Box) SetV(n int)  { b.N = n }",
+     "func (b *Box) SetP(n int) { b.N = n }",
+     "",
+     "b := Box{N: 1}",
+     "b.SetV(5)",
+     "b.SetP(9)",
+     "b.SetV(7)",
+     "fmt.Println(b.N)"
+    ],
+    "highlight": [
+     5
+    ],
+    "output": [
+     "9"
+    ]
+   },
+   "face": "happy",
+   "palette": "blue",
+   "say": "Nine. Only the pointer receiver changes the real box. SetV changes a copy."
+  },
+  {
+   "title": [
+    {
+     "text": "Q2 Data",
+     "box": "yellow"
+    },
+    {
+     "text": "The median?"
+    }
+   ],
+   "image": {
+    "type": "table",
+    "file": "orders.csv",
+    "cols": [
+     "order",
+     "amount"
+    ],
+    "rows": [
+     [
+      "#1",
+      "40"
+     ],
+     [
+      "#2",
+      "10"
+     ],
+     [
+      "#3",
+      "500"
+     ],
+     [
+      "#4",
+      "20"
+     ],
+     [
+      "#5",
+      "30"
+     ]
+    ]
+   },
+   "face": "thinking",
+   "palette": "orange",
+   "say": "Question two. Five order amounts. What is the median? Pause and answer."
+  },
+  {
+   "title": [
+    {
+     "text": "Answer 2",
+     "box": "yellow"
+    },
+    {
+     "text": "30"
+    }
+   ],
+   "image": {
+    "type": "check",
+    "kind": "steps",
+    "items": [
+     "Sort: 10 20 30 40 500",
+     "Middle value = 30",
+     "Mean = 120 (outlier!)"
+    ]
+   },
+   "face": "happy",
+   "palette": "purple",
+   "say": "Thirty. Sort first, then take the middle. Five hundred is just an outlier."
+  },
+  {
+   "title": [
+    {
+     "text": "Q3 Interview",
+     "box": "red"
+    },
+    {
+     "text": "Which skips NULL?"
+    }
+   ],
+   "image": {
+    "type": "table",
+    "file": "customers",
+    "cols": [
+     "name",
+     "email"
+    ],
+    "rows": [
+     [
+      "Asha",
+      "asha@mail.com"
+     ],
+     [
+      "Ravi",
+      "NULL"
+     ],
+     [
+      "Meena",
+      "meena@mail.com"
+     ],
+     [
+      "John",
+      "NULL"
+     ]
+    ]
+   },
+   "face": "thinking",
+   "palette": "blue",
+   "say": "Interview question. COUNT star or COUNT email. Which one skips NULLs? Pause and answer."
+  },
+  {
+   "title": [
+    {
+     "text": "Answer 3",
+     "box": "yellow"
+    },
+    {
+     "text": "COUNT(email)"
+    }
+   ],
+   "image": {
+    "type": "check",
+    "kind": "check",
+    "items": [
+     "Q1: 9",
+     "Q2: 30",
+     "Q3: COUNT(email) = 2",
+     "COUNT(*) = 4, all rows"
+    ]
+   },
+   "banner": "Follow CareerWithCode",
+   "note": "How many?\n1, 2 or 3?",
+   "face": "happy",
+   "palette": "orange",
+   "say": "COUNT email skips NULLs, so it gives two. COUNT star counts all four rows. How many did you get? One, two or three? Follow CareerWithCode!"
+  }
+ ]
+}

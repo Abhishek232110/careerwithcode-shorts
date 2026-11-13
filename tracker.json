@@ -965,6 +965,23 @@
    "facebook": "not posted: Zapier task limit reached",
    "instagram": "skipped",
    "first_comments": "not posted"
+  },
+  {
+   "date": "2026-11-13",
+   "slot": "morning-qa",
+   "time": "09:00",
+   "title": "Morning Quiz: Go + Data Analytics + 1 Interview Question #shorts",
+   "video": "2026-11-13_0900_morning-qa-receivers-median-count-null.mp4",
+   "spec": "specs/2026-11-13_0900_morning-qa-receivers-median-count-null.json",
+   "duration_s": 47.4,
+   "go_part": "Part 22: Pointer vs value receivers",
+   "da_part": "Part 4: Mean vs median: which average to trust",
+   "interview": "COUNT(*) vs COUNT(column): which skips NULLs?",
+   "status": "rendered, not posted: Zapier task limit reached at the YouTube channel check (08:40 and 09:01 IST). No new series parts since Nov 9, so earlier unquizzed parts were used. Video is ready in shorts/ to post as-is.",
+   "youtube": "not posted: Your Zapier account has reached its task limit for the current billing period.",
+   "facebook": "not posted: Your Zapier account has reached its task limit for the current billing period.",
+   "first_comments": "not posted",
+   "fb_first_comment": "no Zapier action"
   }
  ],
  "inspiring": {
@@ -1008,6 +1025,13 @@
     "da_part": "Part 5: Spreadsheet basics: SUM, AVERAGE, COUNT",
     "interview": "Array vs slice in Go: which can grow?",
     "status": "not posted: Zapier task limit"
+   },
+   {
+    "date": "2026-11-13",
+    "go_part": "Part 22: Pointer vs value receivers",
+    "da_part": "Part 4: Mean vs median: which average to trust",
+    "interview": "COUNT(*) vs COUNT(column): which skips NULLs?",
+    "status": "not posted: Zapier task limit"
    }
   ],
   "interview_asked": [
@@ -1015,7 +1039,8 @@
    "WHERE vs HAVING: which filters groups?",
    "POST vs PUT: which is idempotent?",
    "INNER vs LEFT JOIN: which keeps customers with zero orders?",
-   "Array vs slice in Go: which can grow?"
+   "Array vs slice in Go: which can grow?",
+   "COUNT(*) vs COUNT(column): which skips NULLs?"
   ]
  }
 }
