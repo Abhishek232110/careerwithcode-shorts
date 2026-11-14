@@ -30,7 +30,8 @@
       "YouTube ki pehli video 'Me at the zoo' (23 April 2005, 19 sec, Jawed Karim, San Diego Zoo)",
       "Pehla computer virus Creeper (1971, Bob Thomas, BBN, ARPANET; Reaper ne hataya)",
       "Pehla camera phone photo: 11 June 1997, Philippe Kahn ne beti Sophie ki photo share ki",
-      "Pehla Google Doodle: 30 Aug 1998 Burning Man stick figure, Larry Page & Sergey Brin ka out-of-office note"
+      "Pehla Google Doodle: 30 Aug 1998 Burning Man stick figure, Larry Page & Sergey Brin ka out-of-office note",
+      "Pehla Apple computer Apple-1: 1976, $666.66, Wozniak design, sirf circuit board, ~200 bane"
     ]
   },
   "whatif": {
@@ -809,6 +810,16 @@
       "hook_format": "shocking-fact",
       "mood": "upbeat",
       "video": "curiositybox/shorts/2026-11-13_1000_ai-pehla-google-doodle.mp4",
+      "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
+    },
+    {
+      "date": "2026-11-14 10:00",
+      "slot": "ai",
+      "title": "Pehla Apple Computer Sirf $666.66 Ka Tha! Keyboard Bhi Nahi #shorts",
+      "tone": "surprising tech fact, energetic",
+      "hook_format": "number",
+      "mood": "upbeat",
+      "video": "curiositybox/shorts/2026-11-14_1000_ai-apple-1-666-dollar.mp4",
       "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
     }
   ]
