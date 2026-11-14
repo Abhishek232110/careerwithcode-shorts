@@ -1009,6 +1009,23 @@
    "facebook": "not posted: Zapier task limit reached",
    "instagram": "skipped",
    "first_comments": "not posted"
+  },
+  {
+   "date": "2026-11-14",
+   "slot": "morning-qa",
+   "time": "09:00",
+   "title": "Morning Quiz: Go + Data Analytics + 1 Interview Question #shorts",
+   "video": "2026-11-14_0900_morning-qa-methods-rows-401-403.mp4",
+   "spec": "specs/2026-11-14_0900_morning-qa-methods-rows-401-403.json",
+   "duration_s": 51.9,
+   "go_part": "Part 21: Methods on structs",
+   "da_part": "Part 3: Rows and columns",
+   "interview": "HTTP 401 vs 403: which means not logged in?",
+   "status": "rendered, not posted: Zapier task limit reached at the YouTube channel check (08:40 IST). No new series parts since Nov 9, so earlier unquizzed parts were used. Video is ready in shorts/ to post as-is.",
+   "youtube": "not posted: Your Zapier account has reached its task limit for the current billing period.",
+   "facebook": "not posted: Your Zapier account has reached its task limit for the current billing period.",
+   "first_comments": "not posted",
+   "fb_first_comment": "no Zapier action"
   }
  ],
  "inspiring": {
@@ -1059,6 +1076,13 @@
     "da_part": "Part 4: Mean vs median: which average to trust",
     "interview": "COUNT(*) vs COUNT(column): which skips NULLs?",
     "status": "not posted: Zapier task limit"
+   },
+   {
+    "date": "2026-11-14",
+    "go_part": "Part 21: Methods on structs",
+    "da_part": "Part 3: Rows and columns",
+    "interview": "HTTP 401 vs 403: which means not logged in?",
+    "status": "not posted: Zapier task limit"
    }
   ],
   "interview_asked": [
@@ -1067,7 +1091,8 @@
    "POST vs PUT: which is idempotent?",
    "INNER vs LEFT JOIN: which keeps customers with zero orders?",
    "Array vs slice in Go: which can grow?",
-   "COUNT(*) vs COUNT(column): which skips NULLs?"
+   "COUNT(*) vs COUNT(column): which skips NULLs?",
+   "HTTP 401 vs 403: which means not logged in?"
   ]
  }
 }
