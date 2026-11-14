@@ -83,7 +83,8 @@
       "Napoleon ka kad: myth vs fact (French inch, ~5'7\", British cartoons)",
       "Pompeii 79 CE: Vesuvius ki raakh mein dafan shahar, 1748 khudai, plaster casts",
       "Kumbhalgarh: 36 km deewar, Rana Kumbha 15vi sadi, Maharana Pratap janm 1540, UNESCO 2013",
-      "Jantar Mantar Jaipur: Samrat Yantra 27 m, ~2 second sateek, Sawai Jai Singh II, 1734, UNESCO 2010"
+      "Jantar Mantar Jaipur: Samrat Yantra 27 m, ~2 second sateek, Sawai Jai Singh II, 1734, UNESCO 2010",
+      "Tunguska 1908: Siberia dhamaka, ~8 crore ped, ~2150 km2, koi gaddha nahi, Kulik 1927, airburst"
     ]
   },
   "log": [
@@ -820,6 +821,16 @@
       "hook_format": "number",
       "mood": "upbeat",
       "video": "curiositybox/shorts/2026-11-14_1000_ai-apple-1-666-dollar.mp4",
+      "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
+    },
+    {
+      "date": "2026-11-14 20:00",
+      "slot": "kahani",
+      "title": "8 Crore Ped Gire, Par Gaddha Nahi! Tunguska 1908 Ka Rahasya #shorts",
+      "tone": "storyteller, suspense",
+      "hook_format": "shocking-fact",
+      "mood": "mysterious",
+      "video": "curiositybox/shorts/2026-11-14_2000_kahani-tunguska-1908-dhamaka.mp4",
       "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
     }
   ]
