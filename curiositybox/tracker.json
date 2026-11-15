@@ -31,7 +31,8 @@
       "Pehla computer virus Creeper (1971, Bob Thomas, BBN, ARPANET; Reaper ne hataya)",
       "Pehla camera phone photo: 11 June 1997, Philippe Kahn ne beti Sophie ki photo share ki",
       "Pehla Google Doodle: 30 Aug 1998 Burning Man stick figure, Larry Page & Sergey Brin ka out-of-office note",
-      "Pehla Apple computer Apple-1: 1976, $666.66, Wozniak design, sirf circuit board, ~200 bane"
+      "Pehla Apple computer Apple-1: 1976, $666.66, Wozniak design, sirf circuit board, ~200 bane",
+      "Myth: Wi-Fi ka full form 'Wireless Fidelity' nahi, koi full form nahi (1999 Interbrand, Hi-Fi jaisa naam, IEEE 802.11)"
     ]
   },
   "whatif": {
@@ -831,6 +832,15 @@
       "hook_format": "shocking-fact",
       "mood": "mysterious",
       "video": "curiositybox/shorts/2026-11-14_2000_kahani-tunguska-1908-dhamaka.mp4",
+      "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
+    },
+    {
+      "date": "2026-11-15 10:00",
+      "slot": "ai",
+      "title": "WiFi Ka Full Form Wireless Fidelity Nahi Hai! Asli Sach #shorts",
+      "tone": "practical quick win, energetic",
+      "hook_format": "myth-vs-fact",
+      "video": "curiositybox/shorts/2026-11-15_1000_ai-wifi-ka-full-form-myth.mp4",
       "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
     }
   ]
