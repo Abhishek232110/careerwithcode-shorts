@@ -85,7 +85,8 @@
       "Pompeii 79 CE: Vesuvius ki raakh mein dafan shahar, 1748 khudai, plaster casts",
       "Kumbhalgarh: 36 km deewar, Rana Kumbha 15vi sadi, Maharana Pratap janm 1540, UNESCO 2013",
       "Jantar Mantar Jaipur: Samrat Yantra 27 m, ~2 second sateek, Sawai Jai Singh II, 1734, UNESCO 2010",
-      "Tunguska 1908: Siberia dhamaka, ~8 crore ped, ~2150 km2, koi gaddha nahi, Kulik 1927, airburst"
+      "Tunguska 1908: Siberia dhamaka, ~8 crore ped, ~2150 km2, koi gaddha nahi, Kulik 1927, airburst",
+      "Lake Natron Tanzania: laal kshariya jheel, mare panchhi \"patthar\" jaise (calcified), flamingo breeding"
     ]
   },
   "log": [
@@ -841,6 +842,15 @@
       "tone": "practical quick win, energetic",
       "hook_format": "myth-vs-fact",
       "video": "curiositybox/shorts/2026-11-15_1000_ai-wifi-ka-full-form-myth.mp4",
+      "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
+    },
+    {
+      "date": "2026-11-15 20:00",
+      "slot": "kahani",
+      "title": "Ek Jheel Jo Panchhiyon Ko Patthar Bana De? Lake Natron Ka Sach #shorts",
+      "tone": "storyteller, suspense",
+      "hook_format": "story-open",
+      "video": "curiositybox/shorts/2026-11-15_2000_kahani-lake-natron-patthar-panchhi.mp4",
       "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
     }
   ]
