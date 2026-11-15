@@ -1,0 +1,73 @@
+{
+ "voice": "am_michael",
+ "speed": 1.0,
+ "theme": "light",
+ "still_scene": 1,
+ "title_yt": "Morning Quiz: Go + Data Analytics + 1 Interview Question #shorts",
+ "scenes": [
+  {
+   "title": [{"text": "3 questions", "box": "red"}, {"text": "Get all 3?"}, {"text": "Morning Quiz", "box": "yellow"}],
+   "image": {"type": "check", "kind": "steps", "items": ["Go: structs", "Data: types of data", "Interview: UNION vs UNION ALL"]},
+   "face": "happy", "palette": "blue",
+   "say": "Three questions. Can you get all three? Morning quiz!"
+  },
+  {
+   "title": [{"text": "Q1 Go", "box": "yellow"}, {"text": "What prints?"}],
+   "image": {"type": "code", "file": "main.go", "lines": [
+     "type User struct {",
+     "    Name string",
+     "    Age  int",
+     "}",
+     "",
+     "u := User{Name: \"Asha\", Age: 21}",
+     "v := u",
+     "v.Name = \"Ravi\"",
+     "fmt.Println(u.Name)"], "highlight": [6, 7]},
+   "face": "thinking", "palette": "purple",
+   "say": "Question one. We copy u into v, then change v's name. What does u dot Name print? Pause and answer."
+  },
+  {
+   "title": [{"text": "Answer 1", "box": "yellow"}, {"text": "Asha"}],
+   "image": {"type": "code", "file": "main.go", "lines": [
+     "u := User{Name: \"Asha\", Age: 21}",
+     "v := u        // full copy",
+     "v.Name = \"Ravi\" // only v changes",
+     "fmt.Println(u.Name)"], "highlight": [1], "output": ["Asha"]},
+   "face": "happy", "palette": "blue",
+   "say": "Asha. Assigning a struct makes a full copy, so changing v never touches u."
+  },
+  {
+   "title": [{"text": "Q2 Data", "box": "yellow"}, {"text": "Number or category?"}],
+   "image": {"type": "table", "file": "orders.csv", "cols": ["city", "pincode", "amount"], "rows": [
+     ["Delhi", "110001", "450"], ["Pune", "411001", "1200"], ["Delhi", "110001", "300"], ["Goa", "403001", "780"]]},
+   "face": "thinking", "palette": "orange",
+   "say": "Question two. The pincode column is made of digits. Is it a number or a category? Pause and answer."
+  },
+  {
+   "title": [{"text": "Answer 2", "box": "yellow"}, {"text": "Category"}],
+   "image": {"type": "check", "kind": "steps", "items": ["amount = number: add it", "pincode = category: group it", "Sum of pincodes means nothing"]},
+   "face": "happy", "palette": "purple",
+   "say": "Category. Pincode is a label, not a quantity. You group by it, but adding pincodes means nothing."
+  },
+  {
+   "title": [{"text": "Q3 Interview", "box": "red"}, {"text": "How many rows?"}],
+   "image": {"type": "code", "file": "query.sql", "lines": [
+     "-- table A: Delhi, Pune",
+     "-- table B: Pune, Goa",
+     "",
+     "SELECT city FROM A",
+     "UNION ALL",
+     "SELECT city FROM B;"], "highlight": [4]},
+   "face": "thinking", "palette": "blue",
+   "say": "Interview question. Table A has Delhi and Pune. Table B has Pune and Goa. How many rows does UNION ALL return? Pause and answer."
+  },
+  {
+   "title": [{"text": "Answer 3", "box": "yellow"}, {"text": "4 rows"}],
+   "image": {"type": "check", "kind": "check", "items": ["Q1: Asha", "Q2: category", "Q3: UNION ALL = 4 rows", "UNION removes dupes = 3"]},
+   "banner": "Follow CareerWithCode",
+   "note": "How many?\n1, 2 or 3?",
+   "face": "happy", "palette": "orange",
+   "say": "Four. UNION ALL keeps duplicates. Plain UNION removes them and gives three. How many did you get? One, two or three? Follow CareerWithCode!"
+  }
+ ]
+}
