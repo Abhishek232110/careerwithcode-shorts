@@ -87,7 +87,8 @@
       "Kumbhalgarh: 36 km deewar, Rana Kumbha 15vi sadi, Maharana Pratap janm 1540, UNESCO 2013",
       "Jantar Mantar Jaipur: Samrat Yantra 27 m, ~2 second sateek, Sawai Jai Singh II, 1734, UNESCO 2010",
       "Tunguska 1908: Siberia dhamaka, ~8 crore ped, ~2150 km2, koi gaddha nahi, Kulik 1927, airburst",
-      "Lake Natron Tanzania: laal kshariya jheel, mare panchhi \"patthar\" jaise (calcified), flamingo breeding"
+      "Lake Natron Tanzania: laal kshariya jheel, mare panchhi \"patthar\" jaise (calcified), flamingo breeding",
+      "Kumbhakarna 6 mahine neend: Brahma vardan, Saraswati ne vani badli, Ravan ki vinti (Valmiki Ramayan)"
     ]
   },
   "log": [
@@ -862,6 +863,16 @@
       "hook_format": "question",
       "mood": "upbeat",
       "video": "curiositybox/shorts/2026-11-16_1000_ai-pehli-hard-disk-ibm-350.mp4",
+      "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
+    },
+    {
+      "date": "2026-11-16 20:00",
+      "slot": "kahani",
+      "title": "Kumbhakarna 6 Mahine Kyon Sota Tha? Ramayan Ki Kahani #shorts",
+      "tone": "storyteller, suspense",
+      "hook_format": "question",
+      "mood": "mysterious",
+      "video": "curiositybox/shorts/2026-11-16_2000_kahani-kumbhakarna-6-mahine-neend.mp4",
       "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
     }
   ]
