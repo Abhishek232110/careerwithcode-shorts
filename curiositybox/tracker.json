@@ -32,7 +32,8 @@
       "Pehla camera phone photo: 11 June 1997, Philippe Kahn ne beti Sophie ki photo share ki",
       "Pehla Google Doodle: 30 Aug 1998 Burning Man stick figure, Larry Page & Sergey Brin ka out-of-office note",
       "Pehla Apple computer Apple-1: 1976, $666.66, Wozniak design, sirf circuit board, ~200 bane",
-      "Myth: Wi-Fi ka full form 'Wireless Fidelity' nahi, koi full form nahi (1999 Interbrand, Hi-Fi jaisa naam, IEEE 802.11)"
+      "Myth: Wi-Fi ka full form 'Wireless Fidelity' nahi, koi full form nahi (1999 Interbrand, Hi-Fi jaisa naam, IEEE 802.11)",
+      "Pehli hard disk IBM 350 RAMAC (1956): ~785 kg, 50 x 24-inch disks, 3.75 MB (5 million characters), system rent $3,200/month"
     ]
   },
   "whatif": {
@@ -851,6 +852,16 @@
       "tone": "storyteller, suspense",
       "hook_format": "story-open",
       "video": "curiositybox/shorts/2026-11-15_2000_kahani-lake-natron-patthar-panchhi.mp4",
+      "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
+    },
+    {
+      "date": "2026-11-16 10:00",
+      "slot": "ai",
+      "title": "Duniya Ki Pehli Hard Disk 785 Kilo Ki Thi, Sirf 3.75 MB! #shorts",
+      "tone": "surprising tech fact, energetic",
+      "hook_format": "question",
+      "mood": "upbeat",
+      "video": "curiositybox/shorts/2026-11-16_1000_ai-pehli-hard-disk-ibm-350.mp4",
       "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
     }
   ]
