@@ -1,0 +1,71 @@
+{
+ "voice": "am_michael",
+ "speed": 1.0,
+ "theme": "light",
+ "still_scene": 1,
+ "title_yt": "Morning Quiz: Go + Data Analytics + 1 Interview Question #shorts",
+ "scenes": [
+  {
+   "title": [{"text": "3 questions", "box": "red"}, {"text": "Get all 3?"}, {"text": "Morning Quiz", "box": "yellow"}],
+   "image": {"type": "check", "kind": "steps", "items": ["Go: map comma ok", "Data: the 4 steps", "Interview: HTTP 200 vs 201"]},
+   "face": "happy", "palette": "blue",
+   "say": "Three questions. Can you get all three? Morning quiz!"
+  },
+  {
+   "title": [{"text": "Q1 Go", "box": "yellow"}, {"text": "What prints?"}],
+   "image": {"type": "code", "file": "main.go", "lines": [
+     "stock := map[string]int{\"pen\": 0}",
+     "",
+     "v, ok := stock[\"pen\"]",
+     "fmt.Println(v, ok)",
+     "",
+     "w, ok2 := stock[\"ink\"]",
+     "fmt.Println(w, ok2)"], "highlight": [5]},
+   "face": "thinking", "palette": "purple",
+   "say": "Question one. Pen is in the map with zero. Ink is not in the map at all. What do the two lines print? Pause and answer."
+  },
+  {
+   "title": [{"text": "Answer 1", "box": "yellow"}, {"text": "0 true / 0 false"}],
+   "image": {"type": "code", "file": "main.go", "lines": [
+     "v, ok := stock[\"pen\"]   // key exists",
+     "fmt.Println(v, ok)",
+     "w, ok2 := stock[\"ink\"]  // missing key",
+     "fmt.Println(w, ok2)"], "highlight": [2], "output": ["0 true", "0 false"]},
+   "face": "happy", "palette": "blue",
+   "say": "Zero true, then zero false. A missing key also gives zero, so only ok tells you if the key really exists."
+  },
+  {
+   "title": [{"text": "Q2 Data", "box": "yellow"}, {"text": "Which step?"}],
+   "image": {"type": "table", "file": "sales.csv", "cols": ["order", "day", "amount"],
+     "rows": [["101", "Mon", "250"], ["102", "Sat", "900"], ["102", "Sat", "900"], ["104", "Tue", ""]],
+     "bad": [[2, -1], [3, 2]]},
+   "face": "thinking", "palette": "orange",
+   "say": "Question two. You remove the duplicate row and fix the blank amount. Which of the four analytics steps is this? Pause and answer."
+  },
+  {
+   "title": [{"text": "Answer 2", "box": "yellow"}, {"text": "Clean"}],
+   "image": {"type": "flow", "steps": [["Collect", "get the data"], ["Clean", "fix the mess"], ["Analyze", "find the answer"], ["Share", "show a chart"]]},
+   "face": "happy", "palette": "purple",
+   "say": "Clean. Step two comes before analysis, because duplicates and blanks give you the wrong total."
+  },
+  {
+   "title": [{"text": "Q3 Interview", "box": "red"}, {"text": "200 or 201?"}],
+   "image": {"type": "code", "file": "request.http", "lines": [
+     "POST /users",
+     "{\"name\": \"Asha\"}",
+     "",
+     "HTTP/1.1 ???",
+     "Location: /users/42"], "highlight": [3]},
+   "face": "thinking", "palette": "blue",
+   "say": "Interview question. A POST request creates a new user. Should the server reply 200 or 201? Pause and answer."
+  },
+  {
+   "title": [{"text": "Answer 3", "box": "yellow"}, {"text": "201 Created"}],
+   "image": {"type": "check", "kind": "check", "items": ["Q1: 0 true, 0 false", "Q2: Clean", "Q3: 201 Created", "200 OK = success, nothing new"]},
+   "banner": "Follow CareerWithCode",
+   "note": "How many?\n1, 2 or 3?",
+   "face": "happy", "palette": "orange",
+   "say": "Two oh one, Created. It means a new resource was made. Two hundred just means OK. How many did you get? One, two or three? Follow CareerWithCode!"
+  }
+ ]
+}

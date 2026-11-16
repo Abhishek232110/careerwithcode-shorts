@@ -1,0 +1,156 @@
+1
+00:00:00,250 --> 00:00:01,324
+Three questions.
+
+2
+00:00:01,544 --> 00:00:02,792
+Can you get all three?
+
+3
+00:00:03,012 --> 00:00:03,978
+Morning quiz!
+
+4
+00:00:04,698 --> 00:00:05,619
+Question one.
+
+5
+00:00:05,839 --> 00:00:06,658
+Pen is in the
+
+6
+00:00:06,658 --> 00:00:07,540
+map with zero.
+
+7
+00:00:07,760 --> 00:00:08,585
+Ink is not in
+
+8
+00:00:08,585 --> 00:00:09,536
+the map at all.
+
+9
+00:00:09,756 --> 00:00:10,403
+What do the
+
+10
+00:00:10,403 --> 00:00:11,344
+two lines print?
+
+11
+00:00:11,564 --> 00:00:12,661
+Pause and answer.
+
+12
+00:00:13,381 --> 00:00:15,383
+Zero true, then zero false.
+
+13
+00:00:15,603 --> 00:00:16,977
+A missing key also
+
+14
+00:00:16,977 --> 00:00:18,428
+gives zero, so only
+
+15
+00:00:18,428 --> 00:00:19,573
+ok tells you if
+
+16
+00:00:19,573 --> 00:00:21,252
+the key really exists.
+
+17
+00:00:21,972 --> 00:00:23,003
+Question two.
+
+18
+00:00:23,223 --> 00:00:25,085
+You remove the duplicate row
+
+19
+00:00:25,085 --> 00:00:26,749
+and fix the blank amount.
+
+20
+00:00:26,969 --> 00:00:27,944
+Which of the four
+
+21
+00:00:27,944 --> 00:00:29,321
+analytics steps is this?
+
+22
+00:00:29,541 --> 00:00:30,638
+Pause and answer.
+
+23
+00:00:31,358 --> 00:00:31,960
+Clean.
+
+24
+00:00:32,180 --> 00:00:34,196
+Step two comes before analysis,
+
+25
+00:00:34,196 --> 00:00:36,408
+because duplicates and blanks give
+
+26
+00:00:36,408 --> 00:00:37,709
+you the wrong total.
+
+27
+00:00:38,429 --> 00:00:39,544
+Interview question.
+
+28
+00:00:39,764 --> 00:00:41,211
+A POST request creates
+
+29
+00:00:41,211 --> 00:00:41,934
+a new user.
+
+30
+00:00:42,154 --> 00:00:44,373
+Should the server reply
+
+31
+00:00:44,373 --> 00:00:45,434
+200 or 201?
+
+32
+00:00:45,654 --> 00:00:46,751
+Pause and answer.
+
+33
+00:00:47,471 --> 00:00:48,891
+Two oh one, Created.
+
+34
+00:00:49,111 --> 00:00:50,029
+It means a new
+
+35
+00:00:50,029 --> 00:00:51,209
+resource was made.
+
+36
+00:00:51,430 --> 00:00:53,241
+Two hundred just means OK.
+
+37
+00:00:53,461 --> 00:00:54,686
+How many did you get?
+
+38
+00:00:54,906 --> 00:00:56,055
+One, two or three?
+
+39
+00:00:56,275 --> 00:00:57,753
+Follow CareerWithCode!
+
