@@ -89,7 +89,8 @@
       "Jantar Mantar Jaipur: Samrat Yantra 27 m, ~2 second sateek, Sawai Jai Singh II, 1734, UNESCO 2010",
       "Tunguska 1908: Siberia dhamaka, ~8 crore ped, ~2150 km2, koi gaddha nahi, Kulik 1927, airburst",
       "Lake Natron Tanzania: laal kshariya jheel, mare panchhi \"patthar\" jaise (calcified), flamingo breeding",
-      "Kumbhakarna 6 mahine neend: Brahma vardan, Saraswati ne vani badli, Ravan ki vinti (Valmiki Ramayan)"
+      "Kumbhakarna 6 mahine neend: Brahma vardan, Saraswati ne vani badli, Ravan ki vinti (Valmiki Ramayan)",
+      "Rani ki Vav Patan: 7 manzil bawdi, Rani Udayamati 11vi sadi, gaad mein dabi, UNESCO 2014"
     ]
   },
   "log": [
@@ -884,6 +885,15 @@
       "hook_format": "story-open",
       "mood": "upbeat",
       "video": "curiositybox/shorts/2026-11-17_1000_ai-pehla-webcam-coffee-pot.mp4",
+      "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
+    },
+    {
+      "date": "2026-11-17 20:00",
+      "slot": "kahani",
+      "title": "Zameen Ke Neeche 7 Manzil! Rani Ki Vav Ki Kahani #shorts",
+      "tone": "storyteller, suspense",
+      "hook_format": "number",
+      "video": "curiositybox/shorts/2026-11-17_2000_kahani-rani-ki-vav-7-manzil.mp4",
       "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
     }
   ]
