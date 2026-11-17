@@ -1,0 +1,69 @@
+{
+ "voice": "am_michael",
+ "speed": 1.0,
+ "theme": "light",
+ "still_scene": 1,
+ "title_yt": "Morning Quiz: Go + Data Analytics + 1 Interview Question #shorts",
+ "scenes": [
+  {
+   "title": [{"text": "3 questions", "box": "red"}, {"text": "Get all 3?"}, {"text": "Morning Quiz", "box": "yellow"}],
+   "image": {"type": "check", "kind": "steps", "items": ["Go: delete from a map", "Data: pivot count", "Interview: ORDER BY"]},
+   "face": "happy", "palette": "blue",
+   "say": "Three questions. Can you get all three? Morning quiz!"
+  },
+  {
+   "title": [{"text": "Q1 Go", "box": "yellow"}, {"text": "What prints?"}],
+   "image": {"type": "code", "file": "main.go", "lines": [
+     "m := map[string]int{",
+     "    \"a\": 1, \"b\": 2, \"c\": 3}",
+     "",
+     "delete(m, \"b\")",
+     "delete(m, \"z\")",
+     "",
+     "fmt.Println(len(m), m[\"b\"])"], "highlight": [4]},
+   "face": "thinking", "palette": "purple",
+   "say": "Question one. We delete b, then delete z, which is not even in the map. What does the last line print? Pause and answer."
+  },
+  {
+   "title": [{"text": "Answer 1", "box": "yellow"}, {"text": "2 0"}],
+   "image": {"type": "code", "file": "main.go", "lines": [
+     "delete(m, \"b\")  // removed",
+     "delete(m, \"z\")  // missing: no error",
+     "fmt.Println(len(m), m[\"b\"])"], "highlight": [1], "output": ["2 0"]},
+   "face": "happy", "palette": "blue",
+   "say": "Two, zero. Deleting a missing key does nothing and never panics. And reading b now gives the zero value."
+  },
+  {
+   "title": [{"text": "Q2 Data", "box": "yellow"}, {"text": "South = ?"}],
+   "image": {"type": "table", "file": "pivot: Count of amount", "cols": ["region", "amount"],
+     "rows": [["North", "120"], ["South", "80"], ["North", "50"], ["South", "40"], ["South", "60"]]},
+   "face": "thinking", "palette": "orange",
+   "say": "Question two. A pivot table puts region in rows, with count of amount, not sum. What number shows for South? Pause and answer."
+  },
+  {
+   "title": [{"text": "Answer 2", "box": "yellow"}, {"text": "3"}],
+   "image": {"type": "chart", "title": "Count of amount", "bars": [["North", 2], ["South", 3]], "highlight": 2},
+   "face": "happy", "palette": "purple",
+   "say": "Three. Count adds up rows, not money. South has three orders. Sum would give one hundred eighty."
+  },
+  {
+   "title": [{"text": "Q3 Interview", "box": "red"}, {"text": "ASC or DESC?"}],
+   "image": {"type": "code", "file": "query.sql", "lines": [
+     "SELECT name, salary",
+     "FROM employees",
+     "ORDER BY salary;",
+     "",
+     "-- smallest first or biggest first?"], "highlight": [2]},
+   "face": "thinking", "palette": "blue",
+   "say": "Interview question. ORDER BY with no direction. Is it ascending or descending by default? Pause and answer."
+  },
+  {
+   "title": [{"text": "Answer 3", "box": "yellow"}, {"text": "ASC"}],
+   "image": {"type": "check", "kind": "check", "items": ["Q1: 2 0", "Q2: 3", "Q3: ASC, smallest first", "Want biggest first? Add DESC"]},
+   "banner": "Follow CareerWithCode",
+   "note": "How many?\n1, 2 or 3?",
+   "face": "happy", "palette": "orange",
+   "say": "Ascending. Smallest first is the default. Add DESC for biggest first. How many did you get? One, two or three? Follow CareerWithCode!"
+  }
+ ]
+}

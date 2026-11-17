@@ -1,0 +1,152 @@
+1
+00:00:00,250 --> 00:00:01,324
+Three questions.
+
+2
+00:00:01,544 --> 00:00:02,792
+Can you get all three?
+
+3
+00:00:03,012 --> 00:00:03,978
+Morning quiz!
+
+4
+00:00:04,698 --> 00:00:05,619
+Question one.
+
+5
+00:00:05,839 --> 00:00:07,495
+We delete b, then delete
+
+6
+00:00:07,495 --> 00:00:08,875
+z, which is not even
+
+7
+00:00:08,875 --> 00:00:09,634
+in the map.
+
+8
+00:00:09,854 --> 00:00:10,614
+What does the
+
+9
+00:00:10,614 --> 00:00:11,549
+last line print?
+
+10
+00:00:11,769 --> 00:00:12,866
+Pause and answer.
+
+11
+00:00:13,586 --> 00:00:14,502
+Two, zero.
+
+12
+00:00:14,722 --> 00:00:16,321
+Deleting a missing key does
+
+13
+00:00:16,321 --> 00:00:17,801
+nothing and never panics.
+
+14
+00:00:18,021 --> 00:00:19,182
+And reading b now
+
+15
+00:00:19,182 --> 00:00:20,617
+gives the zero value.
+
+16
+00:00:21,337 --> 00:00:22,367
+Question two.
+
+17
+00:00:22,587 --> 00:00:24,281
+A pivot table puts region
+
+18
+00:00:24,281 --> 00:00:25,771
+in rows, with count of
+
+19
+00:00:25,771 --> 00:00:26,855
+amount, not sum.
+
+20
+00:00:27,075 --> 00:00:28,627
+What number shows for South?
+
+21
+00:00:28,847 --> 00:00:29,944
+Pause and answer.
+
+22
+00:00:30,664 --> 00:00:31,268
+Three.
+
+23
+00:00:31,488 --> 00:00:32,340
+Count adds up
+
+24
+00:00:32,340 --> 00:00:33,387
+rows, not money.
+
+25
+00:00:33,607 --> 00:00:35,057
+South has three orders.
+
+26
+00:00:35,277 --> 00:00:36,020
+Sum would give
+
+27
+00:00:36,020 --> 00:00:37,029
+one hundred eighty.
+
+28
+00:00:37,749 --> 00:00:38,863
+Interview question.
+
+29
+00:00:39,083 --> 00:00:40,713
+ORDER BY with no direction.
+
+30
+00:00:40,933 --> 00:00:42,173
+Is it ascending or
+
+31
+00:00:42,173 --> 00:00:43,687
+descending by default?
+
+32
+00:00:43,907 --> 00:00:45,004
+Pause and answer.
+
+33
+00:00:45,724 --> 00:00:46,475
+Ascending.
+
+34
+00:00:46,695 --> 00:00:48,570
+Smallest first is the default.
+
+35
+00:00:48,790 --> 00:00:50,416
+Add DESC for biggest first.
+
+36
+00:00:50,636 --> 00:00:51,861
+How many did you get?
+
+37
+00:00:52,081 --> 00:00:53,230
+One, two or three?
+
+38
+00:00:53,450 --> 00:00:54,928
+Follow CareerWithCode!
+
