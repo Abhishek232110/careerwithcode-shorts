@@ -91,7 +91,8 @@
       "Tunguska 1908: Siberia dhamaka, ~8 crore ped, ~2150 km2, koi gaddha nahi, Kulik 1927, airburst",
       "Lake Natron Tanzania: laal kshariya jheel, mare panchhi \"patthar\" jaise (calcified), flamingo breeding",
       "Kumbhakarna 6 mahine neend: Brahma vardan, Saraswati ne vani badli, Ravan ki vinti (Valmiki Ramayan)",
-      "Rani ki Vav Patan: 7 manzil bawdi, Rani Udayamati 11vi sadi, gaad mein dabi, UNESCO 2014"
+      "Rani ki Vav Patan: 7 manzil bawdi, Rani Udayamati 11vi sadi, gaad mein dabi, UNESCO 2014",
+      "Antikythera Mechanism: 1901 Greek shipwreck, kaanse ke gears, grahan/grahon ki chaal, pehla analog computer (~2000 saal)"
     ]
   },
   "log": [
@@ -905,6 +906,16 @@
       "hook_format": "number",
       "mood": "upbeat",
       "video": "curiositybox/shorts/2026-11-18_1000_ai-pehla-dotcom-symbolics.mp4",
+      "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
+    },
+    {
+      "date": "2026-11-18 20:00",
+      "slot": "kahani",
+      "title": "2000 Saal Purana Computer! Samudra Se Mila Rahasya #shorts",
+      "tone": "storyteller, suspense",
+      "hook_format": "shocking-fact",
+      "mood": "mysterious",
+      "video": "curiositybox/shorts/2026-11-18_2000_kahani-antikythera-mechanism.mp4",
       "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
     }
   ]
