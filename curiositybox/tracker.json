@@ -34,7 +34,8 @@
       "Pehla Apple computer Apple-1: 1976, $666.66, Wozniak design, sirf circuit board, ~200 bane",
       "Myth: Wi-Fi ka full form 'Wireless Fidelity' nahi, koi full form nahi (1999 Interbrand, Hi-Fi jaisa naam, IEEE 802.11)",
       "Pehli hard disk IBM 350 RAMAC (1956): ~785 kg, 50 x 24-inch disks, 3.75 MB (5 million characters), system rent $3,200/month",
-      "Pehla webcam: Trojan Room coffee pot (1991 Cambridge Computer Lab, 1993 web par, 2001 band, eBay par £3,350 mein bika)"
+      "Pehla webcam: Trojan Room coffee pot (1991 Cambridge Computer Lab, 1993 web par, 2001 band, eBay par £3,350 mein bika)",
+      "Pehla .com domain: symbolics.com, 15 March 1985 (Symbolics Inc, USA computer company; web se 6 saal pehle; 2009 mein bika, aaj bhi online)"
     ]
   },
   "whatif": {
@@ -894,6 +895,16 @@
       "tone": "storyteller, suspense",
       "hook_format": "number",
       "video": "curiositybox/shorts/2026-11-17_2000_kahani-rani-ki-vav-7-manzil.mp4",
+      "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
+    },
+    {
+      "date": "2026-11-18 10:00",
+      "slot": "ai",
+      "title": "Duniya Ka Pehla .com Domain Kaunsa Tha? 1985 Ka Sach #shorts",
+      "tone": "surprising tech fact, energetic",
+      "hook_format": "number",
+      "mood": "upbeat",
+      "video": "curiositybox/shorts/2026-11-18_1000_ai-pehla-dotcom-symbolics.mp4",
       "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
     }
   ]
