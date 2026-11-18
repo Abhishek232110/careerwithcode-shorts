@@ -1,0 +1,132 @@
+1
+00:00:00,250 --> 00:00:01,324
+Three questions.
+
+2
+00:00:01,544 --> 00:00:02,792
+Can you get all three?
+
+3
+00:00:03,012 --> 00:00:03,978
+Morning quiz!
+
+4
+00:00:04,698 --> 00:00:05,619
+Question one.
+
+5
+00:00:05,839 --> 00:00:07,407
+We slice s, then set
+
+6
+00:00:07,407 --> 00:00:09,131
+t zero to ninety nine.
+
+7
+00:00:09,351 --> 00:00:10,264
+What prints?
+
+8
+00:00:10,484 --> 00:00:11,581
+Pause and answer.
+
+9
+00:00:12,301 --> 00:00:13,455
+Ninety nine, two.
+
+10
+00:00:13,675 --> 00:00:15,636
+Both slices share one array,
+
+11
+00:00:15,636 --> 00:00:16,827
+so s changes too.
+
+12
+00:00:17,047 --> 00:00:18,025
+And one to three
+
+13
+00:00:18,025 --> 00:00:19,004
+holds two items.
+
+14
+00:00:19,724 --> 00:00:20,754
+Question two.
+
+15
+00:00:20,974 --> 00:00:22,144
+Tuesday is blank.
+
+16
+00:00:22,364 --> 00:00:23,783
+What does AVERAGE give?
+
+17
+00:00:24,003 --> 00:00:25,100
+Pause and answer.
+
+18
+00:00:25,820 --> 00:00:26,601
+Fifteen.
+
+19
+00:00:26,821 --> 00:00:29,048
+AVERAGE skips blank cells: ten
+
+20
+00:00:29,048 --> 00:00:31,126
+plus twenty, divided by two.
+
+21
+00:00:31,846 --> 00:00:32,960
+Interview question.
+
+22
+00:00:33,180 --> 00:00:34,025
+Four oh four
+
+23
+00:00:34,025 --> 00:00:35,152
+or five hundred.
+
+24
+00:00:35,372 --> 00:00:36,981
+Which means the server broke?
+
+25
+00:00:37,201 --> 00:00:38,297
+Pause and answer.
+
+26
+00:00:39,017 --> 00:00:39,978
+Five hundred.
+
+27
+00:00:40,198 --> 00:00:41,028
+Five x x is
+
+28
+00:00:41,028 --> 00:00:42,160
+a server error.
+
+29
+00:00:42,380 --> 00:00:43,299
+Four x x means
+
+30
+00:00:43,299 --> 00:00:44,810
+the client asked wrong.
+
+31
+00:00:45,030 --> 00:00:46,255
+How many did you get?
+
+32
+00:00:46,475 --> 00:00:47,624
+One, two or three?
+
+33
+00:00:47,844 --> 00:00:49,322
+Follow CareerWithCode!
+
