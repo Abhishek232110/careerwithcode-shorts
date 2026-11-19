@@ -93,7 +93,8 @@
       "Lake Natron Tanzania: laal kshariya jheel, mare panchhi \"patthar\" jaise (calcified), flamingo breeding",
       "Kumbhakarna 6 mahine neend: Brahma vardan, Saraswati ne vani badli, Ravan ki vinti (Valmiki Ramayan)",
       "Rani ki Vav Patan: 7 manzil bawdi, Rani Udayamati 11vi sadi, gaad mein dabi, UNESCO 2014",
-      "Antikythera Mechanism: 1901 Greek shipwreck, kaanse ke gears, grahan/grahon ki chaal, pehla analog computer (~2000 saal)"
+      "Antikythera Mechanism: 1901 Greek shipwreck, kaanse ke gears, grahan/grahon ki chaal, pehla analog computer (~2000 saal)",
+      "Lothal: 4500 saal purana dockyard, Gujarat, Sindhu Ghati, S.R. Rao 1954, bead factory"
     ]
   },
   "log": [
@@ -927,6 +928,16 @@
       "hook_format": "shocking-fact",
       "mood": "upbeat",
       "video": "curiositybox/shorts/2026-11-19_1000_ai-eniac-27-ton-computer.mp4",
+      "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
+    },
+    {
+      "date": "2026-11-19 20:00",
+      "slot": "kahani",
+      "title": "4500 Saal Purana Bandargah! Lothal Ka Rahasya #shorts",
+      "tone": "storyteller, suspense",
+      "hook_format": "question",
+      "mood": "epic",
+      "video": "curiositybox/shorts/2026-11-19_2000_kahani-lothal-dockyard.mp4",
       "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
     }
   ]
