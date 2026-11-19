@@ -1,0 +1,148 @@
+1
+00:00:00,250 --> 00:00:01,324
+Three questions.
+
+2
+00:00:01,544 --> 00:00:02,792
+Can you get all three?
+
+3
+00:00:03,012 --> 00:00:03,978
+Morning quiz!
+
+4
+00:00:04,698 --> 00:00:05,619
+Question one.
+
+5
+00:00:05,839 --> 00:00:07,329
+The slice is full, then
+
+6
+00:00:07,329 --> 00:00:08,561
+we append one more.
+
+7
+00:00:08,781 --> 00:00:09,784
+What are the length
+
+8
+00:00:09,784 --> 00:00:10,681
+and capacity now?
+
+9
+00:00:10,901 --> 00:00:11,998
+Pause and answer.
+
+10
+00:00:12,718 --> 00:00:13,601
+Three, four.
+
+11
+00:00:13,821 --> 00:00:15,182
+The array was full, so
+
+12
+00:00:15,182 --> 00:00:16,481
+append made a new one
+
+13
+00:00:16,481 --> 00:00:17,780
+with double the room.
+
+14
+00:00:18,001 --> 00:00:19,229
+Small slices grow
+
+15
+00:00:19,229 --> 00:00:20,384
+about two times.
+
+16
+00:00:21,104 --> 00:00:22,135
+Question two.
+
+17
+00:00:22,355 --> 00:00:23,601
+Filter sales greater
+
+18
+00:00:23,601 --> 00:00:24,661
+than one hundred.
+
+19
+00:00:24,881 --> 00:00:26,143
+How many rows stay?
+
+20
+00:00:26,363 --> 00:00:27,460
+Pause and answer.
+
+21
+00:00:28,180 --> 00:00:29,016
+Two rows.
+
+22
+00:00:29,236 --> 00:00:31,130
+Greater than one hundred does
+
+23
+00:00:31,130 --> 00:00:33,154
+not include one hundred itself,
+
+24
+00:00:33,154 --> 00:00:34,852
+so Thursday is hidden too.
+
+25
+00:00:35,572 --> 00:00:36,686
+Interview question.
+
+26
+00:00:36,906 --> 00:00:38,721
+Primary key or foreign key.
+
+27
+00:00:38,941 --> 00:00:40,262
+Which one links orders
+
+28
+00:00:40,262 --> 00:00:41,643
+to the customers table?
+
+29
+00:00:41,863 --> 00:00:42,960
+Pause and answer.
+
+30
+00:00:43,680 --> 00:00:44,623
+Foreign key.
+
+31
+00:00:44,843 --> 00:00:46,762
+customer id in orders points
+
+32
+00:00:46,762 --> 00:00:48,339
+to the customers table.
+
+33
+00:00:48,559 --> 00:00:49,812
+The primary key just
+
+34
+00:00:49,812 --> 00:00:51,316
+names each row uniquely.
+
+35
+00:00:51,536 --> 00:00:52,762
+How many did you get?
+
+36
+00:00:52,982 --> 00:00:54,130
+One, two or three?
+
+37
+00:00:54,350 --> 00:00:55,828
+Follow CareerWithCode!
+
