@@ -1229,6 +1229,23 @@
    "facebook": "not posted: Zapier task limit reached",
    "instagram": "skipped",
    "first_comments": "not posted"
+  },
+  {
+   "date": "2026-11-19",
+   "slot": "morning-qa",
+   "time": "09:00",
+   "title": "Morning Quiz: Go + Data Analytics + 1 Interview Question #shorts",
+   "video": "2026-11-19_0900_morning-qa-capacity-filter-foreignkey.mp4",
+   "spec": "specs/2026-11-19_0900_morning-qa-capacity-filter-foreignkey.json",
+   "duration_s": 56.3,
+   "go_part": "Part 16: append and slice capacity",
+   "da_part": "Part 6: Sorting and filtering (filter greater than 100)",
+   "interview": "Primary key vs foreign key: which links two tables?",
+   "status": "rendered, not posted: Zapier task limit reached at the YouTube channel check (08:37 and 08:41 IST). No new series parts since Nov 9. Video is ready in shorts/ to post as-is.",
+   "youtube": "not posted: Your Zapier account has reached its task limit for the current billing period.",
+   "facebook": "not posted: Your Zapier account has reached its task limit for the current billing period.",
+   "first_comments": "not posted",
+   "fb_first_comment": "no Zapier action"
   }
  ],
  "inspiring": {
@@ -1314,6 +1331,13 @@
     "da_part": "Part 5: Spreadsheet basics: SUM, AVERAGE, COUNT (re-quizzed with a new question: AVERAGE skips blanks; every posted DA part was already quizzed)",
     "interview": "HTTP 404 vs 500: which means the server broke?",
     "status": "not posted: Zapier task limit"
+   },
+   {
+    "date": "2026-11-19",
+    "go_part": "Part 16: append and slice capacity",
+    "da_part": "Part 6: Sorting and filtering data (re-quizzed with a new question: filter greater than 100 excludes 100; every posted DA part was already quizzed)",
+    "interview": "Primary key vs foreign key: which links two tables?",
+    "status": "not posted: Zapier task limit"
    }
   ],
   "interview_asked": [
@@ -1327,7 +1351,8 @@
    "UNION vs UNION ALL: which keeps duplicates?",
    "HTTP 200 vs 201: which means created?",
    "ORDER BY default: ASC or DESC?",
-   "HTTP 404 vs 500: which means the server broke?"
+   "HTTP 404 vs 500: which means the server broke?",
+   "Primary key vs foreign key: which links two tables?"
   ]
  }
 }

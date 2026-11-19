@@ -1,0 +1,70 @@
+{
+ "voice": "am_michael",
+ "speed": 1.0,
+ "theme": "light",
+ "still_scene": 1,
+ "title_yt": "Morning Quiz: Go + Data Analytics + 1 Interview Question #shorts",
+ "scenes": [
+  {
+   "title": [{"text": "3 questions", "box": "red"}, {"text": "Get all 3?"}, {"text": "Morning Quiz", "box": "yellow"}],
+   "image": {"type": "check", "kind": "steps", "items": ["Go: append and capacity", "Data: filter greater than 100", "Interview: primary vs foreign key"]},
+   "face": "happy", "palette": "blue",
+   "say": "Three questions. Can you get all three? Morning quiz!"
+  },
+  {
+   "title": [{"text": "Q1 Go", "box": "yellow"}, {"text": "What prints?"}],
+   "image": {"type": "code", "file": "main.go", "lines": [
+     "s := make([]int, 0, 2)",
+     "s = append(s, 1, 2)",
+     "fmt.Println(len(s), cap(s))",
+     "",
+     "s = append(s, 3)",
+     "fmt.Println(len(s), cap(s))"], "highlight": [4]},
+   "face": "thinking", "palette": "purple",
+   "say": "Question one. The slice is full, then we append one more. What are the length and capacity now? Pause and answer."
+  },
+  {
+   "title": [{"text": "Answer 1", "box": "yellow"}, {"text": "3 4"}],
+   "image": {"type": "code", "file": "main.go", "lines": [
+     "s = append(s, 1, 2)  // full: 2 of 2",
+     "s = append(s, 3)     // no room",
+     "// Go makes a new array, about 2x"], "highlight": [1],
+     "output": ["2 2", "3 4"]},
+   "face": "happy", "palette": "blue",
+   "say": "Three, four. The array was full, so append made a new one with double the room. Small slices grow about two times."
+  },
+  {
+   "title": [{"text": "Q2 Data", "box": "yellow"}, {"text": "How many rows?"}],
+   "image": {"type": "table", "file": "sales.xlsx", "cols": ["day", "sales"], "rows": [
+     ["Mon", "120"], ["Tue", "90"], ["Wed", "150"], ["Thu", "100"], ["Fri", "80"]]},
+   "face": "thinking", "palette": "orange",
+   "say": "Question two. Filter sales greater than one hundred. How many rows stay? Pause and answer."
+  },
+  {
+   "title": [{"text": "Answer 2", "box": "yellow"}, {"text": "2 rows"}],
+   "image": {"type": "table", "file": "sales.xlsx", "cols": ["day", "sales"], "rows": [
+     ["Mon", "120"], ["Wed", "150"]], "good_rows": [0, 1]},
+   "face": "happy", "palette": "purple",
+   "say": "Two rows. Greater than one hundred does not include one hundred itself, so Thursday is hidden too."
+  },
+  {
+   "title": [{"text": "Q3 Interview", "box": "red"}, {"text": "Which links tables?"}],
+   "image": {"type": "table", "file": "orders", "cols": ["order_id", "customer_id", "amount"], "rows": [
+     ["1", "7", "500"], ["2", "9", "250"], ["3", "7", "120"]]},
+   "face": "thinking", "palette": "blue",
+   "say": "Interview question. Primary key or foreign key. Which one links orders to the customers table? Pause and answer."
+  },
+  {
+   "title": [{"text": "Answer 3", "box": "yellow"}, {"text": "Foreign key"}],
+   "image": {"type": "check", "kind": "check", "items": [
+     "Q1: 3 4",
+     "Q2: 2 rows",
+     "Q3: foreign key links tables",
+     "Primary key = unique row id"]},
+   "banner": "Follow CareerWithCode",
+   "note": "How many?\n1, 2 or 3?",
+   "face": "happy", "palette": "orange",
+   "say": "Foreign key. customer id in orders points to the customers table. The primary key just names each row uniquely. How many did you get? One, two or three? Follow CareerWithCode!"
+  }
+ ]
+}
