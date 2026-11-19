@@ -91,15 +91,6 @@
  },
  "log": [
   {
-   "date": "2026-10-13 09:42",
-   "slot": "educational",
-   "title": "== vs === in JavaScript (in 15 seconds) #shorts",
-   "video": "2026-10-13_0936_educational-js-double-vs-triple-equals.mp4",
-   "status": "published: yt Juuq_QX4Ufw, ig, fb",
-   "tone": "myth-buster",
-   "hook_format": "comparison"
-  },
-  {
    "date": "2026-10-13 09:57",
    "slot": "inspiring",
    "title": "Every developer runs this loop 💻 #shorts #coding",
@@ -1255,6 +1246,19 @@
    "video": "2026-11-09_2130_go-p28-errors-as-values.mp4",
    "spec": "specs/2026-11-09_2130_go-p28-errors-as-values.json",
    "status": "not posted: Zapier task limit reached (failed at the YouTube channel check, 21:20 IST; not retried per runbook). Part 28 video is ready (44 s, public URL OK); next_part left at 28 so the next run can post it as-is.",
+   "youtube": "not posted: Zapier task limit reached",
+   "facebook": "not posted: Zapier task limit reached",
+   "instagram": "skipped",
+   "first_comments": "not posted"
+  },
+  {
+   "date": "2026-11-19",
+   "slot": "data_analytics",
+   "time": "22:00",
+   "title": "Data Analytics Part 9: SQL SELECT and WHERE #shorts",
+   "video": "2026-11-08_2200_data_analytics-p09-sql-select-where.mp4",
+   "spec": "specs/2026-11-08_2200_data_analytics-p09-sql-select-where.json",
+   "status": "not posted: Zapier task limit reached (failed at the YouTube channel check, 21:48 IST; not retried per runbook). Part 9 video is ready; next_part left at 9 so the next run can post it as-is.",
    "youtube": "not posted: Zapier task limit reached",
    "facebook": "not posted: Zapier task limit reached",
    "instagram": "skipped",
