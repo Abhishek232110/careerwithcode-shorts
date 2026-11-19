@@ -35,7 +35,8 @@
       "Myth: Wi-Fi ka full form 'Wireless Fidelity' nahi, koi full form nahi (1999 Interbrand, Hi-Fi jaisa naam, IEEE 802.11)",
       "Pehli hard disk IBM 350 RAMAC (1956): ~785 kg, 50 x 24-inch disks, 3.75 MB (5 million characters), system rent $3,200/month",
       "Pehla webcam: Trojan Room coffee pot (1991 Cambridge Computer Lab, 1993 web par, 2001 band, eBay par £3,350 mein bika)",
-      "Pehla .com domain: symbolics.com, 15 March 1985 (Symbolics Inc, USA computer company; web se 6 saal pehle; 2009 mein bika, aaj bhi online)"
+      "Pehla .com domain: symbolics.com, 15 March 1985 (Symbolics Inc, USA computer company; web se 6 saal pehle; 2009 mein bika, aaj bhi online)",
+      "ENIAC: 27 ton ka computer (1946 unveil, 1800 sq ft, 17,000+ vacuum tubes, 150 kW, Univ. of Pennsylvania)"
     ]
   },
   "whatif": {
@@ -916,6 +917,16 @@
       "hook_format": "shocking-fact",
       "mood": "mysterious",
       "video": "curiositybox/shorts/2026-11-18_2000_kahani-antikythera-mechanism.mp4",
+      "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
+    },
+    {
+      "date": "2026-11-19 10:00",
+      "slot": "ai",
+      "title": "Ek Computer 27 Ton Ka! ENIAC Ka Sach #shorts",
+      "tone": "surprising tech fact, energetic",
+      "hook_format": "shocking-fact",
+      "mood": "upbeat",
+      "video": "curiositybox/shorts/2026-11-19_1000_ai-eniac-27-ton-computer.mp4",
       "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
     }
   ]
