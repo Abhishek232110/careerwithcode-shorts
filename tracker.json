@@ -91,24 +91,6 @@
  },
  "log": [
   {
-   "date": "2026-10-13 09:57",
-   "slot": "inspiring",
-   "title": "Every developer runs this loop 💻 #shorts #coding",
-   "video": "2026-10-13_0950_inspiring-the-developer-loop.mp4",
-   "status": "published: yt LM3RZOemqOg, ig, fb",
-   "tone": "motivating mentor",
-   "hook_format": "myth-vs-fact"
-  },
-  {
-   "date": "2026-10-13 14:00",
-   "slot": "educational",
-   "title": "This Python default argument myth trips up everyone #shorts",
-   "tone": "myth-buster",
-   "hook_format": "myth-vs-fact",
-   "video": "2026-10-13_1400_educational-python-mutable-default-args.mp4",
-   "status": "scheduled: metricool 394701744 (yt, ig, fb) for 14:00 IST"
-  },
-  {
    "date": "2026-10-13 17:00",
    "slot": "learn",
    "title": "How I escaped tutorial hell (the 1:3 rule) #shorts",
@@ -1280,6 +1262,19 @@
    "facebook": "not posted: Your Zapier account has reached its task limit for the current billing period.",
    "first_comments": "not posted",
    "fb_first_comment": "no Zapier action"
+  },
+  {
+   "date": "2026-11-20",
+   "slot": "go",
+   "time": "21:30",
+   "title": "Go Part 28: Errors as values #shorts",
+   "video": "2026-11-09_2130_go-p28-errors-as-values.mp4",
+   "spec": "specs/2026-11-09_2130_go-p28-errors-as-values.json",
+   "status": "not posted: Zapier task limit reached (failed at the YouTube channel check, 21:19 IST; not retried per runbook). Part 28 video ready (public URL OK); next_part left at 28.",
+   "youtube": "not posted: Zapier task limit reached",
+   "facebook": "not posted: Zapier task limit reached",
+   "instagram": "skipped",
+   "first_comments": "not posted"
   }
  ],
  "inspiring": {
