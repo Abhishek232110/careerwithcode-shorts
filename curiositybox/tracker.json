@@ -95,7 +95,8 @@
       "Kumbhakarna 6 mahine neend: Brahma vardan, Saraswati ne vani badli, Ravan ki vinti (Valmiki Ramayan)",
       "Rani ki Vav Patan: 7 manzil bawdi, Rani Udayamati 11vi sadi, gaad mein dabi, UNESCO 2014",
       "Antikythera Mechanism: 1901 Greek shipwreck, kaanse ke gears, grahan/grahon ki chaal, pehla analog computer (~2000 saal)",
-      "Lothal: 4500 saal purana dockyard, Gujarat, Sindhu Ghati, S.R. Rao 1954, bead factory"
+      "Lothal: 4500 saal purana dockyard, Gujarat, Sindhu Ghati, S.R. Rao 1954, bead factory",
+      "Statue of Liberty pehle hari nahi thi: 1886 France ka tohfa, taambe ki parat, patina se hari, patina bachati hai"
     ]
   },
   "log": [
@@ -949,6 +950,16 @@
       "hook_format": "question",
       "mood": "upbeat",
       "video": "curiositybox/shorts/2026-11-20_1000_ai-pehla-hashtag-2007.mp4",
+      "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
+    },
+    {
+      "date": "2026-11-20 20:00",
+      "slot": "kahani",
+      "title": "Statue of Liberty Pehle Hari Nahi Thi! Rang Kaise Badla? #shorts",
+      "tone": "storyteller, suspense",
+      "hook_format": "story-open",
+      "mood": "epic",
+      "video": "curiositybox/shorts/2026-11-20_2000_kahani-statue-of-liberty-hari-kyon.mp4",
       "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
     }
   ]
