@@ -1263,6 +1263,23 @@
    "facebook": "not posted: Zapier task limit reached",
    "instagram": "skipped",
    "first_comments": "not posted"
+  },
+  {
+   "date": "2026-11-20",
+   "slot": "morning-qa",
+   "time": "09:00",
+   "title": "Morning Quiz: Go + Data Analytics + 1 Interview Question #shorts",
+   "video": "2026-11-20_0900_morning-qa-array-copy-mean-nilmap.mp4",
+   "spec": "specs/2026-11-20_0900_morning-qa-array-copy-mean-nilmap.json",
+   "duration_s": 53.4,
+   "go_part": "Part 15: Arrays vs slices",
+   "da_part": "Part 4: Mean vs median (mean with an outlier)",
+   "interview": "Writing to a nil map in Go: works or panic?",
+   "status": "rendered, not posted: Zapier task limit reached at the YouTube channel check (08:37 and 09:00 IST). Video is ready in shorts/ to post as-is.",
+   "youtube": "not posted: Your Zapier account has reached its task limit for the current billing period.",
+   "facebook": "not posted: Your Zapier account has reached its task limit for the current billing period.",
+   "first_comments": "not posted",
+   "fb_first_comment": "no Zapier action"
   }
  ],
  "inspiring": {
@@ -1355,6 +1372,13 @@
     "da_part": "Part 6: Sorting and filtering data (re-quizzed with a new question: filter greater than 100 excludes 100; every posted DA part was already quizzed)",
     "interview": "Primary key vs foreign key: which links two tables?",
     "status": "not posted: Zapier task limit"
+   },
+   {
+    "date": "2026-11-20",
+    "go_part": "Part 15: Arrays vs slices",
+    "da_part": "Part 4: Mean vs median: which average to trust (re-quizzed with a new question: mean of 10,20,30,40,500 is 120)",
+    "interview": "Writing to a nil map in Go: works or panic?",
+    "status": "not posted: Zapier task limit"
    }
   ],
   "interview_asked": [
@@ -1369,7 +1393,8 @@
    "HTTP 200 vs 201: which means created?",
    "ORDER BY default: ASC or DESC?",
    "HTTP 404 vs 500: which means the server broke?",
-   "Primary key vs foreign key: which links two tables?"
+   "Primary key vs foreign key: which links two tables?",
+   "Writing to a nil map in Go: works or panic?"
   ]
  }
 }

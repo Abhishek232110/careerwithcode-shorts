@@ -1,0 +1,71 @@
+{
+ "voice": "am_michael",
+ "speed": 1.0,
+ "theme": "light",
+ "still_scene": 1,
+ "title_yt": "Morning Quiz: Go + Data Analytics + 1 Interview Question #shorts",
+ "scenes": [
+  {
+   "title": [{"text": "3 questions", "box": "red"}, {"text": "Get all 3?"}, {"text": "Morning Quiz", "box": "yellow"}],
+   "image": {"type": "check", "kind": "steps", "items": ["Go: copying an array", "Data: mean with an outlier", "Interview: writing to a nil map"]},
+   "face": "happy", "palette": "blue",
+   "say": "Three questions. Can you get all three? Morning quiz!"
+  },
+  {
+   "title": [{"text": "Q1 Go", "box": "yellow"}, {"text": "What prints?"}],
+   "image": {"type": "code", "file": "main.go", "lines": [
+     "a := [3]int{1, 2, 3}",
+     "b := a",
+     "b[0] = 9",
+     "",
+     "fmt.Println(a[0], b[0])"], "highlight": [1]},
+   "face": "thinking", "palette": "purple",
+   "say": "Question one. We copy array a into b, then change b. What does this print? Pause and answer."
+  },
+  {
+   "title": [{"text": "Answer 1", "box": "yellow"}, {"text": "1 9"}],
+   "image": {"type": "code", "file": "main.go", "lines": [
+     "b := a     // full copy of the array",
+     "b[0] = 9   // only b changes",
+     "// a slice would share, an array copies"], "highlight": [0],
+     "output": ["1 9"]},
+   "face": "happy", "palette": "blue",
+   "say": "One, nine. In Go an array is a value, so b gets its own full copy. A slice would share the same data."
+  },
+  {
+   "title": [{"text": "Q2 Data", "box": "yellow"}, {"text": "What is the mean?"}],
+   "image": {"type": "table", "file": "orders.xlsx", "cols": ["order", "amount"], "rows": [
+     ["A", "10"], ["B", "20"], ["C", "30"], ["D", "40"], ["E", "500"]]},
+   "face": "thinking", "palette": "orange",
+   "say": "Question two. Five order amounts. What is the mean, the normal average? Pause and answer."
+  },
+  {
+   "title": [{"text": "Answer 2", "box": "yellow"}, {"text": "120"}],
+   "image": {"type": "table", "file": "orders.xlsx", "cols": ["step", "value"], "rows": [
+     ["sum", "600"], ["count", "5"], ["mean", "120"], ["median", "30"]], "good_rows": [2]},
+   "face": "happy", "palette": "purple",
+   "say": "One twenty. Six hundred divided by five. One big order pulls the mean up, so the median of thirty tells the real story."
+  },
+  {
+   "title": [{"text": "Q3 Interview", "box": "red"}, {"text": "What happens?"}],
+   "image": {"type": "code", "file": "main.go", "lines": [
+     "var m map[string]int",
+     "",
+     "m[\"go\"] = 1"], "highlight": [2]},
+   "face": "thinking", "palette": "blue",
+   "say": "Interview question. We declare a map but never make it, then write to it. Works, or panic? Pause and answer."
+  },
+  {
+   "title": [{"text": "Answer 3", "box": "yellow"}, {"text": "Panic!"}],
+   "image": {"type": "check", "kind": "check", "items": [
+     "Q1: 1 9",
+     "Q2: mean is 120",
+     "Q3: nil map write panics",
+     "Fix: m := make(map[string]int)"]},
+   "banner": "Follow CareerWithCode",
+   "note": "How many?\n1, 2 or 3?",
+   "face": "happy", "palette": "orange",
+   "say": "Panic! Assignment to entry in nil map. Always use make first. How many did you get? One, two or three? Follow CareerWithCode!"
+  }
+ ]
+}
