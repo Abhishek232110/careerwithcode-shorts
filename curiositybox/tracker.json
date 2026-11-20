@@ -36,7 +36,8 @@
       "Pehli hard disk IBM 350 RAMAC (1956): ~785 kg, 50 x 24-inch disks, 3.75 MB (5 million characters), system rent $3,200/month",
       "Pehla webcam: Trojan Room coffee pot (1991 Cambridge Computer Lab, 1993 web par, 2001 band, eBay par £3,350 mein bika)",
       "Pehla .com domain: symbolics.com, 15 March 1985 (Symbolics Inc, USA computer company; web se 6 saal pehle; 2009 mein bika, aaj bhi online)",
-      "ENIAC: 27 ton ka computer (1946 unveil, 1800 sq ft, 17,000+ vacuum tubes, 150 kW, Univ. of Pennsylvania)"
+      "ENIAC: 27 ton ka computer (1946 unveil, 1800 sq ft, 17,000+ vacuum tubes, 150 kW, Univ. of Pennsylvania)",
+      "Pehla hashtag: 23 Aug 2007, Chris Messina ka #barcamp tweet (Twitter ne kaha 'nerds ke liye', 2007 San Diego fire mein chala, patent nahi)"
     ]
   },
   "whatif": {
@@ -938,6 +939,16 @@
       "hook_format": "question",
       "mood": "epic",
       "video": "curiositybox/shorts/2026-11-19_2000_kahani-lothal-dockyard.mp4",
+      "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
+    },
+    {
+      "date": "2026-11-20 10:00",
+      "slot": "ai",
+      "title": "Pehla Hashtag Kisne Banaya? 2007 Ka Ek Tweet #shorts",
+      "tone": "surprising tech fact, energetic",
+      "hook_format": "question",
+      "mood": "upbeat",
+      "video": "curiositybox/shorts/2026-11-20_1000_ai-pehla-hashtag-2007.mp4",
       "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
     }
   ]
