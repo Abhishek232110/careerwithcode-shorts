@@ -1,0 +1,72 @@
+{
+ "voice": "am_michael",
+ "speed": 1.0,
+ "theme": "light",
+ "still_scene": 1,
+ "title_yt": "Morning Quiz: Go + Data Analytics + 1 Interview Question #shorts",
+ "scenes": [
+  {
+   "title": [{"text": "3 questions", "box": "red"}, {"text": "Get all 3?"}, {"text": "Morning Quiz", "box": "yellow"}],
+   "image": {"type": "check", "kind": "steps", "items": ["Go: what does defer do?", "Data: new order, row or column?", "Interview: VLOOKUP exact match"]},
+   "face": "happy", "palette": "blue",
+   "say": "Three questions. Can you get all three? Morning quiz!"
+  },
+  {
+   "title": [{"text": "Q1 Go", "box": "yellow"}, {"text": "What prints?"}],
+   "image": {"type": "code", "file": "main.go", "lines": [
+     "func main() {",
+     "    defer fmt.Println(\"C\")",
+     "    fmt.Println(\"A\")",
+     "    fmt.Println(\"B\")",
+     "}"], "highlight": [1]},
+   "face": "thinking", "palette": "purple",
+   "say": "Question one. The first line is a defer. In what order do A, B and C print? Pause and answer."
+  },
+  {
+   "title": [{"text": "Answer 1", "box": "yellow"}, {"text": "A B C"}],
+   "image": {"type": "code", "file": "main.go", "lines": [
+     "defer fmt.Println(\"C\") // waits",
+     "fmt.Println(\"A\")       // runs now",
+     "fmt.Println(\"B\")       // runs now",
+     "// main ends, then C runs"], "highlight": [0],
+     "output": ["A", "B", "C"]},
+   "face": "happy", "palette": "blue",
+   "say": "A, B, C. A deferred call waits until the function ends, so C prints last, even though it is written first."
+  },
+  {
+   "title": [{"text": "Q2 Data", "box": "yellow"}, {"text": "Row or column?"}],
+   "image": {"type": "table", "file": "orders.csv", "cols": ["order", "customer", "city", "amount"], "widths": [0.85, 1.25, 1.1, 0.95], "rows": [
+     ["101", "Asha", "Delhi", "300"], ["102", "Ravi", "Mumbai", "450"], ["103", "Meena", "Delhi", "200"], ["104", "?", "?", "?"]]},
+   "face": "thinking", "palette": "orange",
+   "say": "Question two. A new customer places an order. Do we add a new row, or a new column? Pause and answer."
+  },
+  {
+   "title": [{"text": "Answer 2", "box": "yellow"}, {"text": "A new row"}],
+   "image": {"type": "table", "file": "orders.csv", "cols": ["order", "customer", "city", "amount"], "widths": [0.85, 1.25, 1.1, 0.95], "rows": [
+     ["101", "Asha", "Delhi", "300"], ["102", "Ravi", "Mumbai", "450"], ["103", "Meena", "Delhi", "200"], ["104", "John", "Pune", "350"]], "good_rows": [3]},
+   "face": "happy", "palette": "purple",
+   "say": "A new row. One row is one record, here one order. A new column is only for a new detail, like a phone number."
+  },
+  {
+   "title": [{"text": "Q3 Interview", "box": "red"}, {"text": "Exact match?"}],
+   "image": {"type": "code", "file": "sheet.xlsx", "lines": [
+     "=VLOOKUP(\"Ravi\", A2:D10, 3, ???)",
+     "",
+     "TRUE  or  FALSE ?"], "highlight": [0]},
+   "face": "thinking", "palette": "blue",
+   "say": "Interview question. In VLOOKUP, which last value gives an exact match, TRUE or FALSE? Pause and answer."
+  },
+  {
+   "title": [{"text": "Answer 3", "box": "yellow"}, {"text": "FALSE"}],
+   "image": {"type": "check", "kind": "check", "items": [
+     "Q1: A B C, defer runs last",
+     "Q2: new order = new row",
+     "Q3: FALSE = exact match",
+     "TRUE = approximate match"]},
+   "banner": "Follow CareerWithCode",
+   "note": "How many?\n1, 2 or 3?",
+   "face": "happy", "palette": "orange",
+   "say": "FALSE! FALSE means exact match. TRUE means approximate, which can return the wrong row. How many did you get? One, two or three? Follow CareerWithCode!"
+  }
+ ]
+}
