@@ -37,7 +37,8 @@
       "Pehla webcam: Trojan Room coffee pot (1991 Cambridge Computer Lab, 1993 web par, 2001 band, eBay par £3,350 mein bika)",
       "Pehla .com domain: symbolics.com, 15 March 1985 (Symbolics Inc, USA computer company; web se 6 saal pehle; 2009 mein bika, aaj bhi online)",
       "ENIAC: 27 ton ka computer (1946 unveil, 1800 sq ft, 17,000+ vacuum tubes, 150 kW, Univ. of Pennsylvania)",
-      "Pehla hashtag: 23 Aug 2007, Chris Messina ka #barcamp tweet (Twitter ne kaha 'nerds ke liye', 2007 San Diego fire mein chala, patent nahi)"
+      "Pehla hashtag: 23 Aug 2007, Chris Messina ka #barcamp tweet (Twitter ne kaha 'nerds ke liye', 2007 San Diego fire mein chala, patent nahi)",
+      "Pehla spam email: 3 May 1978, Gary Thuerk (DEC), ARPANET par 393 logon ko, DEC computer demo ka ad; 'spam' naam Monty Python sketch se"
     ]
   },
   "whatif": {
@@ -960,6 +961,16 @@
       "hook_format": "story-open",
       "mood": "epic",
       "video": "curiositybox/shorts/2026-11-20_2000_kahani-statue-of-liberty-hari-kyon.mp4",
+      "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
+    },
+    {
+      "date": "2026-11-21 10:00",
+      "slot": "ai",
+      "title": "Pehla Spam Email 393 Logon Ko Gaya! 1978 Ka Sach #shorts",
+      "tone": "surprising tech fact, energetic",
+      "hook_format": "number",
+      "mood": "upbeat",
+      "video": "curiositybox/shorts/2026-11-21_1000_ai-pehla-spam-email-1978.mp4",
       "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
     }
   ]
