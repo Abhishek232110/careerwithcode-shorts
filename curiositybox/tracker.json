@@ -97,7 +97,8 @@
       "Rani ki Vav Patan: 7 manzil bawdi, Rani Udayamati 11vi sadi, gaad mein dabi, UNESCO 2014",
       "Antikythera Mechanism: 1901 Greek shipwreck, kaanse ke gears, grahan/grahon ki chaal, pehla analog computer (~2000 saal)",
       "Lothal: 4500 saal purana dockyard, Gujarat, Sindhu Ghati, S.R. Rao 1954, bead factory",
-      "Statue of Liberty pehle hari nahi thi: 1886 France ka tohfa, taambe ki parat, patina se hari, patina bachati hai"
+      "Statue of Liberty pehle hari nahi thi: 1886 France ka tohfa, taambe ki parat, patina se hari, patina bachati hai",
+      "Viking helmet mein seeng nahi the (myth vs fact): Gjermundbu 1943 Norway, Wagner Ring 1876 costumes (Doepler)"
     ]
   },
   "log": [
@@ -971,6 +972,16 @@
       "hook_format": "number",
       "mood": "upbeat",
       "video": "curiositybox/shorts/2026-11-21_1000_ai-pehla-spam-email-1978.mp4",
+      "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
+    },
+    {
+      "date": "2026-11-21 20:00",
+      "slot": "kahani",
+      "title": "Viking Helmet Mein Seeng Nahi The! Opera Ka Kamaal #shorts",
+      "tone": "storyteller, suspense",
+      "hook_format": "myth-vs-fact",
+      "mood": "epic",
+      "video": "curiositybox/shorts/2026-11-21_2000_kahani-viking-helmet-seeng-myth.mp4",
       "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
     }
   ]
