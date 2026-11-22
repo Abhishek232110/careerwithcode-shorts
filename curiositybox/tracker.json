@@ -99,7 +99,8 @@
       "Antikythera Mechanism: 1901 Greek shipwreck, kaanse ke gears, grahan/grahon ki chaal, pehla analog computer (~2000 saal)",
       "Lothal: 4500 saal purana dockyard, Gujarat, Sindhu Ghati, S.R. Rao 1954, bead factory",
       "Statue of Liberty pehle hari nahi thi: 1886 France ka tohfa, taambe ki parat, patina se hari, patina bachati hai",
-      "Viking helmet mein seeng nahi the (myth vs fact): Gjermundbu 1943 Norway, Wagner Ring 1876 costumes (Doepler)"
+      "Viking helmet mein seeng nahi the (myth vs fact): Gjermundbu 1943 Norway, Wagner Ring 1876 costumes (Doepler)",
+      "Samudra Manthan: 14 ratna, Mandarachal, Vasuki, Kurma avatar, Shiv Neelkanth (Bhagavata Purana)"
     ]
   },
   "log": [
@@ -993,6 +994,16 @@
       "hook_format": "question",
       "mood": "upbeat",
       "video": "curiositybox/shorts/2026-11-22_1000_ai-pehla-smiley-1982.mp4",
+      "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
+    },
+    {
+      "date": "2026-11-22 20:00",
+      "slot": "kahani",
+      "title": "Samudra Manthan Se Nikle 14 Ratna! Pehle Vish, Phir Amrit #shorts",
+      "tone": "storyteller, suspense",
+      "hook_format": "number",
+      "mood": "epic",
+      "video": "curiositybox/shorts/2026-11-22_2000_kahani-samudra-manthan-14-ratna.mp4",
       "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
     }
   ]
