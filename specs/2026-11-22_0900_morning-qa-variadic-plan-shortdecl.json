@@ -1,0 +1,78 @@
+{
+ "voice": "am_michael",
+ "speed": 1.0,
+ "theme": "light",
+ "still_scene": 1,
+ "title_yt": "Morning Quiz: Go + Data Analytics + 1 Interview Question #shorts",
+ "scenes": [
+  {
+   "title": [{"text": "3 questions", "box": "red"}, {"text": "Get all 3?"}, {"text": "Morning Quiz", "box": "yellow"}],
+   "image": {"type": "check", "kind": "steps", "items": ["Go: a function with ...", "Data: what type is plan?", "Interview: := outside main"]},
+   "face": "happy", "palette": "blue",
+   "say": "Three questions. Can you get all three? Morning quiz!"
+  },
+  {
+   "title": [{"text": "Q1 Go", "box": "yellow"}, {"text": "What prints?"}],
+   "image": {"type": "code", "file": "sum.go", "lines": [
+     "func sum(nums ...int) int {",
+     "    total := 0",
+     "    for _, n := range nums {",
+     "        total += n",
+     "    }",
+     "    return total",
+     "}",
+     "fmt.Println(sum(), sum(5), sum(1, 2, 3))"], "highlight": [7]},
+   "face": "thinking", "palette": "purple",
+   "say": "Question one. sum takes any number of ints. We call it with zero, one and three numbers. What prints? Pause and answer."
+  },
+  {
+   "title": [{"text": "Answer 1", "box": "yellow"}, {"text": "0 5 6"}],
+   "image": {"type": "code", "file": "sum.go", "lines": [
+     "sum()        // nums is empty -> 0",
+     "sum(5)       // nums = [5]    -> 5",
+     "sum(1, 2, 3) // nums = [1 2 3] -> 6"], "highlight": [0],
+     "output": ["0 5 6"]},
+   "face": "happy", "palette": "blue",
+   "say": "Zero, five, six. The dots turn the arguments into a slice. With no arguments, the slice is empty, so the total stays zero."
+  },
+  {
+   "title": [{"text": "Q2 Data", "box": "yellow"}, {"text": "Which type?"}],
+   "image": {"type": "table", "file": "users.csv", "cols": ["name", "age", "plan"], "widths": [1.3, 0.9, 1.1], "rows": [
+     ["Asha", "24", "Free"], ["Ravi", "31", "Pro"], ["Meena", "27", "Pro"], ["John", "35", "Free"], ["Sara", "29", "Pro"]]},
+   "face": "thinking", "palette": "orange",
+   "say": "Question two. Look at the plan column. Is it a number, text, a date, or a category? Pause and answer."
+  },
+  {
+   "title": [{"text": "Answer 2", "box": "yellow"}, {"text": "Category"}],
+   "image": {"type": "table", "file": "users.csv", "cols": ["name", "age", "plan"], "widths": [1.3, 0.9, 1.1], "rows": [
+     ["Asha", "24", "Free"], ["Ravi", "31", "Pro"], ["Meena", "27", "Pro"], ["John", "35", "Free"], ["Sara", "29", "Pro"]], "good_rows": [1, 2, 4]},
+   "face": "happy", "palette": "purple",
+   "say": "Category. Plan is a small set of labels, Free or Pro. So you count per plan. Three users are on Pro."
+  },
+  {
+   "title": [{"text": "Q3 Interview", "box": "red"}, {"text": "Works or error?"}],
+   "image": {"type": "code", "file": "main.go", "lines": [
+     "package main",
+     "",
+     "x := 5      // outside any function",
+     "",
+     "func main() {",
+     "    fmt.Println(x)",
+     "}"], "highlight": [2]},
+   "face": "thinking", "palette": "blue",
+   "say": "Interview question. We use colon equals outside any function. Does it compile, or is it an error? Pause and answer."
+  },
+  {
+   "title": [{"text": "Answer 3", "box": "yellow"}, {"text": "Error"}],
+   "image": {"type": "check", "kind": "check", "items": [
+     "Q1: 0 5 6, ... makes a slice",
+     "Q2: plan is a category",
+     "Q3: := works only in a func",
+     "Outside, write var x = 5"]},
+   "banner": "Follow CareerWithCode",
+   "note": "How many?\n1, 2 or 3?",
+   "face": "happy", "palette": "orange",
+   "say": "Error! Colon equals works only inside a function. Outside, write var x equals five. How many did you get? One, two or three? Follow CareerWithCode!"
+  }
+ ]
+}

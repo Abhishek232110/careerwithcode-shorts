@@ -1305,6 +1305,23 @@
    "facebook": "not posted: Zapier task limit reached",
    "instagram": "skipped",
    "first_comments": "not posted"
+  },
+  {
+   "date": "2026-11-22",
+   "slot": "morning-qa",
+   "time": "09:00",
+   "title": "Morning Quiz: Go + Data Analytics + 1 Interview Question #shorts",
+   "video": "2026-11-22_0900_morning-qa-variadic-plan-shortdecl.mp4",
+   "spec": "specs/2026-11-22_0900_morning-qa-variadic-plan-shortdecl.json",
+   "duration_s": 57.4,
+   "go_part": "Part 13: Variadic functions",
+   "da_part": "Part 2: Types of data (plan = category)",
+   "interview": "Short declaration := outside a function: works or error?",
+   "status": "rendered, not posted: Zapier task limit reached at the YouTube channel check (08:38 and 09:00 IST). Video is ready in shorts/ to post as-is.",
+   "youtube": "not posted: Your Zapier account has reached its task limit for the current billing period.",
+   "facebook": "not posted: Your Zapier account has reached its task limit for the current billing period.",
+   "first_comments": "not posted",
+   "fb_first_comment": "no Zapier action"
   }
  ],
  "inspiring": {
@@ -1411,6 +1428,13 @@
     "da_part": "Part 3: Rows and columns (re-quizzed with a new question: a new order is a new row)",
     "interview": "VLOOKUP exact match: TRUE or FALSE?",
     "status": "not posted: Zapier task limit"
+   },
+   {
+    "date": "2026-11-22",
+    "go_part": "Part 13: Variadic functions",
+    "da_part": "Part 2: Types of data: numbers, text, dates, categories (re-quizzed with a new question: plan column is a category)",
+    "interview": "Short declaration := outside a function: works or error?",
+    "status": "not posted: Zapier task limit"
    }
   ],
   "interview_asked": [
@@ -1427,7 +1451,8 @@
    "HTTP 404 vs 500: which means the server broke?",
    "Primary key vs foreign key: which links two tables?",
    "Writing to a nil map in Go: works or panic?",
-   "VLOOKUP exact match: TRUE or FALSE?"
+   "VLOOKUP exact match: TRUE or FALSE?",
+   "Short declaration := outside a function: works or error?"
   ]
  }
 }
