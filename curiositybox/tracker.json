@@ -101,7 +101,8 @@
       "Lothal: 4500 saal purana dockyard, Gujarat, Sindhu Ghati, S.R. Rao 1954, bead factory",
       "Statue of Liberty pehle hari nahi thi: 1886 France ka tohfa, taambe ki parat, patina se hari, patina bachati hai",
       "Viking helmet mein seeng nahi the (myth vs fact): Gjermundbu 1943 Norway, Wagner Ring 1876 costumes (Doepler)",
-      "Samudra Manthan: 14 ratna, Mandarachal, Vasuki, Kurma avatar, Shiv Neelkanth (Bhagavata Purana)"
+      "Samudra Manthan: 14 ratna, Mandarachal, Vasuki, Kurma avatar, Shiv Neelkanth (Bhagavata Purana)",
+      "Easter Island moai: sir ke neeche poora dhad (Rapa Nui, tuff, Rano Raraku khudai)"
     ]
   },
   "log": [
@@ -1015,6 +1016,16 @@
       "hook_format": "shocking-fact",
       "mood": "upbeat",
       "video": "curiositybox/shorts/2026-11-23_1000_ai-pehla-computer-password-1961.mp4",
+      "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
+    },
+    {
+      "date": "2026-11-23 20:00",
+      "slot": "kahani",
+      "title": "Easter Island Ke Putle Sirf Sir Nahi! Zameen Ke Neeche Poora Shareer #shorts",
+      "tone": "storyteller, suspense",
+      "hook_format": "question",
+      "mood": "mysterious",
+      "video": "curiositybox/shorts/2026-11-23_2000_kahani-easter-island-moai-shareer.mp4",
       "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
     }
   ]
