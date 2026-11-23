@@ -39,7 +39,8 @@
       "ENIAC: 27 ton ka computer (1946 unveil, 1800 sq ft, 17,000+ vacuum tubes, 150 kW, Univ. of Pennsylvania)",
       "Pehla hashtag: 23 Aug 2007, Chris Messina ka #barcamp tweet (Twitter ne kaha 'nerds ke liye', 2007 San Diego fire mein chala, patent nahi)",
       "Pehla spam email: 3 May 1978, Gary Thuerk (DEC), ARPANET par 393 logon ko, DEC computer demo ka ad; 'spam' naam Monty Python sketch se",
-      "Pehla smiley :-) : 19 Sept 1982, Scott Fahlman, Carnegie Mellon bulletin board (:-) mazaak, :-( gambhir)"
+      "Pehla smiley :-) : 19 Sept 1982, Scott Fahlman, Carnegie Mellon bulletin board (:-) mazaak, :-( gambhir)",
+      "Pehla computer password: 1961 MIT CTSS (Fernando Corbato team), 1962 PhD student Allan Scherr ne password file print karwa li (zyada computer time ke liye)"
     ]
   },
   "whatif": {
@@ -1004,6 +1005,16 @@
       "hook_format": "number",
       "mood": "epic",
       "video": "curiositybox/shorts/2026-11-22_2000_kahani-samudra-manthan-14-ratna.mp4",
+      "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
+    },
+    {
+      "date": "2026-11-23 10:00",
+      "slot": "ai",
+      "title": "Duniya Ka Pehla Password Agle Hi Saal Chori Ho Gaya! #shorts",
+      "tone": "surprising tech fact, energetic",
+      "hook_format": "shocking-fact",
+      "mood": "upbeat",
+      "video": "curiositybox/shorts/2026-11-23_1000_ai-pehla-computer-password-1961.mp4",
       "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
     }
   ]
