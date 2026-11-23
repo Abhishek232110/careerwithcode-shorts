@@ -1,0 +1,210 @@
+{
+ "voice": "am_michael",
+ "speed": 1.0,
+ "theme": "light",
+ "still_scene": 1,
+ "title_yt": "Morning Quiz: Go + Data Analytics + 1 Interview Question #shorts",
+ "scenes": [
+  {
+   "title": [
+    {
+     "text": "3 questions",
+     "box": "red"
+    },
+    {
+     "text": "Get all 3?"
+    },
+    {
+     "text": "Morning Quiz",
+     "box": "yellow"
+    }
+   ],
+   "image": {
+    "type": "check",
+    "kind": "steps",
+    "items": [
+     "Go: a bare return",
+     "Data: which step is a chart?",
+     "Interview: finding NULL in SQL"
+    ]
+   },
+   "face": "happy",
+   "palette": "blue",
+   "say": "Three questions. Can you get all three? Morning quiz!"
+  },
+  {
+   "title": [
+    {
+     "text": "Q1 Go",
+     "box": "yellow"
+    },
+    {
+     "text": "What prints?"
+    }
+   ],
+   "image": {
+    "type": "code",
+    "file": "split.go",
+    "lines": [
+     "func split(sum int) (x, y int) {",
+     "    x = sum * 4 / 9",
+     "    y = sum - x",
+     "    return",
+     "}",
+     "fmt.Println(split(10))"
+    ],
+    "highlight": [
+     3
+    ]
+   },
+   "face": "thinking",
+   "palette": "purple",
+   "say": "Question one. The returns are named, and it ends with a bare return. What does split of ten print? Pause and answer."
+  },
+  {
+   "title": [
+    {
+     "text": "Answer 1",
+     "box": "yellow"
+    },
+    {
+     "text": "4 6"
+    }
+   ],
+   "image": {
+    "type": "code",
+    "file": "split.go",
+    "lines": [
+     "x = 10 * 4 / 9   // 40 / 9 = 4",
+     "y = 10 - 4       // 6",
+     "return           // sends back x, y"
+    ],
+    "highlight": [
+     2
+    ],
+    "output": [
+     "4 6"
+    ]
+   },
+   "face": "happy",
+   "palette": "blue",
+   "say": "Four six. Forty over nine is four in integer math. The bare return sends back x and y."
+  },
+  {
+   "title": [
+    {
+     "text": "Q2 Data",
+     "box": "yellow"
+    },
+    {
+     "text": "Which step?"
+    }
+   ],
+   "image": {
+    "type": "flow",
+    "steps": [
+     [
+      "Collect",
+      "get the data"
+     ],
+     [
+      "Clean",
+      "fix the mess"
+     ],
+     [
+      "Analyze",
+      "find the answer"
+     ],
+     [
+      "Share",
+      "show a chart"
+     ]
+    ]
+   },
+   "face": "thinking",
+   "palette": "orange",
+   "say": "Question two. You make a bar chart for your manager. Which of the four steps is this? Pause and answer."
+  },
+  {
+   "title": [
+    {
+     "text": "Answer 2",
+     "box": "yellow"
+    },
+    {
+     "text": "Share"
+    }
+   ],
+   "image": {
+    "type": "check",
+    "kind": "check",
+    "items": [
+     "Collect: get the data",
+     "Clean: fix the mess",
+     "Analyze: find the answer",
+     "Share: chart for your manager"
+    ]
+   },
+   "face": "happy",
+   "palette": "purple",
+   "say": "Share. It is the last step: show the answer as a simple chart."
+  },
+  {
+   "title": [
+    {
+     "text": "Q3 Interview",
+     "box": "red"
+    },
+    {
+     "text": "Which one works?"
+    }
+   ],
+   "image": {
+    "type": "code",
+    "file": "query.sql",
+    "lines": [
+     "-- find users with no phone",
+     "",
+     "A: SELECT * FROM users",
+     "   WHERE phone = NULL;",
+     "",
+     "B: SELECT * FROM users",
+     "   WHERE phone IS NULL;"
+    ],
+    "highlight": [
+     3,
+     6
+    ]
+   },
+   "face": "thinking",
+   "palette": "blue",
+   "say": "Interview question. Find users with no phone. A uses equals NULL, B uses IS NULL. Which works? Pause and answer."
+  },
+  {
+   "title": [
+    {
+     "text": "Answer 3",
+     "box": "yellow"
+    },
+    {
+     "text": "B: IS NULL"
+    }
+   ],
+   "image": {
+    "type": "check",
+    "kind": "check",
+    "items": [
+     "Q1: 4 6, bare return",
+     "Q2: a chart is Share",
+     "Q3: use IS NULL",
+     "= NULL never matches"
+    ]
+   },
+   "banner": "Follow CareerWithCode",
+   "note": "How many?\n1, 2 or 3?",
+   "face": "happy",
+   "palette": "orange",
+   "say": "B! NULL means unknown, so equals NULL never matches any row. Always write IS NULL. How many did you get? One, two or three? Follow CareerWithCode!"
+  }
+ ]
+}
