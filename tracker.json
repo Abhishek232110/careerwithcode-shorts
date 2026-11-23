@@ -91,26 +91,6 @@
  },
  "log": [
   {
-   "date": "2026-10-14 20:00",
-   "slot": "python",
-   "title": "My variable changed type and Python didn't care 🐍 Part 2 #shorts",
-   "tone": "playful & relatable",
-   "hook_format": "mini-story",
-   "style": "handwritten",
-   "video": "2026-10-14_2000_python-p02-variables-dynamic-typing.mp4",
-   "status": "scheduled: metricool 395935591 (yt, ig, fb) for 20:00 IST"
-  },
-  {
-   "date": "2026-10-15 10:00",
-   "slot": "educational",
-   "title": "Stop using range(len()) in Python - try this today #shorts",
-   "tone": "practical quick win",
-   "hook_format": "challenge",
-   "style": "handwritten",
-   "video": "2026-10-15_1000_educational-python-enumerate.mp4",
-   "status": "scheduled: metricool 396487282 (yt, ig, fb) for 10:00 IST"
-  },
-  {
    "date": "2026-10-15 14:00",
    "slot": "educational",
    "title": "Why = NULL returns 0 rows in SQL (myth busted) #shorts",
@@ -1327,6 +1307,20 @@
    "facebook": "not posted: Your Zapier account has reached its task limit for the current billing period.",
    "first_comments": "not posted",
    "fb_first_comment": "no Zapier action"
+  },
+  {
+   "date": "2026-11-23",
+   "slot": "go",
+   "time": "21:30",
+   "title": "Go Part 28: Errors as values #shorts",
+   "video": "2026-11-09_2130_go-p28-errors-as-values.mp4",
+   "spec": "specs/2026-11-09_2130_go-p28-errors-as-values.json",
+   "duration_s": 44.2,
+   "status": "not posted: Zapier task limit reached (failed at the YouTube channel check, 21:18 IST; not retried per runbook). Part 28 video ready in shorts/ (reused, not re-rendered); next_part left at 28.",
+   "youtube": "not posted: Zapier task limit reached",
+   "facebook": "not posted: Zapier task limit reached",
+   "instagram": "skipped",
+   "first_comments": "not posted"
   }
  ],
  "inspiring": {
