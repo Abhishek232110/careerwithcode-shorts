@@ -1,0 +1,69 @@
+{
+ "voice": "am_michael",
+ "speed": 1.0,
+ "theme": "light",
+ "still_scene": 1,
+ "title_yt": "Morning Quiz: Go + Data Analytics + 1 Interview Question #shorts",
+ "scenes": [
+  {
+   "title": [{"text": "3 questions", "box": "red"}, {"text": "Get all 3?"}, {"text": "Morning Quiz", "box": "yellow"}],
+   "image": {"type": "check", "kind": "steps", "items": ["Go: two return values", "Data: duplicates by name", "Interview: PUT or PATCH?"]},
+   "face": "happy", "palette": "blue",
+   "say": "Three questions. Can you get all three? Morning quiz!"
+  },
+  {
+   "title": [{"text": "Q1 Go", "box": "yellow"}, {"text": "What prints?"}],
+   "image": {"type": "code", "file": "divide.go", "lines": [
+     "func divide(a, b int) (int, int) {",
+     "    return a / b, a % b",
+     "}",
+     "",
+     "q, r := divide(17, 5)",
+     "fmt.Println(q, r)"], "highlight": [1, 4]},
+   "face": "thinking", "palette": "purple",
+   "say": "Question one. Divide returns two values. What does it print for seventeen and five? Pause and answer."
+  },
+  {
+   "title": [{"text": "Answer 1", "box": "yellow"}, {"text": "3 2"}],
+   "image": {"type": "code", "file": "divide.go", "lines": [
+     "17 / 5   // 3, whole number",
+     "17 % 5   // 2, the remainder",
+     "q, r := divide(17, 5)"], "highlight": [2], "output": ["3 2"]},
+   "face": "happy", "palette": "blue",
+   "say": "Three two. Integer division gives three, the remainder is two, and Go hands back both at once."
+  },
+  {
+   "title": [{"text": "Q2 Data", "box": "yellow"}, {"text": "Rows left?"}],
+   "image": {"type": "table", "file": "scores.csv", "cols": ["name", "score"], "rows": [["Asha", "90"], ["Ravi", "70"], ["Asha", "85"], ["Meena", "60"]]},
+   "face": "thinking", "palette": "orange",
+   "say": "Question two. We drop duplicates by name only. How many rows are left? Pause and answer."
+  },
+  {
+   "title": [{"text": "Answer 2", "box": "yellow"}, {"text": "3 rows"}],
+   "image": {"type": "table", "file": "scores.csv", "cols": ["name", "score"], "rows": [["Asha", "90"], ["Ravi", "70"], ["Asha", "85"], ["Meena", "60"]], "bad": [[2, -1]]},
+   "face": "happy", "palette": "purple",
+   "say": "Three. Only the name is checked, so the second Asha goes, even with a different score. The first one stays."
+  },
+  {
+   "title": [{"text": "Q3 Interview", "box": "red"}, {"text": "PUT or PATCH?"}],
+   "image": {"type": "code", "file": "api.http", "lines": [
+     "# change only the email of user 7",
+     "",
+     "A: PUT   /users/7",
+     "   send the whole user",
+     "",
+     "B: PATCH /users/7",
+     "   send only the email"], "highlight": [2, 5]},
+   "face": "thinking", "palette": "blue",
+   "say": "Interview question. You change only one field of a user. Which HTTP method fits best, PUT or PATCH? Pause and answer."
+  },
+  {
+   "title": [{"text": "Answer 3", "box": "yellow"}, {"text": "PATCH"}],
+   "image": {"type": "check", "kind": "check", "items": ["Q1: 3 2, two returns", "Q2: 3 rows, first Asha stays", "Q3: PATCH for one field", "PUT replaces the whole thing"]},
+   "banner": "Follow CareerWithCode",
+   "note": "How many?\n1, 2 or 3?",
+   "face": "happy", "palette": "orange",
+   "say": "PATCH! It updates part of a record. PUT replaces the whole record. How many did you get? One, two or three? Follow CareerWithCode!"
+  }
+ ]
+}

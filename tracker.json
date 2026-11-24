@@ -1325,6 +1325,23 @@
    "facebook": "not posted: Zapier task limit reached",
    "instagram": "skipped",
    "first_comments": "not posted"
+  },
+  {
+   "date": "2026-11-24",
+   "slot": "morning-qa",
+   "time": "09:00",
+   "title": "Morning Quiz: Go + Data Analytics + 1 Interview Question #shorts",
+   "video": "2026-11-24_0900_morning-qa-divide-subset-patch.mp4",
+   "spec": "specs/2026-11-24_0900_morning-qa-divide-subset-patch.json",
+   "duration_s": 53.1,
+   "go_part": "Part 11: Functions with multiple return values",
+   "da_part": "Part 8: Cleaning data (drop duplicates by name)",
+   "interview": "PUT vs PATCH: which updates one field?",
+   "status": "rendered, not posted: Zapier task limit reached at the YouTube channel check (08:37 and 09:00 IST). Video is ready in shorts/ to post as-is.",
+   "youtube": "not posted: Your Zapier account has reached its task limit for the current billing period.",
+   "facebook": "not posted: Your Zapier account has reached its task limit for the current billing period.",
+   "first_comments": "not posted",
+   "fb_first_comment": "no Zapier action"
   }
  ],
  "inspiring": {
@@ -1445,6 +1462,13 @@
     "da_part": "Part 1: What is Data Analytics? (re-quizzed with a new question: making a chart is the Share step; every posted DA part was already quizzed)",
     "interview": "WHERE phone = NULL vs IS NULL: which works?",
     "status": "not posted: Zapier task limit"
+   },
+   {
+    "date": "2026-11-24",
+    "go_part": "Part 11: Functions with multiple return values",
+    "da_part": "Part 8: Cleaning data: duplicates and blanks (re-quizzed with a new question: drop_duplicates by name only leaves 3 rows)",
+    "interview": "PUT vs PATCH: which updates one field?",
+    "status": "not posted: Zapier task limit"
    }
   ],
   "interview_asked": [
@@ -1463,7 +1487,8 @@
    "Writing to a nil map in Go: works or panic?",
    "VLOOKUP exact match: TRUE or FALSE?",
    "Short declaration := outside a function: works or error?",
-   "WHERE phone = NULL vs IS NULL: which works?"
+   "WHERE phone = NULL vs IS NULL: which works?",
+   "PUT vs PATCH: which updates one field?"
   ]
  }
 }
