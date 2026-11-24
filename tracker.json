@@ -91,26 +91,6 @@
  },
  "log": [
   {
-   "date": "2026-10-15 17:00",
-   "slot": "learn",
-   "title": "Stop letting AI code for you (how I use AI to learn) #shorts",
-   "tone": "motivating mentor",
-   "hook_format": "common-mistake",
-   "style": "handwritten",
-   "video": "2026-10-15_1700_learn-use-ai-to-learn-coding.mp4",
-   "status": "scheduled: metricool 396732755 (yt, ig, fb) for 17:00 IST"
-  },
-  {
-   "date": "2026-10-15 20:00",
-   "slot": "python",
-   "title": "This one line turned my Python list into None 😭 Part 3 #shorts",
-   "tone": "playful & relatable",
-   "hook_format": "common-mistake",
-   "style": "handwritten",
-   "video": "2026-10-15_2000_python-p03-lists-basics.mp4",
-   "status": "scheduled: metricool 396883772 (yt, ig, fb) for 20:00 IST"
-  },
-  {
    "date": "2026-10-16 06:00",
    "slot": "go",
    "title": "Quick Go quiz: var vs := (what does it print?) | Go Part 2 #shorts",
@@ -1342,6 +1322,20 @@
    "facebook": "not posted: Your Zapier account has reached its task limit for the current billing period.",
    "first_comments": "not posted",
    "fb_first_comment": "no Zapier action"
+  },
+  {
+   "date": "2026-11-24",
+   "slot": "go",
+   "time": "21:30",
+   "title": "Go Part 28: Errors as values #shorts",
+   "video": "2026-11-09_2130_go-p28-errors-as-values.mp4",
+   "spec": "specs/2026-11-09_2130_go-p28-errors-as-values.json",
+   "duration_s": 44.2,
+   "status": "not posted: Zapier task limit reached (failed at the YouTube channel check, 21:17 IST; not retried per runbook). Part 28 video ready in shorts/ (reused, not re-rendered); next_part left at 28.",
+   "youtube": "not posted: Zapier task limit reached",
+   "facebook": "not posted: Zapier task limit reached",
+   "instagram": "skipped",
+   "first_comments": "not posted"
   }
  ],
  "inspiring": {
