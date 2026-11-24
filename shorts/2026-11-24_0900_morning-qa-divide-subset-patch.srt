@@ -1,0 +1,140 @@
+1
+00:00:00,250 --> 00:00:01,324
+Three questions.
+
+2
+00:00:01,544 --> 00:00:02,792
+Can you get all three?
+
+3
+00:00:03,012 --> 00:00:03,978
+Morning quiz!
+
+4
+00:00:04,698 --> 00:00:05,619
+Question one.
+
+5
+00:00:05,839 --> 00:00:07,694
+Divide returns two values.
+
+6
+00:00:07,914 --> 00:00:08,841
+What does it print
+
+7
+00:00:08,841 --> 00:00:10,025
+for seventeen and five?
+
+8
+00:00:10,245 --> 00:00:11,342
+Pause and answer.
+
+9
+00:00:12,062 --> 00:00:12,932
+Three two.
+
+10
+00:00:13,152 --> 00:00:15,365
+Integer division gives three, the
+
+11
+00:00:15,365 --> 00:00:16,975
+remainder is two, and Go
+
+12
+00:00:16,975 --> 00:00:18,585
+hands back both at once.
+
+13
+00:00:19,305 --> 00:00:20,335
+Question two.
+
+14
+00:00:20,555 --> 00:00:21,822
+We drop duplicates
+
+15
+00:00:21,822 --> 00:00:22,737
+by name only.
+
+16
+00:00:22,957 --> 00:00:24,362
+How many rows are left?
+
+17
+00:00:24,582 --> 00:00:25,679
+Pause and answer.
+
+18
+00:00:26,399 --> 00:00:27,003
+Three.
+
+19
+00:00:27,223 --> 00:00:28,859
+Only the name is checked,
+
+20
+00:00:28,859 --> 00:00:30,430
+so the second Asha goes,
+
+21
+00:00:30,430 --> 00:00:32,263
+even with a different score.
+
+22
+00:00:32,483 --> 00:00:33,734
+The first one stays.
+
+23
+00:00:34,454 --> 00:00:35,568
+Interview question.
+
+24
+00:00:35,788 --> 00:00:37,074
+You change only one
+
+25
+00:00:37,074 --> 00:00:38,157
+field of a user.
+
+26
+00:00:38,377 --> 00:00:40,122
+Which HTTP method fits
+
+27
+00:00:40,122 --> 00:00:41,630
+best, PUT or PATCH?
+
+28
+00:00:41,850 --> 00:00:42,946
+Pause and answer.
+
+29
+00:00:43,666 --> 00:00:44,223
+PATCH!
+
+30
+00:00:44,443 --> 00:00:45,339
+It updates part
+
+31
+00:00:45,339 --> 00:00:46,056
+of a record.
+
+32
+00:00:46,276 --> 00:00:48,144
+PUT replaces the whole record.
+
+33
+00:00:48,364 --> 00:00:49,589
+How many did you get?
+
+34
+00:00:49,809 --> 00:00:50,958
+One, two or three?
+
+35
+00:00:51,178 --> 00:00:52,656
+Follow CareerWithCode!
+
