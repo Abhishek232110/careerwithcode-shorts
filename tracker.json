@@ -91,16 +91,6 @@
  },
  "log": [
   {
-   "date": "2026-10-16 06:00",
-   "slot": "go",
-   "title": "Quick Go quiz: var vs := (what does it print?) | Go Part 2 #shorts",
-   "tone": "friendly teacher",
-   "hook_format": "quiz",
-   "style": "handwritten",
-   "video": "2026-10-16_0600_go-p02-var-vs-short-declare.mp4",
-   "status": "scheduled: metricool 397313485 (yt, ig, fb) for 06:00 IST"
-  },
-  {
    "date": "2026-10-16 10:00",
    "slot": "go",
    "title": "Did you know Go can count for you? iota | Go Part 3 #shorts",
@@ -1332,6 +1322,19 @@
    "spec": "specs/2026-11-09_2130_go-p28-errors-as-values.json",
    "duration_s": 44.2,
    "status": "not posted: Zapier task limit reached (failed at the YouTube channel check, 21:17 IST; not retried per runbook). Part 28 video ready in shorts/ (reused, not re-rendered); next_part left at 28.",
+   "youtube": "not posted: Zapier task limit reached",
+   "facebook": "not posted: Zapier task limit reached",
+   "instagram": "skipped",
+   "first_comments": "not posted"
+  },
+  {
+   "date": "2026-11-24",
+   "slot": "data_analytics",
+   "time": "22:00",
+   "title": "Data Analytics Part 9: SQL for analysts: SELECT and WHERE #shorts",
+   "video": "2026-11-08_2200_data_analytics-p09-sql-select-where.mp4",
+   "spec": "specs/2026-11-08_2200_data_analytics-p09-sql-select-where.json",
+   "status": "not posted: Zapier task limit reached (failed at the YouTube channel check, 21:48 IST; not retried per runbook). Part 9 video ready in shorts/ (reused, not re-rendered); next_part left at 9.",
    "youtube": "not posted: Zapier task limit reached",
    "facebook": "not posted: Zapier task limit reached",
    "instagram": "skipped",
