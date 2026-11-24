@@ -40,7 +40,8 @@
       "Pehla hashtag: 23 Aug 2007, Chris Messina ka #barcamp tweet (Twitter ne kaha 'nerds ke liye', 2007 San Diego fire mein chala, patent nahi)",
       "Pehla spam email: 3 May 1978, Gary Thuerk (DEC), ARPANET par 393 logon ko, DEC computer demo ka ad; 'spam' naam Monty Python sketch se",
       "Pehla smiley :-) : 19 Sept 1982, Scott Fahlman, Carnegie Mellon bulletin board (:-) mazaak, :-( gambhir)",
-      "Pehla computer password: 1961 MIT CTSS (Fernando Corbato team), 1962 PhD student Allan Scherr ne password file print karwa li (zyada computer time ke liye)"
+      "Pehla computer password: 1961 MIT CTSS (Fernando Corbato team), 1962 PhD student Allan Scherr ne password file print karwa li (zyada computer time ke liye)",
+      "Pehla tweet: 21 March 2006 Jack Dorsey 'just setting up my twttr' (app naam twttr), 2021 NFT $2.9M mein bika (Sina Estavi), 2022 auction mein top bid ~ kuch sau dollar"
     ]
   },
   "whatif": {
@@ -1026,6 +1027,16 @@
       "hook_format": "question",
       "mood": "mysterious",
       "video": "curiositybox/shorts/2026-11-23_2000_kahani-easter-island-moai-shareer.mp4",
+      "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
+    },
+    {
+      "date": "2026-11-24 10:00",
+      "slot": "ai",
+      "title": "Duniya Ka Pehla Tweet 29 Lakh Dollar Mein Bika! #shorts",
+      "tone": "surprising tech fact, energetic",
+      "hook_format": "story-open",
+      "mood": "upbeat",
+      "video": "curiositybox/shorts/2026-11-24_1000_ai-pehla-tweet-2006.mp4",
       "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
     }
   ]
