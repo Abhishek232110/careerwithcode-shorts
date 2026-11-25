@@ -105,7 +105,8 @@
       "Viking helmet mein seeng nahi the (myth vs fact): Gjermundbu 1943 Norway, Wagner Ring 1876 costumes (Doepler)",
       "Samudra Manthan: 14 ratna, Mandarachal, Vasuki, Kurma avatar, Shiv Neelkanth (Bhagavata Purana)",
       "Easter Island moai: sir ke neeche poora dhad (Rapa Nui, tuff, Rano Raraku khudai)",
-      "Gol Gumbaz Vijayapura: whispering gallery, Mohammed Adil Shah ka maqbara, ~1656, gumbad ~44 m"
+      "Gol Gumbaz Vijayapura: whispering gallery, Mohammed Adil Shah ka maqbara, ~1656, gumbad ~44 m",
+      "Everest naam: Peak XV, Radhanath Sikdar 1852, naam 1865, George Everest ne kabhi dekha nahi aur naam ke khilaf the, Sagarmatha"
     ]
   },
   "log": [
@@ -1060,6 +1061,15 @@
       "mood": "upbeat",
       "video": "curiositybox/shorts/2026-11-25_1000_ai-pehla-emoji-1999.mp4",
       "status": "Facebook photo posted (post 1380858578445805_122116546641515109); YouTube not posted: Zapier upload returned 429 Too Many Requests, retry blocked by permission check"
+    },
+    {
+      "date": "2026-11-25 20:00",
+      "slot": "kahani",
+      "title": "Everest Ne Kabhi Everest Nahi Dekha! Naam Ki Kahani #shorts",
+      "tone": "storyteller, suspense",
+      "hook_format": "story-open",
+      "video": "curiositybox/shorts/2026-11-25_2000_kahani-everest-naam-kabhi-dekha-nahi.mp4",
+      "status": "posted: YouTube 8BwgRyRdTZ8, Facebook photo 1380858578445805_122116660989515109"
     }
   ]
 }
