@@ -41,7 +41,8 @@
       "Pehla spam email: 3 May 1978, Gary Thuerk (DEC), ARPANET par 393 logon ko, DEC computer demo ka ad; 'spam' naam Monty Python sketch se",
       "Pehla smiley :-) : 19 Sept 1982, Scott Fahlman, Carnegie Mellon bulletin board (:-) mazaak, :-( gambhir)",
       "Pehla computer password: 1961 MIT CTSS (Fernando Corbato team), 1962 PhD student Allan Scherr ne password file print karwa li (zyada computer time ke liye)",
-      "Pehla tweet: 21 March 2006 Jack Dorsey 'just setting up my twttr' (app naam twttr), 2021 NFT $2.9M mein bika (Sina Estavi), 2022 auction mein top bid ~ kuch sau dollar"
+      "Pehla tweet: 21 March 2006 Jack Dorsey 'just setting up my twttr' (app naam twttr), 2021 NFT $2.9M mein bika (Sina Estavi), 2022 auction mein top bid ~ kuch sau dollar",
+      "Pehla emoji: 1999 Shigetaka Kurita, NTT Docomo i-mode, 176 emoji, 12x12 pixel, 2016 MoMA collection"
     ]
   },
   "whatif": {
@@ -1049,6 +1050,16 @@
       "mood": "mysterious",
       "video": "curiositybox/shorts/2026-11-24_2000_kahani-gol-gumbaz-fusfusahat.mp4",
       "status": "rendered, not posted: Zapier task limit reached (YouTube + Facebook)"
+    },
+    {
+      "date": "2026-11-25 10:00",
+      "slot": "ai",
+      "title": "Sirf 176 Emoji Se Shuru Hua Sab! 1999 Ka Sach #shorts",
+      "tone": "surprising tech fact, energetic",
+      "hook_format": "number",
+      "mood": "upbeat",
+      "video": "curiositybox/shorts/2026-11-25_1000_ai-pehla-emoji-1999.mp4",
+      "status": "Facebook photo posted (post 1380858578445805_122116546641515109); YouTube not posted: Zapier upload returned 429 Too Many Requests, retry blocked by permission check"
     }
   ]
 }
