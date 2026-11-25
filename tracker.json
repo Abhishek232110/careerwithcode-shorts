@@ -2,7 +2,7 @@
  "_note": "Updated automatically after every post. Edit next_part to jump a series forward/back.",
  "series": {
   "go": {
-   "next_part": 28,
+   "next_part": 29,
    "posted": [
     "Part 1: Hello World and package main",
     "Part 2: Variables: var vs :=",
@@ -30,7 +30,8 @@
     "Part 24: Interfaces",
     "Part 25: Empty interface and any",
     "Part 26: Type assertions",
-    "Part 27: Type switches"
+    "Part 27: Type switches",
+    "Part 28: Errors as values"
    ]
   },
   "python": {
@@ -90,16 +91,6 @@
   ]
  },
  "log": [
-  {
-   "date": "2026-10-16 16:00",
-   "slot": "educational",
-   "title": "Why is 0.1 + 0.2 not 0.3 in Python? (myth busted) #shorts",
-   "tone": "myth-buster",
-   "hook_format": "question",
-   "style": "handwritten",
-   "video": "2026-10-16_1600_educational-python-float-0-1-plus-0-2.mp4",
-   "status": "scheduled: metricool 397609965 (yt, ig, fb) for 16:00 IST"
-  },
   {
    "date": "2026-10-17 10:00",
    "slot": "go",
@@ -1345,6 +1336,22 @@
    "youtube": "not posted: Zapier 429 Too Many Requests (x2), retry blocked",
    "facebook": "1485646346999468",
    "first_comments": "youtube: none (no video); fb first comment: no Zapier action"
+  },
+  {
+   "date": "2026-11-25",
+   "slot": "go",
+   "time": "21:30",
+   "title": "Go Part 28: Errors as values #shorts",
+   "tone": "friendly teacher",
+   "hook_format": "question",
+   "video": "2026-11-09_2130_go-p28-errors-as-values.mp4",
+   "spec": "specs/2026-11-09_2130_go-p28-errors-as-values.json",
+   "duration_s": 44.2,
+   "status": "posted 21:30 IST (reused rendered Part 28 video)",
+   "youtube": "6Ec92Ii_Vzo",
+   "facebook": "1869895480806695",
+   "instagram": "skipped",
+   "first_comments": "youtube: UgwzhZVQI2O5yaHhBKd4AaABAg; fb first comment: no Zapier action"
   }
  ],
  "inspiring": {
