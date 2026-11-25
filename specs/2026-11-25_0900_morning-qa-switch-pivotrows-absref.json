@@ -1,0 +1,72 @@
+{
+ "voice": "am_michael",
+ "speed": 1.0,
+ "theme": "light",
+ "still_scene": 1,
+ "title_yt": "Morning Quiz: Go + Data Analytics + 1 Interview Question #shorts",
+ "scenes": [
+  {
+   "title": [{"text": "3 questions", "box": "red"}, {"text": "Get all 3?"}, {"text": "Morning Quiz", "box": "yellow"}],
+   "image": {"type": "check", "kind": "steps", "items": ["Go: switch with no break", "Data: rows in a pivot", "Interview: A1 or $A$1?"]},
+   "face": "happy", "palette": "blue",
+   "say": "Three questions. Can you get all three? Morning quiz!"
+  },
+  {
+   "title": [{"text": "Q1 Go", "box": "yellow"}, {"text": "What prints?"}],
+   "image": {"type": "code", "file": "main.go", "lines": [
+     "x := 2",
+     "switch x {",
+     "case 1:",
+     "    fmt.Println(\"one\")",
+     "case 2:",
+     "    fmt.Println(\"two\")",
+     "case 3:",
+     "    fmt.Println(\"three\")",
+     "}"], "highlight": [4, 5]},
+   "face": "thinking", "palette": "purple",
+   "say": "Question one. There is no break in this switch. What does it print? Pause and answer."
+  },
+  {
+   "title": [{"text": "Answer 1", "box": "yellow"}, {"text": "Only two"}],
+   "image": {"type": "code", "file": "main.go", "lines": [
+     "case 2:",
+     "    fmt.Println(\"two\")",
+     "// Go stops here by itself",
+     "// no break needed"], "highlight": [2], "output": ["two"]},
+   "face": "happy", "palette": "blue",
+   "say": "Just two. Go runs only the matching case and then stops. No break needed, and case three never runs."
+  },
+  {
+   "title": [{"text": "Q2 Data", "box": "yellow"}, {"text": "How many rows?"}],
+   "image": {"type": "table", "file": "orders.csv", "cols": ["region", "sales"], "rows": [["North", "100"], ["South", "80"], ["North", "70"], ["East", "50"], ["South", "40"], ["North", "30"]]},
+   "face": "thinking", "palette": "orange",
+   "say": "Question two. Six orders. A pivot table puts region in rows. How many rows does the pivot show? Pause and answer."
+  },
+  {
+   "title": [{"text": "Answer 2", "box": "yellow"}, {"text": "3 rows"}],
+   "image": {"type": "table", "file": "pivot", "cols": ["region", "sum of sales"], "rows": [["East", "50"], ["North", "200"], ["South", "120"]], "good_rows": [0, 1, 2]},
+   "face": "happy", "palette": "purple",
+   "say": "Three. A pivot makes one row for each unique region: East, North and South. The six orders are grouped inside them."
+  },
+  {
+   "title": [{"text": "Q3 Interview", "box": "red"}, {"text": "A1 or $A$1?"}],
+   "image": {"type": "code", "file": "sheet.xlsx", "lines": [
+     "# tax rate is in cell A1",
+     "# copy this formula down the column",
+     "",
+     "A: =B2 * A1",
+     "",
+     "B: =B2 * $A$1"], "highlight": [3, 5]},
+   "face": "thinking", "palette": "blue",
+   "say": "Interview question. You copy a formula down, and it must always use the tax rate in A1. Which one, A or B? Pause and answer."
+  },
+  {
+   "title": [{"text": "Answer 3", "box": "yellow"}, {"text": "$A$1"}],
+   "image": {"type": "check", "kind": "check", "items": ["Q1: only two, no break", "Q2: 3 rows, one per region", "Q3: $A$1 stays fixed", "A1 moves when copied"]},
+   "banner": "Follow CareerWithCode",
+   "note": "How many?\n1, 2 or 3?",
+   "face": "happy", "palette": "orange",
+   "say": "B! The dollar signs lock the cell, so it stays A1 when copied. Plain A1 slides down. How many did you get? One, two or three? Follow CareerWithCode!"
+  }
+ ]
+}

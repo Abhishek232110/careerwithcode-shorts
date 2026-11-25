@@ -91,16 +91,6 @@
  },
  "log": [
   {
-   "date": "2026-10-16 10:00",
-   "slot": "go",
-   "title": "Did you know Go can count for you? iota | Go Part 3 #shorts",
-   "tone": "friendly teacher",
-   "hook_format": "question",
-   "style": "handwritten",
-   "video": "2026-10-16_1000_go-p03-constants-iota.mp4",
-   "status": "scheduled: metricool 397403289 (yt, ig, fb) for 10:00 IST"
-  },
-  {
    "date": "2026-10-16 16:00",
    "slot": "educational",
    "title": "Why is 0.1 + 0.2 not 0.3 in Python? (myth busted) #shorts",
@@ -1339,6 +1329,22 @@
    "facebook": "not posted: Zapier task limit reached",
    "instagram": "skipped",
    "first_comments": "not posted"
+  },
+  {
+   "date": "2026-11-25",
+   "slot": "morning-qa",
+   "time": "09:00",
+   "title": "Morning Quiz: Go + Data Analytics + 1 Interview Question #shorts",
+   "video": "2026-11-25_0900_morning-qa-switch-pivotrows-absref.mp4",
+   "spec": "specs/2026-11-25_0900_morning-qa-switch-pivotrows-absref.json",
+   "duration_s": 57.8,
+   "go_part": "Part 10: Switch without break",
+   "da_part": "Part 7: Pivot tables (rows per unique region)",
+   "interview": "Excel A1 vs $A$1: which stays fixed when copied?",
+   "status": "Facebook posted 09:00 IST. YouTube not posted: 2 tries returned Zapier 429 Too Many Requests (09:00, 09:02); a 3rd retry at 09:04 was blocked by the session's safety check. Uploads list checked: no duplicate. Zapier task limit is lifted (channel check worked 08:37).",
+   "youtube": "not posted: Zapier 429 Too Many Requests (x2), retry blocked",
+   "facebook": "1485646346999468",
+   "first_comments": "youtube: none (no video); fb first comment: no Zapier action"
   }
  ],
  "inspiring": {
@@ -1466,6 +1472,13 @@
     "da_part": "Part 8: Cleaning data: duplicates and blanks (re-quizzed with a new question: drop_duplicates by name only leaves 3 rows)",
     "interview": "PUT vs PATCH: which updates one field?",
     "status": "not posted: Zapier task limit"
+   },
+   {
+    "date": "2026-11-25",
+    "go_part": "Part 10: Switch without break",
+    "da_part": "Part 7: Pivot tables in 60 seconds (re-quizzed with a new question: region in rows gives one row per unique region, 3 rows)",
+    "interview": "Excel A1 vs $A$1: which stays fixed when copied?",
+    "status": "Facebook posted; YouTube not posted (Zapier 429)"
    }
   ],
   "interview_asked": [
@@ -1485,7 +1498,8 @@
    "VLOOKUP exact match: TRUE or FALSE?",
    "Short declaration := outside a function: works or error?",
    "WHERE phone = NULL vs IS NULL: which works?",
-   "PUT vs PATCH: which updates one field?"
+   "PUT vs PATCH: which updates one field?",
+   "Excel A1 vs $A$1: which stays fixed when copied?"
   ]
  }
 }
