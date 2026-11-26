@@ -1,0 +1,72 @@
+{
+ "voice": "am_michael",
+ "speed": 1.0,
+ "theme": "light",
+ "still_scene": 1,
+ "title_yt": "Morning Quiz: Go + Data Analytics + 1 Interview Question #shorts",
+ "scenes": [
+  {
+   "title": [{"text": "3 questions", "box": "red"}, {"text": "Get all 3?"}, {"text": "Morning Quiz", "box": "yellow"}],
+   "image": {"type": "check", "kind": "steps", "items": ["Go: errors as values", "Data: SQL WHERE", "Interview: public names"]},
+   "face": "happy", "palette": "orange",
+   "say": "Three questions. Can you get all three? Morning quiz!"
+  },
+  {
+   "title": [{"text": "Q1 Go", "box": "yellow"}, {"text": "What prints?"}],
+   "image": {"type": "code", "file": "main.go", "lines": [
+     "func divide(a, b int) (int, error) {",
+     "  if b == 0 {",
+     "    return 0, errors.New(\"cannot divide by zero\")",
+     "  }",
+     "  return a / b, nil",
+     "}",
+     "",
+     "r, err := divide(8, 2)",
+     "fmt.Println(r, err)"], "highlight": [7, 8]},
+   "face": "thinking", "palette": "purple",
+   "say": "Question one. We divide eight by two and print the result and the error. What prints? Pause and answer."
+  },
+  {
+   "title": [{"text": "Answer 1", "box": "yellow"}, {"text": "4 <nil>"}],
+   "image": {"type": "code", "file": "main.go", "lines": [
+     "r, err := divide(8, 2)",
+     "fmt.Println(r, err)",
+     "// no problem, so err is nil"], "highlight": [2], "output": ["4 <nil>"]},
+   "face": "happy", "palette": "blue",
+   "say": "Four, then nil. Nothing went wrong, so the error is nil, and Go prints nil inside angle brackets."
+  },
+  {
+   "title": [{"text": "Q2 Data", "box": "yellow"}, {"text": "sales > 100"}],
+   "image": {"type": "table", "file": "sales table", "cols": ["name", "city", "sales"], "rows": [["Asha", "Pune", "120"], ["Ravi", "Delhi", "150"], ["Meena", "Pune", "90"], ["John", "Mumbai", "60"], ["Sara", "Delhi", "200"]]},
+   "face": "thinking", "palette": "orange",
+   "say": "Question two. Select name from sales where sales is greater than one hundred. How many names come back? Pause and answer."
+  },
+  {
+   "title": [{"text": "Answer 2", "box": "yellow"}, {"text": "3 names"}],
+   "image": {"type": "table", "file": "result", "cols": ["name", "sales"], "rows": [["Asha", "120"], ["Ravi", "150"], ["Sara", "200"]], "good_rows": [0, 1, 2]},
+   "face": "happy", "palette": "purple",
+   "say": "Three. Asha, Ravi and Sara. WHERE keeps only rows above one hundred, so Meena and John are filtered out."
+  },
+  {
+   "title": [{"text": "Q3 Interview", "box": "red"}, {"text": "Which is public?"}],
+   "image": {"type": "code", "file": "user.go", "lines": [
+     "package user",
+     "",
+     "// A",
+     "func getName() string { return \"Asha\" }",
+     "",
+     "// B",
+     "func GetName() string { return \"Asha\" }"], "highlight": [3, 6]},
+   "face": "thinking", "palette": "blue",
+   "say": "Interview question. Which function can other packages call, A or B? Pause and answer."
+  },
+  {
+   "title": [{"text": "Answer 3", "box": "yellow"}, {"text": "B: GetName"}],
+   "image": {"type": "check", "kind": "check", "items": ["Q1: 4 <nil>", "Q2: 3 names", "Q3: B, capital = public", "small letter = private"]},
+   "banner": "Follow CareerWithCode",
+   "note": "How many?\n1, 2 or 3?",
+   "face": "happy", "palette": "orange",
+   "say": "B! In Go, a name that starts with a capital letter is exported, so other packages can use it. How many did you get? One, two or three? Follow CareerWithCode!"
+  }
+ ]
+}

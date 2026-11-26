@@ -93,16 +93,6 @@
  },
  "log": [
   {
-   "date": "2026-10-17 16:00",
-   "slot": "educational",
-   "title": "Myth: NaN equals NaN in JavaScript? Not even close #shorts",
-   "tone": "myth-buster",
-   "hook_format": "myth-vs-fact",
-   "style": "handwritten",
-   "video": "2026-10-17_1600_educational-js-nan-not-equal-nan.mp4",
-   "status": "scheduled: metricool 398423804 (yt, ig, fb) for 16:00 IST"
-  },
-  {
    "date": "2026-10-18 10:00",
    "slot": "go",
    "title": "What's inside a Go variable you never set? | Go Part 5 #shorts",
@@ -1359,6 +1349,23 @@
    "facebook": "1832951531123549",
    "instagram": "skipped",
    "first_comments": "youtube: none (no video); fb first comment: no Zapier action"
+  },
+  {
+   "date": "2026-11-26",
+   "slot": "morning-qa",
+   "time": "09:00",
+   "title": "Morning Quiz: Go + Data Analytics + 1 Interview Question #shorts",
+   "video": "2026-11-26_0900_morning-qa-errnil-where100-exported.mp4",
+   "spec": "specs/2026-11-26_0900_morning-qa-errnil-where100-exported.json",
+   "duration_s": 54.5,
+   "go_part": "Part 28: Errors as values (divide(8, 2) prints 4 <nil>)",
+   "da_part": "Part 9: SQL SELECT and WHERE (WHERE sales > 100 returns 3 names)",
+   "interview": "getName vs GetName: capital letter = exported",
+   "status": "Facebook reel posted 09:00 IST. YouTube not posted: 8 upload_video tries 09:00-09:16 IST all failed, tries 1-5 '429 (Too Many Requests)', tries 6-8 'This action has been throttled without retry.' Uploads playlist checked before every retry: no duplicate. Channel GET calls worked fine.",
+   "youtube": "not posted: Zapier 429 / throttled without retry (x8)",
+   "facebook": "1470985904529082",
+   "instagram": "skipped",
+   "first_comments": "youtube: none (no video); fb first comment: no Zapier action"
   }
  ],
  "inspiring": {
@@ -1493,6 +1500,13 @@
     "da_part": "Part 7: Pivot tables in 60 seconds (re-quizzed with a new question: region in rows gives one row per unique region, 3 rows)",
     "interview": "Excel A1 vs $A$1: which stays fixed when copied?",
     "status": "Facebook posted; YouTube not posted (Zapier 429)"
+   },
+   {
+    "date": "2026-11-26",
+    "go_part": "Part 28: Errors as values",
+    "da_part": "Part 9: SQL for analysts: SELECT and WHERE",
+    "interview": "getName vs GetName in Go: which is public (exported)?",
+    "status": "Facebook posted; YouTube not posted (Zapier 429/throttled x8)"
    }
   ],
   "interview_asked": [
@@ -1513,7 +1527,8 @@
    "Short declaration := outside a function: works or error?",
    "WHERE phone = NULL vs IS NULL: which works?",
    "PUT vs PATCH: which updates one field?",
-   "Excel A1 vs $A$1: which stays fixed when copied?"
+   "Excel A1 vs $A$1: which stays fixed when copied?",
+   "getName vs GetName in Go: which is public (exported)?"
   ]
  }
 }
