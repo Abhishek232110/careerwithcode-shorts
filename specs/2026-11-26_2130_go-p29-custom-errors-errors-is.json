@@ -1,0 +1,162 @@
+{
+ "voice": "am_michael",
+ "speed": 1.0,
+ "theme": "light",
+ "still_scene": 2,
+ "title_yt": "Go Part 29: Custom errors and errors.Is #shorts",
+ "scenes": [
+  {
+   "title": [
+    {
+     "text": "== lies to you!",
+     "box": "red"
+    },
+    {
+     "text": "Custom errors"
+    },
+    {
+     "text": "Go Part 29",
+     "box": "yellow"
+    }
+   ],
+   "image": {
+    "type": "check",
+    "kind": "steps",
+    "items": [
+     "Make your own error",
+     "Wrap it with %w",
+     "Find it with errors.Is",
+     "Skip the == trap"
+    ]
+   },
+   "face": "worried",
+   "palette": "purple",
+   "say": "Why does double equals miss your error? This is Go Part 29, custom errors and errors dot Is."
+  },
+  {
+   "title": [
+    {
+     "text": "Your own",
+     "box": "yellow"
+    },
+    {
+     "text": "error types"
+    }
+   ],
+   "image": {
+    "type": "code",
+    "file": "main.go",
+    "lines": [
+     "var ErrNotFound = errors.New(\"not found\")",
+     "",
+     "type AgeError struct{ Age int }",
+     "",
+     "func (e AgeError) Error() string {",
+     "  return fmt.Sprintf(\"bad age: %d\", e.Age)",
+     "}"
+    ],
+    "highlight": [
+     4
+    ],
+    "output": [
+     "bad age: -3"
+    ]
+   },
+   "face": "happy",
+   "palette": "blue",
+   "say": "First, a sentinel error, ErrNotFound, made with errors dot New. Second, any struct with an Error method is an error too. So AgeError prints bad age minus three."
+  },
+  {
+   "title": [
+    {
+     "text": "Wrap it",
+     "box": "yellow"
+    },
+    {
+     "text": "with %w"
+    }
+   ],
+   "image": {
+    "type": "code",
+    "file": "main.go",
+    "lines": [
+     "func find(id int) error {",
+     "  if id != 1 {",
+     "    return fmt.Errorf(",
+     "      \"user %d: %w\", id, ErrNotFound)",
+     "  }",
+     "  return nil",
+     "}",
+     "",
+     "err := find(7)",
+     "fmt.Println(err)"
+    ],
+    "highlight": [
+     2,
+     3
+    ],
+    "output": [
+     "user 7: not found"
+    ]
+   },
+   "face": "thinking",
+   "palette": "orange",
+   "say": "Now find wraps ErrNotFound with fmt dot Errorf and percent w. It adds context, user seven, but keeps the original error inside."
+  },
+  {
+   "title": [
+    {
+     "text": "errors.Is",
+     "box": "yellow"
+    },
+    {
+     "text": "vs =="
+    }
+   ],
+   "image": {
+    "type": "code",
+    "file": "main.go",
+    "lines": [
+     "fmt.Println(errors.Is(err, ErrNotFound))",
+     "fmt.Println(err == ErrNotFound)"
+    ],
+    "highlight": [
+     0
+    ],
+    "output": [
+     "true",
+     "false"
+    ]
+   },
+   "face": "happy",
+   "palette": "purple",
+   "say": "errors dot Is looks inside the wrap, so it says true. Double equals only compares the outside, so it says false. Use errors dot Is."
+  },
+  {
+   "title": [
+    {
+     "text": "Recap",
+     "box": "yellow"
+    },
+    {
+     "text": "Part 29"
+    }
+   ],
+   "image": {
+    "type": "check",
+    "kind": "check",
+    "items": [
+     "errors.New = sentinel",
+     "Error() makes a type",
+     "%w wraps an error",
+     "errors.Is looks inside"
+    ]
+   },
+   "banner": "Next: Part 30 - panic and recover",
+   "note": "errors.Is or ==\nPick 1!",
+   "face": "happy",
+   "palette": "blue",
+   "say": "Next time, panic and recover. Quick one: to check a wrapped error, errors dot Is or double equals? Pick one in the comments, and follow CareerWithCode!"
+  }
+ ]
+}

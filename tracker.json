@@ -2,7 +2,7 @@
  "_note": "Updated automatically after every post. Edit next_part to jump a series forward/back.",
  "series": {
   "go": {
-   "next_part": 29,
+   "next_part": 30,
    "posted": [
     "Part 1: Hello World and package main",
     "Part 2: Variables: var vs :=",
@@ -31,7 +31,8 @@
     "Part 25: Empty interface and any",
     "Part 26: Type assertions",
     "Part 27: Type switches",
-    "Part 28: Errors as values"
+    "Part 28: Errors as values",
+    "Part 29: Custom errors and errors.Is"
    ]
   },
   "python": {
@@ -92,16 +93,6 @@
   ]
  },
  "log": [
-  {
-   "date": "2026-10-18 10:00",
-   "slot": "go",
-   "title": "What's inside a Go variable you never set? | Go Part 5 #shorts",
-   "tone": "friendly teacher",
-   "hook_format": "question",
-   "style": "handwritten",
-   "video": "2026-10-18_1000_go-p05-zero-values.mp4",
-   "status": "scheduled: metricool 398913005 (yt, ig, fb) for 10:00 IST"
-  },
   {
    "date": "2026-10-18 16:00",
    "slot": "educational",
@@ -1366,6 +1357,22 @@
    "facebook": "1470985904529082",
    "instagram": "skipped",
    "first_comments": "youtube: none (no video); fb first comment: no Zapier action"
+  },
+  {
+   "date": "2026-11-26",
+   "slot": "go",
+   "time": "21:30",
+   "title": "Go Part 29: Custom errors and errors.Is #shorts",
+   "tone": "friendly teacher",
+   "hook_format": "myth-vs-fact",
+   "video": "2026-11-26_2130_go-p29-custom-errors-errors-is.mp4",
+   "spec": "specs/2026-11-26_2130_go-p29-custom-errors-errors-is.json",
+   "duration_s": 48.8,
+   "status": "partial: Facebook video posted 21:30 IST (page 926523670552408). YouTube NOT posted: upload_video 'throttled without retry' at 21:30 IST (channel UCZ6m5Lh_vmFjOLL_RAHNTxw verified); the one retry was blocked by the session's permission check. Uploads checked after: no Part 29 on YouTube, no duplicate. next_part moved to 30 so Facebook doesn't get Part 29 twice; Part 29 YouTube upload still pending (video in shorts/).",
+   "youtube": "not posted: Zapier throttled (pending)",
+   "facebook": "1546184410903479",
+   "instagram": "skipped",
+   "first_comments": "youtube: none (not uploaded); fb first comment: no Zapier action"
   }
  ],
  "inspiring": {
