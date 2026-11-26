@@ -1,0 +1,120 @@
+1
+00:00:00,250 --> 00:00:01,426
+Why does double equals
+
+2
+00:00:01,426 --> 00:00:02,280
+miss your error?
+
+3
+00:00:02,500 --> 00:00:03,740
+This is Go Part
+
+4
+00:00:03,740 --> 00:00:05,475
+29, custom errors and
+
+5
+00:00:05,475 --> 00:00:06,632
+errors dot Is.
+
+6
+00:00:07,352 --> 00:00:09,892
+First, a sentinel error, ErrNotFound,
+
+7
+00:00:09,892 --> 00:00:11,608
+made with errors dot New.
+
+8
+00:00:11,828 --> 00:00:13,133
+Second, any struct with
+
+9
+00:00:13,133 --> 00:00:14,154
+an Error method is
+
+10
+00:00:14,154 --> 00:00:14,892
+an error too.
+
+11
+00:00:15,112 --> 00:00:16,655
+So AgeError prints bad
+
+12
+00:00:16,655 --> 00:00:17,777
+age minus three.
+
+13
+00:00:18,497 --> 00:00:20,714
+Now find wraps ErrNotFound
+
+14
+00:00:20,714 --> 00:00:22,333
+with fmt dot Errorf
+
+15
+00:00:22,333 --> 00:00:23,527
+and percent w.
+
+16
+00:00:23,747 --> 00:00:25,294
+It adds context, user
+
+17
+00:00:25,294 --> 00:00:26,767
+seven, but keeps the
+
+18
+00:00:26,767 --> 00:00:28,388
+original error inside.
+
+19
+00:00:29,108 --> 00:00:30,286
+errors dot Is looks
+
+20
+00:00:30,286 --> 00:00:31,465
+inside the wrap, so
+
+21
+00:00:31,465 --> 00:00:32,271
+it says true.
+
+22
+00:00:32,491 --> 00:00:34,599
+Double equals only compares the
+
+23
+00:00:34,599 --> 00:00:36,367
+outside, so it says false.
+
+24
+00:00:36,587 --> 00:00:37,935
+Use errors dot Is.
+
+25
+00:00:38,655 --> 00:00:40,486
+Next time, panic and recover.
+
+26
+00:00:40,706 --> 00:00:42,070
+Quick one: to check a
+
+27
+00:00:42,070 --> 00:00:43,889
+wrapped error, errors dot Is
+
+28
+00:00:43,889 --> 00:00:44,994
+or double equals?
+
+29
+00:00:45,214 --> 00:00:46,145
+Pick one in the
+
+30
+00:00:46,145 --> 00:00:48,379
+comments, and follow CareerWithCode!
+
