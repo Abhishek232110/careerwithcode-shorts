@@ -1,0 +1,108 @@
+1
+00:00:00,250 --> 00:00:01,742
+Which city sold the most?
+
+2
+00:00:01,962 --> 00:00:02,963
+Let's find out!
+
+3
+00:00:03,183 --> 00:00:05,443
+This is Data Analytics, Part
+
+4
+00:00:05,443 --> 00:00:06,815
+10: SQL GROUP BY.
+
+5
+00:00:07,035 --> 00:00:08,519
+Here is our sales table.
+
+6
+00:00:09,239 --> 00:00:10,555
+GROUP BY puts rows
+
+7
+00:00:10,555 --> 00:00:11,870
+with the same city
+
+8
+00:00:11,870 --> 00:00:12,893
+into one pile.
+
+9
+00:00:13,113 --> 00:00:14,194
+Then SUM adds
+
+10
+00:00:14,194 --> 00:00:15,274
+up each pile.
+
+11
+00:00:15,494 --> 00:00:16,224
+You get one
+
+12
+00:00:16,224 --> 00:00:17,086
+row per city.
+
+13
+00:00:17,806 --> 00:00:19,328
+Select city and the sum
+
+14
+00:00:19,328 --> 00:00:21,115
+of sales, from sales, group
+
+15
+00:00:21,115 --> 00:00:22,636
+by city, biggest first.
+
+16
+00:00:22,856 --> 00:00:24,793
+Delhi has three fifty, Pune
+
+17
+00:00:24,793 --> 00:00:26,371
+two ten, Mumbai sixty.
+
+18
+00:00:27,091 --> 00:00:28,056
+Put it on a chart
+
+19
+00:00:28,056 --> 00:00:29,474
+and the answer jumps out.
+
+20
+00:00:29,694 --> 00:00:30,607
+Delhi wins with
+
+21
+00:00:30,607 --> 00:00:31,825
+three hundred fifty.
+
+22
+00:00:32,545 --> 00:00:34,008
+To count orders per
+
+23
+00:00:34,008 --> 00:00:35,239
+city, do you use
+
+24
+00:00:35,239 --> 00:00:36,240
+SUM or COUNT?
+
+25
+00:00:36,460 --> 00:00:37,839
+Pick one in the comments!
+
+26
+00:00:38,059 --> 00:00:40,446
+Follow CareerWithCode for Part
+
+27
+00:00:40,446 --> 00:00:41,718
+11, JOIN basics.
+

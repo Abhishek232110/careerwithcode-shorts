@@ -1,0 +1,29 @@
+{
+ "voice": "am_michael", "speed": 1.0, "theme": "light", "still_scene": 1,
+ "scenes": [
+  {"title": [{"text": "Which city wins?", "box": "red"}, {"text": "SQL GROUP BY"}, {"text": "Data Analytics 10", "box": "yellow"}],
+   "image": {"type": "table", "file": "sales table", "cols": ["name", "city", "sales"],
+     "rows": [["Asha","Pune","120"],["Ravi","Delhi","150"],["Meena","Pune","90"],["John","Mumbai","60"],["Sara","Delhi","200"]]},
+   "face": "thinking", "palette": "blue",
+   "say": "Which city sold the most? Let's find out! This is Data Analytics, Part 10: SQL GROUP BY. Here is our sales table."},
+  {"title": [{"text": "GROUP BY", "box": "yellow"}, {"text": "makes piles"}],
+   "image": {"type": "flow", "steps": [["GROUP BY city", "same city, one pile"], ["SUM(sales)", "add each pile"], ["1 row per city", "your answer"]]},
+   "face": "happy", "palette": "orange",
+   "say": "GROUP BY puts rows with the same city into one pile. Then SUM adds up each pile. You get one row per city."},
+  {"title": [{"text": "Total by city", "box": "yellow"}, {"text": "real query"}],
+   "image": {"type": "code", "file": "query.sql",
+     "lines": ["SELECT city, SUM(sales) AS total", "FROM sales", "GROUP BY city", "ORDER BY total DESC;"],
+     "highlight": [2], "output": ["Delhi  | 350", "Pune   | 210", "Mumbai | 60"]},
+   "face": "thinking", "palette": "purple",
+   "say": "Select city and the sum of sales, from sales, group by city, biggest first. Delhi has three fifty, Pune two ten, Mumbai sixty."},
+  {"title": [{"text": "Delhi wins!", "box": "yellow"}, {"text": "350 in sales"}],
+   "image": {"type": "chart", "title": "Total sales by city", "bars": [["Delhi", 350], ["Pune", 210], ["Mumbai", 60]], "highlight": 0},
+   "face": "happy", "palette": "blue",
+   "say": "Put it on a chart and the answer jumps out. Delhi wins with three hundred fifty."},
+  {"title": [{"text": "Recap", "box": "yellow"}, {"text": "Part 10", "color": "yellow"}],
+   "image": {"type": "check", "kind": "check", "items": ["GROUP BY makes piles", "SUM adds each pile", "COUNT counts rows", "1 row per group"]},
+   "banner": "Next: Part 11 - SQL JOIN basics", "note": "SUM or COUNT?\nPick 1!",
+   "face": "happy", "palette": "orange",
+   "say": "To count orders per city, do you use SUM or COUNT? Pick one in the comments! Follow CareerWithCode for Part 11, JOIN basics."}
+ ]
+}

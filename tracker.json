@@ -44,7 +44,7 @@
    ]
   },
   "data_analytics": {
-   "next_part": 10,
+   "next_part": 11,
    "posted": [
     "Part 1: What is Data Analytics? (the 4 steps)",
     "Part 2: Types of data: numbers, text, dates, categories",
@@ -54,7 +54,8 @@
     "Part 6: Sorting and filtering data",
     "Part 7: Pivot tables in 60 seconds",
     "Part 8: Cleaning data: duplicates and blanks",
-    "Part 9: SQL for analysts: SELECT and WHERE"
+    "Part 9: SQL for analysts: SELECT and WHERE",
+    "Part 10: SQL GROUP BY"
    ]
   }
  },
@@ -93,16 +94,6 @@
   ]
  },
  "log": [
-  {
-   "date": "2026-10-18 16:00",
-   "slot": "educational",
-   "title": "Why is typeof null \"object\" in JavaScript? #shorts",
-   "tone": "myth-buster",
-   "hook_format": "question",
-   "style": "handwritten",
-   "video": "2026-10-18_1600_educational-js-typeof-null-object.mp4",
-   "status": "scheduled: metricool 399038191 (yt, ig, fb) for 16:00 IST"
-  },
   {
    "date": "2026-10-19 10:00",
    "slot": "go",
@@ -1373,6 +1364,22 @@
    "facebook": "1546184410903479",
    "instagram": "skipped",
    "first_comments": "youtube: none (not uploaded); fb first comment: no Zapier action"
+  },
+  {
+   "date": "2026-11-26",
+   "slot": "data_analytics",
+   "time": "22:00",
+   "title": "Data Analytics Part 10: SQL GROUP BY #shorts",
+   "tone": "friendly teacher",
+   "hook_format": "question",
+   "video": "2026-11-26_2200_data_analytics-p10-sql-group-by.mp4",
+   "spec": "specs/2026-11-26_2200_data_analytics-p10-sql-group-by.json",
+   "duration_s": 42.2,
+   "status": "Facebook posted (video/reel) at 22:00 IST. YouTube NOT posted: upload_video was throttled by Zapier ('throttled without retry'), and the session's permission check blocked the one retry. Checked uploads at 22:02 IST: no Part 10 on YouTube. YouTube uploads for Part 9 and Part 10 are still pending.",
+   "youtube": "not posted: Zapier throttled (pending)",
+   "facebook": "1461692388685006",
+   "instagram": "skipped",
+   "first_comments": "youtube: none (no video); fb first comment: no Zapier action"
   }
  ],
  "inspiring": {
