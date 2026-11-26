@@ -42,7 +42,8 @@
       "Pehla smiley :-) : 19 Sept 1982, Scott Fahlman, Carnegie Mellon bulletin board (:-) mazaak, :-( gambhir)",
       "Pehla computer password: 1961 MIT CTSS (Fernando Corbato team), 1962 PhD student Allan Scherr ne password file print karwa li (zyada computer time ke liye)",
       "Pehla tweet: 21 March 2006 Jack Dorsey 'just setting up my twttr' (app naam twttr), 2021 NFT $2.9M mein bika (Sina Estavi), 2022 auction mein top bid ~ kuch sau dollar",
-      "Pehla emoji: 1999 Shigetaka Kurita, NTT Docomo i-mode, 176 emoji, 12x12 pixel, 2016 MoMA collection"
+      "Pehla emoji: 1999 Shigetaka Kurita, NTT Docomo i-mode, 176 emoji, 12x12 pixel, 2016 MoMA collection",
+      "Myth: Error 404 CERN ke kamra 404 se nahi aaya (HTTP status code: 4xx client error, 404 not found, 5xx server error)"
     ]
   },
   "whatif": {
@@ -1070,6 +1071,16 @@
       "hook_format": "story-open",
       "video": "curiositybox/shorts/2026-11-25_2000_kahani-everest-naam-kabhi-dekha-nahi.mp4",
       "status": "posted: YouTube 8BwgRyRdTZ8, Facebook photo 1380858578445805_122116660989515109"
+    },
+    {
+      "date": "2026-11-26 10:00",
+      "slot": "ai",
+      "title": "Error 404 Ka Asli Matlab! Kamra Number 404 Sirf Kahani #shorts",
+      "tone": "surprising tech fact, energetic",
+      "hook_format": "myth-vs-fact",
+      "mood": "upbeat",
+      "video": "curiositybox/shorts/2026-11-26_1000_ai-error-404-room-myth.mp4",
+      "status": "Facebook photo posted (post 1380858578445805_122116769517515109); YouTube not posted: Zapier upload throttled ('throttled without retry'), retry blocked by permission check; verified no upload on channel"
     }
   ]
 }
