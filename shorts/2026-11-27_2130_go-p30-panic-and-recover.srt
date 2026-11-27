@@ -1,0 +1,104 @@
+1
+00:00:00,250 --> 00:00:01,217
+One bad line can
+
+2
+00:00:01,217 --> 00:00:02,727
+crash your whole program!
+
+3
+00:00:02,947 --> 00:00:04,071
+This is Go Part
+
+4
+00:00:04,071 --> 00:00:05,719
+30, panic and recover.
+
+5
+00:00:06,439 --> 00:00:07,674
+The slice has three
+
+6
+00:00:07,674 --> 00:00:08,778
+items, but we ask
+
+7
+00:00:08,778 --> 00:00:09,753
+for index five.
+
+8
+00:00:09,973 --> 00:00:11,916
+Go panics, the program stops,
+
+9
+00:00:11,916 --> 00:00:13,323
+and end never prints.
+
+10
+00:00:14,043 --> 00:00:15,436
+To catch a panic, put
+
+11
+00:00:15,436 --> 00:00:17,757
+recover inside a deferred function.
+
+12
+00:00:17,977 --> 00:00:20,215
+If something panics, recover grabs
+
+13
+00:00:20,215 --> 00:00:21,399
+it, and we turn it
+
+14
+00:00:21,399 --> 00:00:22,715
+into a normal error.
+
+15
+00:00:23,435 --> 00:00:24,439
+Ten divided by
+
+16
+00:00:24,439 --> 00:00:25,515
+two gives five.
+
+17
+00:00:25,735 --> 00:00:27,670
+Ten divided by zero panics,
+
+18
+00:00:27,670 --> 00:00:29,534
+but recover catches it and
+
+19
+00:00:29,534 --> 00:00:30,752
+returns an error.
+
+20
+00:00:30,972 --> 00:00:32,494
+And the program keeps running!
+
+21
+00:00:33,214 --> 00:00:34,787
+Next time, goroutines.
+
+22
+00:00:35,007 --> 00:00:36,064
+Quick one: for a
+
+23
+00:00:36,064 --> 00:00:37,650
+normal bad input, return
+
+24
+00:00:37,650 --> 00:00:38,839
+an error or panic?
+
+25
+00:00:39,059 --> 00:00:39,990
+Pick one in the
+
+26
+00:00:39,990 --> 00:00:42,224
+comments, and follow CareerWithCode!
+
