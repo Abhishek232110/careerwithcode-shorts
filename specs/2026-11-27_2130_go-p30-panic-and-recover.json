@@ -1,0 +1,87 @@
+{
+ "voice": "am_michael",
+ "speed": 1.0,
+ "theme": "light",
+ "still_scene": 3,
+ "title_yt": "Go Part 30: panic and recover #shorts",
+ "scenes": [
+  {
+   "title": [
+    {"text": "1 line = crash!", "box": "red"},
+    {"text": "panic, recover"},
+    {"text": "Go Part 30", "box": "yellow"}
+   ],
+   "image": {"type": "check", "kind": "steps", "items": [
+     "See a panic happen",
+     "Stop it with recover",
+     "Use defer to catch it",
+     "Know when to panic"
+   ]},
+   "face": "worried",
+   "palette": "orange",
+   "say": "One bad line can crash your whole program! This is Go Part 30, panic and recover."
+  },
+  {
+   "title": [{"text": "A panic", "box": "yellow"}, {"text": "stops it all"}],
+   "image": {"type": "code", "file": "main.go", "lines": [
+     "fmt.Println(\"start\")",
+     "nums := []int{1, 2, 3}",
+     "fmt.Println(nums[5])",
+     "fmt.Println(\"end\")"
+   ], "highlight": [2], "output": [
+     "start",
+     "panic: runtime error:",
+     "index out of range [5]"
+   ]},
+   "face": "worried",
+   "palette": "purple",
+   "say": "The slice has three items, but we ask for index five. Go panics, the program stops, and end never prints."
+  },
+  {
+   "title": [{"text": "defer +", "box": "yellow"}, {"text": "recover"}],
+   "image": {"type": "code", "file": "main.go", "lines": [
+     "func safeDivide(a, b int) (res int, err error) {",
+     "  defer func() {",
+     "    if r := recover(); r != nil {",
+     "      err = fmt.Errorf(\"recovered: %v\", r)",
+     "    }",
+     "  }()",
+     "  return a / b, nil",
+     "}"
+   ], "highlight": [2, 3]},
+   "face": "thinking",
+   "palette": "blue",
+   "say": "To catch a panic, put recover inside a deferred function. If something panics, recover grabs it, and we turn it into a normal error."
+  },
+  {
+   "title": [{"text": "Still", "box": "yellow"}, {"text": "running!"}],
+   "image": {"type": "code", "file": "main.go", "lines": [
+     "fmt.Println(safeDivide(10, 2))",
+     "fmt.Println(safeDivide(10, 0))",
+     "fmt.Println(\"still running\")"
+   ], "highlight": [1], "output": [
+     "5 <nil>",
+     "0 recovered: runtime error:",
+     "  integer divide by zero",
+     "still running"
+   ]},
+   "face": "happy",
+   "palette": "orange",
+   "say": "Ten divided by two gives five. Ten divided by zero panics, but recover catches it and returns an error. And the program keeps running!"
+  },
+  {
+   "title": [{"text": "Recap", "box": "yellow"}, {"text": "Part 30"}],
+   "image": {"type": "check", "kind": "check", "items": [
+     "panic stops the program",
+     "recover only works in defer",
+     "Turn a panic into an error",
+     "Normal bugs? Return errors"
+   ]},
+   "banner": "Next: Part 31 - Goroutines",
+   "note": "error or panic?\nPick 1!",
+   "face": "happy",
+   "palette": "blue",
+   "say": "Next time, goroutines. Quick one: for a normal bad input, return an error or panic? Pick one in the comments, and follow CareerWithCode!"
+  }
+ ]
+}

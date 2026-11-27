@@ -2,7 +2,7 @@
  "_note": "Updated automatically after every post. Edit next_part to jump a series forward/back.",
  "series": {
   "go": {
-   "next_part": 30,
+   "next_part": 31,
    "posted": [
     "Part 1: Hello World and package main",
     "Part 2: Variables: var vs :=",
@@ -32,7 +32,8 @@
     "Part 26: Type assertions",
     "Part 27: Type switches",
     "Part 28: Errors as values",
-    "Part 29: Custom errors and errors.Is"
+    "Part 29: Custom errors and errors.Is",
+    "Part 30: panic and recover"
    ]
   },
   "python": {
@@ -94,16 +95,6 @@
   ]
  },
  "log": [
-  {
-   "date": "2026-10-19 16:00",
-   "slot": "educational",
-   "title": "Myth: round(2.5) is 3 in Python? Nope, it's 2 #shorts",
-   "tone": "myth-buster",
-   "hook_format": "myth-vs-fact",
-   "style": "handwritten",
-   "video": "2026-10-19_1600_educational-python-round-bankers.mp4",
-   "status": "queued: github action (yt, ig, fb) for 16:00 IST"
-  },
   {
    "date": "2026-10-20 10:00",
    "slot": "go",
@@ -1387,6 +1378,22 @@
    "facebook": "29274421898894839",
    "instagram": "skipped",
    "first_comments": "youtube: UgwUn1lQhPLD1ppClih4AaABAg; fb first comment: no Zapier action"
+  },
+  {
+   "date": "2026-11-27",
+   "slot": "go",
+   "time": "21:30",
+   "title": "Go Part 30: panic and recover #shorts",
+   "tone": "friendly teacher",
+   "hook_format": "bold-claim",
+   "video": "2026-11-27_2130_go-p30-panic-and-recover.mp4",
+   "spec": "specs/2026-11-27_2130_go-p30-panic-and-recover.json",
+   "duration_s": 42.7,
+   "status": "posted 21:30 IST",
+   "youtube": "o9phmYWcJ5k",
+   "facebook": "2021547031836623",
+   "instagram": "skipped",
+   "first_comments": "youtube: UgwS8U6b5wX_hHKo7yd4AaABAg; fb first comment: no Zapier action"
   }
  ],
  "inspiring": {
