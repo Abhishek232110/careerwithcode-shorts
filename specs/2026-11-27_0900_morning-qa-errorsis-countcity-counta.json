@@ -1,0 +1,67 @@
+{
+ "voice": "am_michael",
+ "speed": 1.0,
+ "theme": "light",
+ "still_scene": 1,
+ "title_yt": "Morning Quiz: Go + Data Analytics + 1 Interview Question #shorts",
+ "scenes": [
+  {
+   "title": [{"text": "3 questions", "box": "red"}, {"text": "Get all 3?"}, {"text": "Morning Quiz", "box": "yellow"}],
+   "image": {"type": "check", "kind": "steps", "items": ["Go: errors.Is", "Data: GROUP BY", "Interview: COUNT vs COUNTA"]},
+   "face": "happy", "palette": "purple",
+   "say": "Three questions. Can you get all three? Morning quiz!"
+  },
+  {
+   "title": [{"text": "Q1 Go", "box": "yellow"}, {"text": "What prints?"}],
+   "image": {"type": "code", "file": "main.go", "lines": [
+     "var ErrNotFound = errors.New(\"not found\")",
+     "",
+     "err := fmt.Errorf(\"load user: %w\", ErrNotFound)",
+     "",
+     "fmt.Println(err == ErrNotFound)",
+     "fmt.Println(errors.Is(err, ErrNotFound))"], "highlight": [4, 5]},
+   "face": "thinking", "palette": "blue",
+   "say": "Question one. We wrap ErrNotFound with percent w. Then we check with double equals, and with errors dot Is. What prints? Pause and answer."
+  },
+  {
+   "title": [{"text": "Answer 1", "box": "yellow"}, {"text": "false, true"}],
+   "image": {"type": "code", "file": "main.go", "lines": [
+     "fmt.Println(err == ErrNotFound)",
+     "fmt.Println(errors.Is(err, ErrNotFound))",
+     "// == sees the wrapper, Is looks inside"], "highlight": [1], "output": ["false", "true"]},
+   "face": "happy", "palette": "orange",
+   "say": "False, then true. Double equals only sees the wrapper. errors dot Is looks inside the wrap and finds it."
+  },
+  {
+   "title": [{"text": "Q2 Data", "box": "yellow"}, {"text": "Delhi count?"}],
+   "image": {"type": "code", "file": "query.sql", "lines": [
+     "-- sales: Asha Pune, Ravi Delhi,",
+     "-- Meena Pune, John Mumbai, Sara Delhi",
+     "SELECT city, COUNT(*) AS orders",
+     "FROM sales",
+     "GROUP BY city;"], "highlight": [4]},
+   "face": "thinking", "palette": "purple",
+   "say": "Question two. Five sales rows. We group by city and count. What number does Delhi get? Pause and answer."
+  },
+  {
+   "title": [{"text": "Answer 2", "box": "yellow"}, {"text": "Delhi = 2"}],
+   "image": {"type": "table", "file": "result", "cols": ["city", "orders"], "rows": [["Delhi", "2"], ["Pune", "2"], ["Mumbai", "1"]], "good_rows": [0]},
+   "face": "happy", "palette": "blue",
+   "say": "Two. Ravi and Sara are both in Delhi. COUNT counts the rows in each pile, it does not add the sales."
+  },
+  {
+   "title": [{"text": "Q3 Interview", "box": "red"}, {"text": "Counts text?"}],
+   "image": {"type": "table", "file": "Excel: A1 to A5", "cols": ["cell", "value"], "rows": [["A1", "10"], ["A2", "Asha"], ["A3", "(blank)"], ["A4", "25"], ["A5", "Pune"]]},
+   "face": "thinking", "palette": "orange",
+   "say": "Interview question. In Excel, which one counts the text cells too, COUNT or COUNTA? Pause and answer."
+  },
+  {
+   "title": [{"text": "Answer 3", "box": "yellow"}, {"text": "COUNTA"}],
+   "image": {"type": "check", "kind": "check", "items": ["Q1: false, true", "Q2: Delhi = 2", "Q3: COUNTA = 4", "COUNT = numbers only, 2"]},
+   "banner": "Follow CareerWithCode",
+   "note": "How many?\n1, 2 or 3?",
+   "face": "happy", "palette": "purple",
+   "say": "COUNTA! It counts every cell that is not empty, so four. COUNT only counts numbers, so two. How many did you get? One, two or three? Follow CareerWithCode!"
+  }
+ ]
+}
