@@ -45,7 +45,7 @@
    ]
   },
   "data_analytics": {
-   "next_part": 11,
+   "next_part": 12,
    "posted": [
     "Part 1: What is Data Analytics? (the 4 steps)",
     "Part 2: Types of data: numbers, text, dates, categories",
@@ -56,7 +56,8 @@
     "Part 7: Pivot tables in 60 seconds",
     "Part 8: Cleaning data: duplicates and blanks",
     "Part 9: SQL for analysts: SELECT and WHERE",
-    "Part 10: SQL GROUP BY"
+    "Part 10: SQL GROUP BY",
+    "Part 11: SQL JOIN basics"
    ]
   }
  },
@@ -95,16 +96,6 @@
   ]
  },
  "log": [
-  {
-   "date": "2026-10-20 10:00",
-   "slot": "go",
-   "title": "Did you know Go's if can declare variables? | Go Part 7 #shorts",
-   "tone": "friendly teacher",
-   "hook_format": "question",
-   "style": "handwritten",
-   "video": "2026-10-20_1000_go-p07-if-short-statement.mp4",
-   "status": "queued: github action (yt, ig, fb) for 10:00 IST"
-  },
   {
    "date": "2026-10-20 16:00",
    "slot": "educational",
@@ -1394,6 +1385,22 @@
    "facebook": "2021547031836623",
    "instagram": "skipped",
    "first_comments": "youtube: UgwS8U6b5wX_hHKo7yd4AaABAg; fb first comment: no Zapier action"
+  },
+  {
+   "date": "2026-11-27",
+   "slot": "data_analytics",
+   "time": "22:00",
+   "title": "Data Analytics Part 11: SQL JOIN basics #shorts",
+   "tone": "friendly teacher",
+   "hook_format": "mini-story",
+   "video": "2026-11-27_2200_data_analytics-p11-sql-join-basics.mp4",
+   "spec": "specs/2026-11-27_2200_data_analytics-p11-sql-join-basics.json",
+   "duration_s": 52.5,
+   "status": "posted at 22:00 IST: YouTube + Facebook video/reel",
+   "youtube": "e2pVhrU48-g",
+   "facebook": "1888804008955281",
+   "instagram": "skipped",
+   "first_comments": "youtube: UgwT24G1RrKU1guQCIR4AaABAg; fb first comment: no Zapier action"
   }
  ],
  "inspiring": {
