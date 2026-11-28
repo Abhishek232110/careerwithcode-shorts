@@ -1,0 +1,222 @@
+{
+ "voice": "am_michael",
+ "speed": 1.0,
+ "theme": "light",
+ "still_scene": 1,
+ "title_yt": "Morning Quiz: Go + Data Analytics + 1 Interview Question #shorts",
+ "scenes": [
+  {
+   "title": [
+    {
+     "text": "3 questions",
+     "box": "red"
+    },
+    {
+     "text": "Get all 3?"
+    },
+    {
+     "text": "Morning Quiz",
+     "box": "yellow"
+    }
+   ],
+   "image": {
+    "type": "check",
+    "kind": "steps",
+    "items": [
+     "Go: panic + recover",
+     "Data: SQL JOIN",
+     "Interview: defer order"
+    ]
+   },
+   "face": "happy",
+   "palette": "orange",
+   "say": "Three questions. Can you get all three? Morning quiz!"
+  },
+  {
+   "title": [
+    {
+     "text": "Q1 Go",
+     "box": "yellow"
+    },
+    {
+     "text": "What prints?"
+    }
+   ],
+   "image": {
+    "type": "code",
+    "file": "main.go",
+    "lines": [
+     "func safe() (msg string) {",
+     "  defer func() {",
+     "    if r := recover(); r != nil {",
+     "      msg = \"recovered\"",
+     "    }",
+     "  }()",
+     "  panic(\"boom\")",
+     "}",
+     "fmt.Println(safe())",
+     "fmt.Println(\"done\")"
+    ],
+    "highlight": [
+     6
+    ]
+   },
+   "face": "thinking",
+   "palette": "blue",
+   "say": "Question one. The function panics with boom, but a deferred recover is waiting. What prints? Pause and answer."
+  },
+  {
+   "title": [
+    {
+     "text": "Answer 1",
+     "box": "yellow"
+    },
+    {
+     "text": "no crash!"
+    }
+   ],
+   "image": {
+    "type": "code",
+    "file": "main.go",
+    "lines": [
+     "fmt.Println(safe())",
+     "fmt.Println(\"done\")",
+     "// recover in defer stops the panic"
+    ],
+    "highlight": [
+     0
+    ],
+    "output": [
+     "recovered",
+     "done"
+    ]
+   },
+   "face": "happy",
+   "palette": "purple",
+   "say": "Recovered, then done. Recover inside defer catches the panic, sets msg, and the program keeps running."
+  },
+  {
+   "title": [
+    {
+     "text": "Q2 Data",
+     "box": "yellow"
+    },
+    {
+     "text": "How many rows?"
+    }
+   ],
+   "image": {
+    "type": "code",
+    "file": "query.sql",
+    "lines": [
+     "-- orders: customer_id 1, 3, 3, 5",
+     "-- customers: id 1 Asha, 2 Ravi, 3 Meena",
+     "SELECT o.order_id, c.name",
+     "FROM orders o",
+     "JOIN customers c",
+     "  ON o.customer_id = c.id;"
+    ],
+    "highlight": [
+     4,
+     5
+    ]
+   },
+   "face": "thinking",
+   "palette": "orange",
+   "say": "Question two. Four orders, three customers. How many rows does this JOIN return? Pause and answer."
+  },
+  {
+   "title": [
+    {
+     "text": "Answer 2",
+     "box": "yellow"
+    },
+    {
+     "text": "3 rows"
+    }
+   ],
+   "image": {
+    "type": "table",
+    "file": "result",
+    "cols": [
+     "order_id",
+     "name"
+    ],
+    "rows": [
+     [
+      "201",
+      "Asha"
+     ],
+     [
+      "202",
+      "Meena"
+     ],
+     [
+      "203",
+      "Meena"
+     ]
+    ],
+    "good_rows": [
+     1,
+     2
+    ]
+   },
+   "face": "happy",
+   "palette": "blue",
+   "say": "Three. Meena matches twice, so she shows up twice. Customer five does not exist, so that order is dropped."
+  },
+  {
+   "title": [
+    {
+     "text": "Q3 Interview",
+     "box": "red"
+    },
+    {
+     "text": "Which first?"
+    }
+   ],
+   "image": {
+    "type": "code",
+    "file": "main.go",
+    "lines": [
+     "defer fmt.Println(\"A\")",
+     "defer fmt.Println(\"B\")",
+     "fmt.Println(\"main ends\")"
+    ],
+    "highlight": [
+     0,
+     1
+    ]
+   },
+   "face": "thinking",
+   "palette": "purple",
+   "say": "Interview question. Two defers, A then B. Which one runs first? Pause and answer."
+  },
+  {
+   "title": [
+    {
+     "text": "Answer 3",
+     "box": "yellow"
+    },
+    {
+     "text": "B first"
+    }
+   ],
+   "image": {
+    "type": "check",
+    "kind": "check",
+    "items": [
+     "Q1: recovered, done",
+     "Q2: 3 rows",
+     "Q3: B, then A",
+     "defer = last in, first out"
+    ]
+   },
+   "banner": "Follow CareerWithCode",
+   "note": "How many?\n1, 2 or 3?",
+   "face": "happy",
+   "palette": "orange",
+   "say": "B first! Defers run last in, first out, like a stack of plates. How many did you get? One, two or three? Follow CareerWithCode!"
+  }
+ ]
+}
